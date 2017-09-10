@@ -1,12 +1,43 @@
+[npc]
 # mining overseer
 name=Martigan, Overseer
-
 portrait=images/portraits/male05.png
-
 talker=true
 
-# animation info
-gfx=animations/npcs/guild_man1.txt
+[stats]
+INCLUDE enemies/base/vesuvvio.txt
+
+level=11
+xp=2000
+categories=vesuvvio
+
+quest_loot=lb_fire_unlocked,lb_fire_key,9102
+defeat_status=lb_fire_defeated
+
+# combat stats
+stat=hp,300
+speed=6
+turn_delay=166ms
+
+chance_pursue=30
+
+power=melee,33,5
+power=ranged,31,15
+
+stat=accuracy,96
+stat=avoidance,49
+
+stat=dmg_melee_min,25
+stat=dmg_melee_max,40
+stat=dmg_ment_min,25
+stat=dmg_ment_max,65
+stat=absorb_min,2
+stat=absorb_max,2
+#immune fire
+vulnerable=fire,0
+vulnerable=ice,100
+cooldown=1s
+
 
 [dialog]
 requires_not_status=ml_skeleton_search
@@ -57,6 +88,18 @@ requires_not_status=rotten_tower_search
 him=This region was once well guarded. There are watch towers positioned throughout these plains, but most are abandoned and crumbling now.
 him=I need someone to inspect the outpost tower in White Winds, south west of the Frontier Plains. Let me know if goblins have found their way inside.
 set_status=rotten_tower_search
+
+[dialog]
+topic=I can help You beat beasts
+requires_status=ml_skeleton_reward
+you=Lets go.
+take_a_party=true
+
+[dialog]
+topic=Thank You for help
+requires_status=ml_skeleton_reward
+you=Thanks.
+take_a_party=false
 
 [dialog]
 topic=Rotten Tower Search
