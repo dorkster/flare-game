@@ -1,4 +1,4 @@
-
+[tileset]
 img=images/tilesets/tileset_grassland.png
 
 tile=16,288,649,64,32,32,16
@@ -295,10 +295,3 @@ tile=358,576,576,64,192,32,176
 tile=359,640,576,64,192,32,176
 tile=360,704,576,64,192,32,176
 
-[tileset]
-img=images/tilesets/expansion.png
-
-tile=365,0,0,64,128,32,112
-tile=366,64,0,64,128,32,112
-tile=367,128,0,64,128,32,112
-tile=368,192,0,64,128,32,112
