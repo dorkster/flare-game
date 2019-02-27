@@ -58,3 +58,10 @@ soundfx=soundfx/powers/teleport.ogg
 buff=true
 remove_effect=dev_invis,1
 
+[power]
+id=503
+name=Developer menu: Caelfall
+type=fixed
+icon=224
+new_state=instant
+script=on_cast,scripts/dev_caelfall.txt

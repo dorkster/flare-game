@@ -1,0 +1,29 @@
+name=Developer menu: Caelfall
+
+talker=true
+
+[dialog]
+topic=Teleport to entrance
+soundfx=soundfx/environment/teleporter.ogg,0,0
+intermap=maps/caelfall.txt,234,144
+
+[dialog]
+topic=Teleport to town
+soundfx=soundfx/environment/teleporter.ogg,0,0
+intermap=maps/caelfall.txt,192,117
+
+[dialog]
+topic=Teleport to small ruin #1
+soundfx=soundfx/environment/teleporter.ogg,0,0
+intermap=maps/caelfall.txt,36,72
+
+[dialog]
+topic=Teleport to small ruin #2
+soundfx=soundfx/environment/teleporter.ogg,0,0
+intermap=maps/caelfall.txt,235,223
+
+[dialog]
+topic=Teleport to large ruin
+soundfx=soundfx/environment/teleporter.ogg,0,0
+intermap=maps/caelfall.txt,37,205
+
