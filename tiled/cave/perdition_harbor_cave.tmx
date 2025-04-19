@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="20" height="20" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="2">
+ <properties>
+  <property name="music" value="music/cave_theme.ogg"/>
+  <property name="tileset" value="tilesetdefs/tileset_cave.txt"/>
+  <property name="title" value="New Cave Map"/>
+ </properties>
+ <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
+  <image source="tiled_collision.png" width="960" height="32"/>
+ </tileset>
+ <tileset firstgid="16" name="cave" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+  <image source="tiled_cave.png" width="1024" height="1920"/>
+ </tileset>
+ <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
+  <image source="set_rules.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="128" tileheight="64" tilecount="2" columns="2">
+  <tileoffset x="0" y="16"/>
+  <image source="tiled_cave_2x2.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="266" name="boss_chest" tilewidth="64" tileheight="64" tilecount="4" columns="4">
+  <image source="../common/boss_chest.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="270" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+  <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
+ </tileset>
+ <tileset firstgid="510" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16" columns="4">
+  <tileoffset x="0" y="16"/>
+  <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="526" name="door_left" tilewidth="64" tileheight="128" tilecount="2" columns="2">
+  <tileoffset x="-16" y="-8"/>
+  <image source="../dungeon/door_left.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="528" name="door_right" tilewidth="64" tileheight="128" tilecount="2" columns="2">
+  <tileoffset x="16" y="-8"/>
+  <image source="../dungeon/door_right.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="530" name="stairs" tilewidth="256" tileheight="256" tilecount="4" columns="4">
+  <tileoffset x="0" y="48"/>
+  <image source="../dungeon/stairs.png" width="1024" height="256"/>
+ </tileset>
+ <layer id="1" name="background" width="20" height="20">
+  <data encoding="csv">
+270,270,270,270,270,270,270,0,0,0,0,0,0,0,0,0,0,0,0,0,
+270,270,270,270,270,270,270,0,0,0,0,0,0,0,0,0,0,0,0,0,
+270,270,270,270,270,270,0,0,0,0,0,0,0,16,16,57,0,0,0,0,
+270,270,270,270,270,0,0,0,0,0,0,0,16,16,201,202,57,57,0,0,
+270,270,270,270,0,0,0,0,0,0,0,0,16,205,209,210,197,202,0,0,
+270,270,270,532,0,0,0,0,0,0,0,0,16,200,199,195,208,194,0,0,
+270,270,270,270,270,270,270,0,0,0,0,16,16,16,16,16,200,203,57,16,
+0,0,270,270,270,0,0,0,0,0,0,16,16,16,16,16,16,16,16,16,
+0,0,270,270,270,0,0,0,0,0,0,16,16,16,16,16,16,16,16,16,
+0,0,270,270,270,0,0,0,0,0,0,16,16,16,16,16,0,0,0,0,
+0,0,270,270,270,0,0,0,0,0,16,16,16,16,16,0,0,0,0,0,
+0,0,270,270,270,0,0,0,0,16,16,16,16,16,16,0,0,0,0,0,
+0,0,270,270,270,0,0,16,16,16,16,16,16,16,16,0,0,0,0,0,
+0,0,270,270,270,57,270,16,16,16,16,16,16,16,16,0,0,0,0,0,
+0,0,270,270,270,270,289,16,16,16,16,16,16,16,16,0,0,0,0,0,
+0,0,270,270,270,270,286,16,16,16,16,16,16,16,16,0,0,0,0,0,
+0,0,0,0,0,0,0,56,16,16,16,16,16,16,16,0,0,0,0,0,
+0,0,0,0,0,0,0,16,16,16,16,16,16,16,0,0,0,0,0,0,
+0,0,0,0,0,0,0,56,16,16,16,16,16,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="object" width="20" height="20">
+  <properties>
+   <property name="hero_pos" value="17,7"/>
+   <property name="music" value="music/cave_theme.ogg"/>
+   <property name="tileset" value="tilesetdefs/tileset_cave_and_dungeon.txt"/>
+   <property name="title" value="Perdition Harbor Cave"/>
+  </properties>
+  <data encoding="csv">
+331,351,357,319,363,363,359,332,0,0,0,0,0,0,0,0,0,0,0,0,
+358,151,0,0,0,0,0,324,0,0,0,0,0,0,0,0,0,0,0,0,
+352,0,0,0,0,0,0,336,0,0,0,0,0,98,101,65,73,0,0,0,
+362,0,0,0,0,0,0,336,0,0,0,0,76,84,0,0,81,113,77,0,
+356,0,0,0,0,0,0,336,0,0,0,0,100,0,0,0,0,0,66,0,
+352,0,0,0,0,0,0,336,0,0,0,0,100,0,0,0,0,0,66,0,
+318,405,0,0,0,0,0,336,0,0,0,72,103,0,0,0,0,0,81,65,
+330,325,342,0,0,345,337,349,0,0,0,112,0,0,0,0,0,0,0,496,
+0,0,334,0,0,336,0,0,0,0,0,64,0,0,0,0,0,0,0,495,
+0,0,318,0,0,336,0,0,0,0,0,68,0,0,0,0,82,67,67,67,
+0,0,354,0,0,336,0,0,0,0,98,103,0,0,0,82,78,0,0,0,
+0,0,354,0,0,336,0,0,0,72,80,0,0,0,0,70,0,0,0,0,
+0,0,318,0,0,336,0,331,357,84,0,0,0,0,0,70,0,0,0,0,
+0,0,360,0,0,344,335,327,0,0,0,0,0,0,0,70,0,0,0,0,
+0,0,352,0,0,0,527,0,0,0,0,0,0,0,0,66,0,0,0,0,
+0,0,360,0,0,0,526,0,0,0,0,0,0,0,0,70,0,0,0,0,
+0,0,330,325,337,337,337,342,0,0,0,0,0,0,0,66,0,0,0,0,
+0,0,0,0,0,0,0,334,0,0,0,0,0,0,82,78,0,0,0,0,
+0,0,0,0,0,0,0,68,0,0,0,0,0,82,74,0,0,0,0,0,
+0,0,0,0,0,0,0,75,67,67,67,67,67,78,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="collision" width="20" height="20" visible="0">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,
+1,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
+1,0,0,1,0,0,1,1,3,3,3,3,3,1,1,1,1,3,3,3,
+1,0,0,1,3,3,1,1,3,3,3,3,1,1,2,2,1,1,1,3,
+1,0,0,1,3,3,1,1,3,3,3,3,1,2,2,2,2,2,1,3,
+1,0,0,1,1,1,1,1,3,3,3,3,1,2,2,2,2,2,1,3,
+1,0,0,0,0,0,0,1,3,3,3,1,1,0,0,0,2,2,1,1,
+1,1,1,0,0,1,1,1,3,3,3,1,0,0,0,0,0,0,0,0,
+3,3,1,0,0,1,3,3,3,3,3,1,0,0,0,0,0,0,0,0,
+3,3,1,0,0,1,3,3,3,3,3,1,0,0,0,0,1,1,1,1,
+3,3,1,0,0,1,3,3,3,3,1,1,0,0,0,1,1,3,3,3,
+3,3,1,0,0,1,3,3,3,1,1,0,0,0,0,1,3,3,3,3,
+3,3,1,0,0,1,3,1,1,1,0,0,0,0,0,1,3,3,3,3,
+3,3,1,0,0,1,1,1,0,0,0,0,0,0,0,1,3,3,3,3,
+3,3,1,0,0,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,
+3,3,1,0,0,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,
+3,3,1,1,1,1,1,1,0,0,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,1,0,0,0,0,0,0,1,1,3,3,3,3,
+3,3,3,3,3,3,3,1,0,0,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,3,3,3,1,1,1,1,1,1,1,3,3,3,3,3,3
+</data>
+ </layer>
+ <objectgroup id="5" name="event">
+  <object id="1" type="event" x="608" y="224" width="32" height="64">
+   <properties>
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/perdition_harbor.txt,6,15"/>
+    <property name="tooltip" value="Perdition Harbor"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

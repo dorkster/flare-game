@@ -1,0 +1,3 @@
+[event]
+intermap=maps/iron_labyrinth.txt
+

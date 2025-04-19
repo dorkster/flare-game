@@ -6,6 +6,8 @@
     "folders": [
         "."
     ],
+    "properties": [
+    ],
     "propertyTypes": [
         {
             "color": "#ffff9f3f",

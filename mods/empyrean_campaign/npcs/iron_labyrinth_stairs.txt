@@ -1,0 +1,22 @@
+#name=Stairs
+
+talker=true
+
+[dialog]
+topic=Exit
+response=id_il_exit_yes
+response=id_il_exit_no
+him=Return to Perdition Harbor Cave?
+
+
+[dialog]
+id=id_il_exit_yes
+response_only=true
+topic=Yes
+intermap=maps/perdition_harbor_cave.txt,3,6
+
+[dialog]
+id=id_il_exit_no
+response_only=true
+topic=No
+
