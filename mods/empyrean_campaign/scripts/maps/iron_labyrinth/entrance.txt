@@ -1,3 +1,4 @@
 [event]
-intermap=maps/iron_labyrinth.txt
+# intermap=maps/iron_labyrinth.txt
+intermap=maps/procgen_test.txt
 

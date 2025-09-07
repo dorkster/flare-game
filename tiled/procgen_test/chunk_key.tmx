@@ -101,6 +101,7 @@
    <properties>
     <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
+    <property name="loot" value="1105"/>
     <property name="mapmod" value="object,6,7,160"/>
     <property name="repeat" value="false"/>
     <property name="soundfx" value="soundfx/wood_open.ogg"/>

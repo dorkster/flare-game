@@ -79,3 +79,15 @@ data=
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
+[event]
+# Unlock Door
+type=event
+location=7,7,2,2
+activate=on_trigger
+hotspot=location
+mapmod=object,6,8,212;object,9,8,218;object,7,8,0;object,8,8,0;collision,7,7,0;collision,7,8,0;collision,8,7,0;collision,8,8,0
+remove_item=1105:1
+requires_item=1105
+soundfx=soundfx/door_open.ogg
+tooltip=Locked Door
+

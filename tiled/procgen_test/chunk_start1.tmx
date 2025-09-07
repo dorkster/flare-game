@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="16" height="16" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="2">
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="16" height="16" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="4">
  <editorsettings>
-  <export target="../../mods/procgen_test/maps/chunk_generic.txt" format="flare"/>
+  <export target="../../mods/procgen_test/maps/chunk_start1.txt" format="flare"/>
  </editorsettings>
  <properties>
   <property name="hero_pos" value="5,10"/>
@@ -97,14 +97,19 @@
 </data>
  </layer>
  <objectgroup id="5" name="event">
-  <object id="1" type="event" x="224" y="288" width="64" height="32">
+  <object id="2" name="Stairs Up" type="event" x="192" y="192" width="128" height="128">
    <properties>
     <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/procgen_test.txt"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
-    <property name="tooltip" value="Previous Floor"/>
+    <property name="npc" value="npcs/iron_labyrinth_stairs.txt"/>
+    <property name="requires_not_status" value="emp_il_exit"/>
+    <property name="set_status" value="emp_il_exit"/>
+    <property name="tooltip" value="Stairs"/>
+   </properties>
+  </object>
+  <object id="3" name="Reset exit prompt" type="event" x="192" y="320" width="128" height="32">
+   <properties>
+    <property name="unset_status" value="emp_il_exit"/>
    </properties>
   </object>
  </objectgroup>

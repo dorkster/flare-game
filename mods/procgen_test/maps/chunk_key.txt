@@ -84,6 +84,7 @@ type=event
 location=6,7,1,1
 activate=on_trigger
 hotspot=location
+loot=1105
 mapmod=object,6,7,160
 repeat=false
 soundfx=soundfx/wood_open.ogg

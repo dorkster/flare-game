@@ -80,12 +80,19 @@ data=
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
 [event]
+# Stairs Up
 type=event
-location=7,9,2,1
+location=6,6,4,4
 activate=on_trigger
 hotspot=location
-intermap=maps/procgen_test.txt
-repeat=false
-soundfx=soundfx/environment/stairs.ogg,0,0
-tooltip=Previous Floor
+npc=npcs/iron_labyrinth_stairs.txt
+requires_not_status=emp_il_exit
+set_status=emp_il_exit
+tooltip=Stairs
+
+[event]
+# Reset exit prompt
+type=event
+location=6,10,4,1
+unset_status=emp_il_exit
 

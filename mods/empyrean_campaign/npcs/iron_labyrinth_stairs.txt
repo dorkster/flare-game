@@ -4,19 +4,26 @@ talker=true
 
 [dialog]
 topic=Exit
-response=id_il_exit_yes
-response=id_il_exit_no
-him=Return to Perdition Harbor Cave?
+response=id_il_exit_top
+response=id_il_exit_prev
+response=id_il_exit_cancel
+him=Ascend the stairs?
 
 
 [dialog]
-id=id_il_exit_yes
+id=id_il_exit_top
 response_only=true
-topic=Yes
+topic=Return to Perdition Harbor Cave
 intermap=maps/perdition_harbor_cave.txt,3,6
 
 [dialog]
-id=id_il_exit_no
+id=id_il_exit_prev
 response_only=true
-topic=No
+topic=Return to previous floor
+intermap=maps/procgen_test.txt
+
+[dialog]
+id=id_il_exit_cancel
+response_only=true
+topic=Cancel
 

@@ -17,4 +17,6 @@ filename=maps/chunk_generic.txt
 filename=maps/chunk_generic2.txt
 filename=maps/chunk_generic3.txt
 filename=maps/chunk_generic4.txt
+filename=maps/chunk_generic5.txt
+filename=maps/chunk_generic6.txt
 
