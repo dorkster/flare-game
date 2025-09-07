@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="16" height="16" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="5">
+ <editorsettings>
+  <export target="../../mods/procgen_test/maps/procgen_links.txt" format="flare"/>
+ </editorsettings>
+ <properties>
+  <property name="hero_pos" value="0,0"/>
+  <property name="procgen_type" value="links"/>
+  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
+ </properties>
+ <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
+  <image source="../dungeon/tiled_collision.png" width="960" height="32"/>
+ </tileset>
+ <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+  <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
+ </tileset>
+ <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
+  <image source="../dungeon/set_rules.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16" columns="4">
+  <tileoffset x="0" y="16"/>
+  <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2" columns="2">
+  <tileoffset x="-16" y="-8"/>
+  <image source="../dungeon/door_left.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2" columns="2">
+  <tileoffset x="16" y="-8"/>
+  <image source="../dungeon/door_right.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4" columns="4">
+  <tileoffset x="0" y="48"/>
+  <image source="../dungeon/stairs.png" width="1024" height="256"/>
+ </tileset>
+ <tileset firstgid="288" name="boss_chest" tilewidth="64" tileheight="64" tilecount="4" columns="4">
+  <image source="../common/boss_chest.png" width="256" height="64"/>
+ </tileset>
+ <layer id="1" name="background" width="16" height="16">
+  <data encoding="csv">
+0,0,0,0,0,42,45,18,39,18,0,0,0,0,0,0,
+0,0,0,0,0,39,41,16,45,40,0,0,0,0,0,0,
+0,0,0,0,0,38,39,46,17,39,0,0,0,0,0,0,
+0,0,0,0,45,36,35,35,35,35,46,37,0,0,0,0,
+0,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,
+44,18,39,37,0,0,0,0,0,0,0,0,18,41,47,45,
+16,41,40,34,0,0,0,0,0,0,0,0,33,40,38,46,
+46,18,46,35,0,0,0,0,0,0,0,0,34,39,42,37,
+19,36,42,33,0,0,0,0,0,0,0,0,32,40,37,17,
+38,16,44,32,0,0,0,0,0,0,0,0,32,47,16,46,
+0,0,0,38,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,47,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,44,35,35,35,35,0,0,0,0,0,0,
+0,0,0,0,0,45,17,18,38,19,0,0,0,0,0,0,
+0,0,0,0,0,38,47,16,41,39,0,0,0,0,0,0,
+0,0,0,0,0,47,46,40,38,19,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="object" width="16" height="16" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,64,0,0,0,0,82,0,0,0,0,0,
+0,0,0,0,0,106,0,0,0,0,82,0,0,0,0,0,
+0,0,0,0,0,102,0,0,0,0,82,0,0,0,0,0,
+0,0,0,0,99,73,0,0,0,0,90,81,0,0,0,0,
+0,0,0,98,0,0,0,0,0,0,0,0,70,0,0,0,
+65,107,103,73,0,0,0,0,0,0,0,0,90,81,107,69,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+83,83,83,88,0,0,0,0,0,0,0,0,91,83,83,83,
+0,0,0,80,0,0,0,0,0,0,0,0,82,0,0,0,
+0,0,0,0,71,88,0,0,0,0,91,83,0,0,0,0,
+0,0,0,0,0,80,0,0,0,0,82,0,0,0,0,0,
+0,0,0,0,0,106,0,0,0,0,82,0,0,0,0,0,
+0,0,0,0,0,64,0,0,0,0,82,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="collision" width="16" height="16">
+  <data encoding="csv">
+3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,1,1,0,0,0,0,1,1,3,3,3,3,
+3,3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,
+1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1,
+3,3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,
+3,3,3,3,1,1,0,0,0,0,1,1,3,3,3,3,
+3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3
+</data>
+ </layer>
+ <objectgroup id="5" name="event">
+  <object id="1" type="event" x="0" y="128" width="128" height="256">
+   <properties>
+    <property name="procgen_link" value="west"/>
+   </properties>
+  </object>
+  <object id="2" type="event" x="128" y="0" width="256" height="128">
+   <properties>
+    <property name="procgen_link" value="north"/>
+   </properties>
+  </object>
+  <object id="3" type="event" x="384" y="128" width="128" height="256">
+   <properties>
+    <property name="procgen_link" value="east"/>
+   </properties>
+  </object>
+  <object id="4" type="event" x="128" y="384" width="256" height="128">
+   <properties>
+    <property name="procgen_link" value="south"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

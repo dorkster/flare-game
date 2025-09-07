@@ -1,0 +1,3 @@
+description=Procedural map generation test
+requires=fantasycore:1.14
+game=flare-game
