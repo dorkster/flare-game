@@ -79,3 +79,10 @@ data=
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 
+[enemy]
+type=enemy
+location=5,5,6,6
+category=grassland
+level=1
+number=2,5
+

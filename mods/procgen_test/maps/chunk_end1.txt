@@ -89,3 +89,8 @@ repeat=false
 soundfx=soundfx/environment/stairs.ogg,0,0
 tooltip=Previous Floor
 
+[event]
+type=event
+location=5,10,1,1
+hero_pos_id=0
+
