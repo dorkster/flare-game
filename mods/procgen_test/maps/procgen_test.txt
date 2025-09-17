@@ -7,6 +7,7 @@ orientation=isometric
 background_color=0,0,0,255
 hero_pos=0,0
 music=music/dungeon_theme.ogg
+procgen_reset_status=emp_il_f1_reset
 tileset=tilesetdefs/tileset_dungeon.txt
 title=Iron Labyrinth
 

@@ -6,6 +6,7 @@ talker=true
 topic=Exit
 response=id_il_exit_top
 response=id_il_exit_prev
+response=id_il_exit_reset
 response=id_il_exit_cancel
 him=Ascend the stairs?
 
@@ -20,6 +21,13 @@ intermap=maps/perdition_harbor_cave.txt,3,6
 id=id_il_exit_prev
 response_only=true
 topic=Return to previous floor
+intermap=maps/procgen_test.txt,-1,-1,1
+
+[dialog]
+id=id_il_exit_reset
+response_only=true
+topic=Regenerate floor
+set_status=emp_il_f1_reset
 intermap=maps/procgen_test.txt
 
 [dialog]

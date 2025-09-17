@@ -96,6 +96,12 @@ type=event
 location=6,10,4,1
 unset_status=emp_il_exit
 
+[event]
+type=event
+location=3,3,1,1
+activate=on_load
+unset_status=emp_il_f1_reset
+
 [npc]
 type=npc
 location=11,8,1,1

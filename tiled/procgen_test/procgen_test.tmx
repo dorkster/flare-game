@@ -6,6 +6,7 @@
  <properties>
   <property name="hero_pos" value="0,0"/>
   <property name="music" value="music/dungeon_theme.ogg"/>
+  <property name="procgen_reset_status" value="emp_il_f1_reset"/>
   <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
   <property name="title" value="Iron Labyrinth"/>
  </properties>
