@@ -17,6 +17,7 @@
 		<p>Players may find or buy different items to protect themselves from attacks or boost their stats. These include potions, scrolls, weapons, armor, and magical artifacts. Along with the normal equipment, there are enchanted, rare, and unique pieces of gear that provide extra bonuses.</p>
 		<p>The Flare engine is licensed under GPL 3, whereas the Empyrean Campaign is licensed under CC-BY-SA 3.0. Both the engine and the game content are being actively developed, including new features, art, and content.</p>
 	</description>
+	<launchable type="desktop-id">flare.desktop</launchable>
 	<url type="homepage">http://flarerpg.org/</url>
 	<releases>
 		<release date="2022-12-10" version="1.14" />
