@@ -193,6 +193,7 @@ radius=1.0
 starting_pos=melee
 post_effect=slow_ice,0,5s
 cooldown=5s
+trait_elemental=ice
 
 # shadowball
 [power]
