@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/mage_boots_alt1.txt

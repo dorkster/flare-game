@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/infantry_axe.txt

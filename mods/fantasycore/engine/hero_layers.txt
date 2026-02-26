@@ -1,9 +1,10 @@
 # layer=direction, list of types in order of appearance, first item will be printed on screen first
-layer=0,main,feet,legs,hands,chest,head,off
-layer=1,main,feet,legs,hands,chest,head,off
-layer=2,off,feet,legs,hands,chest,head,main
-layer=3,off,feet,legs,hands,chest,head,main
-layer=4,off,feet,legs,hands,chest,head,main
-layer=5,feet,legs,hands,chest,head,off,main
-layer=6,main,feet,legs,hands,chest,head,off
-layer=7,main,feet,legs,hands,chest,head,off
+layer=SW,main,feet,legs,hands,chest,off,head
+layer=W,main,feet,legs,hands,chest,off,head
+layer=NW,main,feet,legs,hands,chest,off,head
+layer=N,feet,legs,hands,chest,off,head,main
+layer=NE,feet,legs,hands,chest,off,head,main
+layer=E,feet,legs,hands,chest,off,head,main
+layer=SE,feet,legs,hands,main,chest,head,off
+layer=S,main,feet,legs,hands,chest,head,off
+

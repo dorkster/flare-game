@@ -1,23 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="56" height="38" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="26">
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="56" height="38" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="26">
  <properties>
-  <property name="hero_pos" value="52,18"/>
-  <property name="music" value="music/cave_theme.ogg"/>
-  <property name="tileset" value="tilesetdefs/tileset_cave.txt"/>
-  <property name="title" value="Perdition Mines"/>
+  <property name="hero_pos" value="52,18" />
+  <property name="music" value="music/cave_theme.ogg" />
+  <property name="tileset" value="tilesetdefs/tileset_cave.txt" />
+  <property name="title" value="Perdition Mines" />
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
-  <image source="../cave/tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../cave/../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="cave" tilewidth="64" tileheight="128" tilecount="240" columns="16">
-  <image source="../cave/tiled_cave.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="cave" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../cave/../tilesheets/cave.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
-  <image source="../cave/set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../cave/../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="128" tileheight="64" tilecount="2" columns="2">
-  <tileoffset x="0" y="16"/>
-  <image source="../cave/tiled_cave_2x2.png" width="256" height="64"/>
+ <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="384" tileheight="192" tilecount="2" columns="2">
+  <tileoffset x="0" y="48" />
+  <image source="../cave/../tilesheets/cave_2x2.png" width="768" height="192" />
  </tileset>
  <layer id="1" name="background" width="56" height="38">
   <data encoding="csv">
@@ -146,185 +145,185 @@
 </data>
  </layer>
  <objectgroup id="4" name="event">
-  <object id="1" name="to Salted Field" type="event" x="1760" y="576" width="32" height="96">
+  <object id="1" name="to Salted Field" type="event" x="5280" y="1728" width="96" height="288">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/salted_field.txt,7,13"/>
-    <property name="tooltip" value="Salted Field"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/salted_field.txt,7,13" />
+    <property name="tooltip" value="Salted Field" />
    </properties>
   </object>
-  <object id="9" name="Krolan chest (no key)" type="event" x="32" y="384" width="32" height="32">
+  <object id="9" name="Krolan chest (no key)" type="event" x="96" y="1152" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="4,16,1,1"/>
-    <property name="requires_not_status" value="emp_krolan_key"/>
-    <property name="requires_status" value="emp_krolan_init"/>
-    <property name="tooltip" value="Krolan's Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="4,16,1,1" />
+    <property name="requires_not_status" value="emp_krolan_key" />
+    <property name="requires_status" value="emp_krolan_init" />
+    <property name="tooltip" value="Krolan's Chest" />
    </properties>
   </object>
-  <object id="10" name="Krolan chest (ready to unlock)" type="event" x="32" y="448" width="32" height="32">
+  <object id="10" name="Krolan chest (ready to unlock)" type="event" x="96" y="1344" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="4,16,1,1"/>
-    <property name="loot" value="loot/chest_level_2.txt;1001,fixed,1"/>
-    <property name="loot_count" value="3,4"/>
-    <property name="mapmod" value="object,4,16,176"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_item" value="1000"/>
-    <property name="requires_not_status" value="emp_krolan_emerald"/>
-    <property name="requires_status" value="emp_krolan_init,emp_krolan_key"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Krolan's Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="4,16,1,1" />
+    <property name="loot" value="loot/chest_level_2.txt;1001,fixed,1" />
+    <property name="loot_count" value="3,4" />
+    <property name="mapmod" value="object,4,16,176" />
+    <property name="repeat" value="false" />
+    <property name="requires_item" value="1000" />
+    <property name="requires_not_status" value="emp_krolan_emerald" />
+    <property name="requires_status" value="emp_krolan_init,emp_krolan_key" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Krolan's Chest" />
    </properties>
   </object>
-  <object id="11" name="Treasure chest (no quest)" type="event" x="128" y="512" width="32" height="32">
+  <object id="11" name="Treasure chest (no quest)" type="event" x="384" y="1536" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_2.txt"/>
-    <property name="loot_count" value="3,4"/>
-    <property name="mapmod" value="object,4,16,176"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_krolan_init"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_2.txt" />
+    <property name="loot_count" value="3,4" />
+    <property name="mapmod" value="object,4,16,176" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_krolan_init" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="13" name="Krolan chest (opened)" type="event" x="32" y="320" width="32" height="32">
+  <object id="13" name="Krolan chest (opened)" type="event" x="96" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="object,4,16,176"/>
-    <property name="requires_status" value="emp_krolan_init,emp_krolan_key,emp_krolan_emerald"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="object,4,16,176" />
+    <property name="requires_status" value="emp_krolan_init,emp_krolan_key,emp_krolan_emerald" />
    </properties>
   </object>
-  <object id="14" name="Cave wind sound effect" type="event" x="0" y="0" width="32" height="32">
+  <object id="14" name="Cave wind sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg" />
    </properties>
   </object>
-  <object id="15" name="Water dripping" type="event" x="224" y="512" width="32" height="32">
+  <object id="15" name="Water dripping" type="event" x="672" y="1536" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="16" name="Water dripping" type="event" x="608" y="192" width="32" height="32">
+  <object id="16" name="Water dripping" type="event" x="1824" y="576" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="17" name="Water dripping" type="event" x="864" y="512" width="32" height="32">
+  <object id="17" name="Water dripping" type="event" x="2592" y="1536" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="18" name="Water dripping" type="event" x="544" y="960" width="32" height="32">
+  <object id="18" name="Water dripping" type="event" x="1632" y="2880" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="19" name="Water dripping" type="event" x="1216" y="224" width="32" height="32">
+  <object id="19" name="Water dripping" type="event" x="3648" y="672" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="20" name="Water dripping" type="event" x="1216" y="928" width="32" height="32">
+  <object id="20" name="Water dripping" type="event" x="3648" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="21" name="Barrel" type="event" x="512" y="992" width="32" height="32">
+  <object id="21" name="Barrel" type="event" x="1536" y="2976" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_1.txt"/>
-    <property name="mapmod" value="object,16,31,178"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_1.txt" />
+    <property name="mapmod" value="object,16,31,178" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="22" name="Crate" type="event" x="544" y="128" width="32" height="32">
+  <object id="22" name="Crate" type="event" x="1632" y="384" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_1.txt"/>
-    <property name="mapmod" value="object,17,4,179"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Crate"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_1.txt" />
+    <property name="mapmod" value="object,17,4,179" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Crate" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
-  <object id="2" type="enemy" x="1088" y="160" width="288" height="224">
+  <object id="2" type="enemy" x="3264" y="480" width="864" height="672">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="1"/>
-    <property name="number" value="2"/>
-    <property name="wander_radius" value="1"/>
+    <property name="category" value="undead" />
+    <property name="level" value="1" />
+    <property name="number" value="2" />
+    <property name="wander_radius" value="1" />
    </properties>
   </object>
-  <object id="3" type="enemy" x="1120" y="832" width="288" height="224">
+  <object id="3" type="enemy" x="3360" y="2496" width="864" height="672">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="1"/>
-    <property name="number" value="2"/>
-    <property name="wander_radius" value="1"/>
+    <property name="category" value="undead" />
+    <property name="level" value="1" />
+    <property name="number" value="2" />
+    <property name="wander_radius" value="1" />
    </properties>
   </object>
-  <object id="4" type="enemy" x="512" y="864" width="224" height="192">
+  <object id="4" type="enemy" x="1536" y="2592" width="672" height="576">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="1"/>
-    <property name="number" value="2,3"/>
-    <property name="wander_radius" value="1"/>
+    <property name="category" value="undead" />
+    <property name="level" value="1" />
+    <property name="number" value="2,3" />
+    <property name="wander_radius" value="1" />
    </properties>
   </object>
-  <object id="5" type="enemy" x="480" y="96" width="288" height="160">
+  <object id="5" type="enemy" x="1440" y="288" width="864" height="480">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="1"/>
-    <property name="number" value="2,3"/>
-    <property name="wander_radius" value="1"/>
+    <property name="category" value="undead" />
+    <property name="level" value="1" />
+    <property name="number" value="2,3" />
+    <property name="wander_radius" value="1" />
    </properties>
   </object>
-  <object id="6" type="enemy" x="736" y="416" width="192" height="320">
+  <object id="6" type="enemy" x="2208" y="1248" width="576" height="960">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="1"/>
-    <property name="number" value="3,4"/>
-    <property name="wander_radius" value="2"/>
+    <property name="category" value="undead" />
+    <property name="level" value="1" />
+    <property name="number" value="3,4" />
+    <property name="wander_radius" value="2" />
    </properties>
   </object>
-  <object id="7" type="enemy" x="160" y="480" width="32" height="32">
+  <object id="7" type="enemy" x="480" y="1440" width="96" height="96">
    <properties>
-    <property name="category" value="krolan"/>
-    <property name="number" value="1"/>
-    <property name="wander_radius" value="1"/>
+    <property name="category" value="krolan" />
+    <property name="number" value="1" />
+    <property name="wander_radius" value="1" />
    </properties>
   </object>
-  <object id="8" type="enemy" x="288" y="544" width="128" height="64">
+  <object id="8" type="enemy" x="864" y="1632" width="384" height="192">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="1"/>
-    <property name="number" value="1"/>
-    <property name="wander_radius" value="1"/>
+    <property name="category" value="undead" />
+    <property name="level" value="1" />
+    <property name="number" value="1" />
+    <property name="wander_radius" value="1" />
    </properties>
   </object>
-  <object id="24" type="enemy" x="192" y="416" width="160" height="64">
+  <object id="24" type="enemy" x="576" y="1248" width="480" height="192">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="1"/>
-    <property name="number" value="1"/>
-    <property name="wander_radius" value="1"/>
+    <property name="category" value="undead" />
+    <property name="level" value="1" />
+    <property name="number" value="1" />
+    <property name="wander_radius" value="1" />
    </properties>
   </object>
  </objectgroup>

@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/plate_cuirass.txt

@@ -4,7 +4,7 @@
 sfx_loot=soundfx/flying_loot.ogg
 
 # Tooltip
-tooltip_margin=32
+tooltip_margin=128
 
 # Autopickup
 autopickup_currency=1

@@ -1,35 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.0" orientation="isometric" renderorder="right-down" width="28" height="129" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextobjectid="43">
+<map version="1.0" tiledversion="1.1.0" orientation="isometric" renderorder="right-down" width="28" height="129" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextobjectid="43">
  <properties>
-  <property name="hero_pos" value="15,126"/>
-  <property name="music" value="music/boss_theme.ogg"/>
-  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
-  <property name="title" value="Averguard Temple"/>
+  <property name="hero_pos" value="15,126" />
+  <property name="music" value="music/boss_theme.ogg" />
+  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
+  <property name="title" value="Averguard Temple" />
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
-  <image source="../dungeon/tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../dungeon/../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
-  <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../dungeon/../tilesheets/dungeon.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
-  <image source="../dungeon/set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../dungeon/../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16" columns="4">
-  <tileoffset x="0" y="16"/>
-  <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16" columns="4">
+  <tileoffset x="0" y="48" />
+  <image source="../dungeon/../tilesheets/dungeon_2x2.png" width="1536" height="768" />
  </tileset>
- <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="-16" y="-8"/>
-  <image source="../dungeon/door_left.png" width="128" height="128"/>
+ <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="-48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_left.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="16" y="-8"/>
-  <image source="../dungeon/door_right.png" width="128" height="128"/>
+ <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_right.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4" columns="4">
-  <tileoffset x="0" y="48"/>
-  <image source="../dungeon/stairs.png" width="1024" height="256"/>
+ <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4" columns="4">
+  <tileoffset x="0" y="144" />
+  <image source="../dungeon/../tilesheets/dungeon_stairs.png" width="3072" height="768" />
  </tileset>
  <layer name="background" width="28" height="129">
   <data encoding="csv">
@@ -431,338 +430,338 @@
 </data>
  </layer>
  <objectgroup name="event">
-  <object id="1" type="event" x="448" y="4064" width="64" height="64">
+  <object id="1" type="event" x="1344" y="12192" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/averguard_atrium.txt,8,2"/>
-    <property name="soundfx" value="soundfx/door_open.ogg,0,0"/>
-    <property name="tooltip" value="Averguard Atrium"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/averguard_atrium.txt,8,2" />
+    <property name="soundfx" value="soundfx/door_open.ogg,0,0" />
+    <property name="tooltip" value="Averguard Atrium" />
    </properties>
   </object>
-  <object id="2" name="switch to open the temple library room" type="event" x="608" y="3776" width="32" height="32">
+  <object id="2" name="switch to open the temple library room" type="event" x="1824" y="11328" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,19,118,150;object,10,118,112;collision,10,118,0"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/door_open.ogg"/>
-    <property name="tooltip" value="Switch"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,19,118,150;object,10,118,112;collision,10,118,0" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/door_open.ogg" />
+    <property name="tooltip" value="Switch" />
    </properties>
   </object>
-  <object id="3" name="fire statue trap" type="event" x="192" y="1632" width="608" height="448">
+  <object id="3" name="fire statue trap" type="event" x="576" y="4896" width="1824" height="1344">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="3s"/>
-    <property name="power" value="31"/>
-    <property name="power_damage" value="25,50"/>
-    <property name="power_path" value="15,58,hero"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="3s" />
+    <property name="power" value="31" />
+    <property name="power_damage" value="25,50" />
+    <property name="power_path" value="15,58,hero" />
    </properties>
   </object>
-  <object id="4" name="have key, but no talisman" type="event" x="320" y="2624" width="32" height="32">
+  <object id="4" name="have key, but no talisman" type="event" x="960" y="7872" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="15,88,1,1"/>
-    <property name="msg" value="You insert the Averguard Key. Runes glow around the door, then fade. The door is still sealed."/>
-    <property name="repeat" value="false"/>
-    <property name="requires_item" value="9001"/>
-    <property name="requires_not_status" value="ak_talisman_found"/>
-    <property name="requires_status" value="ak_key_found"/>
-    <property name="set_status" value="ak_temple_sealed"/>
-    <property name="tooltip" value="Sealed Temple Door"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="15,88,1,1" />
+    <property name="msg" value="You insert the Averguard Key. Runes glow around the door, then fade. The door is still sealed." />
+    <property name="repeat" value="false" />
+    <property name="requires_item" value="9001" />
+    <property name="requires_not_status" value="ak_talisman_found" />
+    <property name="requires_status" value="ak_key_found" />
+    <property name="set_status" value="ak_temple_sealed" />
+    <property name="tooltip" value="Sealed Temple Door" />
    </properties>
   </object>
-  <object id="5" name="have key and talisman" type="event" x="320" y="2560" width="32" height="32">
+  <object id="5" name="have key and talisman" type="event" x="960" y="7680" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="15,88,1,1"/>
-    <property name="mapmod" value="object,15,88,113;collision,15,88,0"/>
-    <property name="msg" value="You read aloud the runes on Langlier's Talisman. The Avergard Key begins to glow!"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="ak_talisman_used"/>
-    <property name="requires_status" value="ak_key_found,ak_talisman_found"/>
-    <property name="set_status" value="ak_talisman_used"/>
-    <property name="shakycam" value="2s"/>
-    <property name="soundfx" value="soundfx/powers/quake.ogg"/>
-    <property name="tooltip" value="Activate Talisman"/>
-    <property name="unset_status" value="ak_temple_sealed"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="15,88,1,1" />
+    <property name="mapmod" value="object,15,88,113;collision,15,88,0" />
+    <property name="msg" value="You read aloud the runes on Langlier's Talisman. The Avergard Key begins to glow!" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="ak_talisman_used" />
+    <property name="requires_status" value="ak_key_found,ak_talisman_found" />
+    <property name="set_status" value="ak_talisman_used" />
+    <property name="shakycam" value="2s" />
+    <property name="soundfx" value="soundfx/powers/quake.ogg" />
+    <property name="tooltip" value="Activate Talisman" />
+    <property name="unset_status" value="ak_temple_sealed" />
    </properties>
   </object>
-  <object id="6" name="door is already open" type="event" x="320" y="2496" width="32" height="32">
+  <object id="6" name="door is already open" type="event" x="960" y="7488" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="object,15,88,113;collision,15,88,0"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_status" value="ak_talisman_used"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="object,15,88,113;collision,15,88,0" />
+    <property name="repeat" value="false" />
+    <property name="requires_status" value="ak_talisman_used" />
    </properties>
   </object>
-  <object id="7" type="event" x="64" y="3744" width="32" height="32">
+  <object id="7" type="event" x="192" y="11232" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,2,117,164"/>
-    <property name="msg" value="&quot;Some said Sir Maddox cared too much for the peasants.  He would not quarantine, saying the villagers did not deserve to die locked away.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,2,117,164" />
+    <property name="msg" value="&quot;Some said Sir Maddox cared too much for the peasants.  He would not quarantine, saying the villagers did not deserve to die locked away.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="8" type="event" x="64" y="3872" width="32" height="32">
+  <object id="8" type="event" x="192" y="11616" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,2,121,164"/>
-    <property name="msg" value="&quot;Maddox died of the plague in 638.  After attempts to magically revive him failed he was sealed deep behind the temple.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,2,121,164" />
+    <property name="msg" value="&quot;Maddox died of the plague in 638.  After attempts to magically revive him failed he was sealed deep behind the temple.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="9" name="chest in the boss room" type="event" x="480" y="32" width="32" height="32">
+  <object id="9" name="chest in the boss room" type="event" x="1440" y="96" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="msg" value="This chest is locked."/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="ak_maddox_defeated"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="msg" value="This chest is locked." />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="ak_maddox_defeated" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="10" type="event" x="480" y="32" width="32" height="32">
+  <object id="10" type="event" x="1440" y="96" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_high.txt"/>
-    <property name="mapmod" value="object,15,1,161"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_status" value="ak_maddox_defeated"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_high.txt" />
+    <property name="mapmod" value="object,15,1,161" />
+    <property name="repeat" value="false" />
+    <property name="requires_status" value="ak_maddox_defeated" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="11" type="event" x="448" y="1984" width="96" height="32">
+  <object id="11" type="event" x="1344" y="5952" width="288" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="msg" value="A plaque under the statue reads &quot;Sir Evan Maddox, may he return to rescue us all&quot;"/>
-    <property name="repeat" value="false"/>
+    <property name="activate" value="on_trigger" />
+    <property name="msg" value="A plaque under the statue reads &quot;Sir Evan Maddox, may he return to rescue us all&quot;" />
+    <property name="repeat" value="false" />
    </properties>
   </object>
-  <object id="12" name="when entering Maddox's Burial Chamber" type="event" x="480" y="608" width="64" height="64">
+  <object id="12" name="when entering Maddox's Burial Chamber" type="event" x="1440" y="1824" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="msg" value="A ghastly voice reverberates from the next chamber.  &quot;What fool disturbs my tomb?!&quot;"/>
-    <property name="repeat" value="false"/>
+    <property name="activate" value="on_trigger" />
+    <property name="msg" value="A ghastly voice reverberates from the next chamber.  &quot;What fool disturbs my tomb?!&quot;" />
+    <property name="repeat" value="false" />
    </properties>
   </object>
-  <object id="13" type="event" x="480" y="288" width="32" height="64">
+  <object id="13" type="event" x="1440" y="864" width="96" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_high.txt"/>
-    <property name="msg" value="You wipe dust away from the tomb lid, revealing an inscription: &quot;Here lies Sir Evan Maddox&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="tooltip" value="Maddox's Tomb"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_high.txt" />
+    <property name="msg" value="You wipe dust away from the tomb lid, revealing an inscription: &quot;Here lies Sir Evan Maddox&quot;" />
+    <property name="repeat" value="false" />
+    <property name="tooltip" value="Maddox's Tomb" />
    </properties>
   </object>
-  <object id="14" name="brazier sound effect" type="event" x="448" y="3136" width="32" height="32">
+  <object id="14" name="brazier sound effect" type="event" x="1344" y="9408" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="15" name="brazier sound effect" type="event" x="512" y="3136" width="32" height="32">
+  <object id="15" name="brazier sound effect" type="event" x="1536" y="9408" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="16" name="don't have key" type="event" x="320" y="2688" width="32" height="32">
+  <object id="16" name="don't have key" type="event" x="960" y="8064" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="15,88,1,1"/>
-    <property name="msg" value="A locked gate is here, with a small keyhole in the center."/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="ak_key_found"/>
-    <property name="tooltip" value="Sealed Temple Door"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="15,88,1,1" />
+    <property name="msg" value="A locked gate is here, with a small keyhole in the center." />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="ak_key_found" />
+    <property name="tooltip" value="Sealed Temple Door" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="enemy">
-  <object id="17" type="enemy" x="384" y="3680" width="32" height="32">
+  <object id="17" type="enemy" x="1152" y="11040" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
+    <property name="category" value="zombie_rotting" />
    </properties>
   </object>
-  <object id="18" type="enemy" x="512" y="3776" width="32" height="32">
+  <object id="18" type="enemy" x="1536" y="11328" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_normal"/>
+    <property name="category" value="zombie_normal" />
    </properties>
   </object>
-  <object id="19" type="enemy" x="416" y="3488" width="32" height="32">
+  <object id="19" type="enemy" x="1248" y="10464" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
+    <property name="category" value="zombie_rotting" />
    </properties>
   </object>
-  <object id="20" type="enemy" x="320" y="3392" width="32" height="32">
+  <object id="20" type="enemy" x="960" y="10176" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="21" type="enemy" x="288" y="3328" width="32" height="32">
+  <object id="21" type="enemy" x="864" y="9984" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="22" type="enemy" x="320" y="3328" width="32" height="32">
+  <object id="22" type="enemy" x="960" y="9984" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="23" type="enemy" x="288" y="3264" width="32" height="32">
+  <object id="23" type="enemy" x="864" y="9792" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_normal"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_normal" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="24" type="enemy" x="320" y="3200" width="32" height="32">
+  <object id="24" type="enemy" x="960" y="9600" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="25" type="enemy" x="384" y="3392" width="32" height="32">
+  <object id="25" type="enemy" x="1152" y="10176" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="26" type="enemy" x="416" y="3264" width="32" height="32">
+  <object id="26" type="enemy" x="1248" y="9792" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="27" type="enemy" x="384" y="3200" width="32" height="32">
+  <object id="27" type="enemy" x="1152" y="9600" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_brute"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_brute" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="28" type="enemy" x="416" y="3200" width="32" height="32">
+  <object id="28" type="enemy" x="1248" y="9600" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="29" type="enemy" x="544" y="3392" width="32" height="32">
+  <object id="29" type="enemy" x="1632" y="10176" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="30" type="enemy" x="544" y="3328" width="32" height="32">
+  <object id="30" type="enemy" x="1632" y="9984" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_normal"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_normal" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="31" type="enemy" x="576" y="3200" width="32" height="32">
+  <object id="31" type="enemy" x="1728" y="9600" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="32" type="enemy" x="640" y="3264" width="32" height="32">
+  <object id="32" type="enemy" x="1920" y="9792" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="33" type="enemy" x="672" y="3264" width="32" height="32">
+  <object id="33" type="enemy" x="2016" y="9792" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_rotting"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_rotting" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="34" type="enemy" x="672" y="3328" width="32" height="32">
+  <object id="34" type="enemy" x="2016" y="9984" width="96" height="96">
    <properties>
-    <property name="category" value="zombie_iceclaw"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="zombie_iceclaw" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="35" type="enemy" x="480" y="3168" width="32" height="32">
+  <object id="35" type="enemy" x="1440" y="9504" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_mage"/>
-    <property name="direction" value="3"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_mage" />
+    <property name="direction" value="3" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="36" type="enemy" x="480" y="3040" width="32" height="32">
+  <object id="36" type="enemy" x="1440" y="9120" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_warrior"/>
-    <property name="direction" value="7"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_warrior" />
+    <property name="direction" value="7" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="37" type="enemy" x="448" y="864" width="32" height="32">
+  <object id="37" type="enemy" x="1344" y="2592" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_sniper"/>
-    <property name="direction" value="7"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_sniper" />
+    <property name="direction" value="7" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="38" type="enemy" x="512" y="864" width="32" height="32">
+  <object id="38" type="enemy" x="1536" y="2592" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_sniper"/>
-    <property name="direction" value="7"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_sniper" />
+    <property name="direction" value="7" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="39" type="enemy" x="512" y="256" width="32" height="32">
+  <object id="39" type="enemy" x="1536" y="768" width="96" height="96">
    <properties>
-    <property name="category" value="sir_evan_maddox"/>
-    <property name="direction" value="7"/>
+    <property name="category" value="sir_evan_maddox" />
+    <property name="direction" value="7" />
    </properties>
   </object>
-  <object id="40" type="enemy" x="32" y="3680" width="160" height="288">
+  <object id="40" type="enemy" x="96" y="11040" width="480" height="864">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="4,6"/>
-    <property name="number" value="1,3"/>
+    <property name="category" value="undead" />
+    <property name="level" value="4,6" />
+    <property name="number" value="1,3" />
    </properties>
   </object>
-  <object id="41" type="enemy" x="192" y="1568" width="608" height="576">
+  <object id="41" type="enemy" x="576" y="4704" width="1824" height="1728">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="3,6"/>
-    <property name="number" value="3,5"/>
+    <property name="category" value="undead" />
+    <property name="level" value="3,6" />
+    <property name="number" value="3,5" />
    </properties>
   </object>
-  <object id="42" type="enemy" x="192" y="1568" width="608" height="576">
+  <object id="42" type="enemy" x="576" y="4704" width="1824" height="1728">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="3,6"/>
-    <property name="number" value="3,5"/>
+    <property name="category" value="undead" />
+    <property name="level" value="3,6" />
+    <property name="number" value="3,5" />
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="enemygroup"/>
+ <objectgroup name="enemygroup" />
 </map>

@@ -107,7 +107,7 @@ can_stack=false
 id=dark_mist_animation
 can_stack=false
 animation=animations/powers/dark_mist.txt
-render_above=false
+render_above=true
 
 [effect]
 id=fire_weakness

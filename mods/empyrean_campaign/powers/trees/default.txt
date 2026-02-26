@@ -15,7 +15,7 @@ title=Magician
 [power]
 id=1
 tab=0
-position=48,80
+position=96,136
 requires_primary=physical,1
 
 
@@ -23,7 +23,7 @@ requires_primary=physical,1
 [power]
 id=7
 tab=0
-position=112,144
+position=224,264
 requires_primary=physical,2
 requires_point=true
 upgrades=8,9,10,11
@@ -53,7 +53,7 @@ requires_point=true
 [power]
 id=17
 tab=0
-position=112,208
+position=224,392
 requires_primary=physical,3
 requires_point=true
 upgrades=18,19,20,21
@@ -83,7 +83,7 @@ requires_point=true
 [power]
 id=22
 tab=0
-position=176,144
+position=352,264
 requires_primary=physical,2
 requires_point=true
 upgrades=23,24,25,26
@@ -113,7 +113,7 @@ requires_point=true
 [power]
 id=27
 tab=0
-position=176,208
+position=352,392
 requires_primary=physical,3
 requires_power=22
 requires_point=true
@@ -148,7 +148,7 @@ requires_point=true
 [power]
 id=2
 tab=0
-position=240,80
+position=480,136
 requires_primary=defense,2
 requires_primary=physical,2
 requires_point=true
@@ -183,7 +183,7 @@ requires_point=true
 [power]
 id=12
 tab=0
-position=240,208
+position=480,392
 requires_primary=defense,3
 requires_primary=physical,1
 requires_point=true
@@ -218,7 +218,7 @@ requires_point=true
 [power]
 id=32
 tab=0
-position=240,272
+position=480,520
 requires_primary=defense,2
 requires_primary=physical,3
 requires_point=true
@@ -253,7 +253,7 @@ requires_point=true
 [power]
 id=37
 tab=0
-position=48,336
+position=96,648
 requires_point=true
 requires_level=1
 upgrades=38,39,40,41
@@ -286,7 +286,7 @@ requires_level=9
 [power]
 id=42
 tab=1
-position=48,80
+position=96,136
 requires_primary=offense,1
 
 
@@ -294,7 +294,7 @@ requires_primary=offense,1
 [power]
 id=45
 tab=1
-position=240,80
+position=480,136
 requires_primary=defense,2
 requires_primary=offense,2
 requires_point=true
@@ -329,7 +329,7 @@ requires_point=true
 [power]
 id=50
 tab=1
-position=112,144
+position=224,264
 requires_primary=offense,2
 requires_point=true
 upgrades=51,52,53,54
@@ -359,7 +359,7 @@ requires_point=true
 [power]
 id=80
 tab=1
-position=112,208
+position=224,392
 requires_primary=offense,3
 requires_point=true
 upgrades=81,82,83,84
@@ -389,7 +389,7 @@ requires_point=true
 [power]
 id=65
 tab=1
-position=112,272
+position=224,520
 requires_primary=offense,3
 requires_point=true
 upgrades=66,67,68,69
@@ -419,7 +419,7 @@ requires_point=true
 [power]
 id=95
 tab=1
-position=176,144
+position=352,264
 requires_primary=offense,2
 requires_point=true
 upgrades=96,97,98,99
@@ -449,7 +449,7 @@ requires_point=true
 [power]
 id=100
 tab=1
-position=240,144
+position=480,264
 requires_primary=offense,2
 requires_primary=defense,1
 requires_point=true
@@ -484,7 +484,7 @@ requires_point=true
 [power]
 id=105
 tab=1
-position=240,208
+position=480,392
 requires_primary=offense,3
 requires_primary=defense,2
 requires_power=100
@@ -523,7 +523,7 @@ requires_point=true
 [power]
 id=111
 tab=1
-position=48,336
+position=96,648
 requires_point=true
 requires_level=1
 upgrades=112,113,114,115
@@ -555,7 +555,7 @@ requires_level=9
 [power]
 id=116
 tab=2
-position=48,80
+position=96,136
 requires_primary=mental,1
 
 
@@ -563,7 +563,7 @@ requires_primary=mental,1
 [power]
 id=117
 tab=2
-position=240,80
+position=480,136
 requires_primary=mental,2
 requires_primary=defense,2
 requires_point=true
@@ -598,7 +598,7 @@ requires_point=true
 [power]
 id=122
 tab=2
-position=112,144
+position=224,264
 requires_primary=mental,2
 requires_point=true
 upgrades=123,124,125,126
@@ -628,7 +628,7 @@ requires_point=true
 [power]
 id=127
 tab=2
-position=176,144
+position=352,264
 requires_primary=mental,2
 requires_point=true
 upgrades=128,129,130,131
@@ -658,7 +658,7 @@ requires_point=true
 [power]
 id=132
 tab=2
-position=240,144
+position=480,264
 requires_primary=mental,2
 requires_point=true
 upgrades=133,134,135,136
@@ -688,7 +688,7 @@ requires_point=true
 [power]
 id=137
 tab=2
-position=112,208
+position=224,392
 requires_primary=mental,3
 requires_power=122
 requires_point=true
@@ -723,7 +723,7 @@ requires_point=true
 [power]
 id=142
 tab=2
-position=176,208
+position=352,392
 requires_primary=mental,3
 requires_power=127
 requires_point=true
@@ -758,7 +758,7 @@ requires_point=true
 [power]
 id=147
 tab=2
-position=240,208
+position=480,392
 requires_primary=mental,3
 requires_power=132
 requires_point=true
@@ -793,7 +793,7 @@ requires_point=true
 [power]
 id=152
 tab=2
-position=48,336
+position=96,648
 requires_point=true
 requires_level=1
 upgrades=153,154,155,156
@@ -824,7 +824,7 @@ requires_level=9
 [power]
 id=238
 tab=0
-position=112,336
+position=224,648
 requires_point=false
 requires_status=emp_main_bloodvial
 visible_check_locked=true
@@ -832,7 +832,7 @@ visible_check_locked=true
 [power]
 id=238
 tab=1
-position=112,336
+position=224,648
 requires_point=false
 requires_status=emp_main_bloodvial
 visible_check_locked=true
@@ -840,7 +840,7 @@ visible_check_locked=true
 [power]
 id=238
 tab=2
-position=112,336
+position=224,648
 requires_point=false
 requires_status=emp_main_bloodvial
 visible_check_locked=true

@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/leather_pants.txt

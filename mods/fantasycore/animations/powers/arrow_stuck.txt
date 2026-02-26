@@ -1,15 +1,17 @@
-
 image=images/powers/arrow_stuck.png
+#flare_sprite_packer_input=86 10 63 36 12 45 63 36 86 10 63 36 12 45 63 36
+#flare_sprite_packer_output=0 0 0 20 86 0 63 45 0 10 0 56 98 0 63 81
+
 
 [power]
 frames=1
-duration=3s
+duration=3000ms
 type=play_once
-frame=0,0,8,12,29,4,20,34
-frame=0,1,8,0,22,12,15,40
-frame=0,2,0,0,4,16,2,43
-frame=0,3,74,0,21,12,7,40
-frame=0,4,37,12,29,4,9,34
-frame=0,5,30,0,22,12,7,36
-frame=0,6,4,0,4,16,2,37
-frame=0,7,52,0,22,12,15,36
+frame=0,0,0,0,86,10,60,101
+frame=0,1,0,20,63,36,43,119
+frame=0,2,86,0,12,45,6,127
+frame=0,3,63,45,63,36,20,119
+frame=0,4,0,10,86,10,26,101
+frame=0,5,0,56,63,36,20,109
+frame=0,6,98,0,12,45,6,110
+frame=0,7,63,81,63,36,43,109

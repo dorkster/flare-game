@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/smith_hammer.txt

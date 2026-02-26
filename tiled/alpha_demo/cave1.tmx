@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.0" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextobjectid="98">
+<map version="1.0" tiledversion="1.1.0" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextobjectid="98">
  <properties>
-  <property name="hero_pos" value="3,13"/>
-  <property name="music" value="music/cave_theme.ogg"/>
-  <property name="tileset" value="tilesetdefs/tileset_cave.txt"/>
-  <property name="title" value="Caves Level 1"/>
+  <property name="hero_pos" value="3,13" />
+  <property name="music" value="music/cave_theme.ogg" />
+  <property name="tileset" value="tilesetdefs/tileset_cave.txt" />
+  <property name="title" value="Caves Level 1" />
  </properties>
- <tileset firstgid="1" name="tiled_collision.png" tilewidth="64" tileheight="32" tilecount="15" columns="15">
-  <image source="../cave/tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="tiled_collision.png" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../cave/../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="tiled_cave.png" tilewidth="64" tileheight="128" tilecount="240" columns="16">
-  <image source="../cave/tiled_cave.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="tiled_cave.png" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../cave/../tilesheets/cave.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules.png" tilewidth="64" tileheight="32" tilecount="8" columns="2">
-  <image source="../cave/set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules.png" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../cave/../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
  <layer name="background" width="100" height="100">
   <data encoding="csv">
@@ -328,582 +327,582 @@
 </data>
  </layer>
  <objectgroup name="event">
-  <object id="1" name="exit to goblin warrens" type="event" x="64" y="384" width="32" height="64">
+  <object id="1" name="exit to goblin warrens" type="event" x="192" y="1152" width="96" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/goblin_warrens.txt,51,14"/>
-    <property name="tooltip" value="Goblin Warrens"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/goblin_warrens.txt,51,14" />
+    <property name="tooltip" value="Goblin Warrens" />
    </properties>
   </object>
-  <object id="2" name="exit to lost mines level 1" type="event" x="480" y="2176" width="64" height="32">
+  <object id="2" name="exit to lost mines level 1" type="event" x="1440" y="6528" width="192" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/lost_mines1.txt,53,5"/>
-    <property name="tooltip" value="Lost Mines Level 1"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/lost_mines1.txt,53,5" />
+    <property name="tooltip" value="Lost Mines Level 1" />
    </properties>
   </object>
-  <object id="3" type="event" x="544" y="1536" width="32" height="32">
+  <object id="3" type="event" x="1632" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,17,48,128"/>
-    <property name="repeat" value="false"/>
-    <property name="tooltip" value="Mine Cart"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,17,48,128" />
+    <property name="repeat" value="false" />
+    <property name="tooltip" value="Mine Cart" />
    </properties>
   </object>
-  <object id="4" name="nest treasure" type="event" x="928" y="2400" width="32" height="32">
+  <object id="4" name="nest treasure" type="event" x="2784" y="7200" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,29,75,178"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,29,75,178" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="5" type="event" x="1376" y="2944" width="32" height="32">
+  <object id="5" type="event" x="4128" y="8832" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,43,92,176"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,43,92,176" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="6" type="event" x="928" y="2432" width="32" height="32">
+  <object id="6" type="event" x="2784" y="7296" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,29,76,178"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,29,76,178" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="7" name="warning message" type="event" x="608" y="448" width="96" height="96">
+  <object id="7" name="warning message" type="event" x="1824" y="1344" width="288" height="288">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="msg" value="The crumbling walls of the south tunnel are held up by planks of rotting wood."/>
-    <property name="repeat" value="false"/>
+    <property name="activate" value="on_trigger" />
+    <property name="msg" value="The crumbling walls of the south tunnel are held up by planks of rotting wood." />
+    <property name="repeat" value="false" />
    </properties>
   </object>
-  <object id="8" type="event" x="256" y="256" width="160" height="160">
+  <object id="8" type="event" x="768" y="768" width="480" height="480">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="repeat" value="false"/>
-    <property name="spawn" value="antlion_hatchling,12,9;antlion_hatchling,12,12"/>
+    <property name="activate" value="on_trigger" />
+    <property name="repeat" value="false" />
+    <property name="spawn" value="antlion_hatchling,12,9;antlion_hatchling,12,12" />
    </properties>
   </object>
-  <object id="9" name="crate in nest hallway" type="event" x="1888" y="1952" width="32" height="32">
+  <object id="9" name="crate in nest hallway" type="event" x="5664" y="5856" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,59,61,179"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Crate"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,59,61,179" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Crate" />
    </properties>
   </object>
-  <object id="10" type="event" x="64" y="928" width="32" height="32">
+  <object id="10" type="event" x="192" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,2,29,178"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,2,29,178" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="11" type="event" x="64" y="960" width="32" height="32">
+  <object id="11" type="event" x="192" y="2880" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,2,30,178"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,2,30,178" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="13" type="event" x="1088" y="800" width="32" height="32">
+  <object id="13" type="event" x="3264" y="2400" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,34,25,177"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,34,25,177" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="14" type="event" x="2784" y="1696" width="32" height="32">
+  <object id="14" type="event" x="8352" y="5088" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,87,53,177"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,87,53,177" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="15" type="event" x="2880" y="1696" width="32" height="32">
+  <object id="15" type="event" x="8640" y="5088" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,90,53,178"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,90,53,178" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="16" type="event" x="1344" y="128" width="32" height="32">
+  <object id="16" type="event" x="4032" y="384" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_low.txt"/>
-    <property name="mapmod" value="object,42,4,129"/>
-    <property name="repeat" value="false"/>
-    <property name="tooltip" value="Mine Cart"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_low.txt" />
+    <property name="mapmod" value="object,42,4,129" />
+    <property name="repeat" value="false" />
+    <property name="tooltip" value="Mine Cart" />
    </properties>
   </object>
-  <object id="17" name="ritual message" type="event" x="2080" y="864" width="96" height="160">
+  <object id="17" name="ritual message" type="event" x="6240" y="2592" width="288" height="480">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="msg" value="These goblins have captured a human trader.  Human bones are carefully arranged around the pillar in preparation for a goblin ritual."/>
-    <property name="repeat" value="false"/>
+    <property name="activate" value="on_trigger" />
+    <property name="msg" value="These goblins have captured a human trader.  Human bones are carefully arranged around the pillar in preparation for a goblin ritual." />
+    <property name="repeat" value="false" />
    </properties>
   </object>
-  <object id="18" name="reward for being saved" type="event" x="2272" y="960" width="96" height="64">
+  <object id="18" name="reward for being saved" type="event" x="6816" y="2880" width="288" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="msg" value="Talrych says, &quot;You arrived just in time.  Please, take this.&quot;"/>
-    <property name="repeat" value="false"/>
+    <property name="activate" value="on_trigger" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="msg" value="Talrych says, &quot;You arrived just in time.  Please, take this.&quot;" />
+    <property name="repeat" value="false" />
    </properties>
   </object>
-  <object id="19" name="cave-in event" type="event" x="608" y="704" width="64" height="64">
+  <object id="19" name="cave-in event" type="event" x="1824" y="2112" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="mapmod" value="collision,19,20,1;collision,20,20,1;collision,19,19,1;collision,20,19,1;object,19,21,151;object,18,20,72;object,19,20,65;object,20,20,69;object,21,20,73;object,18,19,75;object,19,19,67;object,20,19,71;object,21,19,74"/>
-    <property name="msg" value="The walls collapse inward and rubble blocks off the passage!"/>
-    <property name="repeat" value="false"/>
-    <property name="shakycam" value="2s"/>
-    <property name="soundfx" value="soundfx/powers/quake.ogg"/>
+    <property name="activate" value="on_trigger" />
+    <property name="mapmod" value="collision,19,20,1;collision,20,20,1;collision,19,19,1;collision,20,19,1;object,19,21,151;object,18,20,72;object,19,20,65;object,20,20,69;object,21,20,73;object,18,19,75;object,19,19,67;object,20,19,71;object,21,19,74" />
+    <property name="msg" value="The walls collapse inward and rubble blocks off the passage!" />
+    <property name="repeat" value="false" />
+    <property name="shakycam" value="2s" />
+    <property name="soundfx" value="soundfx/powers/quake.ogg" />
    </properties>
   </object>
-  <object id="20" name="release the skeletal mage" type="event" x="480" y="1408" width="192" height="64">
+  <object id="20" name="release the skeletal mage" type="event" x="1440" y="4224" width="576" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="mapmod" value="object,14,44,80;object,14,45,0;object,14,46,83;object,13,44,105;object,13,46,107;collision,14,45,0;collision,13,45,0"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/door_open.ogg"/>
+    <property name="activate" value="on_trigger" />
+    <property name="mapmod" value="object,14,44,80;object,14,45,0;object,14,46,83;object,13,44,105;object,13,46,107;collision,14,45,0;collision,13,45,0" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/door_open.ogg" />
    </properties>
   </object>
-  <object id="21" name="Cave wind sound effect" type="event" x="0" y="0" width="32" height="32">
+  <object id="21" name="Cave wind sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg" />
    </properties>
   </object>
-  <object id="22" name="Water dripping" type="event" x="160" y="128" width="32" height="32">
+  <object id="22" name="Water dripping" type="event" x="480" y="384" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="23" name="Water dripping" type="event" x="1056" y="768" width="32" height="32">
+  <object id="23" name="Water dripping" type="event" x="3168" y="2304" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="24" name="Water dripping" type="event" x="1792" y="1312" width="32" height="32">
+  <object id="24" name="Water dripping" type="event" x="5376" y="3936" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="25" name="Water dripping" type="event" x="1440" y="896" width="32" height="32">
+  <object id="25" name="Water dripping" type="event" x="4320" y="2688" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="26" name="Water dripping" type="event" x="2688" y="1664" width="32" height="32">
+  <object id="26" name="Water dripping" type="event" x="8064" y="4992" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="27" name="Water dripping" type="event" x="2176" y="800" width="32" height="32">
+  <object id="27" name="Water dripping" type="event" x="6528" y="2400" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="npc" visible="0">
-  <object id="28" name="Trader in the goblin room" type="npc" x="2304" y="992" width="32" height="32">
+  <object id="28" name="Trader in the goblin room" type="npc" x="6912" y="2976" width="96" height="96">
    <properties>
-    <property name="filename" value="npcs/captured_trader.txt"/>
+    <property name="filename" value="npcs/captured_trader.txt" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="enemy">
-  <object id="29" type="enemy" x="1152" y="160" width="32" height="32">
+  <object id="29" type="enemy" x="3456" y="480" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="30" type="enemy" x="1824" y="384" width="32" height="32">
+  <object id="30" type="enemy" x="5472" y="1152" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="31" type="enemy" x="1056" y="320" width="32" height="32">
+  <object id="31" type="enemy" x="3168" y="960" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="32" type="enemy" x="1184" y="320" width="32" height="32">
+  <object id="32" type="enemy" x="3552" y="960" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="33" type="enemy" x="1344" y="224" width="32" height="32">
+  <object id="33" type="enemy" x="4032" y="672" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="34" type="enemy" x="1440" y="288" width="32" height="32">
+  <object id="34" type="enemy" x="4320" y="864" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="35" type="enemy" x="1472" y="544" width="32" height="32">
+  <object id="35" type="enemy" x="4416" y="1632" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="36" type="enemy" x="1504" y="608" width="32" height="32">
+  <object id="36" type="enemy" x="4512" y="1824" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="37" type="enemy" x="1568" y="576" width="32" height="32">
+  <object id="37" type="enemy" x="4704" y="1728" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="38" type="enemy" x="1664" y="512" width="32" height="32">
+  <object id="38" type="enemy" x="4992" y="1536" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="39" type="enemy" x="1696" y="576" width="32" height="32">
+  <object id="39" type="enemy" x="5088" y="1728" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="40" type="enemy" x="1728" y="544" width="32" height="32">
+  <object id="40" type="enemy" x="5184" y="1632" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="41" type="enemy" x="1536" y="832" width="32" height="32">
+  <object id="41" type="enemy" x="4608" y="2496" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="42" type="enemy" x="1504" y="960" width="32" height="32">
+  <object id="42" type="enemy" x="4512" y="2880" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="43" type="enemy" x="1568" y="1056" width="32" height="32">
+  <object id="43" type="enemy" x="4704" y="3168" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="44" type="enemy" x="1504" y="1088" width="32" height="32">
+  <object id="44" type="enemy" x="4512" y="3264" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="45" type="enemy" x="1472" y="960" width="32" height="32">
+  <object id="45" type="enemy" x="4416" y="2880" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="46" type="enemy" x="1568" y="864" width="32" height="32">
+  <object id="46" type="enemy" x="4704" y="2592" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="47" type="enemy" x="1760" y="1056" width="32" height="32">
+  <object id="47" type="enemy" x="5280" y="3168" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="48" type="enemy" x="2144" y="864" width="32" height="32">
+  <object id="48" type="enemy" x="6432" y="2592" width="96" height="96">
    <properties>
-    <property name="category" value="goblin_charger"/>
+    <property name="category" value="goblin_charger" />
    </properties>
   </object>
-  <object id="49" type="enemy" x="2368" y="928" width="32" height="32">
+  <object id="49" type="enemy" x="7104" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="goblin_spearman"/>
+    <property name="category" value="goblin_spearman" />
    </properties>
   </object>
-  <object id="50" type="enemy" x="2400" y="1024" width="32" height="32">
+  <object id="50" type="enemy" x="7200" y="3072" width="96" height="96">
    <properties>
-    <property name="category" value="goblin_charger"/>
+    <property name="category" value="goblin_charger" />
    </properties>
   </object>
-  <object id="51" type="enemy" x="2336" y="1056" width="32" height="32">
+  <object id="51" type="enemy" x="7008" y="3168" width="96" height="96">
    <properties>
-    <property name="category" value="goblin_shaman"/>
+    <property name="category" value="goblin_shaman" />
    </properties>
   </object>
-  <object id="52" type="enemy" x="2336" y="1024" width="32" height="32">
+  <object id="52" type="enemy" x="7008" y="3072" width="96" height="96">
    <properties>
-    <property name="category" value="goblin_spearman"/>
+    <property name="category" value="goblin_spearman" />
    </properties>
   </object>
-  <object id="53" type="enemy" x="512" y="928" width="32" height="32">
+  <object id="53" type="enemy" x="1536" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_archer"/>
+    <property name="category" value="skeletal_archer" />
    </properties>
   </object>
-  <object id="54" type="enemy" x="576" y="960" width="32" height="32">
+  <object id="54" type="enemy" x="1728" y="2880" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_mage"/>
+    <property name="category" value="skeletal_mage" />
    </properties>
   </object>
-  <object id="55" type="enemy" x="736" y="928" width="32" height="32">
+  <object id="55" type="enemy" x="2208" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_warrior"/>
+    <property name="category" value="skeletal_warrior" />
    </properties>
   </object>
-  <object id="56" type="enemy" x="736" y="1056" width="32" height="32">
+  <object id="56" type="enemy" x="2208" y="3168" width="96" height="96">
    <properties>
-    <property name="category" value="minotaur"/>
+    <property name="category" value="minotaur" />
    </properties>
   </object>
-  <object id="57" type="enemy" x="320" y="960" width="32" height="32">
+  <object id="57" type="enemy" x="960" y="2880" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_warrior"/>
+    <property name="category" value="skeletal_warrior" />
    </properties>
   </object>
-  <object id="58" type="enemy" x="544" y="1600" width="32" height="32">
+  <object id="58" type="enemy" x="1632" y="4800" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_archer"/>
+    <property name="category" value="skeletal_archer" />
    </properties>
   </object>
-  <object id="59" type="enemy" x="512" y="1568" width="32" height="32">
+  <object id="59" type="enemy" x="1536" y="4704" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_archer"/>
+    <property name="category" value="skeletal_archer" />
    </properties>
   </object>
-  <object id="60" type="enemy" x="768" y="1664" width="32" height="32">
+  <object id="60" type="enemy" x="2304" y="4992" width="96" height="96">
    <properties>
-    <property name="category" value="minotaur"/>
+    <property name="category" value="minotaur" />
    </properties>
   </object>
-  <object id="61" type="enemy" x="416" y="1440" width="32" height="32">
+  <object id="61" type="enemy" x="1248" y="4320" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_mage"/>
+    <property name="category" value="skeletal_mage" />
    </properties>
   </object>
-  <object id="62" name="misc tunnels" type="enemy" x="1248" y="1248" width="32" height="32">
+  <object id="62" name="misc tunnels" type="enemy" x="3744" y="3744" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_blinker"/>
+    <property name="category" value="antlion_blinker" />
    </properties>
   </object>
-  <object id="63" type="enemy" x="1376" y="1376" width="32" height="32">
+  <object id="63" type="enemy" x="4128" y="4128" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_burster"/>
+    <property name="category" value="antlion_burster" />
    </properties>
   </object>
-  <object id="64" type="enemy" x="1440" y="1536" width="32" height="32">
+  <object id="64" type="enemy" x="4320" y="4608" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_blinker"/>
+    <property name="category" value="antlion_blinker" />
    </properties>
   </object>
-  <object id="65" type="enemy" x="2368" y="1696" width="32" height="32">
+  <object id="65" type="enemy" x="7104" y="5088" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="66" type="enemy" x="2240" y="1792" width="32" height="32">
+  <object id="66" type="enemy" x="6720" y="5376" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="67" type="enemy" x="2720" y="2176" width="32" height="32">
+  <object id="67" type="enemy" x="8160" y="6528" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_blinker"/>
+    <property name="category" value="antlion_blinker" />
    </properties>
   </object>
-  <object id="68" name="pathway to antlion nest" type="enemy" x="2016" y="2048" width="32" height="32">
+  <object id="68" name="pathway to antlion nest" type="enemy" x="6048" y="6144" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="69" type="enemy" x="2016" y="2112" width="32" height="32">
+  <object id="69" type="enemy" x="6048" y="6336" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="70" type="enemy" x="2176" y="2176" width="32" height="32">
+  <object id="70" type="enemy" x="6528" y="6528" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="71" type="enemy" x="2144" y="2272" width="32" height="32">
+  <object id="71" type="enemy" x="6432" y="6816" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_blinker"/>
+    <property name="category" value="antlion_blinker" />
    </properties>
   </object>
-  <object id="72" type="enemy" x="1920" y="2304" width="32" height="32">
+  <object id="72" type="enemy" x="5760" y="6912" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_burster"/>
+    <property name="category" value="antlion_burster" />
    </properties>
   </object>
-  <object id="73" type="enemy" x="1664" y="2208" width="32" height="32">
+  <object id="73" type="enemy" x="4992" y="6624" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_blinker"/>
+    <property name="category" value="antlion_blinker" />
    </properties>
   </object>
-  <object id="74" type="enemy" x="1856" y="2432" width="32" height="32">
+  <object id="74" type="enemy" x="5568" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="75" type="enemy" x="1888" y="2432" width="32" height="32">
+  <object id="75" type="enemy" x="5664" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="76" type="enemy" x="1920" y="2432" width="32" height="32">
+  <object id="76" type="enemy" x="5760" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="77" type="enemy" x="1952" y="2432" width="32" height="32">
+  <object id="77" type="enemy" x="5856" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="78" type="enemy" x="1984" y="2400" width="32" height="32">
+  <object id="78" type="enemy" x="5952" y="7200" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="79" name="antlion nest" type="enemy" x="1216" y="2016" width="32" height="32">
+  <object id="79" name="antlion nest" type="enemy" x="3648" y="6048" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_burster"/>
+    <property name="category" value="antlion_burster" />
    </properties>
   </object>
-  <object id="80" type="enemy" x="1152" y="2080" width="32" height="32">
+  <object id="80" type="enemy" x="3456" y="6240" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_burster"/>
+    <property name="category" value="antlion_burster" />
    </properties>
   </object>
-  <object id="81" type="enemy" x="1344" y="2112" width="32" height="32">
+  <object id="81" type="enemy" x="4032" y="6336" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_burster"/>
+    <property name="category" value="antlion_burster" />
    </properties>
   </object>
-  <object id="82" type="enemy" x="1216" y="2240" width="32" height="32">
+  <object id="82" type="enemy" x="3648" y="6720" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_blinker"/>
+    <property name="category" value="antlion_blinker" />
    </properties>
   </object>
-  <object id="83" type="enemy" x="1344" y="2336" width="32" height="32">
+  <object id="83" type="enemy" x="4032" y="7008" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_burster"/>
+    <property name="category" value="antlion_burster" />
    </properties>
   </object>
-  <object id="84" type="enemy" x="1184" y="2464" width="32" height="32">
+  <object id="84" type="enemy" x="3552" y="7392" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="85" type="enemy" x="1248" y="2528" width="32" height="32">
+  <object id="85" type="enemy" x="3744" y="7584" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_blinker"/>
+    <property name="category" value="antlion_blinker" />
    </properties>
   </object>
-  <object id="86" type="enemy" x="1344" y="2528" width="32" height="32">
+  <object id="86" type="enemy" x="4032" y="7584" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_spitter"/>
+    <property name="category" value="antlion_spitter" />
    </properties>
   </object>
-  <object id="87" type="enemy" x="1472" y="2560" width="32" height="32">
+  <object id="87" type="enemy" x="4416" y="7680" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="88" type="enemy" x="1024" y="2432" width="32" height="32">
+  <object id="88" type="enemy" x="3072" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="89" type="enemy" x="1120" y="2528" width="32" height="32">
+  <object id="89" type="enemy" x="3360" y="7584" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="90" type="enemy" x="1184" y="2656" width="32" height="32">
+  <object id="90" type="enemy" x="3552" y="7968" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_slasher"/>
+    <property name="category" value="antlion_slasher" />
    </properties>
   </object>
-  <object id="91" type="enemy" x="1408" y="2752" width="32" height="32">
+  <object id="91" type="enemy" x="4224" y="8256" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_burster"/>
+    <property name="category" value="antlion_burster" />
    </properties>
   </object>
-  <object id="92" type="enemy" x="1152" y="2304" width="32" height="32">
+  <object id="92" type="enemy" x="3456" y="6912" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="93" type="enemy" x="1184" y="2272" width="32" height="32">
+  <object id="93" type="enemy" x="3552" y="6816" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="94" type="enemy" x="1248" y="2272" width="32" height="32">
+  <object id="94" type="enemy" x="3744" y="6816" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="95" type="enemy" x="1408" y="2368" width="32" height="32">
+  <object id="95" type="enemy" x="4224" y="7104" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="96" type="enemy" x="1376" y="2400" width="32" height="32">
+  <object id="96" type="enemy" x="4128" y="7200" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
-  <object id="97" type="enemy" x="1472" y="2464" width="32" height="32">
+  <object id="97" type="enemy" x="4416" y="7392" width="96" height="96">
    <properties>
-    <property name="category" value="antlion_hatchling"/>
+    <property name="category" value="antlion_hatchling" />
    </properties>
   </object>
  </objectgroup>

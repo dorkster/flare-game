@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/chain_boots.txt

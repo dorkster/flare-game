@@ -1,39 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="258">
+<map version="1.11" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="100" height="100" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="258">
  <editorsettings>
-  <export target="../../mods/empyrean_campaign/maps/underworld_stronghold_2.txt" format="flare"/>
+  <export target="../../mods/empyrean_campaign/maps/underworld_stronghold_2.txt" format="flare" />
  </editorsettings>
  <properties>
-  <property name="hero_pos" value="36,8"/>
-  <property name="music" value="music/battle_theme.ogg"/>
-  <property name="parallax_layers" value="maps/parallax/fog.txt"/>
-  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
-  <property name="title" value="Underworld Stronghold: Barracks"/>
+  <property name="hero_pos" value="36,8" />
+  <property name="music" value="music/battle_theme.ogg" />
+  <property name="parallax_layers" value="maps/parallax/fog.txt" />
+  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
+  <property name="title" value="Underworld Stronghold: Barracks" />
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
-  <image source="../dungeon/tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../dungeon/../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
-  <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../dungeon/../tilesheets/dungeon.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
-  <image source="../dungeon/set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../dungeon/../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16" columns="4">
-  <tileoffset x="0" y="16"/>
-  <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16" columns="4">
+  <tileoffset x="0" y="48" />
+  <image source="../dungeon/../tilesheets/dungeon_2x2.png" width="1536" height="768" />
  </tileset>
- <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="-16" y="-8"/>
-  <image source="../dungeon/door_left.png" width="128" height="128"/>
+ <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="-48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_left.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="16" y="-8"/>
-  <image source="../dungeon/door_right.png" width="128" height="128"/>
+ <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_right.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4" columns="4">
-  <tileoffset x="0" y="48"/>
-  <image source="../dungeon/stairs.png" width="1024" height="256"/>
+ <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4" columns="4">
+  <tileoffset x="0" y="144" />
+  <image source="../dungeon/../tilesheets/dungeon_stairs.png" width="3072" height="768" />
  </tileset>
  <layer id="1" name="background" width="100" height="100">
   <data encoding="csv">
@@ -348,1329 +347,1329 @@
 </data>
  </layer>
  <objectgroup id="4" name="event">
-  <object id="1" name="Unlock waypoint" type="event" x="1312" y="128" width="192" height="192">
+  <object id="1" name="Unlock waypoint" type="event" x="3936" y="384" width="576" height="576">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="mapmod" value="background,43,7,265"/>
-    <property name="msg" value="Underworld Stronghold: Barracks waypoint discovered."/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_waypoint_11"/>
-    <property name="set_status" value="emp_waypoint_11"/>
+    <property name="activate" value="on_trigger" />
+    <property name="mapmod" value="background,43,7,265" />
+    <property name="msg" value="Underworld Stronghold: Barracks waypoint discovered." />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_waypoint_11" />
+    <property name="set_status" value="emp_waypoint_11" />
    </properties>
   </object>
-  <object id="2" name="to Hyperspace" type="event" x="1376" y="192" width="64" height="64">
+  <object id="2" name="to Hyperspace" type="event" x="4128" y="576" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/hyperspace.txt,9,17"/>
-    <property name="requires_status" value="emp_waypoint_11"/>
-    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
-    <property name="tooltip" value="Hyperspace"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/hyperspace.txt,9,17" />
+    <property name="requires_status" value="emp_waypoint_11" />
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0" />
+    <property name="tooltip" value="Hyperspace" />
    </properties>
   </object>
-  <object id="3" name="unlock waypoint (on_load)" type="event" x="1568" y="0" width="32" height="32">
+  <object id="3" name="unlock waypoint (on_load)" type="event" x="4704" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="background,43,7,265"/>
-    <property name="requires_status" value="emp_waypoint_11"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="background,43,7,265" />
+    <property name="requires_status" value="emp_waypoint_11" />
    </properties>
   </object>
-  <object id="4" name="Wind sound" type="event" x="0" y="0" width="32" height="32">
+  <object id="4" name="Wind sound" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg" />
    </properties>
   </object>
-  <object id="5" name="set map status" type="event" x="0" y="64" width="32" height="32">
+  <object id="5" name="set map status" type="event" x="0" y="192" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="requires_not_status" value="emp_stronghold2_init"/>
-    <property name="set_status" value="emp_stronghold2_init"/>
+    <property name="activate" value="on_load" />
+    <property name="requires_not_status" value="emp_stronghold2_init" />
+    <property name="set_status" value="emp_stronghold2_init" />
    </properties>
   </object>
-  <object id="6" name="brazier sound effect" type="event" x="1248" y="384" width="32" height="32">
+  <object id="6" name="brazier sound effect" type="event" x="3744" y="1152" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="7" name="brazier sound effect" type="event" x="2624" y="448" width="32" height="32">
+  <object id="7" name="brazier sound effect" type="event" x="7872" y="1344" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="8" name="brazier sound effect" type="event" x="2624" y="1440" width="32" height="32">
+  <object id="8" name="brazier sound effect" type="event" x="7872" y="4320" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="9" name="brazier sound effect" type="event" x="2208" y="1984" width="32" height="32">
+  <object id="9" name="brazier sound effect" type="event" x="6624" y="5952" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="10" name="brazier sound effect" type="event" x="1120" y="1984" width="32" height="32">
+  <object id="10" name="brazier sound effect" type="event" x="3360" y="5952" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="11" name="brazier sound effect" type="event" x="544" y="1952" width="32" height="32">
+  <object id="11" name="brazier sound effect" type="event" x="1632" y="5856" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="12" name="brazier sound effect" type="event" x="608" y="1216" width="32" height="32">
+  <object id="12" name="brazier sound effect" type="event" x="1824" y="3648" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="13" name="Crate" type="event" x="2848" y="704" width="32" height="32">
+  <object id="13" name="Crate" type="event" x="8544" y="2112" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_15.txt"/>
-    <property name="loot_count" value="1,2"/>
-    <property name="mapmod" value="object,89,22,163"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Crate"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_15.txt" />
+    <property name="loot_count" value="1,2" />
+    <property name="mapmod" value="object,89,22,163" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Crate" />
    </properties>
   </object>
-  <object id="14" name="Barrel" type="event" x="2944" y="1184" width="32" height="32">
+  <object id="14" name="Barrel" type="event" x="8832" y="3552" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_15.txt"/>
-    <property name="loot_count" value="1,2"/>
-    <property name="mapmod" value="object,92,37,162"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_15.txt" />
+    <property name="loot_count" value="1,2" />
+    <property name="mapmod" value="object,92,37,162" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="15" name="Treasure Chest" type="event" x="448" y="2432" width="32" height="32">
+  <object id="15" name="Treasure Chest" type="event" x="1344" y="7296" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_16.txt"/>
-    <property name="loot_count" value="3,4"/>
-    <property name="mapmod" value="object,14,76,160"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_16.txt" />
+    <property name="loot_count" value="3,4" />
+    <property name="mapmod" value="object,14,76,160" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="16" name="Treasure Chest" type="event" x="448" y="2336" width="32" height="32">
+  <object id="16" name="Treasure Chest" type="event" x="1344" y="7008" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_16.txt"/>
-    <property name="loot_count" value="3,4"/>
-    <property name="mapmod" value="object,14,73,160"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_16.txt" />
+    <property name="loot_count" value="3,4" />
+    <property name="mapmod" value="object,14,73,160" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="17" name="floor spikes (east to west)" type="event" x="1984" y="2272" width="32" height="32">
+  <object id="17" name="floor spikes (east to west)" type="event" x="5952" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="18" name="floor spikes (east to west)" type="event" x="2016" y="2272" width="32" height="32">
+  <object id="18" name="floor spikes (east to west)" type="event" x="6048" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="19" name="floor spikes (east to west)" type="event" x="2048" y="2272" width="32" height="32">
+  <object id="19" name="floor spikes (east to west)" type="event" x="6144" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="20" name="floor spikes (east to west)" type="event" x="2080" y="2272" width="32" height="32">
+  <object id="20" name="floor spikes (east to west)" type="event" x="6240" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="131" name="floor spikes (east to west)" type="event" x="2080" y="2304" width="32" height="32">
+  <object id="131" name="floor spikes (east to west)" type="event" x="6240" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="132" name="floor spikes (east to west)" type="event" x="2048" y="2304" width="32" height="32">
+  <object id="132" name="floor spikes (east to west)" type="event" x="6144" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="133" name="floor spikes (east to west)" type="event" x="2016" y="2304" width="32" height="32">
+  <object id="133" name="floor spikes (east to west)" type="event" x="6048" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="134" name="floor spikes (east to west)" type="event" x="1984" y="2304" width="32" height="32">
+  <object id="134" name="floor spikes (east to west)" type="event" x="5952" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="135" name="floor spikes (east to west)" type="event" x="1952" y="2304" width="32" height="32">
+  <object id="135" name="floor spikes (east to west)" type="event" x="5856" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="136" name="floor spikes (east to west)" type="event" x="1920" y="2304" width="32" height="32">
+  <object id="136" name="floor spikes (east to west)" type="event" x="5760" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="137" name="floor spikes (east to west)" type="event" x="1952" y="2272" width="32" height="32">
+  <object id="137" name="floor spikes (east to west)" type="event" x="5856" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="138" name="floor spikes (east to west)" type="event" x="1888" y="2304" width="32" height="32">
+  <object id="138" name="floor spikes (east to west)" type="event" x="5664" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="139" name="floor spikes (east to west)" type="event" x="1920" y="2272" width="32" height="32">
+  <object id="139" name="floor spikes (east to west)" type="event" x="5760" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="140" name="floor spikes (east to west)" type="event" x="1856" y="2304" width="32" height="32">
+  <object id="140" name="floor spikes (east to west)" type="event" x="5568" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="141" name="floor spikes (east to west)" type="event" x="1888" y="2272" width="32" height="32">
+  <object id="141" name="floor spikes (east to west)" type="event" x="5664" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="142" name="floor spikes (east to west)" type="event" x="1856" y="2272" width="32" height="32">
+  <object id="142" name="floor spikes (east to west)" type="event" x="5568" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="143" name="floor spikes (east to west)" type="event" x="1824" y="2304" width="32" height="32">
+  <object id="143" name="floor spikes (east to west)" type="event" x="5472" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="144" name="floor spikes (east to west)" type="event" x="1792" y="2304" width="32" height="32">
+  <object id="144" name="floor spikes (east to west)" type="event" x="5376" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="145" name="floor spikes (east to west)" type="event" x="1824" y="2272" width="32" height="32">
+  <object id="145" name="floor spikes (east to west)" type="event" x="5472" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="146" name="floor spikes (east to west)" type="event" x="1760" y="2304" width="32" height="32">
+  <object id="146" name="floor spikes (east to west)" type="event" x="5280" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="147" name="floor spikes (east to west)" type="event" x="1792" y="2272" width="32" height="32">
+  <object id="147" name="floor spikes (east to west)" type="event" x="5376" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="148" name="floor spikes (east to west)" type="event" x="1728" y="2304" width="32" height="32">
+  <object id="148" name="floor spikes (east to west)" type="event" x="5184" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="149" name="floor spikes (east to west)" type="event" x="1760" y="2272" width="32" height="32">
+  <object id="149" name="floor spikes (east to west)" type="event" x="5280" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="150" name="floor spikes (east to west)" type="event" x="1728" y="2272" width="32" height="32">
+  <object id="150" name="floor spikes (east to west)" type="event" x="5184" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="151" name="floor spikes (east to west)" type="event" x="1696" y="2304" width="32" height="32">
+  <object id="151" name="floor spikes (east to west)" type="event" x="5088" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="152" name="floor spikes (east to west)" type="event" x="1664" y="2304" width="32" height="32">
+  <object id="152" name="floor spikes (east to west)" type="event" x="4992" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="153" name="floor spikes (east to west)" type="event" x="1696" y="2272" width="32" height="32">
+  <object id="153" name="floor spikes (east to west)" type="event" x="5088" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="154" name="floor spikes (east to west)" type="event" x="1632" y="2304" width="32" height="32">
+  <object id="154" name="floor spikes (east to west)" type="event" x="4896" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="155" name="floor spikes (east to west)" type="event" x="1664" y="2272" width="32" height="32">
+  <object id="155" name="floor spikes (east to west)" type="event" x="4992" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="156" name="floor spikes (east to west)" type="event" x="1600" y="2304" width="32" height="32">
+  <object id="156" name="floor spikes (east to west)" type="event" x="4800" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="157" name="floor spikes (east to west)" type="event" x="1632" y="2272" width="32" height="32">
+  <object id="157" name="floor spikes (east to west)" type="event" x="4896" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="158" name="floor spikes (east to west)" type="event" x="1600" y="2272" width="32" height="32">
+  <object id="158" name="floor spikes (east to west)" type="event" x="4800" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="159" name="floor spikes (east to west)" type="event" x="1568" y="2304" width="32" height="32">
+  <object id="159" name="floor spikes (east to west)" type="event" x="4704" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="160" name="floor spikes (east to west)" type="event" x="1536" y="2304" width="32" height="32">
+  <object id="160" name="floor spikes (east to west)" type="event" x="4608" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="161" name="floor spikes (east to west)" type="event" x="1568" y="2272" width="32" height="32">
+  <object id="161" name="floor spikes (east to west)" type="event" x="4704" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="162" name="floor spikes (east to west)" type="event" x="1504" y="2304" width="32" height="32">
+  <object id="162" name="floor spikes (east to west)" type="event" x="4512" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="163" name="floor spikes (east to west)" type="event" x="1536" y="2272" width="32" height="32">
+  <object id="163" name="floor spikes (east to west)" type="event" x="4608" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="164" name="floor spikes (east to west)" type="event" x="1472" y="2304" width="32" height="32">
+  <object id="164" name="floor spikes (east to west)" type="event" x="4416" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="165" name="floor spikes (east to west)" type="event" x="1504" y="2272" width="32" height="32">
+  <object id="165" name="floor spikes (east to west)" type="event" x="4512" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="166" name="floor spikes (east to west)" type="event" x="1472" y="2272" width="32" height="32">
+  <object id="166" name="floor spikes (east to west)" type="event" x="4416" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="167" name="floor spikes (east to west)" type="event" x="1440" y="2304" width="32" height="32">
+  <object id="167" name="floor spikes (east to west)" type="event" x="4320" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="168" name="floor spikes (east to west)" type="event" x="1408" y="2304" width="32" height="32">
+  <object id="168" name="floor spikes (east to west)" type="event" x="4224" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="169" name="floor spikes (east to west)" type="event" x="1440" y="2272" width="32" height="32">
+  <object id="169" name="floor spikes (east to west)" type="event" x="4320" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="170" name="floor spikes (east to west)" type="event" x="1376" y="2304" width="32" height="32">
+  <object id="170" name="floor spikes (east to west)" type="event" x="4128" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="171" name="floor spikes (east to west)" type="event" x="1408" y="2272" width="32" height="32">
+  <object id="171" name="floor spikes (east to west)" type="event" x="4224" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="172" name="floor spikes (east to west)" type="event" x="1344" y="2304" width="32" height="32">
+  <object id="172" name="floor spikes (east to west)" type="event" x="4032" y="6912" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="173" name="floor spikes (east to west)" type="event" x="1376" y="2272" width="32" height="32">
+  <object id="173" name="floor spikes (east to west)" type="event" x="4128" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="174" name="floor spikes (east to west)" type="event" x="1344" y="2272" width="32" height="32">
+  <object id="174" name="floor spikes (east to west)" type="event" x="4032" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="175" name="spike sound" type="event" x="1984" y="2240" width="32" height="32">
+  <object id="175" name="spike sound" type="event" x="5952" y="6720" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="1s"/>
-    <property name="repeat" value="true"/>
-    <property name="soundfx" value="soundfx/powers/spikes.ogg"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="1s" />
+    <property name="repeat" value="true" />
+    <property name="soundfx" value="soundfx/powers/spikes.ogg" />
    </properties>
   </object>
-  <object id="176" name="spike sound" type="event" x="1440" y="2240" width="32" height="32">
+  <object id="176" name="spike sound" type="event" x="4320" y="6720" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="1s"/>
-    <property name="repeat" value="true"/>
-    <property name="soundfx" value="soundfx/powers/spikes.ogg"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="1s" />
+    <property name="repeat" value="true" />
+    <property name="soundfx" value="soundfx/powers/spikes.ogg" />
    </properties>
   </object>
-  <object id="177" name="spike sound" type="event" x="1696" y="2240" width="32" height="32">
+  <object id="177" name="spike sound" type="event" x="5088" y="6720" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="1s"/>
-    <property name="repeat" value="true"/>
-    <property name="soundfx" value="soundfx/powers/spikes.ogg"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="1s" />
+    <property name="repeat" value="true" />
+    <property name="soundfx" value="soundfx/powers/spikes.ogg" />
    </properties>
   </object>
-  <object id="178" name="floor spikes (south to north)" type="event" x="736" y="1856" width="32" height="32">
+  <object id="178" name="floor spikes (south to north)" type="event" x="2208" y="5568" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="179" name="floor spikes (south to north)" type="event" x="736" y="1888" width="32" height="32">
+  <object id="179" name="floor spikes (south to north)" type="event" x="2208" y="5664" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="180" name="floor spikes (south to north)" type="event" x="736" y="1920" width="32" height="32">
+  <object id="180" name="floor spikes (south to north)" type="event" x="2208" y="5760" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="181" name="floor spikes (south to north)" type="event" x="736" y="1952" width="32" height="32">
+  <object id="181" name="floor spikes (south to north)" type="event" x="2208" y="5856" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="182" name="floor spikes (south to north)" type="event" x="768" y="1952" width="32" height="32">
+  <object id="182" name="floor spikes (south to north)" type="event" x="2304" y="5856" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="183" name="floor spikes (south to north)" type="event" x="768" y="1920" width="32" height="32">
+  <object id="183" name="floor spikes (south to north)" type="event" x="2304" y="5760" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="184" name="floor spikes (south to north)" type="event" x="768" y="1888" width="32" height="32">
+  <object id="184" name="floor spikes (south to north)" type="event" x="2304" y="5664" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="185" name="floor spikes (south to north)" type="event" x="768" y="1856" width="32" height="32">
+  <object id="185" name="floor spikes (south to north)" type="event" x="2304" y="5568" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="186" name="floor spikes (south to north)" type="event" x="768" y="1824" width="32" height="32">
+  <object id="186" name="floor spikes (south to north)" type="event" x="2304" y="5472" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="187" name="floor spikes (south to north)" type="event" x="768" y="1792" width="32" height="32">
+  <object id="187" name="floor spikes (south to north)" type="event" x="2304" y="5376" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="188" name="floor spikes (south to north)" type="event" x="736" y="1824" width="32" height="32">
+  <object id="188" name="floor spikes (south to north)" type="event" x="2208" y="5472" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="189" name="floor spikes (south to north)" type="event" x="768" y="1760" width="32" height="32">
+  <object id="189" name="floor spikes (south to north)" type="event" x="2304" y="5280" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="190" name="floor spikes (south to north)" type="event" x="736" y="1792" width="32" height="32">
+  <object id="190" name="floor spikes (south to north)" type="event" x="2208" y="5376" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="191" name="floor spikes (south to north)" type="event" x="768" y="1728" width="32" height="32">
+  <object id="191" name="floor spikes (south to north)" type="event" x="2304" y="5184" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="192" name="floor spikes (south to north)" type="event" x="736" y="1760" width="32" height="32">
+  <object id="192" name="floor spikes (south to north)" type="event" x="2208" y="5280" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="193" name="floor spikes (south to north)" type="event" x="736" y="1728" width="32" height="32">
+  <object id="193" name="floor spikes (south to north)" type="event" x="2208" y="5184" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="194" name="floor spikes (south to north)" type="event" x="768" y="1696" width="32" height="32">
+  <object id="194" name="floor spikes (south to north)" type="event" x="2304" y="5088" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="195" name="floor spikes (south to north)" type="event" x="768" y="1664" width="32" height="32">
+  <object id="195" name="floor spikes (south to north)" type="event" x="2304" y="4992" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="196" name="floor spikes (south to north)" type="event" x="736" y="1696" width="32" height="32">
+  <object id="196" name="floor spikes (south to north)" type="event" x="2208" y="5088" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="197" name="floor spikes (south to north)" type="event" x="768" y="1632" width="32" height="32">
+  <object id="197" name="floor spikes (south to north)" type="event" x="2304" y="4896" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="198" name="floor spikes (south to north)" type="event" x="736" y="1664" width="32" height="32">
+  <object id="198" name="floor spikes (south to north)" type="event" x="2208" y="4992" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="199" name="floor spikes (south to north)" type="event" x="768" y="1600" width="32" height="32">
+  <object id="199" name="floor spikes (south to north)" type="event" x="2304" y="4800" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="200" name="floor spikes (south to north)" type="event" x="736" y="1632" width="32" height="32">
+  <object id="200" name="floor spikes (south to north)" type="event" x="2208" y="4896" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="201" name="floor spikes (south to north)" type="event" x="736" y="1600" width="32" height="32">
+  <object id="201" name="floor spikes (south to north)" type="event" x="2208" y="4800" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="202" name="floor spikes (south to north)" type="event" x="768" y="1568" width="32" height="32">
+  <object id="202" name="floor spikes (south to north)" type="event" x="2304" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="203" name="floor spikes (south to north)" type="event" x="768" y="1536" width="32" height="32">
+  <object id="203" name="floor spikes (south to north)" type="event" x="2304" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="204" name="floor spikes (south to north)" type="event" x="736" y="1568" width="32" height="32">
+  <object id="204" name="floor spikes (south to north)" type="event" x="2208" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="205" name="floor spikes (south to north)" type="event" x="768" y="1504" width="32" height="32">
+  <object id="205" name="floor spikes (south to north)" type="event" x="2304" y="4512" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="206" name="floor spikes (south to north)" type="event" x="736" y="1536" width="32" height="32">
+  <object id="206" name="floor spikes (south to north)" type="event" x="2208" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="207" name="floor spikes (south to north)" type="event" x="768" y="1472" width="32" height="32">
+  <object id="207" name="floor spikes (south to north)" type="event" x="2304" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="208" name="floor spikes (south to north)" type="event" x="736" y="1504" width="32" height="32">
+  <object id="208" name="floor spikes (south to north)" type="event" x="2208" y="4512" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="209" name="floor spikes (south to north)" type="event" x="736" y="1472" width="32" height="32">
+  <object id="209" name="floor spikes (south to north)" type="event" x="2208" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="210" name="floor spikes (south to north)" type="event" x="768" y="1440" width="32" height="32">
+  <object id="210" name="floor spikes (south to north)" type="event" x="2304" y="4320" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="211" name="floor spikes (south to north)" type="event" x="768" y="1408" width="32" height="32">
+  <object id="211" name="floor spikes (south to north)" type="event" x="2304" y="4224" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="212" name="floor spikes (south to north)" type="event" x="736" y="1440" width="32" height="32">
+  <object id="212" name="floor spikes (south to north)" type="event" x="2208" y="4320" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="213" name="floor spikes (south to north)" type="event" x="768" y="1376" width="32" height="32">
+  <object id="213" name="floor spikes (south to north)" type="event" x="2304" y="4128" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="214" name="floor spikes (south to north)" type="event" x="736" y="1408" width="32" height="32">
+  <object id="214" name="floor spikes (south to north)" type="event" x="2208" y="4224" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="215" name="floor spikes (south to north)" type="event" x="768" y="1344" width="32" height="32">
+  <object id="215" name="floor spikes (south to north)" type="event" x="2304" y="4032" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="216" name="floor spikes (south to north)" type="event" x="736" y="1376" width="32" height="32">
+  <object id="216" name="floor spikes (south to north)" type="event" x="2208" y="4128" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="217" name="floor spikes (south to north)" type="event" x="736" y="1344" width="32" height="32">
+  <object id="217" name="floor spikes (south to north)" type="event" x="2208" y="4032" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="218" name="floor spikes (south to north)" type="event" x="768" y="1312" width="32" height="32">
+  <object id="218" name="floor spikes (south to north)" type="event" x="2304" y="3936" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="219" name="floor spikes (south to north)" type="event" x="768" y="1280" width="32" height="32">
+  <object id="219" name="floor spikes (south to north)" type="event" x="2304" y="3840" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="220" name="floor spikes (south to north)" type="event" x="736" y="1312" width="32" height="32">
+  <object id="220" name="floor spikes (south to north)" type="event" x="2208" y="3936" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="3s"/>
-    <property name="delay" value="1s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="3s" />
+    <property name="delay" value="1s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="221" name="floor spikes (south to north)" type="event" x="768" y="1248" width="32" height="32">
+  <object id="221" name="floor spikes (south to north)" type="event" x="2304" y="3744" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="222" name="floor spikes (south to north)" type="event" x="736" y="1280" width="32" height="32">
+  <object id="222" name="floor spikes (south to north)" type="event" x="2208" y="3840" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="2s"/>
-    <property name="delay" value="2s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="2s" />
+    <property name="delay" value="2s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="223" name="floor spikes (south to north)" type="event" x="768" y="1216" width="32" height="32">
+  <object id="223" name="floor spikes (south to north)" type="event" x="2304" y="3648" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="224" name="floor spikes (south to north)" type="event" x="736" y="1248" width="32" height="32">
+  <object id="224" name="floor spikes (south to north)" type="event" x="2208" y="3744" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="delay" value="3s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="delay" value="3s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="225" name="floor spikes (south to north)" type="event" x="736" y="1216" width="32" height="32">
+  <object id="225" name="floor spikes (south to north)" type="event" x="2208" y="3648" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="4s"/>
-    <property name="power" value="255"/>
-    <property name="power_damage" value="400"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="4s" />
+    <property name="power" value="255" />
+    <property name="power_damage" value="400" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
-  <object id="226" name="spike sound" type="event" x="704" y="1856" width="32" height="32">
+  <object id="226" name="spike sound" type="event" x="2112" y="5568" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="1s"/>
-    <property name="repeat" value="true"/>
-    <property name="soundfx" value="soundfx/powers/spikes.ogg"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="1s" />
+    <property name="repeat" value="true" />
+    <property name="soundfx" value="soundfx/powers/spikes.ogg" />
    </properties>
   </object>
-  <object id="227" name="spike sound" type="event" x="704" y="1568" width="32" height="32">
+  <object id="227" name="spike sound" type="event" x="2112" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="1s"/>
-    <property name="repeat" value="true"/>
-    <property name="soundfx" value="soundfx/powers/spikes.ogg"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="1s" />
+    <property name="repeat" value="true" />
+    <property name="soundfx" value="soundfx/powers/spikes.ogg" />
    </properties>
   </object>
-  <object id="228" name="spike sound" type="event" x="704" y="1312" width="32" height="32">
+  <object id="228" name="spike sound" type="event" x="2112" y="3936" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="delay" value="1s"/>
-    <property name="repeat" value="true"/>
-    <property name="soundfx" value="soundfx/powers/spikes.ogg"/>
+    <property name="activate" value="static" />
+    <property name="delay" value="1s" />
+    <property name="repeat" value="true" />
+    <property name="soundfx" value="soundfx/powers/spikes.ogg" />
    </properties>
   </object>
-  <object id="229" name="enable bypass teleporters" type="event" x="512" y="1152" width="32" height="32">
+  <object id="229" name="enable bypass teleporters" type="event" x="1536" y="3456" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,16,36,166;background,19,36,61;background,20,36,63;background,17,62,61;background,18,62,63;background,35,63,60;background,36,63,62;background,69,63,60;background,70,63,62"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_stronghold2_bypass"/>
-    <property name="set_status" value="emp_stronghold2_bypass"/>
-    <property name="soundfx" value="soundfx/door_open.ogg"/>
-    <property name="tooltip" value="Switch"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,16,36,166;background,19,36,61;background,20,36,63;background,17,62,61;background,18,62,63;background,35,63,60;background,36,63,62;background,69,63,60;background,70,63,62" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_stronghold2_bypass" />
+    <property name="set_status" value="emp_stronghold2_bypass" />
+    <property name="soundfx" value="soundfx/door_open.ogg" />
+    <property name="tooltip" value="Switch" />
    </properties>
   </object>
-  <object id="230" name="enable bypass teleporters (on_load)" type="event" x="544" y="1280" width="32" height="32">
+  <object id="230" name="enable bypass teleporters (on_load)" type="event" x="1632" y="3840" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="object,16,36,166;background,19,36,61;background,20,36,63;background,17,62,61;background,18,62,63;background,35,63,60;background,36,63,62;background,69,63,60;background,70,63,62"/>
-    <property name="requires_status" value="emp_stronghold2_bypass"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="object,16,36,166;background,19,36,61;background,20,36,63;background,17,62,61;background,18,62,63;background,35,63,60;background,36,63,62;background,69,63,60;background,70,63,62" />
+    <property name="requires_status" value="emp_stronghold2_bypass" />
    </properties>
   </object>
-  <object id="232" name="bypass teleporter" type="event" x="608" y="1152" width="64" height="32">
+  <object id="232" name="bypass teleporter" type="event" x="1824" y="3456" width="192" height="96">
    <properties>
-    <property name="intramap" value="17,64"/>
-    <property name="requires_status" value="emp_stronghold2_bypass"/>
-    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
+    <property name="intramap" value="17,64" />
+    <property name="requires_status" value="emp_stronghold2_bypass" />
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0" />
    </properties>
   </object>
-  <object id="233" name="bypass teleporter" type="event" x="544" y="1984" width="64" height="32">
+  <object id="233" name="bypass teleporter" type="event" x="1632" y="5952" width="192" height="96">
    <properties>
-    <property name="intramap" value="19,34"/>
-    <property name="requires_status" value="emp_stronghold2_bypass"/>
-    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
+    <property name="intramap" value="19,34" />
+    <property name="requires_status" value="emp_stronghold2_bypass" />
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0" />
    </properties>
   </object>
-  <object id="234" name="bypass teleporter" type="event" x="1120" y="2016" width="64" height="32">
+  <object id="234" name="bypass teleporter" type="event" x="3360" y="6048" width="192" height="96">
    <properties>
-    <property name="intramap" value="69,65"/>
-    <property name="requires_status" value="emp_stronghold2_bypass"/>
-    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
+    <property name="intramap" value="69,65" />
+    <property name="requires_status" value="emp_stronghold2_bypass" />
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0" />
    </properties>
   </object>
-  <object id="235" name="bypass teleporter" type="event" x="2208" y="2016" width="64" height="32">
+  <object id="235" name="bypass teleporter" type="event" x="6624" y="6048" width="192" height="96">
    <properties>
-    <property name="intramap" value="35,65"/>
-    <property name="requires_status" value="emp_stronghold2_bypass"/>
-    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
+    <property name="intramap" value="35,65" />
+    <property name="requires_status" value="emp_stronghold2_bypass" />
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0" />
    </properties>
   </object>
-  <object id="236" name="Locked Door" type="event" x="480" y="2144" width="64" height="64">
+  <object id="236" name="Locked Door" type="event" x="1440" y="6432" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="msg" value="This door needs a key to be opened."/>
-    <property name="requires_not_item" value="1029"/>
-    <property name="requires_not_status" value="emp_stronghold2_door"/>
-    <property name="tooltip" value="Locked Door"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="msg" value="This door needs a key to be opened." />
+    <property name="requires_not_item" value="1029" />
+    <property name="requires_not_status" value="emp_stronghold2_door" />
+    <property name="tooltip" value="Locked Door" />
    </properties>
   </object>
-  <object id="237" name="Unlock Door (on_load)" type="event" x="320" y="2080" width="32" height="32">
+  <object id="237" name="Unlock Door (on_load)" type="event" x="960" y="6240" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="collision,15,67,0;collision,16,67,0;collision,15,68,0;collision,16,68,0;object,15,68,0;object,16,68,0;object,14,67,208;object,17,67,222"/>
-    <property name="requires_status" value="emp_stronghold2_door"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="collision,15,67,0;collision,16,67,0;collision,15,68,0;collision,16,68,0;object,15,68,0;object,16,68,0;object,14,67,208;object,17,67,222" />
+    <property name="requires_status" value="emp_stronghold2_door" />
    </properties>
   </object>
-  <object id="238" name="Unlock Door" type="event" x="320" y="2144" width="32" height="32">
+  <object id="238" name="Unlock Door" type="event" x="960" y="6432" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="15,67,2,2"/>
-    <property name="mapmod" value="collision,15,67,0;collision,16,67,0;collision,15,68,0;collision,16,68,0;object,15,68,0;object,16,68,0;object,14,67,208;object,17,67,222"/>
-    <property name="remove_item" value="1029"/>
-    <property name="requires_item" value="1029"/>
-    <property name="requires_not_status" value="emp_stronghold2_door"/>
-    <property name="set_status" value="emp_stronghold2_door"/>
-    <property name="soundfx" value="soundfx/door_open.ogg"/>
-    <property name="tooltip" value="Locked Door"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="15,67,2,2" />
+    <property name="mapmod" value="collision,15,67,0;collision,16,67,0;collision,15,68,0;collision,16,68,0;object,15,68,0;object,16,68,0;object,14,67,208;object,17,67,222" />
+    <property name="remove_item" value="1029" />
+    <property name="requires_item" value="1029" />
+    <property name="requires_not_status" value="emp_stronghold2_door" />
+    <property name="set_status" value="emp_stronghold2_door" />
+    <property name="soundfx" value="soundfx/door_open.ogg" />
+    <property name="tooltip" value="Locked Door" />
    </properties>
   </object>
-  <object id="239" name="to Underworld Stronghold: Foyer" type="event" x="1088" y="320" width="128" height="128">
+  <object id="239" name="to Underworld Stronghold: Foyer" type="event" x="3264" y="960" width="384" height="384">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/underworld_stronghold_1.txt,22,7"/>
-    <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
-    <property name="tooltip" value="Underworld Stronghold: Foyer"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/underworld_stronghold_1.txt,22,7" />
+    <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0" />
+    <property name="tooltip" value="Underworld Stronghold: Foyer" />
    </properties>
   </object>
-  <object id="240" name="to Halls of Infinity" type="event" x="1696" y="1600" width="64" height="32">
+  <object id="240" name="to Halls of Infinity" type="event" x="5088" y="4800" width="192" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/halls_of_infinity.txt,12,55"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/door_open.ogg,0,0"/>
-    <property name="tooltip" value="Halls of Infinity"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/halls_of_infinity.txt,12,55" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/door_open.ogg,0,0" />
+    <property name="tooltip" value="Halls of Infinity" />
    </properties>
   </object>
-  <object id="241" name="to The Pit" type="event" x="384" y="640" width="128" height="96">
+  <object id="241" name="to The Pit" type="event" x="1152" y="1920" width="384" height="288">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="intermap" value="maps/the_pit.txt,71,71"/>
-    <property name="set_status" value="emp_pit_fall"/>
+    <property name="activate" value="on_trigger" />
+    <property name="intermap" value="maps/the_pit.txt,71,71" />
+    <property name="set_status" value="emp_pit_fall" />
    </properties>
   </object>
-  <object id="256" name="sparkle effect for pit" type="event" x="544" y="768" width="32" height="32">
+  <object id="256" name="sparkle effect for pit" type="event" x="1632" y="2304" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="power" value="268"/>
-    <property name="power_path" value="13,20"/>
-    <property name="repeat" value="true"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="power" value="268" />
+    <property name="power_path" value="13,20" />
+    <property name="repeat" value="true" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
-  <object id="242" type="enemy" x="1344" y="576" width="640" height="384">
+  <object id="242" type="enemy" x="4032" y="1728" width="1920" height="1152">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="5,6"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="5,6" />
    </properties>
   </object>
-  <object id="243" type="enemy" x="1856" y="320" width="768" height="256">
+  <object id="243" type="enemy" x="5568" y="960" width="2304" height="768">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="4,5"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="4,5" />
    </properties>
   </object>
-  <object id="244" type="enemy" x="2752" y="448" width="256" height="384">
+  <object id="244" type="enemy" x="8256" y="1344" width="768" height="1152">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="3,4"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="3,4" />
    </properties>
   </object>
-  <object id="245" type="enemy" x="2752" y="1088" width="256" height="384">
+  <object id="245" type="enemy" x="8256" y="3264" width="768" height="1152">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="3,4"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="3,4" />
    </properties>
   </object>
-  <object id="246" type="enemy" x="2112" y="576" width="512" height="896">
+  <object id="246" type="enemy" x="6336" y="1728" width="1536" height="2688">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="6,7"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="6,7" />
    </properties>
   </object>
-  <object id="247" type="enemy" x="2496" y="1728" width="512" height="896">
+  <object id="247" type="enemy" x="7488" y="5184" width="1536" height="2688">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="6,7"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="6,7" />
    </properties>
   </object>
-  <object id="248" type="enemy" x="2112" y="2144" width="384" height="480">
+  <object id="248" type="enemy" x="6336" y="6432" width="1152" height="1440">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="4"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="4" />
    </properties>
   </object>
-  <object id="249" type="enemy" x="960" y="2080" width="384" height="384">
+  <object id="249" type="enemy" x="2880" y="6240" width="1152" height="1152">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="5"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="5" />
    </properties>
   </object>
-  <object id="250" type="enemy" x="832" y="2624" width="512" height="128">
+  <object id="250" type="enemy" x="2496" y="7872" width="1536" height="384">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="3,4"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="3,4" />
    </properties>
   </object>
-  <object id="251" type="enemy" x="448" y="2368" width="384" height="384">
+  <object id="251" type="enemy" x="1344" y="7104" width="1152" height="1152">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="5"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="5" />
    </properties>
   </object>
-  <object id="252" type="enemy" x="704" y="576" width="384" height="448">
+  <object id="252" type="enemy" x="2112" y="1728" width="1152" height="1344">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="5,6"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="5,6" />
    </properties>
   </object>
-  <object id="253" type="enemy" x="192" y="320" width="512" height="256">
+  <object id="253" type="enemy" x="576" y="960" width="1536" height="768">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="5,6"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="5,6" />
    </properties>
   </object>
-  <object id="254" type="enemy" x="192" y="576" width="96" height="256">
+  <object id="254" type="enemy" x="576" y="1728" width="288" height="768">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="3,4"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="3,4" />
    </properties>
   </object>
-  <object id="255" type="enemy" x="544" y="2272" width="32" height="32">
+  <object id="255" type="enemy" x="1632" y="6816" width="96" height="96">
    <properties>
-    <property name="category" value="rakk"/>
-    <property name="number" value="1"/>
+    <property name="category" value="rakk" />
+    <property name="number" value="1" />
    </properties>
   </object>
  </objectgroup>

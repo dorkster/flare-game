@@ -1,14 +1,8 @@
-# Settings for the Log menu
-# the first two values are x,y positions
-# some items have two more values, width and height
-
-pos=0,0,320,416
+pos=0,-35,640,832
 align=left
 soundfx_open=soundfx/inventory/inventory_page.ogg
 soundfx_close=soundfx/inventory/inventory_book.ogg
 
-label_title=160,8,center,top
-close=294,2
-
-tab_area=32,30,241,336
-
+label_title=320,24,center,center
+close=571,5
+tab_area=64,60,482,672

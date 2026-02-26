@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/reinforced_club.txt

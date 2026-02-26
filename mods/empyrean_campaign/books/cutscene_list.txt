@@ -1,23 +1,28 @@
-pos=0,0,500,350
+pos=0,0,1137,700
 align=center
 soundfx_open=soundfx/inventory/inventory_page.ogg
 soundfx_close=soundfx/inventory/inventory_book.ogg
 
-close=464,16
+close=932,68
 background=images/menus/book.png
 
 [text]
-text_pos=25,25,225,center
-text_font=0,0,0,font_cursive_big
+text_pos=144,80,400,center
+text_font=0,0,0,font_bold
 text=Cutscenes
 
+[text]
+text_pos=144,272,400,center
+text_font=0,0,0,font_regular
+text=Select a previously viewed cutscene to watch it again.
+
 [button]
-button_pos=60,140
+button_pos=600,272
 text=Arrival
 cutscene=cutscenes/backstory.txt
 
 [button]
-button_pos=60,180
+button_pos=600,332
 text=Ending
 requires_status=emp_main_finish
 cutscene=cutscenes/ending.txt

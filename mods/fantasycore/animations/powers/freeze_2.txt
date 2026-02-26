@@ -1,0 +1,2 @@
+# this used to be different between fantasycore and empyrean (fantasycore didn't use active_frame=all)
+INCLUDE animations/powers/freeze.txt

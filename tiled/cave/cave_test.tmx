@@ -1,12 +1,12 @@
-<map height="100" orientation="isometric" tileheight="32" tilewidth="64" version="1.0" width="100">
- <tileset firstgid="1" name="collision" tileheight="32" tilewidth="64">
-  <image height="32" source="tiled_collision.png" width="960" />
+<map height="100" orientation="isometric" tileheight="96" tilewidth="192" version="1.0" width="100">
+ <tileset firstgid="1" name="collision" tileheight="96" tilewidth="192">
+  <image height="96" source="../tilesheets/tiled_collision.png" width="2880" />
  </tileset>
- <tileset firstgid="16" name="cave" tileheight="128" tilewidth="64">
-  <image height="1920" source="tiled_cave.png" width="1024" />
+ <tileset firstgid="16" name="cave" tileheight="384" tilewidth="192">
+  <image height="5760" source="../tilesheets/cave.png" width="3072" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tileheight="32" tilewidth="64">
-  <image height="128" source="set_rules.png" width="128" />
+ <tileset firstgid="256" name="set_rules" tileheight="96" tilewidth="192">
+  <image height="384" source="../tilesheets/tiled_set_rules.png" width="384" />
  </tileset>
  <layer height="100" name="background" width="100">
   <data encoding="csv">

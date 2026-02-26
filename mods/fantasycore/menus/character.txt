@@ -1,42 +1,30 @@
-# Settings for the Character menu
-# the first two values are x,y positions
-# some items have two more values, width and height
-
-pos=0,0,320,416
+pos=0,-35,640,832
 align=left
 soundfx_open=soundfx/inventory/inventory_page.ogg
 soundfx_close=soundfx/inventory/inventory_book.ogg
 
-close=294,2
-label_title=160,8,center,top
+label_title=320,24,center,center
+close=571,5
+name=168,66,240,28
+name_max_width=240
+label_name=144,80,right,center
+level=562,66,60,28
+label_level=544,80,right,center
+upgrade_primary=physical,80,108
+primary=physical,162,110,60,28
+label_primary=physical,320,124,left,center
+upgrade_primary=mental,80,152
+primary=mental,162,154,60,28
+label_primary=mental,320,168,left,center
+upgrade_primary=offense,80,196
+primary=offense,162,198,60,28
+label_primary=offense,320,212,left,center
+upgrade_primary=defense,80,240
+primary=defense,162,242,60,28
+label_primary=defense,320,256,left,center
 
-upgrade_primary=physical,40,56
-upgrade_primary=mental,40,80
-upgrade_primary=offense,40,104
-upgrade_primary=defense,40,128
-
-statlist=24,152
-statlist_rows=11
-statlist_scrollbar_offset=1
-
-name=84,32,104,16
-name_max_width=98
-label_name=72,40,right,center
-
-level=256,32,32,16
-label_level=248,40,right,center
-
-primary=physical,80,56,32,16
-label_primary=physical,160,64,left,center
-
-primary=mental,80,80,32,16
-label_primary=mental,160,88,left,center
-
-primary=offense,80,104,32,16
-label_primary=offense,160,112,left,center
-
-primary=defense,80,128,32,16
-label_primary=defense,160,136,left,center
-
-unspent=160,396,center,top
+statlist=16,296
+statlist_rows=15
+statlist_scrollbar_offset=2
+unspent=320,784,center,top
 

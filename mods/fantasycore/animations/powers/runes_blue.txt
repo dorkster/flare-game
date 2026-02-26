@@ -1,0 +1,11 @@
+image=images/powers/runes.png
+
+
+[power]
+frames=4
+duration=533ms
+type=looped
+frame=0,0,152,267,152,87,62,43
+frame=1,0,0,186,176,81,87,46
+frame=2,0,304,351,154,85,91,44
+frame=3,0,147,354,147,81,91,39

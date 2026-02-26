@@ -1,30 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="80" height="80" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="45">
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="80" height="80" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="45">
  <editorsettings>
-  <export target="../../mods/empyrean_campaign/maps/the_pit.txt" format="flare"/>
+  <export target="../../mods/empyrean_campaign/maps/the_pit.txt" format="flare" />
  </editorsettings>
  <properties>
-  <property name="hero_pos" value="71,71"/>
-  <property name="music" value="music/wind_ambient.ogg"/>
-  <property name="parallax_layers" value="maps/parallax/fog.txt"/>
-  <property name="tileset" value="tilesetdefs/tileset_cave.txt"/>
-  <property name="title" value="The Pit"/>
+  <property name="hero_pos" value="71,71" />
+  <property name="music" value="music/wind_ambient.ogg" />
+  <property name="parallax_layers" value="maps/parallax/fog.txt" />
+  <property name="tileset" value="tilesetdefs/tileset_cave.txt" />
+  <property name="title" value="The Pit" />
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
-  <image source="../cave/tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../cave/../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="cave" tilewidth="64" tileheight="128" tilecount="240" columns="16">
-  <image source="../cave/tiled_cave.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="cave" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../cave/../tilesheets/cave.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
-  <image source="../cave/set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../cave/../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="128" tileheight="64" tilecount="2" columns="2">
-  <tileoffset x="0" y="16"/>
-  <image source="../cave/tiled_cave_2x2.png" width="256" height="64"/>
+ <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="384" tileheight="192" tilecount="2" columns="2">
+  <tileoffset x="0" y="48" />
+  <image source="../cave/../tilesheets/cave_2x2.png" width="768" height="192" />
  </tileset>
- <tileset firstgid="266" name="boss_chest" tilewidth="64" tileheight="64" tilecount="4" columns="4">
-  <image source="../common/boss_chest.png" width="256" height="64"/>
+ <tileset firstgid="266" name="boss_chest" tilewidth="192" tileheight="192" tilecount="4" columns="4">
+  <image source="../common/../tilesheets/boss_chest.png" width="768" height="192" />
  </tileset>
  <layer id="1" name="background" width="80" height="80">
   <data encoding="csv">
@@ -279,281 +278,281 @@
 </data>
  </layer>
  <objectgroup id="4" name="event">
-  <object id="1" name="activate trap" type="event" x="864" y="1248" width="160" height="64">
+  <object id="1" name="activate trap" type="event" x="2592" y="3744" width="480" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="mapmod" value="collision,28,43,1;collision,29,43,1;collision,28,44,1;collision,29,44,1;object,27,44,97;object,28,44,65;object,29,44,69;object,30,44,65;object,27,43,67;object,28,43,67;object,29,43,67;object,30,43,67"/>
-    <property name="music" value="music/boss_theme.ogg"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_lezaith_defeated"/>
-    <property name="shakycam" value="2s"/>
-    <property name="soundfx" value="soundfx/powers/quake.ogg"/>
+    <property name="activate" value="on_trigger" />
+    <property name="mapmod" value="collision,28,43,1;collision,29,43,1;collision,28,44,1;collision,29,44,1;object,27,44,97;object,28,44,65;object,29,44,69;object,30,44,65;object,27,43,67;object,28,43,67;object,29,43,67;object,30,43,67" />
+    <property name="music" value="music/boss_theme.ogg" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_lezaith_defeated" />
+    <property name="shakycam" value="2s" />
+    <property name="soundfx" value="soundfx/powers/quake.ogg" />
    </properties>
   </object>
-  <object id="2" name="to Underworld Stronghold: Barracks" type="event" x="2176" y="2048" width="64" height="64">
+  <object id="2" name="to Underworld Stronghold: Barracks" type="event" x="6528" y="6144" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/underworld_stronghold_2.txt,12,34"/>
-    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
-    <property name="tooltip" value="Underworld Stronghold: Barracks"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/underworld_stronghold_2.txt,12,34" />
+    <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0" />
+    <property name="tooltip" value="Underworld Stronghold: Barracks" />
    </properties>
   </object>
-  <object id="3" name="screen shake after fall" type="event" x="96" y="0" width="32" height="32">
+  <object id="3" name="screen shake after fall" type="event" x="288" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_status" value="emp_pit_fall"/>
-    <property name="shakycam" value="500ms"/>
-    <property name="unset_status" value="emp_pit_fall"/>
+    <property name="activate" value="on_load" />
+    <property name="repeat" value="false" />
+    <property name="requires_status" value="emp_pit_fall" />
+    <property name="shakycam" value="500ms" />
+    <property name="unset_status" value="emp_pit_fall" />
    </properties>
   </object>
-  <object id="4" name="Cave wind sound effect" type="event" x="0" y="0" width="32" height="32">
+  <object id="4" name="Cave wind sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg" />
    </properties>
   </object>
-  <object id="5" name="Water dripping" type="event" x="2112" y="2112" width="32" height="32">
+  <object id="5" name="Water dripping" type="event" x="6336" y="6336" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="6" name="Water dripping" type="event" x="1408" y="1536" width="32" height="32">
+  <object id="6" name="Water dripping" type="event" x="4224" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="7" name="Water dripping" type="event" x="896" y="1568" width="32" height="32">
+  <object id="7" name="Water dripping" type="event" x="2688" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="8" name="Water dripping" type="event" x="1216" y="704" width="32" height="32">
+  <object id="8" name="Water dripping" type="event" x="3648" y="2112" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="13" name="Water dripping" type="event" x="1344" y="480" width="32" height="32">
+  <object id="13" name="Water dripping" type="event" x="4032" y="1440" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="14" name="Water dripping" type="event" x="1856" y="928" width="32" height="32">
+  <object id="14" name="Water dripping" type="event" x="5568" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="15" name="Water dripping" type="event" x="1344" y="192" width="32" height="32">
+  <object id="15" name="Water dripping" type="event" x="4032" y="576" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="16" name="Water dripping" type="event" x="800" y="608" width="32" height="32">
+  <object id="16" name="Water dripping" type="event" x="2400" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="17" name="Water dripping" type="event" x="160" y="576" width="32" height="32">
+  <object id="17" name="Water dripping" type="event" x="480" y="1728" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
    </properties>
   </object>
-  <object id="37" name="set init status" type="event" x="32" y="0" width="32" height="32">
+  <object id="37" name="set init status" type="event" x="96" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_pit_init"/>
-    <property name="set_status" value="emp_pit_init"/>
+    <property name="activate" value="on_load" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_pit_init" />
+    <property name="set_status" value="emp_pit_init" />
    </properties>
   </object>
-  <object id="39" name="locked chest" type="event" x="864" y="128" width="32" height="32">
+  <object id="39" name="locked chest" type="event" x="2592" y="384" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="1s"/>
-    <property name="hotspot" value="location"/>
-    <property name="repeat" value="true"/>
-    <property name="requires_not_status" value="emp_pit_chest"/>
-    <property name="script" value="scripts/maps/the_pit/locked_chest.txt"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="1s" />
+    <property name="hotspot" value="location" />
+    <property name="repeat" value="true" />
+    <property name="requires_not_status" value="emp_pit_chest" />
+    <property name="script" value="scripts/maps/the_pit/locked_chest.txt" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="40" name="unlock chest" type="event" x="864" y="0" width="32" height="32">
+  <object id="40" name="unlock chest" type="event" x="2592" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="27,4,1,1"/>
-    <property name="loot" value="loot/chest_level_16.txt"/>
-    <property name="loot_count" value="8,12"/>
-    <property name="mapmod" value="object,27,4,267"/>
-    <property name="remove_item" value="1030"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_item" value="1030"/>
-    <property name="requires_not_status" value="emp_pit_chest"/>
-    <property name="requires_status" value="emp_pit_key,emp_lezaith_defeated"/>
-    <property name="set_status" value="emp_pit_chest"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
-    <property name="unset_status" value="emp_pit_key"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="27,4,1,1" />
+    <property name="loot" value="loot/chest_level_16.txt" />
+    <property name="loot_count" value="8,12" />
+    <property name="mapmod" value="object,27,4,267" />
+    <property name="remove_item" value="1030" />
+    <property name="repeat" value="false" />
+    <property name="requires_item" value="1030" />
+    <property name="requires_not_status" value="emp_pit_chest" />
+    <property name="requires_status" value="emp_pit_key,emp_lezaith_defeated" />
+    <property name="set_status" value="emp_pit_chest" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
+    <property name="unset_status" value="emp_pit_key" />
    </properties>
   </object>
-  <object id="41" name="lighting effect on obelisk" type="event" x="640" y="96" width="384" height="256">
+  <object id="41" name="lighting effect on obelisk" type="event" x="1920" y="288" width="1152" height="768">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="power" value="207"/>
-    <property name="power_path" value="24,4"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_main_finish"/>
-    <property name="requires_status" value="emp_lezaith_defeated"/>
-    <property name="shakycam" value="2s"/>
+    <property name="activate" value="on_trigger" />
+    <property name="power" value="207" />
+    <property name="power_path" value="24,4" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_main_finish" />
+    <property name="requires_status" value="emp_lezaith_defeated" />
+    <property name="shakycam" value="2s" />
    </properties>
   </object>
-  <object id="42" name="set main quest status" type="event" x="160" y="0" width="32" height="32">
+  <object id="42" name="set main quest status" type="event" x="480" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_main_pit"/>
-    <property name="set_status" value="emp_main_pit"/>
+    <property name="activate" value="on_load" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_main_pit" />
+    <property name="set_status" value="emp_main_pit" />
    </properties>
   </object>
-  <object id="43" name="chest open" type="event" x="128" y="0" width="32" height="32">
+  <object id="43" name="chest open" type="event" x="384" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="object,27,4,267"/>
-    <property name="requires_not_status" value="emp_lezaith_respawn"/>
-    <property name="requires_status" value="emp_pit_chest"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="object,27,4,267" />
+    <property name="requires_not_status" value="emp_lezaith_respawn" />
+    <property name="requires_status" value="emp_pit_chest" />
    </properties>
   </object>
-  <object id="44" name="reset statuses" type="event" x="64" y="0" width="32" height="32">
+  <object id="44" name="reset statuses" type="event" x="192" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="requires_status" value="emp_lezaith_respawn"/>
-    <property name="unset_status" value="emp_lezaith_defeated,emp_pit_chest"/>
+    <property name="activate" value="on_load" />
+    <property name="requires_status" value="emp_lezaith_respawn" />
+    <property name="unset_status" value="emp_lezaith_defeated,emp_pit_chest" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
-  <object id="18" type="enemy" x="224" y="672" width="32" height="32">
+  <object id="18" type="enemy" x="672" y="2016" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="19" type="enemy" x="1312" y="224" width="32" height="32">
+  <object id="19" type="enemy" x="3936" y="672" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="20" type="enemy" x="1856" y="608" width="32" height="32">
+  <object id="20" type="enemy" x="5568" y="1824" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="21" type="enemy" x="448" y="256" width="32" height="32">
+  <object id="21" type="enemy" x="1344" y="768" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="22" type="enemy" x="288" y="416" width="32" height="32">
+  <object id="22" type="enemy" x="864" y="1248" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="23" type="enemy" x="576" y="800" width="32" height="32">
+  <object id="23" type="enemy" x="1728" y="2400" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="24" type="enemy" x="1280" y="928" width="32" height="32">
+  <object id="24" type="enemy" x="3840" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="25" type="enemy" x="1568" y="512" width="32" height="32">
+  <object id="25" type="enemy" x="4704" y="1536" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="26" type="enemy" x="1664" y="1088" width="32" height="32">
+  <object id="26" type="enemy" x="4992" y="3264" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="27" type="enemy" x="928" y="224" width="32" height="32">
+  <object id="27" type="enemy" x="2784" y="672" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="28" type="enemy" x="1056" y="672" width="32" height="32">
+  <object id="28" type="enemy" x="3168" y="2016" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="29" type="enemy" x="832" y="768" width="32" height="32">
+  <object id="29" type="enemy" x="2496" y="2304" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="30" type="enemy" x="768" y="416" width="32" height="32">
+  <object id="30" type="enemy" x="2304" y="1248" width="96" height="96">
    <properties>
-    <property name="category" value="forgotten_grave"/>
-    <property name="number" value="1"/>
+    <property name="category" value="forgotten_grave" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="31" type="enemy" x="32" y="256" width="704" height="576">
+  <object id="31" type="enemy" x="96" y="768" width="2112" height="1728">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="4"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="4" />
    </properties>
   </object>
-  <object id="32" type="enemy" x="1184" y="192" width="960" height="1056">
+  <object id="32" type="enemy" x="3552" y="576" width="2880" height="3168">
    <properties>
-    <property name="category" value="dungeon"/>
-    <property name="level" value="15"/>
-    <property name="number" value="6"/>
+    <property name="category" value="dungeon" />
+    <property name="level" value="15" />
+    <property name="number" value="6" />
    </properties>
   </object>
-  <object id="33" name="Lezaith (first encounter)" type="enemy" x="864" y="352" width="32" height="32">
+  <object id="33" name="Lezaith (first encounter)" type="enemy" x="2592" y="1056" width="96" height="96">
    <properties>
-    <property name="category" value="lezaith"/>
-    <property name="level" value="16"/>
-    <property name="number" value="1"/>
-    <property name="requires_not_status" value="emp_lezaith_respawn,emp_lezaith_defeated"/>
+    <property name="category" value="lezaith" />
+    <property name="level" value="16" />
+    <property name="number" value="1" />
+    <property name="requires_not_status" value="emp_lezaith_respawn,emp_lezaith_defeated" />
    </properties>
   </object>
-  <object id="36" name="Lezaith (respawn)" type="enemy" x="864" y="352" width="32" height="32">
+  <object id="36" name="Lezaith (respawn)" type="enemy" x="2592" y="1056" width="96" height="96">
    <properties>
-    <property name="category" value="lezaith"/>
-    <property name="level" value="16"/>
-    <property name="number" value="1"/>
-    <property name="requires_status" value="emp_lezaith_respawn"/>
+    <property name="category" value="lezaith" />
+    <property name="level" value="16" />
+    <property name="number" value="1" />
+    <property name="requires_status" value="emp_lezaith_respawn" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="npc">
-  <object id="38" type="npc" x="768" y="128" width="32" height="32">
+  <object id="38" type="npc" x="2304" y="384" width="96" height="96">
    <properties>
-    <property name="filename" value="npcs/glowing_obelisk_4.txt"/>
+    <property name="filename" value="npcs/glowing_obelisk_4.txt" />
    </properties>
   </object>
  </objectgroup>

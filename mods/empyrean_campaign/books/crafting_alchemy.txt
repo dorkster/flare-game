@@ -1,9 +1,9 @@
-pos=0,0,416,320
-align=center
+pos=0,-102,960,384
+align=bottom
+close=891,5
 soundfx_open=soundfx/inventory/inventory_potion.ogg
 soundfx_close=soundfx/inventory/inventory_book.ogg
 
-close=390,2
 background=images/menus/crafting_table.png
 
 [event_open]
@@ -12,198 +12,202 @@ script=scripts/crafting/alchemy/init.txt
 [event_close]
 script=scripts/crafting/alchemy/clear.txt
 
+# Window title
 [text]
-text_pos=0,8,416,center
+# text_pos=452,8,384,center
+text_pos=0,8,960,center
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Alchemy
 
+# Reset Button
 [button]
-button_pos=248,152
+button_pos=559,107
 text=Reset
 script=scripts/crafting/alchemy/init.txt
 requires_status=emp_alchemy_slot0_0
 
+# Craft Button
 [button]
-button_pos=248,280
+button_pos=452,314
 text=Craft
 requires_status=emp_alchemy_craft
 script=scripts/crafting/alchemy/craft.txt
 
 # Input: Empty Bottle
 [image]
-image_pos=32,48
+image_pos=33,59
 image_icon=512
 
 [button]
 button_image=images/menus/buttons/button_plus.png
-button_pos=64,48
+button_pos=33,123
 requires_status=emp_alchemy_0
 script=scripts/crafting/alchemy/add_0.txt
 
 [text]
-text_pos=88,52,136,left
-text_font=255,255,255,font_regular
+text_pos=13,163,106,center
+text_font=255,255,255,font_small
 text_shadow=true
 text=Empty Bottle
 
 # Input: Aloe Vera
 [image]
-image_pos=32,96
+image_pos=139,59
 image_icon=513
 
 [button]
 button_image=images/menus/buttons/button_plus.png
-button_pos=64,96
+button_pos=139,123
 requires_status=emp_alchemy_1
 script=scripts/crafting/alchemy/add_1.txt
 
 [text]
-text_pos=88,100,136,left
-text_font=255,255,255,font_regular
+text_pos=119,163,106,center
+text_font=255,255,255,font_small
 text_shadow=true
 text=Aloe Vera
 
 # Input: Mana Crystal
 [image]
-image_pos=32,144
+image_pos=245,59
 image_icon=514
 
 [button]
 button_image=images/menus/buttons/button_plus.png
-button_pos=64,144
+button_pos=245,123
 requires_status=emp_alchemy_2
 script=scripts/crafting/alchemy/add_2.txt
 
 [text]
-text_pos=88,148,136,left
-text_font=255,255,255,font_regular
+text_pos=225,163,106,center
+text_font=255,255,255,font_small
 text_shadow=true
 text=Mana Crystal
 
 # Input: Mushrooms
 [image]
-image_pos=32,192
+image_pos=33,219
 image_icon=516
 
 [button]
 button_image=images/menus/buttons/button_plus.png
-button_pos=64,192
+button_pos=33,283
 requires_status=emp_alchemy_3
 script=scripts/crafting/alchemy/add_3.txt
 
 [text]
-text_pos=88,196,136,left
-text_font=255,255,255,font_regular
+text_pos=13,323,106,center
+text_font=255,255,255,font_small
 text_shadow=true
 text=Mushrooms
 
 # Input: Blast Powder
 [image]
-image_pos=32,240
+image_pos=139,219
 image_icon=262
 requires_status=emp_naziamines_powder
 
 [button]
 button_image=images/menus/buttons/button_plus.png
-button_pos=64,240
+button_pos=139,283
 requires_status=emp_alchemy_4
 script=scripts/crafting/alchemy/add_4.txt
 requires_status=emp_naziamines_powder
 
 [text]
-text_pos=88,244,136,left
-text_font=255,255,255,font_regular
+text_pos=119,323,106,center
+text_font=255,255,255,font_small
 text_shadow=true
 text=Blast Powder
 requires_status=emp_naziamines_powder
 
 # slot 0, empty bottle
 [image]
-image_pos=304,48
+image_pos=415,67
 image_icon=512
 requires_status=emp_alchemy_slot0_0
 
 # slot 1, aloe vera
 [image]
-image_pos=256,96
+image_pos=351,99
 image_icon=513
 requires_status=emp_alchemy_slot1_1
 
 # slot 1, mana crystals
 [image]
-image_pos=256,96
+image_pos=351,99
 image_icon=514
 requires_status=emp_alchemy_slot1_2
 
 # slot 1, mushrooms
 [image]
-image_pos=256,96
+image_pos=351,99
 image_icon=516
 requires_status=emp_alchemy_slot1_3
 
 # slot 1, blast powder
 [image]
-image_pos=256,96
+image_pos=351,99
 image_icon=262
 requires_status=emp_alchemy_slot1_4
 
 # slot 2, aloe vera
 [image]
-image_pos=304,96
+image_pos=415,131
 image_icon=513
 requires_status=emp_alchemy_slot2_1
 
 # slot 2, mana crystals
 [image]
-image_pos=304,96
+image_pos=415,131
 image_icon=514
 requires_status=emp_alchemy_slot2_2
 
-# slot 3, mushrooms
+# slot 2, mushrooms
 [image]
-image_pos=304,96
+image_pos=415,131
 image_icon=516
 requires_status=emp_alchemy_slot2_3
 
-# slot 3, blast powder
+# slot 2, blast powder
 [image]
-image_pos=304,96
+image_pos=415,131
 image_icon=262
 requires_status=emp_alchemy_slot2_4
 
 # slot 3, aloe vera
 [image]
-image_pos=352,96
+image_pos=479,99
 image_icon=513
 requires_status=emp_alchemy_slot3_1
 
 # slot 3, mana crystals
 [image]
-image_pos=352,96
+image_pos=479,99
 image_icon=514
 requires_status=emp_alchemy_slot3_2
 
 # slot 3, mushrooms
 [image]
-image_pos=352,96
+image_pos=479,99
 image_icon=516
 requires_status=emp_alchemy_slot3_3
 
 # slot 3, blast powder
 [image]
-image_pos=352,96
+image_pos=479,99
 image_icon=262
 requires_status=emp_alchemy_slot3_4
 
 # output, hp potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=64
 requires_status=emp_alchemy_output_0
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Health Potion
@@ -211,12 +215,12 @@ requires_status=emp_alchemy_output_0
 
 # output, mp potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=65
 requires_status=emp_alchemy_output_1
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Mana Potion
@@ -224,12 +228,12 @@ requires_status=emp_alchemy_output_1
 
 # output, stamina potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=80
 requires_status=emp_alchemy_output_2
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Stamina Potion
@@ -237,12 +241,12 @@ requires_status=emp_alchemy_output_2
 
 # output, restoration potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=81
 requires_status=emp_alchemy_output_3
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Restoration Potion
@@ -250,12 +254,12 @@ requires_status=emp_alchemy_output_3
 
 # output, treasure potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=82
 requires_status=emp_alchemy_output_4
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Treasure Potion
@@ -263,12 +267,12 @@ requires_status=emp_alchemy_output_4
 
 # output, elemental potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=83
 requires_status=emp_alchemy_output_5
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Elemental Potion
@@ -276,12 +280,12 @@ requires_status=emp_alchemy_output_5
 
 # output, dynamite
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=261
 requires_status=emp_alchemy_output_6
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Dynamite
@@ -289,12 +293,12 @@ requires_status=emp_alchemy_output_6
 
 # output, super hp potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=84
 requires_status=emp_alchemy_output_7
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Super Health Potion
@@ -302,12 +306,12 @@ requires_status=emp_alchemy_output_7
 
 # output, ultra hp potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=85
 requires_status=emp_alchemy_output_8
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Ultra Health Potion
@@ -315,12 +319,12 @@ requires_status=emp_alchemy_output_8
 
 # output, super mp potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=86
 requires_status=emp_alchemy_output_9
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Super Mana Potion
@@ -328,14 +332,30 @@ requires_status=emp_alchemy_output_9
 
 # output, ultra mp potion
 [image]
-image_pos=304,208
+image_pos=479,227
 image_icon=87
 requires_status=emp_alchemy_output_10
 
 [text]
-text_pos=240,248,160,center
+text_pos=559,243,378,left
 text_font=255,255,255,font_regular
 text_shadow=true
 text=Ultra Mana Potion
 requires_status=emp_alchemy_output_10
 
+
+# ingredient page navigation
+# [button]
+# button_image=images/menus/buttons/left.png
+# button_pos=13,4
+#
+# [button]
+# button_image=images/menus/buttons/right.png
+# button_pos=277,4
+#
+# [text]
+# text_pos=69,8,208,center
+# text_font=127,127,127,font_regular
+# text_shadow=true
+# text=Page 1
+#

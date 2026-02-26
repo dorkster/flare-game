@@ -804,6 +804,8 @@ trait_elemental=dark
 modifier_accuracy=multiply,125,0
 post_effect=stun,0,1s,25
 cooldown=5s
+post_power=294
+wall_power=294
 
 # teleport
 [power]
@@ -1001,7 +1003,7 @@ post_effect=knockback,20,100ms
 [power]
 id=259
 type=missile
-new_state=swing
+new_state=shoot
 face=true
 directional=true
 requires_los=true

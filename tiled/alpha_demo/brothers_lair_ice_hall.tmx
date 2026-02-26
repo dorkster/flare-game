@@ -1,35 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.0" orientation="isometric" renderorder="right-down" width="50" height="80" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextobjectid="37">
+<map version="1.0" tiledversion="1.1.0" orientation="isometric" renderorder="right-down" width="50" height="80" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextobjectid="37">
  <properties>
-  <property name="hero_pos" value="47,71"/>
-  <property name="music" value="music/magical_theme.ogg"/>
-  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
-  <property name="title" value="Brothers' Lair Ice Hall"/>
+  <property name="hero_pos" value="47,71" />
+  <property name="music" value="music/magical_theme.ogg" />
+  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
+  <property name="title" value="Brothers' Lair Ice Hall" />
  </properties>
- <tileset firstgid="1" name="tiled_collision.png" tilewidth="64" tileheight="32" tilecount="15" columns="15">
-  <image source="../dungeon/tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="tiled_collision.png" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../dungeon/../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="tiled_dungeon.png" tilewidth="64" tileheight="128" tilecount="240" columns="16">
-  <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="tiled_dungeon.png" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../dungeon/../tilesheets/dungeon.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules.png" tilewidth="64" tileheight="32" tilecount="8" columns="2">
-  <image source="../dungeon/set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules.png" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../dungeon/../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2.png" tilewidth="128" tileheight="64" tilecount="16" columns="4">
-  <tileoffset x="0" y="16"/>
-  <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
+ <tileset firstgid="264" name="tiled_dungeon_2x2.png" tilewidth="384" tileheight="192" tilecount="16" columns="4">
+  <tileoffset x="0" y="48" />
+  <image source="../dungeon/../tilesheets/dungeon_2x2.png" width="1536" height="768" />
  </tileset>
- <tileset firstgid="280" name="door_left.png" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="-16" y="-8"/>
-  <image source="../dungeon/door_left.png" width="128" height="128"/>
+ <tileset firstgid="280" name="door_left.png" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="-48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_left.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="282" name="door_right.png" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="16" y="-8"/>
-  <image source="../dungeon/door_right.png" width="128" height="128"/>
+ <tileset firstgid="282" name="door_right.png" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_right.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="284" name="stairs.png" tilewidth="256" tileheight="256" tilecount="4" columns="4">
-  <tileoffset x="0" y="48"/>
-  <image source="../dungeon/stairs.png" width="1024" height="256"/>
+ <tileset firstgid="284" name="stairs.png" tilewidth="768" tileheight="768" tilecount="4" columns="4">
+  <tileoffset x="0" y="144" />
+  <image source="../dungeon/../tilesheets/dungeon_stairs.png" width="3072" height="768" />
  </tileset>
  <layer name="background" width="50" height="80">
   <data encoding="csv">
@@ -284,349 +283,349 @@
 </data>
  </layer>
  <objectgroup name="event">
-  <object id="1" name="Warp to Atrium" type="event" x="1536" y="2240" width="64" height="64">
+  <object id="1" name="Warp to Atrium" type="event" x="4608" y="6720" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/brothers_lair_atrium.txt,3,13"/>
-    <property name="soundfx" value="soundfx/door_open.ogg,0,0"/>
-    <property name="tooltip" value="Brothers' Lair Atrium"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/brothers_lair_atrium.txt,3,13" />
+    <property name="soundfx" value="soundfx/door_open.ogg,0,0" />
+    <property name="tooltip" value="Brothers' Lair Atrium" />
    </properties>
   </object>
-  <object id="2" name="Bookcase Door" type="event" x="544" y="1440" width="32" height="32">
+  <object id="2" name="Bookcase Door" type="event" x="1632" y="4320" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,17,45,0;collision,17,45,0"/>
-    <property name="repeat" value="false"/>
-    <property name="shakycam" value="666ms"/>
-    <property name="soundfx" value="soundfx/powers/quake.ogg"/>
-    <property name="tooltip" value="Suspicious Bookcase"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,17,45,0;collision,17,45,0" />
+    <property name="repeat" value="false" />
+    <property name="shakycam" value="666ms" />
+    <property name="soundfx" value="soundfx/powers/quake.ogg" />
+    <property name="tooltip" value="Suspicious Bookcase" />
    </properties>
   </object>
-  <object id="3" name="Lore: Plotting" type="event" x="576" y="1472" width="32" height="32">
+  <object id="3" name="Lore: Plotting" type="event" x="1728" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,18,46,165"/>
-    <property name="msg" value="&quot;When we could no longer stand the idiotic practices of our master, I hatched a plan to kill him. My brothers agreed the deed had to be done.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,18,46,165" />
+    <property name="msg" value="&quot;When we could no longer stand the idiotic practices of our master, I hatched a plan to kill him. My brothers agreed the deed had to be done.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="4" name="Lore: The Trap" type="event" x="512" y="1472" width="32" height="32">
+  <object id="4" name="Lore: The Trap" type="event" x="1536" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,16,46,165"/>
-    <property name="msg" value="&quot;In accordance with our plan, G. asked the old fool to teach him about the preparation of corpses in the later stages of decay. Naturally, the corpse in question was a cleverly disguised bomb made by V.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,16,46,165" />
+    <property name="msg" value="&quot;In accordance with our plan, G. asked the old fool to teach him about the preparation of corpses in the later stages of decay. Naturally, the corpse in question was a cleverly disguised bomb made by V.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="5" name="Lore: Under the Wing" type="event" x="800" y="1920" width="32" height="32">
+  <object id="5" name="Lore: Under the Wing" type="event" x="2400" y="5760" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="msg" value="&quot;My brothers and I wandered around for a few days. In an incredible stroke of luck, we encountered a master necromancer who, seeing the marks of banishment on our foreheads, took us as his apprentices.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Bookcase"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="msg" value="&quot;My brothers and I wandered around for a few days. In an incredible stroke of luck, we encountered a master necromancer who, seeing the marks of banishment on our foreheads, took us as his apprentices.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Bookcase" />
    </properties>
   </object>
-  <object id="6" name="Lore: Outgrowing" type="event" x="960" y="1536" width="32" height="32">
+  <object id="6" name="Lore: Outgrowing" type="event" x="2880" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,30,48,165"/>
-    <property name="msg" value="&quot;We grew swiftly under the tutelage of the necromancer. The more we learned, the more we realized we could do better than the short-sighted git.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,30,48,165" />
+    <property name="msg" value="&quot;We grew swiftly under the tutelage of the necromancer. The more we learned, the more we realized we could do better than the short-sighted git.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="7" name="Lore: Academy" type="event" x="224" y="1632" width="32" height="32">
+  <object id="7" name="Lore: Academy" type="event" x="672" y="4896" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,7,51,164"/>
-    <property name="msg" value="&quot;My brothers V. and G. used to go to a wizard's academy with me. We were top students until one day V. killed another student in a spontaneous fit of rage.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,7,51,164" />
+    <property name="msg" value="&quot;My brothers V. and G. used to go to a wizard's academy with me. We were top students until one day V. killed another student in a spontaneous fit of rage.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="8" name="Lore: Outcast" type="event" x="544" y="2272" width="32" height="32">
+  <object id="8" name="Lore: Outcast" type="event" x="1632" y="6816" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,17,71,164"/>
-    <property name="msg" value="&quot;Naturally, V. was expelled for his crime. It was foolish of us, but G. and I decided to defend our brother. We were expelled too. The wizards magically marked us with a sign of banishment on our foreheads so that no wizard would dare teach us.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,17,71,164" />
+    <property name="msg" value="&quot;Naturally, V. was expelled for his crime. It was foolish of us, but G. and I decided to defend our brother. We were expelled too. The wizards magically marked us with a sign of banishment on our foreheads so that no wizard would dare teach us.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="9" name="Lore: New Residence" type="event" x="512" y="320" width="32" height="32">
+  <object id="9" name="Lore: New Residence" type="event" x="1536" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,16,10,165"/>
-    <property name="msg" value="&quot;G. suggested that each of us should take one of the halls in the old necromancer's lair.&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,16,10,165" />
+    <property name="msg" value="&quot;G. suggested that each of us should take one of the halls in the old necromancer's lair.&quot;" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="10" name="Scathelocke's Diary" type="event" x="576" y="320" width="32" height="32">
+  <object id="10" name="Scathelocke's Diary" type="event" x="1728" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="mapmod" value="object,18,10,165"/>
-    <property name="msg" value="&quot;It's days like today that make me wonder if I should go a step further and eliminate V. and G. too... they're getting on my nerves. ~Scathelocke&quot;"/>
-    <property name="repeat" value="false"/>
-    <property name="set_status" value="lb_ice_password"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Book Stand"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="mapmod" value="object,18,10,165" />
+    <property name="msg" value="&quot;It's days like today that make me wonder if I should go a step further and eliminate V. and G. too... they're getting on my nerves. ~Scathelocke&quot;" />
+    <property name="repeat" value="false" />
+    <property name="set_status" value="lb_ice_password" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Book Stand" />
    </properties>
   </object>
-  <object id="11" name="Crate" type="event" x="352" y="416" width="32" height="32">
+  <object id="11" name="Crate" type="event" x="1056" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,11,13,163"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Crate"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,11,13,163" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Crate" />
    </properties>
   </object>
-  <object id="12" name="Crate" type="event" x="704" y="416" width="32" height="32">
+  <object id="12" name="Crate" type="event" x="2112" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,22,13,163"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Crate"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,22,13,163" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Crate" />
    </properties>
   </object>
-  <object id="13" name="Crate" type="event" x="928" y="1536" width="32" height="32">
+  <object id="13" name="Crate" type="event" x="2784" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,29,48,163"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Crate"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,29,48,163" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Crate" />
    </properties>
   </object>
-  <object id="14" name="Barrel" type="event" x="352" y="448" width="32" height="32">
+  <object id="14" name="Barrel" type="event" x="1056" y="1344" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,11,14,162"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,11,14,162" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="15" name="Barrel" type="event" x="384" y="448" width="32" height="32">
+  <object id="15" name="Barrel" type="event" x="1152" y="1344" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,12,14,162"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,12,14,162" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="16" name="Barrel" type="event" x="736" y="416" width="32" height="32">
+  <object id="16" name="Barrel" type="event" x="2208" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,23,13,162"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Barrel"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,23,13,162" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Barrel" />
    </properties>
   </object>
-  <object id="17" name="Treasure Chest" type="event" x="224" y="1600" width="32" height="32">
+  <object id="17" name="Treasure Chest" type="event" x="672" y="4800" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="mapmod" value="object,7,50,160"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="mapmod" value="object,7,50,160" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="18" name="Scathelocke's Chest (Spellbook)" type="event" x="448" y="320" width="32" height="32">
+  <object id="18" name="Scathelocke's Chest (Spellbook)" type="event" x="1344" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="9100,fixed,1,1;loot/leveled_high.txt"/>
-    <property name="mapmod" value="object,14,10,160"/>
-    <property name="remove_item" value="9101"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_item" value="9101"/>
-    <property name="requires_not_status" value="lb_ice_spellbook"/>
-    <property name="set_status" value="lb_ice_looted,lb_ice_spellbook"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Runed Chest"/>
-    <property name="unset_status" value="lb_ice_key"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="9100,fixed,1,1;loot/leveled_high.txt" />
+    <property name="mapmod" value="object,14,10,160" />
+    <property name="remove_item" value="9101" />
+    <property name="repeat" value="false" />
+    <property name="requires_item" value="9101" />
+    <property name="requires_not_status" value="lb_ice_spellbook" />
+    <property name="set_status" value="lb_ice_looted,lb_ice_spellbook" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Runed Chest" />
+    <property name="unset_status" value="lb_ice_key" />
    </properties>
   </object>
-  <object id="19" name="Scathelocke's Chest" type="event" x="448" y="320" width="32" height="32">
+  <object id="19" name="Scathelocke's Chest" type="event" x="1344" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="currency,fixed,50,100;loot/leveled_high.txt"/>
-    <property name="mapmod" value="object,14,10,160"/>
-    <property name="remove_item" value="9101"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_item" value="9101"/>
-    <property name="requires_status" value="lb_ice_spellbook"/>
-    <property name="set_status" value="lb_ice_looted"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Runed Chest"/>
-    <property name="unset_status" value="lb_ice_key"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="currency,fixed,50,100;loot/leveled_high.txt" />
+    <property name="mapmod" value="object,14,10,160" />
+    <property name="remove_item" value="9101" />
+    <property name="repeat" value="false" />
+    <property name="requires_item" value="9101" />
+    <property name="requires_status" value="lb_ice_spellbook" />
+    <property name="set_status" value="lb_ice_looted" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Runed Chest" />
+    <property name="unset_status" value="lb_ice_key" />
    </properties>
   </object>
-  <object id="20" name="Scathelocke's Chest Locked" type="event" x="448" y="320" width="32" height="32">
+  <object id="20" name="Scathelocke's Chest Locked" type="event" x="1344" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="power" value="14"/>
-    <property name="power_damage" value="100,150"/>
-    <property name="power_path" value="14,10,hero"/>
-    <property name="requires_not_status" value="lb_ice_key,lb_ice_looted"/>
-    <property name="tooltip" value="Runed Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="power" value="14" />
+    <property name="power_damage" value="100,150" />
+    <property name="power_path" value="14,10,hero" />
+    <property name="requires_not_status" value="lb_ice_key,lb_ice_looted" />
+    <property name="tooltip" value="Runed Chest" />
    </properties>
   </object>
-  <object id="21" name="Trapped Tile" type="event" x="544" y="1088" width="32" height="64">
+  <object id="21" name="Trapped Tile" type="event" x="1632" y="3264" width="96" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="mapmod" value="object,13,31,0;collision,13,31,0;object,21,31,0;collision,21,31,0;object,13,38,0;collision,13,38,0;object,21,38,0;collision,21,38,0"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/door_open.ogg"/>
+    <property name="activate" value="on_trigger" />
+    <property name="mapmod" value="object,13,31,0;collision,13,31,0;object,21,31,0;collision,21,31,0;object,13,38,0;collision,13,38,0;object,21,38,0;collision,21,38,0" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/door_open.ogg" />
    </properties>
   </object>
-  <object id="22" name="Treasure" type="event" x="960" y="1824" width="32" height="32">
+  <object id="22" name="Treasure" type="event" x="2880" y="5472" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="reachable_from" value="31,56,2,3"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Bookcase"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="reachable_from" value="31,56,2,3" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Bookcase" />
    </properties>
   </object>
-  <object id="23" name="Treasure" type="event" x="192" y="1952" width="32" height="32">
+  <object id="23" name="Treasure" type="event" x="576" y="5856" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/leveled_mid.txt"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
-    <property name="tooltip" value="Bookcase"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/leveled_mid.txt" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
+    <property name="tooltip" value="Bookcase" />
    </properties>
   </object>
-  <object id="24" type="event" x="352" y="224" width="32" height="32">
+  <object id="24" type="event" x="1056" y="672" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="unset_status" value="lb_ice_looted"/>
+    <property name="activate" value="on_load" />
+    <property name="unset_status" value="lb_ice_looted" />
    </properties>
   </object>
-  <object id="25" x="384" y="256"/>
+  <object id="25" x="1152" y="768" />
  </objectgroup>
  <objectgroup name="enemy">
-  <object id="26" name="Skeletal Knight" type="enemy" x="704" y="1216" width="32" height="32">
+  <object id="26" name="Skeletal Knight" type="enemy" x="2112" y="3648" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_knight"/>
-    <property name="direction" value="1"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_knight" />
+    <property name="direction" value="1" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="27" name="Skeletal Knight" type="enemy" x="704" y="992" width="32" height="32">
+  <object id="27" name="Skeletal Knight" type="enemy" x="2112" y="2976" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_knight"/>
-    <property name="direction" value="1"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_knight" />
+    <property name="direction" value="1" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="28" name="Skeletal Knight" type="enemy" x="384" y="1216" width="32" height="32">
+  <object id="28" name="Skeletal Knight" type="enemy" x="1152" y="3648" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_knight"/>
-    <property name="direction" value="5"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_knight" />
+    <property name="direction" value="5" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="29" name="Skeletal Knight" type="enemy" x="384" y="992" width="32" height="32">
+  <object id="29" name="Skeletal Knight" type="enemy" x="1152" y="2976" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_knight"/>
-    <property name="direction" value="5"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="skeletal_knight" />
+    <property name="direction" value="5" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="30" type="enemy" x="640" y="448" width="32" height="32">
+  <object id="30" type="enemy" x="1920" y="1344" width="96" height="96">
    <properties>
-    <property name="category" value="skeletal_prophet"/>
+    <property name="category" value="skeletal_prophet" />
    </properties>
   </object>
-  <object id="31" name="3-4 Undead" type="enemy" x="480" y="1664" width="384" height="416">
+  <object id="31" name="3-4 Undead" type="enemy" x="1440" y="4992" width="1152" height="1248">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="6,8"/>
-    <property name="number" value="3,4"/>
+    <property name="category" value="undead" />
+    <property name="level" value="6,8" />
+    <property name="number" value="3,4" />
    </properties>
   </object>
-  <object id="32" name="1-3 Undead" type="enemy" x="224" y="1536" width="128" height="160">
+  <object id="32" name="1-3 Undead" type="enemy" x="672" y="4608" width="384" height="480">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="chance" value="80"/>
-    <property name="level" value="6,8"/>
-    <property name="number" value="1,3"/>
+    <property name="category" value="undead" />
+    <property name="chance" value="80" />
+    <property name="level" value="6,8" />
+    <property name="number" value="1,3" />
    </properties>
   </object>
-  <object id="33" name="1-3 Undead" type="enemy" x="224" y="1824" width="128" height="224">
+  <object id="33" name="1-3 Undead" type="enemy" x="672" y="5472" width="384" height="672">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="chance" value="80"/>
-    <property name="level" value="6,8"/>
-    <property name="number" value="1,3"/>
+    <property name="category" value="undead" />
+    <property name="chance" value="80" />
+    <property name="level" value="6,8" />
+    <property name="number" value="1,3" />
    </properties>
   </object>
-  <object id="34" name="1-3 Undead" type="enemy" x="544" y="2176" width="128" height="192">
+  <object id="34" name="1-3 Undead" type="enemy" x="1632" y="6528" width="384" height="576">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="chance" value="80"/>
-    <property name="level" value="6,8"/>
-    <property name="number" value="1,3"/>
+    <property name="category" value="undead" />
+    <property name="chance" value="80" />
+    <property name="level" value="6,8" />
+    <property name="number" value="1,3" />
    </properties>
   </object>
-  <object id="35" name="1-3 Undead" type="enemy" x="864" y="1536" width="192" height="128">
+  <object id="35" name="1-3 Undead" type="enemy" x="2592" y="4608" width="576" height="384">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="chance" value="80"/>
-    <property name="level" value="6,8"/>
-    <property name="number" value="1,3"/>
+    <property name="category" value="undead" />
+    <property name="chance" value="80" />
+    <property name="level" value="6,8" />
+    <property name="number" value="1,3" />
    </properties>
   </object>
-  <object id="36" name="2 Undead" type="enemy" x="992" y="1792" width="128" height="128">
+  <object id="36" name="2 Undead" type="enemy" x="2976" y="5376" width="384" height="384">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="6,8"/>
-    <property name="number" value="2,2"/>
+    <property name="category" value="undead" />
+    <property name="level" value="6,8" />
+    <property name="number" value="2,2" />
    </properties>
   </object>
  </objectgroup>

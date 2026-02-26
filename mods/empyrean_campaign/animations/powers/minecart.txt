@@ -1,7 +1,19 @@
 image=images/powers/minecart.png
+#flare_sprite_packer_input=92 79 82 70 94 79 66 73 92 79 82 71 94 81 66 76
+#flare_sprite_packer_output=0 160 160 0 0 81 176 70 92 160 94 76 0 0 94 0
 
-[stance]
+
+[power]
 frames=1
-duration=33ms
+duration=66ms
 type=looped
-frame=0,0,0,0,64,64,32,48
+active_frame=all
+active_sub_frame=all
+frame=0,0,0,160,92,79,39,65
+frame=0,1,160,0,82,70,33,59
+frame=0,2,0,81,94,79,39,65
+frame=0,3,176,70,66,73,26,62
+frame=0,4,92,160,92,79,39,65
+frame=0,5,94,76,82,71,33,60
+frame=0,6,0,0,94,81,39,66
+frame=0,7,94,0,66,76,26,65

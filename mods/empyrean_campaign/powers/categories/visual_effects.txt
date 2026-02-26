@@ -51,3 +51,15 @@ use_hazard=true
 no_attack=true
 lifespan=1s
 starting_pos=source
+
+# Green Spark
+[power]
+id=294
+type=fixed
+animation=animations/powers/spark_green.txt
+use_hazard=true
+no_attack=true
+lifespan=400ms
+starting_pos=target
+visual_random=2
+

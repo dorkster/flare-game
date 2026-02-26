@@ -1,38 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="40" height="60" tilewidth="64" tileheight="32" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="81">
+<map version="1.11" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="40" height="60" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="81">
  <properties>
-  <property name="hero_pos" value="7,47"/>
-  <property name="music" value="music/boss_theme.ogg"/>
-  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
-  <property name="title" value="St. Maria: Crypt"/>
+  <property name="hero_pos" value="7,47" />
+  <property name="music" value="music/boss_theme.ogg" />
+  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
+  <property name="title" value="St. Maria: Crypt" />
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
-  <image source="../dungeon/tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../dungeon/../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
-  <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../dungeon/../tilesheets/dungeon.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
-  <image source="../dungeon/set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../dungeon/../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16" columns="4">
-  <tileoffset x="0" y="16"/>
-  <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16" columns="4">
+  <tileoffset x="0" y="48" />
+  <image source="../dungeon/../tilesheets/dungeon_2x2.png" width="1536" height="768" />
  </tileset>
- <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="-16" y="-8"/>
-  <image source="../dungeon/door_left.png" width="128" height="128"/>
+ <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="-48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_left.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2" columns="2">
-  <tileoffset x="16" y="-8"/>
-  <image source="../dungeon/door_right.png" width="128" height="128"/>
+ <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="48" y="-24" />
+  <image source="../dungeon/../tilesheets/dungeon_door_right.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4" columns="4">
-  <tileoffset x="0" y="48"/>
-  <image source="../dungeon/stairs.png" width="1024" height="256"/>
+ <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4" columns="4">
+  <tileoffset x="0" y="144" />
+  <image source="../dungeon/../tilesheets/dungeon_stairs.png" width="3072" height="768" />
  </tileset>
- <tileset firstgid="288" name="boss_chest" tilewidth="64" tileheight="64" tilecount="4" columns="4">
-  <image source="../common/boss_chest.png" width="256" height="64"/>
+ <tileset firstgid="288" name="boss_chest" tilewidth="192" tileheight="192" tilecount="4" columns="4">
+  <image source="../common/../tilesheets/boss_chest.png" width="768" height="192" />
  </tileset>
  <layer id="1" name="background" width="40" height="60">
   <data encoding="csv">
@@ -227,343 +226,343 @@
 </data>
  </layer>
  <objectgroup id="4" name="event">
-  <object id="1" name="to St. Maria: Catacombs" type="event" x="192" y="1472" width="32" height="64">
+  <object id="1" name="to St. Maria: Catacombs" type="event" x="576" y="4416" width="96" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/st_maria_2.txt,15,5"/>
-    <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
-    <property name="tooltip" value="St. Maria: Catacombs"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="intermap" value="maps/st_maria_2.txt,15,5" />
+    <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0" />
+    <property name="tooltip" value="St. Maria: Catacombs" />
    </properties>
   </object>
-  <object id="6" name="torch set 1" type="event" x="352" y="1216" width="384" height="64">
+  <object id="6" name="torch set 1" type="event" x="1056" y="3648" width="1152" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_seagate_torches"/>
-    <property name="script" value="scripts/maps/st_maria_3/torch_1.txt"/>
-    <property name="soundfx" value="soundfx/powers/fireball.ogg,0,0"/>
+    <property name="activate" value="on_trigger" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_seagate_torches" />
+    <property name="script" value="scripts/maps/st_maria_3/torch_1.txt" />
+    <property name="soundfx" value="soundfx/powers/fireball.ogg,0,0" />
    </properties>
   </object>
-  <object id="11" name="torch set 2" type="event" x="352" y="960" width="384" height="64">
+  <object id="11" name="torch set 2" type="event" x="1056" y="2880" width="1152" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_seagate_torches"/>
-    <property name="script" value="scripts/maps/st_maria_3/torch_2.txt"/>
-    <property name="soundfx" value="soundfx/powers/fireball.ogg,0,0"/>
+    <property name="activate" value="on_trigger" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_seagate_torches" />
+    <property name="script" value="scripts/maps/st_maria_3/torch_2.txt" />
+    <property name="soundfx" value="soundfx/powers/fireball.ogg,0,0" />
    </properties>
   </object>
-  <object id="14" name="torch set 3" type="event" x="352" y="704" width="384" height="64">
+  <object id="14" name="torch set 3" type="event" x="1056" y="2112" width="1152" height="192">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_seagate_torches"/>
-    <property name="script" value="scripts/maps/st_maria_3/torch_3.txt"/>
-    <property name="soundfx" value="soundfx/powers/fireball.ogg,0,0"/>
+    <property name="activate" value="on_trigger" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_seagate_torches" />
+    <property name="script" value="scripts/maps/st_maria_3/torch_3.txt" />
+    <property name="soundfx" value="soundfx/powers/fireball.ogg,0,0" />
    </properties>
   </object>
-  <object id="18" name="kill seagate's tombstone (bottom)" type="event" x="32" y="96" width="32" height="32">
+  <object id="18" name="kill seagate's tombstone (bottom)" type="event" x="96" y="288" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="mapmod" value="collision,27,4,0"/>
-    <property name="power" value="177"/>
-    <property name="power_path" value="27,5,27,5"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_status" value="emp_seagate_defeated"/>
+    <property name="activate" value="static" />
+    <property name="mapmod" value="collision,27,4,0" />
+    <property name="power" value="177" />
+    <property name="power_path" value="27,5,27,5" />
+    <property name="repeat" value="false" />
+    <property name="requires_status" value="emp_seagate_defeated" />
    </properties>
   </object>
-  <object id="17" name="kill seagate's tombstone (top)" type="event" x="0" y="96" width="32" height="32">
+  <object id="17" name="kill seagate's tombstone (top)" type="event" x="0" y="288" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="mapmod" value="collision,6,4,0"/>
-    <property name="power" value="177"/>
-    <property name="power_path" value="6,5,6,5"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_status" value="emp_seagate_defeated"/>
+    <property name="activate" value="static" />
+    <property name="mapmod" value="collision,6,4,0" />
+    <property name="power" value="177" />
+    <property name="power_path" value="6,5,6,5" />
+    <property name="repeat" value="false" />
+    <property name="requires_status" value="emp_seagate_defeated" />
    </properties>
   </object>
-  <object id="25" name="lock door" type="event" x="480" y="1312" width="128" height="32">
+  <object id="25" name="lock door" type="event" x="1440" y="3936" width="384" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="mapmod" value="object,16,45,115;collision,16,45,1"/>
-    <property name="repeat" value="false"/>
-    <property name="soundfx" value="soundfx/door_open.ogg"/>
+    <property name="activate" value="on_trigger" />
+    <property name="mapmod" value="object,16,45,115;collision,16,45,1" />
+    <property name="repeat" value="false" />
+    <property name="soundfx" value="soundfx/door_open.ogg" />
    </properties>
   </object>
-  <object id="27" name="Wind sound" type="event" x="0" y="0" width="32" height="32">
+  <object id="27" name="Wind sound" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg" />
    </properties>
   </object>
-  <object id="28" name="brazier sound effect" type="event" x="96" y="160" width="32" height="32">
+  <object id="28" name="brazier sound effect" type="event" x="288" y="480" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="29" name="brazier sound effect" type="event" x="96" y="384" width="32" height="32">
+  <object id="29" name="brazier sound effect" type="event" x="288" y="1152" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="30" name="brazier sound effect" type="event" x="960" y="384" width="32" height="32">
+  <object id="30" name="brazier sound effect" type="event" x="2880" y="1152" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="31" name="brazier sound effect" type="event" x="960" y="160" width="32" height="32">
+  <object id="31" name="brazier sound effect" type="event" x="2880" y="480" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="32" name="Treasure Chest" type="event" x="384" y="64" width="32" height="32">
+  <object id="32" name="Treasure Chest" type="event" x="1152" y="192" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_4.txt"/>
-    <property name="loot_count" value="4,5"/>
-    <property name="mapmod" value="object,12,2,289"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_seagate_chest1"/>
-    <property name="set_status" value="emp_seagate_chest1"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_4.txt" />
+    <property name="loot_count" value="4,5" />
+    <property name="mapmod" value="object,12,2,289" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_seagate_chest1" />
+    <property name="set_status" value="emp_seagate_chest1" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="33" name="Treasure Chest" type="event" x="672" y="64" width="32" height="32">
+  <object id="33" name="Treasure Chest" type="event" x="2016" y="192" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="loot" value="loot/chest_level_4.txt"/>
-    <property name="loot_count" value="4,5"/>
-    <property name="mapmod" value="object,21,2,289"/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_seagate_chest2"/>
-    <property name="set_status" value="emp_seagate_chest2"/>
-    <property name="soundfx" value="soundfx/wood_open.ogg"/>
-    <property name="tooltip" value="Treasure Chest"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="loot" value="loot/chest_level_4.txt" />
+    <property name="loot_count" value="4,5" />
+    <property name="mapmod" value="object,21,2,289" />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_seagate_chest2" />
+    <property name="set_status" value="emp_seagate_chest2" />
+    <property name="soundfx" value="soundfx/wood_open.ogg" />
+    <property name="tooltip" value="Treasure Chest" />
    </properties>
   </object>
-  <object id="37" name="floor spikes" type="event" x="224" y="320" width="32" height="32">
+  <object id="37" name="floor spikes" type="event" x="672" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="3s"/>
-    <property name="power" value="178"/>
-    <property name="power_damage" value="70,80"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="3s" />
+    <property name="power" value="178" />
+    <property name="power_damage" value="70,80" />
    </properties>
   </object>
-  <object id="48" name="floor spikes" type="event" x="256" y="320" width="32" height="32">
+  <object id="48" name="floor spikes" type="event" x="768" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="3s"/>
-    <property name="power" value="178"/>
-    <property name="power_damage" value="70,80"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="3s" />
+    <property name="power" value="178" />
+    <property name="power_damage" value="70,80" />
    </properties>
   </object>
-  <object id="49" name="floor spikes" type="event" x="256" y="288" width="32" height="32">
+  <object id="49" name="floor spikes" type="event" x="768" y="864" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="3s"/>
-    <property name="power" value="178"/>
-    <property name="power_damage" value="70,80"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="3s" />
+    <property name="power" value="178" />
+    <property name="power_damage" value="70,80" />
    </properties>
   </object>
-  <object id="50" name="floor spikes" type="event" x="800" y="288" width="32" height="32">
+  <object id="50" name="floor spikes" type="event" x="2400" y="864" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="3s"/>
-    <property name="power" value="178"/>
-    <property name="power_damage" value="70,80"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="3s" />
+    <property name="power" value="178" />
+    <property name="power_damage" value="70,80" />
    </properties>
   </object>
-  <object id="51" name="floor spikes" type="event" x="800" y="320" width="32" height="32">
+  <object id="51" name="floor spikes" type="event" x="2400" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="3s"/>
-    <property name="power" value="178"/>
-    <property name="power_damage" value="70,80"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="3s" />
+    <property name="power" value="178" />
+    <property name="power_damage" value="70,80" />
    </properties>
   </object>
-  <object id="52" name="floor spikes" type="event" x="832" y="320" width="32" height="32">
+  <object id="52" name="floor spikes" type="event" x="2496" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="cooldown" value="3s"/>
-    <property name="power" value="178"/>
-    <property name="power_damage" value="70,80"/>
+    <property name="activate" value="on_trigger" />
+    <property name="cooldown" value="3s" />
+    <property name="power" value="178" />
+    <property name="power_damage" value="70,80" />
    </properties>
   </object>
-  <object id="58" name="plaque" type="event" x="512" y="384" width="32" height="32">
+  <object id="58" name="plaque" type="event" x="1536" y="1152" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="msg" value="The plaque reads: Grave of the Saints"/>
-    <property name="tooltip" value="Plaque"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="msg" value="The plaque reads: Grave of the Saints" />
+    <property name="tooltip" value="Plaque" />
    </properties>
   </object>
-  <object id="59" name="gravebloom" type="event" x="544" y="384" width="32" height="32">
+  <object id="59" name="gravebloom" type="event" x="1632" y="1152" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="location"/>
-    <property name="msg" value="You remove the gravebloom flower from the Altar."/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_main_gravebloom"/>
-    <property name="requires_status" value="emp_main_init,emp_seagate_defeated"/>
-    <property name="reward_item" value="1100,1"/>
-    <property name="set_status" value="emp_main_gravebloom"/>
-    <property name="tooltip" value="Altar"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="location" />
+    <property name="msg" value="You remove the gravebloom flower from the Altar." />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_main_gravebloom" />
+    <property name="requires_status" value="emp_main_init,emp_seagate_defeated" />
+    <property name="reward_item" value="1100,1" />
+    <property name="set_status" value="emp_main_gravebloom" />
+    <property name="tooltip" value="Altar" />
    </properties>
   </object>
-  <object id="62" name="brazier sound effect" type="event" x="512" y="64" width="32" height="32">
+  <object id="62" name="brazier sound effect" type="event" x="1536" y="192" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
+    <property name="activate" value="on_load" />
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    </properties>
   </object>
-  <object id="70" name="gravebloom (frozen)" type="event" x="544" y="352" width="32" height="32">
+  <object id="70" name="gravebloom (frozen)" type="event" x="1632" y="1056" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger"/>
-    <property name="hotspot" value="17,12,1,1"/>
-    <property name="msg" value="There is a gravebloom flower on the altar, but it is frozen in place."/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_main_gravebloom,emp_seagate_defeated"/>
-    <property name="requires_status" value="emp_main_init"/>
-    <property name="shakycam" value="2s"/>
-    <property name="soundfx" value="soundfx/powers/quake.ogg"/>
-    <property name="spawn" value="seagate,17,9"/>
-    <property name="tooltip" value="Altar"/>
+    <property name="activate" value="on_trigger" />
+    <property name="hotspot" value="17,12,1,1" />
+    <property name="msg" value="There is a gravebloom flower on the altar, but it is frozen in place." />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_main_gravebloom,emp_seagate_defeated" />
+    <property name="requires_status" value="emp_main_init" />
+    <property name="shakycam" value="2s" />
+    <property name="soundfx" value="soundfx/powers/quake.ogg" />
+    <property name="spawn" value="seagate,17,9" />
+    <property name="tooltip" value="Altar" />
    </properties>
   </object>
-  <object id="71" name="gravebloom (thaw msg)" type="event" x="0" y="192" width="32" height="32">
+  <object id="71" name="gravebloom (thaw msg)" type="event" x="0" y="576" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="msg" value="The gravebloom flower laid upon the altar has thawed."/>
-    <property name="repeat" value="false"/>
-    <property name="requires_not_status" value="emp_main_gravebloom"/>
-    <property name="requires_status" value="emp_seagate_defeated"/>
+    <property name="activate" value="static" />
+    <property name="msg" value="The gravebloom flower laid upon the altar has thawed." />
+    <property name="repeat" value="false" />
+    <property name="requires_not_status" value="emp_main_gravebloom" />
+    <property name="requires_status" value="emp_seagate_defeated" />
    </properties>
   </object>
-  <object id="73" name="start main quest" type="event" x="32" y="0" width="32" height="32">
+  <object id="73" name="start main quest" type="event" x="96" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="requires_not_status" value="emp_main_init"/>
-    <property name="set_status" value="emp_main_init"/>
+    <property name="activate" value="on_load" />
+    <property name="requires_not_status" value="emp_main_init" />
+    <property name="set_status" value="emp_main_init" />
    </properties>
   </object>
-  <object id="74" name="reset statuses" type="event" x="64" y="0" width="32" height="32">
+  <object id="74" name="reset statuses" type="event" x="192" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="requires_status" value="emp_seagate_respawn"/>
-    <property name="unset_status" value="emp_seagate_defeated,emp_seagate_chest1,emp_seagate_chest2"/>
+    <property name="activate" value="on_load" />
+    <property name="requires_status" value="emp_seagate_respawn" />
+    <property name="unset_status" value="emp_seagate_defeated,emp_seagate_chest1,emp_seagate_chest2" />
    </properties>
   </object>
-  <object id="75" name="light torches (on_load)" type="event" x="256" y="1280" width="32" height="32">
+  <object id="75" name="light torches (on_load)" type="event" x="768" y="3840" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="requires_status" value="emp_seagate_torches"/>
-    <property name="script" value="scripts/maps/st_maria_3/torch_all.txt"/>
+    <property name="activate" value="on_load" />
+    <property name="requires_status" value="emp_seagate_torches" />
+    <property name="script" value="scripts/maps/st_maria_3/torch_all.txt" />
    </properties>
   </object>
-  <object id="76" name="set torch status" type="event" x="224" y="1280" width="32" height="32">
+  <object id="76" name="set torch status" type="event" x="672" y="3840" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="requires_status" value="emp_seagate_defeated"/>
-    <property name="set_status" value="emp_seagate_torches"/>
+    <property name="activate" value="static" />
+    <property name="requires_status" value="emp_seagate_defeated" />
+    <property name="set_status" value="emp_seagate_torches" />
    </properties>
   </object>
-  <object id="78" name="chest1 open" type="event" x="0" y="32" width="32" height="32">
+  <object id="78" name="chest1 open" type="event" x="0" y="96" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="object,12,2,289"/>
-    <property name="requires_not_status" value="emp_seagate_respawn"/>
-    <property name="requires_status" value="emp_seagate_chest1"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="object,12,2,289" />
+    <property name="requires_not_status" value="emp_seagate_respawn" />
+    <property name="requires_status" value="emp_seagate_chest1" />
    </properties>
   </object>
-  <object id="79" name="chest2 open" type="event" x="32" y="32" width="32" height="32">
+  <object id="79" name="chest2 open" type="event" x="96" y="96" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load"/>
-    <property name="mapmod" value="object,21,2,289"/>
-    <property name="requires_not_status" value="emp_seagate_respawn"/>
-    <property name="requires_status" value="emp_seagate_chest2"/>
+    <property name="activate" value="on_load" />
+    <property name="mapmod" value="object,21,2,289" />
+    <property name="requires_not_status" value="emp_seagate_respawn" />
+    <property name="requires_status" value="emp_seagate_chest2" />
    </properties>
   </object>
-  <object id="80" name="sparkle effect for gravebloom" type="event" x="800" y="512" width="32" height="32">
+  <object id="80" name="sparkle effect for gravebloom" type="event" x="2400" y="1536" width="96" height="96">
    <properties>
-    <property name="activate" value="static"/>
-    <property name="cooldown" value="1s"/>
-    <property name="power" value="268"/>
-    <property name="power_path" value="17,12"/>
-    <property name="repeat" value="true"/>
-    <property name="requires_not_status" value="emp_main_gravebloom"/>
-    <property name="requires_status" value="emp_main_init,emp_seagate_defeated"/>
+    <property name="activate" value="static" />
+    <property name="cooldown" value="1s" />
+    <property name="power" value="268" />
+    <property name="power_path" value="17,12" />
+    <property name="repeat" value="true" />
+    <property name="requires_not_status" value="emp_main_gravebloom" />
+    <property name="requires_status" value="emp_main_init,emp_seagate_defeated" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
-  <object id="15" type="enemy" x="192" y="160" width="32" height="32">
+  <object id="15" type="enemy" x="576" y="480" width="96" height="96">
    <properties>
-    <property name="category" value="seagate_tombstone"/>
-    <property name="direction" value="7"/>
-    <property name="number" value="1"/>
+    <property name="category" value="seagate_tombstone" />
+    <property name="direction" value="7" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="16" type="enemy" x="864" y="160" width="32" height="32">
+  <object id="16" type="enemy" x="2592" y="480" width="96" height="96">
    <properties>
-    <property name="category" value="seagate_tombstone"/>
-    <property name="direction" value="7"/>
-    <property name="number" value="1"/>
+    <property name="category" value="seagate_tombstone" />
+    <property name="direction" value="7" />
+    <property name="number" value="1" />
    </properties>
   </object>
-  <object id="22" type="enemy" x="544" y="288" width="32" height="32">
+  <object id="22" type="enemy" x="1632" y="864" width="96" height="96">
    <properties>
-    <property name="category" value="seagate"/>
-    <property name="direction" value="3"/>
-    <property name="number" value="1"/>
-    <property name="requires_status" value="emp_seagate_respawn"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="seagate" />
+    <property name="direction" value="3" />
+    <property name="number" value="1" />
+    <property name="requires_status" value="emp_seagate_respawn" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="24" type="enemy" x="480" y="1472" width="128" height="352">
+  <object id="24" type="enemy" x="1440" y="4416" width="384" height="1056">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="3"/>
-    <property name="number" value="2,3"/>
-    <property name="wander_radius" value="2"/>
+    <property name="category" value="undead" />
+    <property name="level" value="3" />
+    <property name="number" value="2,3" />
+    <property name="wander_radius" value="2" />
    </properties>
   </object>
-  <object id="36" type="enemy" x="288" y="1696" width="192" height="128">
+  <object id="36" type="enemy" x="864" y="5088" width="576" height="384">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="3"/>
-    <property name="number" value="1,2"/>
-    <property name="wander_radius" value="2"/>
+    <property name="category" value="undead" />
+    <property name="level" value="3" />
+    <property name="number" value="1,2" />
+    <property name="wander_radius" value="2" />
    </properties>
   </object>
-  <object id="56" type="enemy" x="224" y="288" width="32" height="32">
+  <object id="56" type="enemy" x="672" y="864" width="96" height="96">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="3"/>
-    <property name="number" value="1"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="undead" />
+    <property name="level" value="3" />
+    <property name="number" value="1" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
-  <object id="57" type="enemy" x="832" y="288" width="32" height="32">
+  <object id="57" type="enemy" x="2496" y="864" width="96" height="96">
    <properties>
-    <property name="category" value="undead"/>
-    <property name="level" value="3"/>
-    <property name="number" value="1"/>
-    <property name="wander_radius" value="0"/>
+    <property name="category" value="undead" />
+    <property name="level" value="3" />
+    <property name="number" value="1" />
+    <property name="wander_radius" value="0" />
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="npc">
-  <object id="61" type="npc" x="544" y="64" width="32" height="32">
+  <object id="61" type="npc" x="1632" y="192" width="96" height="96">
    <properties>
-    <property name="filename" value="npcs/glowing_obelisk_1.txt"/>
+    <property name="filename" value="npcs/glowing_obelisk_1.txt" />
    </properties>
   </object>
  </objectgroup>

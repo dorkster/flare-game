@@ -1,33 +1,33 @@
-<map height="100" nextobjectid="14" orientation="isometric" renderorder="right-down" tileheight="32" tilewidth="64" version="1.0" width="100">
+<map height="100" nextobjectid="14" orientation="isometric" renderorder="right-down" tileheight="96" tilewidth="192" version="1.0" width="100">
  <properties>
   <property name="music" value="music/title_theme.ogg" />
   <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
   <property name="title" value="Dev Lab - Map Drawing" />
  </properties>
- <tileset firstgid="1" name="tiled_collision.png" tileheight="32" tilewidth="64">
-  <image height="32" source="../dungeon/tiled_collision.png" width="960" />
+ <tileset firstgid="1" name="tiled_collision.png" tileheight="96" tilewidth="192">
+  <image height="96" source="../dungeon/../tilesheets/tiled_collision.png" width="2880" />
  </tileset>
- <tileset firstgid="16" name="tiled_dungeon.png" tileheight="128" tilewidth="64">
-  <image height="1920" source="../dungeon/tiled_dungeon.png" width="1024" />
+ <tileset firstgid="16" name="tiled_dungeon.png" tileheight="384" tilewidth="192">
+  <image height="5760" source="../dungeon/../tilesheets/dungeon.png" width="3072" />
  </tileset>
- <tileset firstgid="256" name="set_rules.png" tileheight="32" tilewidth="64">
-  <image height="128" source="../dungeon/set_rules.png" width="128" />
+ <tileset firstgid="256" name="set_rules.png" tileheight="96" tilewidth="192">
+  <image height="384" source="../dungeon/../tilesheets/tiled_set_rules.png" width="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2.png" tileheight="64" tilewidth="128">
-  <tileoffset x="0" y="16" />
-  <image height="256" source="../dungeon/tiled_dungeon_2x2.png" width="512" />
- </tileset>
- <tileset firstgid="280" name="door_left.png" tileheight="128" tilewidth="64">
-  <tileoffset x="-16" y="-8" />
-  <image height="128" source="../dungeon/door_left.png" width="128" />
- </tileset>
- <tileset firstgid="282" name="door_right.png" tileheight="128" tilewidth="64">
-  <tileoffset x="16" y="-8" />
-  <image height="128" source="../dungeon/door_right.png" width="128" />
- </tileset>
- <tileset firstgid="284" name="stairs.png" tileheight="256" tilewidth="256">
+ <tileset firstgid="264" name="tiled_dungeon_2x2.png" tileheight="192" tilewidth="384">
   <tileoffset x="0" y="48" />
-  <image height="256" source="../dungeon/stairs.png" width="1024" />
+  <image height="768" source="../dungeon/../tilesheets/dungeon_2x2.png" width="1536" />
+ </tileset>
+ <tileset firstgid="280" name="door_left.png" tileheight="384" tilewidth="192">
+  <tileoffset x="-48" y="-24" />
+  <image height="384" source="../dungeon/../tilesheets/dungeon_door_left.png" width="384" />
+ </tileset>
+ <tileset firstgid="282" name="door_right.png" tileheight="384" tilewidth="192">
+  <tileoffset x="48" y="-24" />
+  <image height="384" source="../dungeon/../tilesheets/dungeon_door_right.png" width="384" />
+ </tileset>
+ <tileset firstgid="284" name="stairs.png" tileheight="768" tilewidth="768">
+  <tileoffset x="0" y="144" />
+  <image height="768" source="../dungeon/../tilesheets/dungeon_stairs.png" width="3072" />
  </tileset>
  <layer height="100" name="background" width="100">
   <data compression="zlib" encoding="base64">
@@ -45,7 +45,7 @@
   </data>
  </layer>
  <objectgroup name="event">
-  <object height="64" id="1" name="Basic lab" type="event" width="64" x="2656" y="1664">
+  <object height="192" id="1" name="Basic lab" type="event" width="192" x="7968" y="4992">
    <properties>
     <property name="hotspot" value="location" />
     <property name="intermap" value="maps/lab_basic.txt,3,21" />
@@ -53,7 +53,7 @@
     <property name="tooltip" value="Dev Lab - Basic Lessons" />
    <property name="activate" value="on_trigger" /></properties>
   </object>
-  <object height="32" id="2" name="Book Stand" type="event" width="32" x="256" y="1216">
+  <object height="96" id="2" name="Book Stand" type="event" width="96" x="768" y="3648">
    <properties>
     <property name="hotspot" value="location" />
     <property name="mapmod" value="object,8,38,164" />
@@ -62,7 +62,7 @@
     <property name="tooltip" value="Book stand" />
    <property name="activate" value="on_trigger" /></properties>
   </object>
-  <object height="32" id="3" name="Book Stand" type="event" width="32" x="128" y="2400">
+  <object height="96" id="3" name="Book Stand" type="event" width="96" x="384" y="7200">
    <properties>
     <property name="hotspot" value="location" />
     <property name="mapmod" value="object,8,38,164" />
@@ -71,31 +71,31 @@
     <property name="tooltip" value="Book stand" />
    <property name="activate" value="on_trigger" /></properties>
   </object>
-  <object height="32" id="4" type="event" width="64" x="224" y="2144">
+  <object height="96" id="4" type="event" width="192" x="672" y="6432">
    <properties>
     <property name="hotspot" value="location" />
     <property name="intermap" value="maps/lab_mapping.txt,7,75" />
     <property name="tooltip" value="Runes on the ground." />
    <property name="activate" value="on_trigger" /></properties>
   </object>
-  <object height="32" id="5" name="brazier sound effect" type="event" width="32" x="640" y="1280">
+  <object height="96" id="5" name="brazier sound effect" type="event" width="96" x="1920" y="3840">
    <properties>
     <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    <property name="activate" value="on_load" /></properties>
   </object>
-  <object height="32" id="6" name="brazier sound effect" type="event" width="32" x="128" y="1568">
+  <object height="96" id="6" name="brazier sound effect" type="event" width="96" x="384" y="4704">
    <properties>
     <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
    <property name="activate" value="on_load" /></properties>
   </object>
  </objectgroup>
  <objectgroup name="npc">
-  <object height="32" id="7" type="npc" width="32" x="1888" y="1600"><properties><property name="filename" value="npcs/mapping_welcome.txt" /></properties></object>
-  <object height="32" id="8" type="npc" width="32" x="1472" y="1152"><properties><property name="filename" value="npcs/mapping_tiles.txt" /></properties></object>
-  <object height="32" id="9" type="npc" width="32" x="1856" y="1184"><properties><property name="filename" value="npcs/mapping_basics.txt" /></properties></object>
-  <object height="32" id="10" type="npc" width="32" x="1376" y="1600"><properties><property name="filename" value="npcs/mapping_tilesets.txt" /></properties></object>
-  <object height="32" id="11" type="npc" width="32" x="608" y="1312"><properties><property name="filename" value="npcs/mapping_structure.txt" /></properties></object>
-  <object height="32" id="12" type="npc" width="32" x="192" y="1568"><properties><property name="filename" value="npcs/mapping_collision.txt" /></properties></object>
-  <object height="32" id="13" type="npc" width="32" x="192" y="2688"><properties><property name="filename" value="npcs/mapping_console.txt" /></properties></object>
+  <object height="96" id="7" type="npc" width="96" x="5664" y="4800"><properties><property name="filename" value="npcs/mapping_welcome.txt" /></properties></object>
+  <object height="96" id="8" type="npc" width="96" x="4416" y="3456"><properties><property name="filename" value="npcs/mapping_tiles.txt" /></properties></object>
+  <object height="96" id="9" type="npc" width="96" x="5568" y="3552"><properties><property name="filename" value="npcs/mapping_basics.txt" /></properties></object>
+  <object height="96" id="10" type="npc" width="96" x="4128" y="4800"><properties><property name="filename" value="npcs/mapping_tilesets.txt" /></properties></object>
+  <object height="96" id="11" type="npc" width="96" x="1824" y="3936"><properties><property name="filename" value="npcs/mapping_structure.txt" /></properties></object>
+  <object height="96" id="12" type="npc" width="96" x="576" y="4704"><properties><property name="filename" value="npcs/mapping_collision.txt" /></properties></object>
+  <object height="96" id="13" type="npc" width="96" x="576" y="8064"><properties><property name="filename" value="npcs/mapping_console.txt" /></properties></object>
  </objectgroup>
 </map>

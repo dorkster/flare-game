@@ -37,6 +37,6 @@ option=28,female,head_long,images/portraits/female09.png,Ashdara
 option=29,female,head_long,images/portraits/female10.png,Calyss
 option=30,female,head_long,images/portraits/female11.png,Zeldyn
 option=31,female,head_long,images/portraits/female12.png,Malia
-option=32,female,head_long,images/portraits/female13.png,Ayah
+option=32,female_dark,head_long,images/portraits/female13.png,Ayah
 option=33,female,head_long,images/portraits/female14.png,Gywn
 option=34,female,head_long,images/portraits/female15.png,Sonia

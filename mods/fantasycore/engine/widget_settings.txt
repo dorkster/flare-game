@@ -1,5 +1,18 @@
 APPEND
 
 [slot]
-quantity_label=2,2,left,top,font_slot_quantity
-quantity_bg_color=0,0,0,255
+quantity_label=4,4,left,top,font_slot_quantity
+quantity_bg_color=0,0,0,192
+
+[horizontal_list]
+text_width=384
+
+[tab]
+padding=4,0
+text_padding=8
+
+[log]
+padding=8
+
+[sound]
+activate=soundfx/widget_activate.ogg

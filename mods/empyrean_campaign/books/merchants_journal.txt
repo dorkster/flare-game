@@ -1,70 +1,70 @@
-pos=0,0,500,350
+pos=0,0,1137,700
 align=center
 soundfx_open=soundfx/inventory/inventory_page.ogg
 soundfx_close=soundfx/inventory/inventory_book.ogg
 
-close=464,16
+close=932,68
 background=images/menus/book.png
 
 # page 1
 [text]
-text_pos=25,30,200,left
+text_pos=175,70,400,left
 text_font=0,0,0,font_cursive
 text=1472/9/27
 
 [text]
-text_pos=25,80,200,left
+text_pos=175,120,400,left
 text_font=0,0,0,font_cursive
 text=-1  Dagger
 
 [text]
-text_pos=170,110,60,right
+text_pos=320,150,120,right
 text_font=0,0,0,font_cursive
 text=100
 
 [text]
-text_pos=25,140,200,left
+text_pos=175,180,400,left
 text_font=0,0,0,font_cursive
 text=+1  Cloth Shirt
 
 [text]
-text_pos=170,170,60,right
+text_pos=320,210,120,right
 text_font=0,0,0,font_cursive
 text=-18
 
 [text]
-text_pos=25,200,200,left
+text_pos=175,240,400,left
 text_font=0,0,0,font_cursive
 text=+1  Gold Ring
 
 [text]
-text_pos=170,230,60,right
+text_pos=320,270,120,right
 text_font=0,0,0,font_cursive
 text=-50
 
 # page 2
 [text]
-text_pos=275,30,200,left
+text_pos=625,70,400,left
 text_font=0,0,0,font_cursive
 text=1472/9/28
 
 [text]
-text_pos=275,80,200,left
+text_pos=625,120,400,left
 text_font=0,0,0,font_cursive
 text=-2  Health Potion
 
 [text]
-text_pos=420,110,60,right
+text_pos=770,150,120,right
 text_font=0,0,0,font_cursive
 text=120
 
 [text]
-text_pos=275,140,200,left
+text_pos=625,180,400,left
 text_font=0,0,0,font_cursive
 text=+1  Dagger
 
 [text]
-text_pos=420,170,60,right
+text_pos=770,210,120,right
 text_font=0,0,0,font_cursive
 text=-25
 

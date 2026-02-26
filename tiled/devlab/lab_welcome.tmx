@@ -1,33 +1,33 @@
-<map height="12" nextobjectid="3" orientation="isometric" renderorder="right-down" tileheight="32" tilewidth="64" version="1.0" width="10">
+<map height="12" nextobjectid="3" orientation="isometric" renderorder="right-down" tileheight="96" tilewidth="192" version="1.0" width="10">
  <properties>
   <property name="music" value="music/title_theme.ogg" />
   <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
   <property name="title" value="Dev Lab - Welcome" />
  </properties>
- <tileset firstgid="1" name="collision" tileheight="32" tilewidth="64">
-  <image height="32" source="../dungeon/tiled_collision.png" width="960" />
+ <tileset firstgid="1" name="collision" tileheight="96" tilewidth="192">
+  <image height="96" source="../dungeon/../tilesheets/tiled_collision.png" width="2880" />
  </tileset>
- <tileset firstgid="16" name="dungeon" tileheight="128" tilewidth="64">
-  <image height="1920" source="../dungeon/tiled_dungeon.png" width="1024" />
+ <tileset firstgid="16" name="dungeon" tileheight="384" tilewidth="192">
+  <image height="5760" source="../dungeon/../tilesheets/dungeon.png" width="3072" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tileheight="32" tilewidth="64">
-  <image height="128" source="../dungeon/set_rules.png" width="128" />
+ <tileset firstgid="256" name="set_rules" tileheight="96" tilewidth="192">
+  <image height="384" source="../dungeon/../tilesheets/tiled_set_rules.png" width="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tileheight="64" tilewidth="128">
-  <tileoffset x="0" y="16" />
-  <image height="256" source="../dungeon/tiled_dungeon_2x2.png" width="512" />
- </tileset>
- <tileset firstgid="280" name="door_left" tileheight="128" tilewidth="64">
-  <tileoffset x="-16" y="-8" />
-  <image height="128" source="../dungeon/door_left.png" width="128" />
- </tileset>
- <tileset firstgid="282" name="door_right" tileheight="128" tilewidth="64">
-  <tileoffset x="16" y="-8" />
-  <image height="128" source="../dungeon/door_right.png" width="128" />
- </tileset>
- <tileset firstgid="284" name="stairs" tileheight="256" tilewidth="256">
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tileheight="192" tilewidth="384">
   <tileoffset x="0" y="48" />
-  <image height="256" source="../dungeon/stairs.png" width="1024" />
+  <image height="768" source="../dungeon/../tilesheets/dungeon_2x2.png" width="1536" />
+ </tileset>
+ <tileset firstgid="280" name="door_left" tileheight="384" tilewidth="192">
+  <tileoffset x="-48" y="-24" />
+  <image height="384" source="../dungeon/../tilesheets/dungeon_door_left.png" width="384" />
+ </tileset>
+ <tileset firstgid="282" name="door_right" tileheight="384" tilewidth="192">
+  <tileoffset x="48" y="-24" />
+  <image height="384" source="../dungeon/../tilesheets/dungeon_door_right.png" width="384" />
+ </tileset>
+ <tileset firstgid="284" name="stairs" tileheight="768" tilewidth="768">
+  <tileoffset x="0" y="144" />
+  <image height="768" source="../dungeon/../tilesheets/dungeon_stairs.png" width="3072" />
  </tileset>
  <layer height="12" name="background" width="10">
   <data encoding="csv">
@@ -78,10 +78,10 @@
 </data>
  </layer>
  <objectgroup name="npc">
-  <object height="32" id="1" type="npc" width="32" x="64" y="96"><properties><property name="filename" value="npcs/prog_welcome.txt" /></properties></object>
+  <object height="96" id="1" type="npc" width="96" x="192" y="288"><properties><property name="filename" value="npcs/prog_welcome.txt" /></properties></object>
  </objectgroup>
  <objectgroup name="event">
-  <object height="32" id="2" type="event" width="64" x="128" y="32">
+  <object height="96" id="2" type="event" width="192" x="384" y="96">
    <properties>
     <property name="hotspot" value="location" />
     <property name="intermap" value="maps/lab_basic.txt,4,27" />

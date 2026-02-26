@@ -1,0 +1,1 @@
+INCLUDE animations/avatar/female/hand_axe.txt

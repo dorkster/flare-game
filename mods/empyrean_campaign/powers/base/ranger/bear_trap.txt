@@ -14,4 +14,4 @@ radius=1.0
 post_effect=slow,0,5s
 post_power=110
 cooldown=1600ms
-
+floor=true

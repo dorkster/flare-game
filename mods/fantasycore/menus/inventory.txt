@@ -1,31 +1,40 @@
-# Settings for the Inventory menu
-# the first two values are x,y positions
-# some items have two more values, width and height
-
-pos=0,0,320,416
+pos=0,-35,640,832
 align=right
 soundfx_open=soundfx/inventory/inventory_page.ogg
 soundfx_close=soundfx/inventory/inventory_book.ogg
 
-close=294,2
-help=2,2,24,24
+label_title=320,24,center,center
+currency=32,776,left,top
+close=571,5
+help=4,4,48,48
 
-# define x,y position, slot type
-equipment_slot=96,64,hands
-equipment_slot=96,112,ring
-equipment_slot=96,160,main
-equipment_slot=144,32,head
-equipment_slot=144,80,chest
-equipment_slot=144,128,legs
-equipment_slot=144,176,feet
-equipment_slot=192,64,artifact
-equipment_slot=192,112,ring
-equipment_slot=192,160,off
+equipment_slot=368,128,hands,1
+equipment_slot=544,128,artifact,1
+equipment_slot=368,216,ring,1
+equipment_slot=544,216,ring,1
+equipment_slot=368,304,main,1
+equipment_slot=544,304,off,1
+equipment_slot=456,64,head,1
+equipment_slot=456,152,chest,1
+equipment_slot=456,240,legs,1
+equipment_slot=456,328,feet,1
 
-carried_area=32,224
-carried_cols=8
-carried_rows=5
+equipment_slot=368,128,hands,2
+equipment_slot=544,128,artifact,2
+equipment_slot=368,216,ring,2
+equipment_slot=544,216,ring,2
+equipment_slot=368,304,main,2
+equipment_slot=544,304,off,2
+equipment_slot=456,64,head,2
+equipment_slot=456,152,chest,2
+equipment_slot=456,240,legs,2
+equipment_slot=456,328,feet,2
 
-label_title=160,8,center,top
-currency=288,208,right,center
+set_previous=368,432,images/menus/buttons/left.png
+set_next=544,432,images/menus/buttons/right.png
+label_equipment_set=488,448,center,center
+
+carried_area=32,64
+carried_cols=5
+carried_rows=11
 

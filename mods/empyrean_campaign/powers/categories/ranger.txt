@@ -557,7 +557,8 @@ use_hazard=true
 no_attack=true
 directional=true
 lifespan=5s
-starting_pos=target
+starting_pos=source
+floor=true
 
 
 

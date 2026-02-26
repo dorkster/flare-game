@@ -1,32 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="isometric" renderorder="right-down" width="33" height="31" tilewidth="64" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="isometric" renderorder="right-down" width="33" height="31" tilewidth="192" tileheight="96" nextobjectid="1">
  <properties>
-  <property name="AutomappingRadius" value="2"/>
+  <property name="AutomappingRadius" value="2" />
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15">
-  <image source="../tiled_collision.png" width="960" height="32"/>
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15">
+  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96" />
  </tileset>
- <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240">
-  <image source="../tiled_dungeon.png" width="1024" height="1920"/>
+ <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240">
+  <image source="../../tilesheets/dungeon.png" width="3072" height="5760" />
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8">
-  <image source="../set_rules.png" width="128" height="128"/>
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8">
+  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16">
-  <tileoffset x="0" y="16"/>
-  <image source="../tiled_dungeon_2x2.png" width="512" height="256"/>
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16">
+  <tileoffset x="0" y="48" />
+  <image source="../../tilesheets/dungeon_2x2.png" width="1536" height="768" />
  </tileset>
- <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2">
-  <tileoffset x="-16" y="-8"/>
-  <image source="../door_left.png" width="128" height="128"/>
+ <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2">
+  <tileoffset x="-48" y="-24" />
+  <image source="../../tilesheets/dungeon_door_left.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2">
-  <tileoffset x="16" y="-8"/>
-  <image source="../door_right.png" width="128" height="128"/>
+ <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2">
+  <tileoffset x="48" y="-24" />
+  <image source="../../tilesheets/dungeon_door_right.png" width="384" height="384" />
  </tileset>
- <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4">
-  <tileoffset x="0" y="48"/>
-  <image source="../stairs.png" width="1024" height="256"/>
+ <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4">
+  <tileoffset x="0" y="144" />
+  <image source="../../tilesheets/dungeon_stairs.png" width="3072" height="768" />
  </tileset>
  <layer name="regions" width="33" height="31">
   <data encoding="csv">
