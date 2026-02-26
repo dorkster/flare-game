@@ -1,0 +1,7 @@
+INCLUDE items/random/mastite_magic.txt
+
+[bonuses]
+bonus=ice_resist,base:8:10,item_level:1
+bonus=dmg_ice_min,base:5:10,item_level:1:1
+bonus=dmg_ice_max,base:5:10,item_level:1:5
+

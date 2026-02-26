@@ -1,0 +1,57 @@
+INCLUDE enemies/base/antlion_fire.txt
+
+name=Labyrinth Fire Antlion
+level=1
+rarity=common
+categories=il_antlion,il_common
+xp=2
+xp_scaling=enemies/xp_scaling/il.txt
+
+# combat stats
+stat=hp,50
+
+# TODO speed_per_level
+speed=4
+
+turn_delay=200ms
+
+stat=accuracy,90
+stat=avoidance,5
+stat=poise,10
+
+stat=absorb_min,5
+stat=absorb_max,10
+
+stat=dmg_melee_min,5
+stat=dmg_melee_max,10
+stat=dmg_ment_min,15
+stat=dmg_ment_max,20
+
+stat=fire_resist,50
+stat=ice_resist,-50
+
+# TODO cooldown_per_level
+cooldown=1800ms
+
+# level-scaled stats
+stat_per_level=hp,25
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+stat_per_level=dmg_ment_min,15
+stat_per_level=dmg_ment_max,15
+
+# loot
+loot=loot/il_common.txt
+
+# Ranged units behaviour, see docs/ranged_behavior.txt
+chance_pursue=5
+chance_flee=16
+flee_duration=2s
+flee_cooldown=1s
+flee_range=5
+threat_range=8,16
+power=melee,164,10
+power=ranged,173,50

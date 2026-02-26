@@ -1,0 +1,1 @@
+/home/justin/Projects/flare/mods/hd-flare-game/tiled/ruins/rules.txt

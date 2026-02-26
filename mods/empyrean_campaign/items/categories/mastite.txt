@@ -1,0 +1,438 @@
+[item]
+id=432
+name=Mastite Shirt
+INCLUDE items/base/armor/cloth/chest.txt
+INCLUDE items/scaling/mastite_armor/default/chest.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=433
+name=Mastite Pants
+INCLUDE items/base/armor/cloth/legs.txt
+INCLUDE items/scaling/mastite_armor/default/legs.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=434
+name=Mastite Sandals
+INCLUDE items/base/armor/cloth/feet.txt
+INCLUDE items/scaling/mastite_armor/default/feet.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=435
+name=Mastite Gloves
+INCLUDE items/base/armor/cloth/hands.txt
+INCLUDE items/scaling/mastite_armor/default/hands.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=436
+name=Mastite Dagger
+INCLUDE items/base/weapons/melee/dagger.txt
+INCLUDE items/scaling/mastite_weapon/melee.txt
+randomizer_def=items/random/mastite_melee.txt
+
+[item]
+id=437
+name=Mastite Slingshot
+INCLUDE items/base/weapons/ranged/slingshot.txt
+INCLUDE items/scaling/mastite_weapon/ranged.txt
+randomizer_def=items/random/mastite_ranged.txt
+
+[item]
+id=438
+name=Mastite Wand
+INCLUDE items/base/weapons/magic/wand.txt
+INCLUDE items/scaling/mastite_weapon/mental.txt
+randomizer_def=items/random/mastite_mental.txt
+
+[item]
+id=439
+name=Mastite Buckler
+INCLUDE items/base/shields/wood.txt
+INCLUDE items/scaling/mastite_armor/shield.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=440
+name=Mastite Belt
+INCLUDE items/base/armor/belt.txt
+INCLUDE items/scaling/mastite_accessory/belt.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=441
+name=Mastite Pendant
+INCLUDE items/base/necklaces/gold_1.txt
+INCLUDE items/scaling/mastite_accessory/pendant.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=442
+name=Mastite Pendant
+INCLUDE items/base/necklaces/gold_2.txt
+INCLUDE items/scaling/mastite_accessory/pendant.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=443
+name=Mastite Pendant
+INCLUDE items/base/necklaces/silver_1.txt
+INCLUDE items/scaling/mastite_accessory/pendant.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=444
+name=Mastite Pendant
+INCLUDE items/base/necklaces/silver_2.txt
+INCLUDE items/scaling/mastite_accessory/pendant.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=445
+name=Mastite Spellbook
+INCLUDE items/base/misc/spellbook.txt
+INCLUDE items/scaling/mastite_accessory/spellbook.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=446
+name=Mastite Ring
+INCLUDE items/base/rings/gold_5.txt
+INCLUDE items/scaling/mastite_accessory/ring.txt
+randomizer_def=items/random/mastite_magic_fire.txt
+
+[item]
+id=447
+name=Mastite Ring
+INCLUDE items/base/rings/silver_4.txt
+INCLUDE items/scaling/mastite_accessory/ring.txt
+randomizer_def=items/random/mastite_magic_ice.txt
+
+[item]
+id=448
+name=Mastite Ring
+INCLUDE items/base/rings/silver_5.txt
+INCLUDE items/scaling/mastite_accessory/ring.txt
+randomizer_def=items/random/mastite_magic_lightning.txt
+
+[item]
+id=449
+name=Mastite Ring
+INCLUDE items/base/rings/gold_3.txt
+INCLUDE items/scaling/mastite_accessory/ring.txt
+randomizer_def=items/random/mastite_magic_dark.txt
+
+[item]
+id=450
+name=Mastite Ring
+INCLUDE items/base/rings/silver_2.txt
+INCLUDE items/scaling/mastite_accessory/ring.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=451
+name=Mastite Ring
+INCLUDE items/base/rings/gold_2.txt
+INCLUDE items/scaling/mastite_accessory/ring.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=452
+name=Mastite Ring
+INCLUDE items/base/rings/gold_4.txt
+INCLUDE items/scaling/mastite_accessory/ring.txt
+randomizer_def=items/random/mastite_magic.txt
+
+[item]
+id=453
+name=Mastite Leather Hood
+INCLUDE items/base/armor/leather/head.txt
+INCLUDE items/scaling/mastite_armor/default/head.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=454
+name=Mastite Leather Tunic
+INCLUDE items/base/armor/leather/chest.txt
+INCLUDE items/scaling/mastite_armor/default/chest.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=455
+name=Mastite Leather Pants
+INCLUDE items/base/armor/leather/legs.txt
+INCLUDE items/scaling/mastite_armor/default/legs.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=456
+name=Mastite Leather Boots
+INCLUDE items/base/armor/leather/feet.txt
+INCLUDE items/scaling/mastite_armor/default/feet.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=457
+name=Mastite Leather Gloves
+INCLUDE items/base/armor/leather/hands.txt
+INCLUDE items/scaling/mastite_armor/default/hands.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=458
+name=Mastite Mage Hood
+INCLUDE items/base/armor/mage/head.txt
+INCLUDE items/scaling/mastite_armor/mage/head.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=459
+name=Mastite Mage Vest
+INCLUDE items/base/armor/mage/chest.txt
+INCLUDE items/scaling/mastite_armor/mage/chest.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=460
+name=Mastite Mage Skirt
+INCLUDE items/base/armor/mage/legs.txt
+INCLUDE items/scaling/mastite_armor/mage/legs.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=461
+name=Mastite Mage Boots
+INCLUDE items/base/armor/mage/feet.txt
+INCLUDE items/scaling/mastite_armor/mage/feet.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=462
+name=Mastite Mage Sleeves
+INCLUDE items/base/armor/mage/hands.txt
+INCLUDE items/scaling/mastite_armor/mage/hands.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=463
+name=Mastite Shortsword
+INCLUDE items/base/weapons/melee/shortsword.txt
+INCLUDE items/scaling/mastite_weapon/melee.txt
+randomizer_def=items/random/mastite_melee.txt
+
+[item]
+id=464
+name=Mastite Shortbow
+INCLUDE items/base/weapons/ranged/shortbow.txt
+INCLUDE items/scaling/mastite_weapon/ranged.txt
+randomizer_def=items/random/mastite_ranged.txt
+
+[item]
+id=465
+name=Mastite Rod
+INCLUDE items/base/weapons/magic/rod.txt
+INCLUDE items/scaling/mastite_weapon/mental.txt
+randomizer_def=items/random/mastite_mental.txt
+
+[item]
+id=466
+name=Mastite Iron Buckler
+INCLUDE items/base/shields/iron.txt
+INCLUDE items/scaling/mastite_armor/shield.txt
+randomizer_def=items/random/mastite_armor.txt
+
+# chain armor
+[item]
+id=467
+name=Mastite Chain Coif
+INCLUDE items/base/armor/chain/head.txt
+INCLUDE items/scaling/mastite_armor/default/head.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=468
+name=Mastite Chain Cuirass
+INCLUDE items/base/armor/chain/chest.txt
+INCLUDE items/scaling/mastite_armor/default/chest.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=469
+name=Mastite Chain Greaves
+INCLUDE items/base/armor/chain/legs.txt
+INCLUDE items/scaling/mastite_armor/default/legs.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=470
+name=Mastite Chain Boots
+INCLUDE items/base/armor/chain/feet.txt
+INCLUDE items/scaling/mastite_armor/default/feet.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=471
+name=Mastite Chain Gloves
+INCLUDE items/base/armor/chain/hands.txt
+INCLUDE items/scaling/mastite_armor/default/hands.txt
+randomizer_def=items/random/mastite_armor.txt
+
+# wizard (mage) robes
+[item]
+id=472
+name=Mastite Wizard Hood
+INCLUDE items/base/armor/mage_alt1/head.txt
+INCLUDE items/scaling/mastite_armor/mage/head.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=473
+name=Mastite Wizard Vest
+INCLUDE items/base/armor/mage_alt1/chest.txt
+INCLUDE items/scaling/mastite_armor/mage/chest.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=474
+name=Mastite Wizard Skirt
+INCLUDE items/base/armor/mage_alt1/legs.txt
+INCLUDE items/scaling/mastite_armor/mage/legs.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=475
+name=Mastite Wizard Boots
+INCLUDE items/base/armor/mage_alt1/feet.txt
+INCLUDE items/scaling/mastite_armor/mage/feet.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=476
+name=Mastite Wizard Sleeves
+INCLUDE items/base/armor/mage_alt1/hands.txt
+INCLUDE items/scaling/mastite_armor/mage/hands.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=477
+name=Mastite Longsword
+INCLUDE items/base/weapons/melee/longsword.txt
+INCLUDE items/scaling/mastite_weapon/melee.txt
+randomizer_def=items/random/mastite_melee.txt
+
+[item]
+id=478
+name=Mastite Longbow
+INCLUDE items/base/weapons/ranged/longbow.txt
+INCLUDE items/scaling/mastite_weapon/ranged.txt
+randomizer_def=items/random/mastite_ranged.txt
+
+[item]
+id=479
+name=Mastite Staff
+INCLUDE items/base/weapons/magic/staff.txt
+INCLUDE items/scaling/mastite_weapon/mental.txt
+randomizer_def=items/random/mastite_mental.txt
+
+[item]
+id=480
+name=Mastite Tower Shield
+INCLUDE items/base/shields/steel.txt
+INCLUDE items/scaling/mastite_armor/shield.txt
+randomizer_def=items/random/mastite_armor.txt
+
+# plate armor
+[item]
+id=481
+name=Mastite Plate Helmet
+INCLUDE items/base/armor/plate/head.txt
+INCLUDE items/scaling/mastite_armor/default/head.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=482
+name=Mastite Plate Cuirass
+INCLUDE items/base/armor/plate/chest.txt
+INCLUDE items/scaling/mastite_armor/default/chest.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=483
+name=Mastite Plate Greaves
+INCLUDE items/base/armor/plate/legs.txt
+INCLUDE items/scaling/mastite_armor/default/legs.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=484
+name=Mastite Plate Boots
+INCLUDE items/base/armor/plate/feet.txt
+INCLUDE items/scaling/mastite_armor/default/feet.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=485
+name=Mastite Plate Gauntlets
+INCLUDE items/base/armor/plate/hands.txt
+INCLUDE items/scaling/mastite_armor/default/hands.txt
+randomizer_def=items/random/mastite_armor.txt
+
+# archwizard (mage) robes
+[item]
+id=486
+name=Mastite Archwizard Hood
+INCLUDE items/base/armor/mage_alt2/head.txt
+INCLUDE items/scaling/mastite_armor/mage/head.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=487
+name=Mastite Archwizard Vest
+INCLUDE items/base/armor/mage_alt2/chest.txt
+INCLUDE items/scaling/mastite_armor/mage/chest.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=488
+name=Mastite Archwizard Skirt
+INCLUDE items/base/armor/mage_alt2/legs.txt
+INCLUDE items/scaling/mastite_armor/mage/legs.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=489
+name=Mastite Archwizard Boots
+INCLUDE items/base/armor/mage_alt2/feet.txt
+INCLUDE items/scaling/mastite_armor/mage/feet.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=490
+name=Mastite Archwizard Sleeves
+INCLUDE items/base/armor/mage_alt2/hands.txt
+INCLUDE items/scaling/mastite_armor/mage/hands.txt
+randomizer_def=items/random/mastite_armor.txt
+
+[item]
+id=491
+name=Mastite Greatsword
+INCLUDE items/base/weapons/melee/greatsword.txt
+INCLUDE items/scaling/mastite_weapon/melee.txt
+randomizer_def=items/random/mastite_melee.txt
+
+[item]
+id=492
+name=Mastite Greatbow
+INCLUDE items/base/weapons/ranged/greatbow.txt
+INCLUDE items/scaling/mastite_weapon/ranged.txt
+randomizer_def=items/random/mastite_ranged.txt
+
+[item]
+id=493
+name=Mastite Greatstaff
+INCLUDE items/base/weapons/magic/greatstaff.txt
+INCLUDE items/scaling/mastite_weapon/mental.txt
+randomizer_def=items/random/mastite_mental.txt
+

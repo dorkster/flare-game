@@ -1,0 +1,52 @@
+INCLUDE enemies/base/wyvern.txt
+
+name=Labyrinth Wyvern
+level=1
+rarity=uncommon
+categories=il_wyvern,il_common
+xp=2
+xp_scaling=enemies/xp_scaling/il.txt
+
+# combat stats
+stat=hp,60
+
+# TODO speed_per_level
+speed=4
+
+turn_delay=200ms
+chance_pursue=25
+
+stat=accuracy,85
+stat=avoidance,10
+stat=poise,15
+
+stat=absorb_min,5
+stat=absorb_max,15
+
+stat=dmg_melee_min,10
+stat=dmg_melee_max,15
+stat=dmg_ment_min,20
+stat=dmg_ment_max,25
+
+stat=lightning_resist,-25
+
+# level-scaled stats
+stat_per_level=hp,30
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+stat_per_level=dmg_ment_min,15
+stat_per_level=dmg_ment_max,15
+
+# TODO cooldown_per_level
+cooldown=1800ms
+
+# powers
+power=melee,164,10
+power=melee,168,5
+
+# loot
+loot=loot/il_common.txt
+

@@ -1,0 +1,42 @@
+INCLUDE enemies/base/antlion_small.txt
+
+name=Labyrinth Antlion Hatchling
+level=1
+rarity=common
+categories=il_antlion_small
+xp=2
+xp_scaling=enemies/xp_scaling/il.txt
+
+# combat stats
+stat=hp,20
+
+# TODO speed_per_level
+speed=5
+
+chance_pursue=30
+
+turn_delay=200ms
+
+power=melee,164,10
+
+stat=accuracy,80
+stat=avoidance,10
+stat=poise,5
+
+stat=dmg_melee_min,5
+stat=dmg_melee_max,10
+
+# TODO cooldown_per_level
+cooldown=1500ms
+
+# level-scaled stats
+stat_per_level=hp,15
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+
+# loot
+loot=loot/il_common.txt
+

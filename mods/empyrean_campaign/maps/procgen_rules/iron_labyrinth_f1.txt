@@ -1,0 +1,6 @@
+INCLUDE maps/procgen_rules/iron_labyrinth.txt
+
+[chunks]
+filename=maps/iron_labyrinth/f1/start.txt
+filename=maps/iron_labyrinth/f1/end.txt
+

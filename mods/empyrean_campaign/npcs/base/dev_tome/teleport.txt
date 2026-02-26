@@ -10,6 +10,7 @@ response=map_region_wizard
 response=map_region_underworld
 response=map_region_infinity
 response=map_region_hoi
+response=map_region_il
 response=main
 her=
 
@@ -112,6 +113,18 @@ response=map_hoi_7
 response=map_hoi_8
 response=map_hoi_9
 response=map_hoi_10
+response=main
+her=
+
+[dialog]
+topic=Iron Labyrinth
+id=map_region_il
+response_only=true
+response=map_il_cave
+response=map_il_1
+response=map_il_2
+response=map_il_3
+response=map_il_chasm
 response=main
 her=
 
@@ -473,5 +486,35 @@ response_only=true
 topic=Halls of Infinity: 10
 intermap=maps/halls_of_infinity/halls_of_infinity_10.txt
 id=map_hoi_10
+response_only=true
+
+[dialog]
+topic=Perdition Harbor Cave
+intermap=maps/perdition_harbor_cave.txt
+id=map_il_cave
+response_only=true
+
+[dialog]
+topic=Iron Labyrinth: Level 1
+intermap=maps/iron_labyrinth_f1.txt
+id=map_il_1
+response_only=true
+
+[dialog]
+topic=Iron Labyrinth: Level 2
+intermap=maps/iron_labyrinth_f2.txt
+id=map_il_2
+response_only=true
+
+[dialog]
+topic=Iron Labyrinth: Level 3
+intermap=maps/iron_labyrinth_f3.txt
+id=map_il_3
+response_only=true
+
+[dialog]
+topic=Iron Labyrinth: Chasm
+intermap=maps/iron_labyrinth_chasm.txt
+id=map_il_chasm
 response_only=true
 

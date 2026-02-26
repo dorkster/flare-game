@@ -11,3 +11,10 @@ id=crafting_tool
 name=Normal
 color=64,255,255
 overlay_icon=1030
+
+[quality]
+id=mastite
+name=Mastite
+color=191,255,64
+overlay_icon=1033
+

@@ -1,0 +1,25 @@
+[loot]
+id=currency
+chance=50
+quantity=10,20
+quantity_per_level=2,3
+
+# crafting
+[loot]
+id=751
+chance=16
+quantity=1
+
+[loot]
+id=752
+chance=16
+quantity=1
+
+[loot]
+id=754
+chance=16
+quantity=1
+
+INCLUDE loot/il_static.txt
+INCLUDE loot/mastite.txt
+

@@ -1,0 +1,4 @@
+level=1
+price=200,item_level:200
+requires_level=base:-2:1,item_level:1,min:0
+

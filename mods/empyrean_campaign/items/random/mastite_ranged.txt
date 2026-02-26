@@ -1,0 +1,5 @@
+INCLUDE items/random/mastite_weapon.txt
+
+[bonuses]
+bonus=dmg_ranged_min,base:10:15,item_level:1:1
+bonus=dmg_ranged_max,base:10:15,item_level:1:5

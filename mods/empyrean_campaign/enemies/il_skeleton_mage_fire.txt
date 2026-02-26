@@ -1,0 +1,61 @@
+INCLUDE enemies/base/skeleton_mage_fire.txt
+
+name=Labyrinth Skeleton Fire Mage
+level=1
+categories=il_skeleton_fire_mage,il_common,il_undead
+rarity=uncommon
+xp=2
+
+# combat stats
+stat=hp,40
+
+# TODO speed_per_level?
+speed=3.6
+
+turn_delay=200ms
+
+passive_powers=185
+
+stat=accuracy,90
+stat=avoidance,15
+stat=poise,10
+
+stat=absorb_min,0
+stat=absorb_max,0
+
+stat=dmg_melee_min,20
+stat=dmg_melee_max,25
+stat=dmg_ment_min,30
+stat=dmg_ment_max,35
+
+stat=fire_resist,50
+stat=ice_resist,-50
+
+# TODO cooldown_per_level?
+cooldown=1600ms
+
+# level-scaled stats
+stat_per_level=hp,25
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+stat_per_level=dmg_ment_min,15
+stat_per_level=dmg_ment_max,15
+stat_per_level=absorb_min,1
+stat_per_level=absorb_max,1
+
+# loot
+loot=loot/il_common.txt
+
+# Ranged units behaviour, see docs/ranged_behavior.txt
+chance_pursue=3
+chance_flee=20
+flee_duration=3s
+flee_cooldown=1s
+flee_range=8
+threat_range=10,20
+power=melee,164,1
+power=ranged,173,50
+power=ranged,203,100

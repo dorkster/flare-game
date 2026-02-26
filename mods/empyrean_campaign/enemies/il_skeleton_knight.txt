@@ -1,0 +1,49 @@
+INCLUDE enemies/base/skeleton.txt
+
+name=Labyrinth Skeleton Knight
+level=1
+categories=il_skeleton_knight,il_common,il_undead
+rarity=common
+xp=2
+xp_scaling=enemies/xp_scaling/il.txt
+
+# combat stats
+stat=hp,60
+
+# TODO speed_per_level?
+speed=3.6
+
+turn_delay=400ms
+chance_pursue=10
+
+power=melee,164,10
+power=melee,168,5
+power=melee,186,2
+passive_powers=185
+
+stat=accuracy,90
+stat=avoidance,10
+stat=poise,15
+
+stat=dmg_melee_min,25
+stat=dmg_melee_max,35
+
+# TODO cooldown_per_level?
+cooldown=1600ms
+
+stat=absorb_min,2
+stat=absorb_max,2
+
+# level-scaled stats
+stat_per_level=hp,25
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+stat_per_level=absorb_min,1
+stat_per_level=absorb_max,1
+
+# loot
+loot=loot/il_common.txt
+

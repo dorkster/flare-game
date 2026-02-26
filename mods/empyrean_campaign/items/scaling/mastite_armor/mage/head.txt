@@ -1,0 +1,7 @@
+level=1
+price=60,item_level:60
+abs_min=base:-2:0,item_level:0.5,round:true,min:0
+abs_max=base:-1:1,item_level:0.5,round:true,min:0
+requires_stat=defense,base:-3:1,item_level:0.5:0.9:0.1,round:true,min:0
+requires_stat=mental,base:-2:1,item_level:0.5:0.9:0.1,round:true,min:0
+

@@ -1,0 +1,54 @@
+INCLUDE enemies/base/hobgoblin_archer.txt
+
+name=Labyrinth Hobgoblin Archer
+level=1
+categories=il_goblin,il_common
+rarity=uncommon
+xp=2
+xp_scaling=enemies/xp_scaling/il.txt
+
+# combat stats
+stat=hp,40
+
+# TODO speed_per_level?
+speed=3.2
+
+melee_range=1.125
+turn_delay=400ms
+chance_pursue=10
+
+stat=accuracy,85
+stat=avoidance,15
+stat=poise,10
+
+stat=dmg_melee_min,15
+stat=dmg_melee_max,20
+
+stat=dmg_ranged_min,30
+stat=dmg_ranged_max,35
+
+# TODO cooldown_per_level?
+cooldown=1800ms
+
+# level-scaled stats
+stat_per_level=hp,25
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+stat_per_level=dmg_ranged_min,15
+stat_per_level=dmg_ranged_max,15
+
+# loot
+loot=loot/il_common.txt
+
+# Ranged units behaviour, see docs/ranged_behavior.txt
+chance_pursue=2
+chance_flee=20
+flee_duration=3s
+flee_cooldown=1s
+flee_range=6
+threat_range=10
+power=melee,259,2
+power=ranged,259,40

@@ -1,0 +1,5 @@
+level=1
+price=100,item_level:100
+requires_stat=defense,base:-1:2,item_level:1,min:0
+requires_stat=physical,base:0:1,item_level:1
+

@@ -1,0 +1,6 @@
+level=1
+price=200,item_level:200
+dmg_min=ment,base:5:15,item_level:3
+dmg_max=ment,base:10:15,item_level:3
+requires_stat=mental,base:-4:1,item_level:2,min:0
+

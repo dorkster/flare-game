@@ -1,0 +1,9 @@
+level=1
+
+stat=dmg_ment_min,15
+stat=dmg_ment_max,40
+
+# level-scaled stats
+stat_per_level=dmg_ment_min,15
+stat_per_level=dmg_ment_max,15
+

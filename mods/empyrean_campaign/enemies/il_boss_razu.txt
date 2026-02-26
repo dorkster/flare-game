@@ -1,0 +1,53 @@
+INCLUDE enemies/base/antlion.txt
+animations=animations/enemies/antlion_armored.txt
+
+name=Razu
+level=1
+categories=razu
+xp=2
+xp_scaling=enemies/xp_scaling/il.txt
+
+defeat_status=emp_il_razu_defeated
+
+# combat stats
+stat=hp,830
+speed=4.4
+turn_delay=166ms
+
+chance_pursue=30
+threat_range=10
+
+# bleed & slow/stun immunities
+passive_powers=185,287
+
+power=melee,164,2
+power=melee,168,5
+
+stat=accuracy,80
+stat=avoidance,10
+stat=poise,20
+
+stat=absorb_min,2
+stat=absorb_max,2
+
+stat=dmg_melee_min,15
+stat=dmg_melee_max,20
+
+cooldown=1500ms
+
+# level-scaled stats
+stat_per_level=hp,830
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+stat_per_level=dmg_ment_min,15
+stat_per_level=dmg_ment_max,15
+stat_per_level=absorb_min,1
+stat_per_level=absorb_max,1
+
+#loot
+loot=loot/il_chest_common.txt
+loot_count=4,5
+

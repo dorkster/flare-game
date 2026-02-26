@@ -1,0 +1,57 @@
+INCLUDE enemies/base/skeleton_archer.txt
+
+name=Labyrinth Skeleton Archer
+level=1
+categories=skeleton_archer,skeleton,undead,dungeon,grassland
+categories=il_skeleton_archer,il_common,il_undead
+rarity=uncommon
+xp=2
+
+# combat stats
+stat=hp,50
+
+# TODO speed_per_level?
+speed=3.6
+
+turn_delay=200ms
+
+passive_powers=185
+
+stat=accuracy,95
+stat=avoidance,20
+stat=poise,10
+
+stat=dmg_melee_min,20
+stat=dmg_melee_max,25
+stat=dmg_ranged_min,30
+stat=dmg_ranged_max,35
+stat=absorb_min,0
+stat=absorb_max,1
+
+# TODO cooldown_per_level?
+cooldown=1800ms
+
+# level-scaled stats
+stat_per_level=hp,25
+stat_per_level=accuracy,5
+stat_per_level=avoidance,5
+stat_per_level=poise,3
+stat_per_level=dmg_melee_min,15
+stat_per_level=dmg_melee_max,15
+stat_per_level=dmg_ranged_min,15
+stat_per_level=dmg_ranged_max,15
+stat_per_level=absorb_min,1
+stat_per_level=absorb_max,1
+
+# loot
+loot=loot/il_common.txt
+
+# Ranged units behaviour, see docs/ranged_behavior.txt
+chance_pursue=3
+chance_flee=20
+flee_duration=3s
+flee_cooldown=1s
+flee_range=8
+threat_range=15,20
+power=melee,164,5
+power=ranged,171,50

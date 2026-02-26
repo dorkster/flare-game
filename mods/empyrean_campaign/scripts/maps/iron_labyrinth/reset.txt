@@ -1,0 +1,32 @@
+[event]
+set_status=emp_il_f1_reset
+set_status=emp_il_f2_reset
+set_status=emp_il_f3_reset
+unset_status=emp_il_f1_door1
+unset_status=emp_il_f1_door2
+unset_status=emp_il_f2_door1
+unset_status=emp_il_f2_door2
+unset_status=emp_il_f3_door1
+unset_status=emp_il_f3_door2
+unset_status=emp_il_f1_tele
+unset_status=emp_il_f2_tele
+unset_status=emp_il_f3_tele
+
+# chasm / boss
+unset_status=emp_il_chasm_tele
+unset_status=emp_il_razu_defeated
+unset_status=emp_il_boss_chest_1
+unset_status=emp_il_boss_chest_2
+
+# warp room
+unset_status=emp_il_warp_room
+unset_status=emp_il_warp_room_active
+unset_status=emp_il_warp_room_unknown
+unset_status=emp_il_warp_room_dest_0
+unset_status=emp_il_warp_room_dest_1
+unset_status=emp_il_warp_room_dest_2
+unset_status=emp_il_warp_room_dest_3
+unset_status=emp_il_warp_room_dest_4
+unset_status=emp_il_warp_room_dest_5
+unset_status=emp_il_warp_room_dest_6
+

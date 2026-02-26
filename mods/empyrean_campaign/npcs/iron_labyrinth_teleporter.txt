@@ -1,0 +1,62 @@
+name=Strange Obelisk
+
+# animation info
+animations=animations/npcs/return_obelisk1.txt
+
+talker=true
+
+[dialog]
+topic=Teleport
+requires_not_status=emp_il_f1_tele,emp_il_f2_tele,emp_il_f3_tele
+him=(You touch the obelisk, but nothing happens.)
+
+[dialog]
+topic=Teleport
+requires_status=emp_il_f1_tele
+response=emp_il_f1
+response=emp_il_f2
+response=emp_il_f3
+response=emp_il_chasm
+response=emp_il_cancel
+him=Choose a destination.
+
+[dialog]
+id=emp_il_f1
+topic=Iron Labyrinth: Level 1
+response_only=true
+requires_status=emp_il_f1_tele
+set_status=emp_il_f1
+intermap=maps/iron_labyrinth_f1.txt,-1,-1,entrance_tele
+soundfx=soundfx/environment/teleporter.ogg,0,0
+
+[dialog]
+id=emp_il_f2
+topic=Iron Labyrinth: Level 2
+response_only=true
+requires_status=emp_il_f2_tele
+set_status=emp_il_f2
+intermap=maps/iron_labyrinth_f2.txt,-1,-1,entrance_tele
+soundfx=soundfx/environment/teleporter.ogg,0,0
+
+[dialog]
+id=emp_il_f3
+topic=Iron Labyrinth: Level 3
+response_only=true
+requires_status=emp_il_f3_tele
+set_status=emp_il_f3
+intermap=maps/iron_labyrinth_f3.txt,-1,-1,entrance_tele
+soundfx=soundfx/environment/teleporter.ogg,0,0
+
+[dialog]
+id=emp_il_chasm
+topic=Iron Labyrinth: Chasm
+response_only=true
+requires_status=emp_il_chasm_tele
+intermap=maps/iron_labyrinth_chasm.txt,-1,-1,entrance_tele
+soundfx=soundfx/environment/teleporter.ogg,0,0
+
+[dialog]
+id=emp_il_cancel
+topic=Cancel
+response_only=true
+

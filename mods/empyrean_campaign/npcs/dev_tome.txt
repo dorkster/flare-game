@@ -36,6 +36,7 @@ id=campaign
 response_only=true
 response=reset_quests
 response=waypoints
+response=reset_il
 response=main
 her=
 
@@ -67,6 +68,14 @@ response=waypoints_lock
 response=waypoints_unlock
 response=main
 her=
+
+# reset iron labyrinth
+[dialog]
+topic=Reset Iron Labyrinth
+id=reset_il
+response_only=true
+script=scripts/maps/iron_labyrinth/reset.txt
+intermap=maps/perdition_harbor_cave.txt,-1,-1,obelisk
 
 [dialog]
 topic=Lock all Hyperspace waypoints
