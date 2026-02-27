@@ -1,56 +1,57 @@
-<map version="1.0" orientation="isometric" renderorder="right-down" width="17" height="37" tilewidth="192" tileheight="96" nextobjectid="1">
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="17" height="37" tilewidth="192" tileheight="96" infinite="0" nextlayerid="4" nextobjectid="1">
  <properties>
-  <property name="AutomappingRadius" value="1" />
-  <property name="DeleteTiles" value="1" />
+  <property name="AutomappingRadius" value="1"/>
+  <property name="DeleteTiles" value="1"/>
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15">
-  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96" />
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
- <tileset firstgid="16" name="snowplains" tilewidth="192" tileheight="384" tilecount="128">
-  <image source="../../tilesheets/snowplains.png" width="3072" height="3072" />
+ <tileset firstgid="16" name="snowplains" tilewidth="192" tileheight="384" tilecount="128" columns="16">
+  <image source="../../tilesheets/snowplains.png" width="3072" height="3072"/>
  </tileset>
- <tileset firstgid="144" name="water" tilewidth="192" tileheight="192" tilecount="64">
-  <tileoffset x="0" y="96" />
-  <image source="../../tilesheets/snowplains_water.png" width="3072" height="768" />
+ <tileset firstgid="144" name="water" tilewidth="192" tileheight="192" tilecount="64" columns="16">
+  <tileoffset x="0" y="96"/>
+  <image source="../../tilesheets/snowplains_water.png" width="3072" height="768"/>
  </tileset>
- <tileset firstgid="208" name="tall structures" tilewidth="192" tileheight="768" tilecount="32">
-  <image source="../../tilesheets/snowplains_structures.png" width="3072" height="1536" />
+ <tileset firstgid="208" name="tall structures" tilewidth="192" tileheight="768" tilecount="32" columns="16">
+  <image source="../../tilesheets/snowplains_structures.png" width="3072" height="1536"/>
  </tileset>
- <tileset firstgid="240" name="trees" tilewidth="384" tileheight="768" tilecount="16">
-  <tileoffset x="-96" y="0" />
-  <image source="../../tilesheets/snowplains_trees.png" width="3072" height="1536" />
+ <tileset firstgid="240" name="trees" tilewidth="384" tileheight="768" tilecount="16" columns="8">
+  <tileoffset x="-96" y="0"/>
+  <image source="../../tilesheets/snowplains_trees.png" width="3072" height="1536"/>
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8">
-  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384" />
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
- <tileset firstgid="264" name="tiled_snowplains_2x2" tilewidth="384" tileheight="192" tilecount="32">
-  <tileoffset x="0" y="48" />
-  <image source="../../tilesheets/snowplains_2x2.png" width="1536" height="1536" />
+ <tileset firstgid="264" name="tiled_snowplains_2x2" tilewidth="384" tileheight="192" tilecount="32" columns="4">
+  <tileoffset x="0" y="48"/>
+  <image source="../../tilesheets/snowplains_2x2.png" width="1536" height="1536"/>
  </tileset>
- <tileset firstgid="296" name="snowplains_ice" tilewidth="192" tileheight="384" tilecount="224">
-  <tileoffset x="0" y="96" />
-  <image source="../../tilesheets/snowplains_ice.png" width="3072" height="5376" />
+ <tileset firstgid="296" name="snowplains_ice" tilewidth="192" tileheight="384" tilecount="224" columns="16">
+  <tileoffset x="0" y="96"/>
+  <image source="../../tilesheets/snowplains_ice.png" width="3072" height="5376"/>
  </tileset>
- <tileset firstgid="520" name="snowplains_other" tilewidth="192" tileheight="384" tilecount="224">
-  <image source="../../tilesheets/snowplains_other.png" width="3072" height="5376" />
+ <tileset firstgid="520" name="snowplains_other" tilewidth="192" tileheight="384" tilecount="224" columns="16">
+  <image source="../../tilesheets/snowplains_other.png" width="3072" height="5376"/>
  </tileset>
- <tileset firstgid="744" name="snowplains_rottentower" tilewidth="1074" tileheight="1074" tilecount="1">
-  <tileoffset x="0" y="144" />
-  <image source="../../tilesheets/snowplains_rottentower.png" width="1074" height="1074" />
+ <tileset firstgid="744" name="snowplains_rottentower" tilewidth="1074" tileheight="1074" tilecount="1" columns="1">
+  <tileoffset x="0" y="144"/>
+  <image source="../../tilesheets/snowplains_rottentower.png" width="1074" height="1074"/>
  </tileset>
- <layer name="regions" width="17" height="37">
+ <layer id="1" name="regions" width="17" height="37">
   <data encoding="base64" compression="zlib">
    eJxjYKASYKSQHnXHqDtG3THqjlF3jLpj1B2j7hjq7hhAAADLbQCK
   </data>
  </layer>
- <layer name="input_object" width="17" height="37">
+ <layer id="2" name="input_object" width="17" height="37">
   <data encoding="base64" compression="zlib">
    eJyt0tk2VgEYx+FvfUcyRBQhFRpEwzejEdHIPcjUILqF0GS+NZpLLEq5AXTaQU830Hrfk2etffDfv7X2TiRiLsU0M8wyxzwLbA96/7/rYCcv8wqv8hqv80ZwRxe72cOb7GUfb/F2cMcd3uU93mc/BzjIB8EdQxzmCEc5xod8xMfBHU84zqec4CSf8TmngjumOcMXfMlXfM03nA3umOM8F7jIJS5zl3vBHfv8zaLkXw+wmCUsZVkytuOgvXJW8BArWcXDPBLcUW2vhkdZyzrW8xgbgjuO2zvBFp5jK9t4nheCOy7au8QU08wwyxzzwR0Fe+3c9HyL3/mD2/wZm5H4xR2ucJVv+Y7v+SG44yM/8TO/8CvX+I3rwR0bPOm7NLKJzTzF0zwT/H+cDd77n/sDe8U0Fw==
   </data>
  </layer>
- <layer name="output_collision" width="17" height="37" opacity="0.98">
+ <layer id="3" name="output_collision" width="17" height="37" opacity="0.98">
   <data encoding="base64" compression="zlib">
-   eJxjYKAOYKSQphYYdQcqYKGQHnUHfdxBKD3Qyh2E7CHkzoFyx0hPHyM9PAaLO0Z6/YJuLjOJ4tQCuMwfqPAYSAAAOHkBYg==
+   eJxjYKAOYKSQphYYdQcqYKKQHnUHfdxBKD3Qyh2E7CHkzoFyx0hPHyM9PAaLO0Z6/YJuLjOJ4tQCuMwfqPAYSAAASswA1g==
   </data>
  </layer>
 </map>

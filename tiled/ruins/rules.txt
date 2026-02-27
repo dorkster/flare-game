@@ -1,0 +1,4 @@
+./rules/ruins_ruleset0.tmx
+./rules/ruins_ruleset1.tmx
+./rules/ruins_ruleset2.tmx
+./rules/ruins_ruleset3.tmx

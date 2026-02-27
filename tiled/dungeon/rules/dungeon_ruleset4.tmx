@@ -1,33 +1,34 @@
-<map version="1.0" orientation="isometric" renderorder="right-down" width="33" height="31" tilewidth="192" tileheight="96" nextobjectid="1">
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="33" height="31" tilewidth="192" tileheight="96" infinite="0" nextlayerid="4" nextobjectid="1">
  <properties>
-  <property name="AutomappingRadius" value="2" />
+  <property name="AutomappingRadius" value="2"/>
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15">
-  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96" />
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
- <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240">
-  <image source="../../tilesheets/dungeon.png" width="3072" height="5760" />
+ <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../../tilesheets/dungeon.png" width="3072" height="5760"/>
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8">
-  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384" />
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16">
-  <tileoffset x="0" y="48" />
-  <image source="../../tilesheets/dungeon_2x2.png" width="1536" height="768" />
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16" columns="4">
+  <tileoffset x="0" y="48"/>
+  <image source="../../tilesheets/dungeon_2x2.png" width="1536" height="768"/>
  </tileset>
- <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2">
-  <tileoffset x="-48" y="-24" />
-  <image source="../../tilesheets/dungeon_door_left.png" width="384" height="384" />
+ <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="-48" y="-24"/>
+  <image source="../../tilesheets/dungeon_door_left.png" width="384" height="384"/>
  </tileset>
- <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2">
-  <tileoffset x="48" y="-24" />
-  <image source="../../tilesheets/dungeon_door_right.png" width="384" height="384" />
+ <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="48" y="-24"/>
+  <image source="../../tilesheets/dungeon_door_right.png" width="384" height="384"/>
  </tileset>
- <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4">
-  <tileoffset x="0" y="144" />
-  <image source="../../tilesheets/dungeon_stairs.png" width="3072" height="768" />
+ <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4" columns="4">
+  <tileoffset x="0" y="144"/>
+  <image source="../../tilesheets/dungeon_stairs.png" width="3072" height="768"/>
  </tileset>
- <layer name="regions" width="33" height="31">
+ <layer id="1" name="regions" width="33" height="31">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,256,0,256,0,256,0,256,0,256,0,256,0,256,0,256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -62,7 +63,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="input_object" width="33" height="31">
+ <layer id="2" name="input_object" width="33" height="31">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,64,0,65,0,66,0,67,0,68,0,69,0,70,0,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -97,7 +98,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="output_collision" width="33" height="31">
+ <layer id="3" name="output_collision" width="33" height="31">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -114,15 +115,15 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,3,0,3,0,3,0,3,0,4,0,4,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1,0,1,0,1,0,1,0,2,0,2,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,4,0,4,0,4,0,4,0,4,0,4,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,4,0,4,0,4,0,4,0,4,0,4,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,4,0,4,0,4,0,4,0,4,0,4,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,4,0,4,0,4,0,4,0,4,0,4,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2,0,2,0,2,0,2,0,2,0,2,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

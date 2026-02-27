@@ -1,29 +1,30 @@
-<map version="1.0" orientation="isometric" renderorder="right-down" width="17" height="19" tilewidth="192" tileheight="96" nextobjectid="1">
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="17" height="19" tilewidth="192" tileheight="96" infinite="0" nextlayerid="4" nextobjectid="1">
  <properties>
-  <property name="AutomappingRadius" value="1" />
+  <property name="AutomappingRadius" value="1"/>
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15">
-  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96" />
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
- <tileset firstgid="16" name="cave" tilewidth="192" tileheight="384" tilecount="240">
-  <image source="../../tilesheets/cave.png" width="3072" height="5760" />
+ <tileset firstgid="16" name="cave" tilewidth="192" tileheight="384" tilecount="240" columns="16">
+  <image source="../../tilesheets/cave.png" width="3072" height="5760"/>
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8">
-  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384" />
+ <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
- <layer name="regions" width="17" height="19">
+ <layer id="1" name="regions" width="17" height="19">
   <data encoding="base64" compression="zlib">
    eJxjYKASYKSQHnXHqDtG3THqjgF0BwC7BABJ
   </data>
  </layer>
- <layer name="input_object" width="17" height="19">
+ <layer id="2" name="input_object" width="17" height="19">
   <data encoding="base64" compression="zlib">
    eJytzklCAQAYhmFHy5SERNQ2JVKGBopd5QJpUHYNF1AuaPO4wf9tnuX3JhIx22KSKaaZYZbbzAX9b7bDPHdZYJEl7rEc3LHPCqs8YI11HvIouOOYDZ7wlE2escV2cMc5O7zgJbvssc9BcMcVr3nDWw454h3vgzvGnPCZM77wlW98D+6Y84OfXPCBj3ziNLjji9/84S+X/OM/V4ENa9s6Hzk=
   </data>
  </layer>
- <layer name="output_collision" width="17" height="19">
+ <layer id="3" name="output_collision" width="17" height="19">
   <data encoding="base64" compression="zlib">
-   eJxjYKAOYKSQphYYdceoO4aiO1gI0LRyByH7CLmL1u4glqYGAADqUACC
+   eJxjYKAOYKSQphYYdceoO4aiO5gI0LRyByH7CLmL1u4glqYGAADK+ABc
   </data>
  </layer>
 </map>

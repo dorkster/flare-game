@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="9" height="3" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="19" nextobjectid="5">
+ <editorsettings>
+  <export target="../../../../game/mods/procgen_test/maps/ruins_test.txt" format="flare"/>
+ </editorsettings>
+ <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
+  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96"/>
+ </tileset>
+ <tileset firstgid="16" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
+  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384"/>
+ </tileset>
+ <tileset firstgid="24" name="ruins" tilewidth="192" tileheight="384" tilecount="352" columns="16">
+  <image source="../../tilesheets/ruins.png" width="3072" height="8448"/>
+ </tileset>
+ <tileset firstgid="376" name="ruins_door_left" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="-48" y="-24"/>
+  <image source="../../tilesheets/ruins_door_left.png" width="384" height="384"/>
+ </tileset>
+ <tileset firstgid="378" name="ruins_door_right" tilewidth="192" tileheight="384" tilecount="2" columns="2">
+  <tileoffset x="48" y="-24"/>
+  <image source="../../tilesheets/ruins_door_right.png" width="384" height="384"/>
+ </tileset>
+ <layer id="18" name="regions" width="9" height="3">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,16,0,16,0,16,0,16,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="17" name="input_automap" width="9" height="3">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,18,0,19,0,20,0,17,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="9" name="output_background" width="9" height="3">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,24,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="output_object" width="9" height="3">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="output_collision" width="9" height="3">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,4,0,1,0,3,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
