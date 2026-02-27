@@ -1,25 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="60" height="80" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="58">
  <editorsettings>
-  <export target="../../mods/empyrean_campaign/maps/mog_caverns.txt" format="flare" />
+  <export target="../../mods/empyrean_campaign/maps/mog_caverns.txt" format="flare"/>
  </editorsettings>
  <properties>
-  <property name="hero_pos" value="56,66" />
-  <property name="music" value="music/cave_theme.ogg" />
-  <property name="tileset" value="tilesetdefs/tileset_cave.txt" />
-  <property name="title" value="Mog Caverns" />
+  <property name="hero_pos" value="56,66"/>
+  <property name="music" value="music/cave_theme.ogg"/>
+  <property name="tileset" value="tilesetdefs/tileset_cave.txt"/>
+  <property name="title" value="Mog Caverns"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
-  <image source="../cave/../tilesheets/tiled_collision.png" width="2880" height="96" />
+  <image source="../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
  <tileset firstgid="16" name="cave" tilewidth="192" tileheight="384" tilecount="240" columns="16">
-  <image source="../cave/../tilesheets/cave.png" width="3072" height="5760" />
+  <image source="../tilesheets/cave.png" width="3072" height="5760"/>
  </tileset>
  <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
-  <image source="../cave/../tilesheets/tiled_set_rules.png" width="384" height="384" />
+  <image source="../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="384" tileheight="192" tilecount="2" columns="2">
-  <tileoffset x="0" y="48" />
-  <image source="../cave/../tilesheets/cave_2x2.png" width="768" height="192" />
+  <tileoffset x="0" y="48"/>
+  <image source="../tilesheets/cave_2x2.png" width="768" height="192"/>
  </tileset>
  <layer id="1" name="background" width="60" height="80">
   <data encoding="csv">
@@ -192,489 +193,489 @@
  <layer id="3" name="collision" width="60" height="80">
   <data encoding="csv">
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,3,3,1,1,1,1,0,4,0,0,0,1,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,1,1,1,1,0,0,0,0,4,0,0,0,0,1,1,3,3,3,3,
-3,3,3,3,3,3,3,1,1,0,4,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
-3,3,3,3,3,3,3,1,0,0,0,0,0,0,1,1,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,4,0,4,4,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,1,1,3,3,
-3,3,3,3,3,3,3,1,0,0,1,4,0,0,0,1,1,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,1,0,0,0,0,1,1,3,
-3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,4,0,0,0,0,0,0,1,3,
-3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,1,0,0,0,4,0,0,0,0,0,0,0,0,1,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,3,3,1,1,1,1,0,2,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,1,1,1,1,0,0,0,0,2,0,0,0,0,1,1,3,3,3,3,
+3,3,3,3,3,3,3,1,1,0,2,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
+3,3,3,3,3,3,3,1,0,0,0,0,0,0,1,1,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,2,0,2,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,1,1,3,3,
+3,3,3,3,3,3,3,1,0,0,1,2,0,0,0,1,1,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,1,0,0,0,0,1,1,3,
+3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,2,0,0,0,0,0,0,1,3,
+3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,1,0,0,0,2,0,0,0,0,0,0,0,0,1,3,
 3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
-3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,2,2,0,1,1,0,2,2,0,4,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,1,3,
-3,3,3,3,3,1,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,2,2,4,4,2,4,0,0,0,0,0,2,2,2,4,1,1,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
-3,3,3,3,3,1,0,0,0,0,0,2,2,4,1,0,0,0,0,0,0,2,4,4,4,4,4,0,0,0,0,0,2,4,4,2,2,2,2,4,4,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
-3,3,3,3,1,1,0,0,0,0,2,2,4,4,2,4,2,0,0,0,2,2,4,4,4,2,2,0,0,0,0,2,2,4,4,4,4,4,4,4,4,4,2,2,0,2,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
-3,3,3,3,1,0,0,0,1,0,2,4,4,4,4,4,2,2,2,2,2,4,4,4,2,2,0,0,0,0,0,2,2,4,4,4,4,4,4,4,4,4,4,2,0,2,2,2,0,0,0,0,0,0,0,1,1,3,3,3,
-3,3,3,1,1,0,0,0,0,0,2,4,4,1,1,1,4,4,4,4,4,4,4,2,1,0,0,0,0,0,0,0,2,4,4,4,4,4,4,4,4,4,4,2,0,2,2,2,2,0,0,0,0,0,0,1,3,3,3,3,
-3,3,3,1,0,0,0,0,0,2,2,4,4,1,3,1,4,4,1,1,1,4,4,2,0,0,0,0,0,0,0,0,2,4,4,4,4,4,4,4,4,2,2,2,0,0,2,2,2,2,4,0,0,0,0,1,3,3,3,3,
-3,3,3,1,0,0,0,0,0,2,2,4,4,1,1,1,4,4,1,3,1,4,4,2,0,0,0,0,0,0,0,2,2,4,4,4,4,4,4,4,2,2,0,0,4,0,0,2,4,4,4,0,0,0,0,1,1,3,3,3,
-3,3,3,1,4,0,0,0,0,0,2,4,4,4,4,4,4,4,1,1,1,4,2,2,0,0,0,0,2,2,2,2,4,4,4,4,4,4,4,4,2,0,0,0,0,0,0,2,4,4,2,0,0,0,0,0,1,3,3,3,
-3,3,1,1,0,0,0,0,0,0,2,4,4,4,4,4,4,4,4,4,4,4,2,4,0,0,0,0,2,4,4,4,4,4,4,4,4,4,4,4,2,0,0,0,0,0,0,2,4,4,2,0,0,0,0,0,1,3,3,3,
-3,3,1,4,0,0,0,0,0,0,2,2,4,4,1,1,1,4,4,4,4,4,2,0,0,0,0,0,2,4,4,4,4,4,4,4,4,4,4,4,2,0,0,0,0,0,2,2,4,4,2,2,0,0,0,0,1,3,3,3,
-3,3,1,0,0,0,0,0,0,0,0,2,2,4,1,3,1,4,4,4,4,4,2,0,0,0,0,2,2,4,4,4,4,4,4,4,4,4,4,4,2,0,1,1,0,0,2,4,4,4,4,2,0,0,0,0,1,3,3,3,
-3,3,1,1,4,4,1,0,0,0,0,0,2,2,1,1,1,4,4,4,4,4,2,4,0,0,0,4,1,4,4,4,4,4,2,2,2,2,4,4,2,2,1,1,0,0,2,4,4,4,2,2,0,0,0,0,1,3,3,3,
-3,3,3,1,4,0,0,0,0,0,0,0,4,2,2,4,4,4,4,4,4,4,4,2,2,4,0,4,4,4,4,4,4,2,2,0,0,2,2,2,2,2,0,0,0,0,2,4,4,2,1,0,0,0,0,0,1,3,3,3,
-3,3,3,1,0,0,0,0,0,0,0,1,4,4,2,2,2,2,4,2,2,2,2,2,4,2,2,2,4,4,4,4,2,2,0,0,0,0,2,2,0,0,0,0,0,0,4,4,2,4,0,0,0,0,0,0,1,3,3,3,
-3,3,3,1,0,0,0,0,0,0,0,0,0,4,0,0,0,2,2,2,0,4,1,4,2,4,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,2,4,4,4,0,0,0,0,0,1,1,3,3,3,
-3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,4,4,2,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,1,2,4,2,0,0,0,0,1,1,1,3,3,3,3,
-3,3,3,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,4,2,4,4,4,4,4,4,2,0,0,0,0,0,0,0,0,0,0,0,0,2,4,4,2,0,0,0,0,1,3,3,3,3,3,3,
-3,3,3,3,1,0,0,1,1,0,0,0,0,0,1,0,0,0,2,1,2,0,0,0,0,2,2,4,4,4,4,4,2,0,0,1,0,2,2,2,0,0,0,0,0,2,2,4,2,0,0,0,0,1,1,3,3,3,3,3,
-3,3,3,3,1,1,0,4,4,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,4,4,4,4,4,2,0,0,4,0,2,2,2,0,0,0,0,0,0,2,4,2,1,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,3,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,2,2,2,0,0,0,4,0,2,4,2,2,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,3,1,1,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,4,2,4,0,1,1,0,4,4,4,2,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,3,3,1,1,1,1,1,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,4,0,0,0,0,2,2,4,2,0,1,1,0,2,4,2,2,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,1,1,4,1,0,0,0,0,1,0,0,1,1,1,1,0,0,2,4,4,4,2,1,0,0,0,0,0,2,2,2,4,4,0,2,2,4,2,0,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,1,4,0,0,0,0,0,4,0,0,1,3,3,1,1,1,2,4,4,4,2,2,0,0,0,0,0,0,2,2,2,2,2,2,4,4,2,0,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,2,4,4,4,2,1,1,1,0,0,0,0,1,4,4,4,4,4,4,4,2,0,0,0,0,1,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,1,1,2,4,4,4,2,1,3,1,0,0,0,0,4,2,2,4,4,4,4,2,2,0,0,0,0,1,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,1,0,0,1,0,0,0,0,0,0,1,1,3,3,3,1,2,2,4,4,4,2,1,3,1,1,0,0,0,0,0,2,2,4,4,4,2,0,0,0,0,0,1,3,3,3,3,3,3,
-3,3,3,3,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,1,2,2,4,4,2,2,1,3,3,1,1,0,0,0,0,0,2,4,4,2,2,0,0,0,0,0,1,3,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,1,0,0,1,0,0,0,0,0,1,3,3,3,3,3,1,1,2,4,4,2,1,1,3,3,3,1,0,0,0,0,0,2,2,4,2,1,0,0,0,0,1,1,3,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,1,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,1,2,4,4,2,1,3,3,3,3,1,1,0,0,0,0,0,2,4,2,0,0,0,0,1,1,3,3,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,1,0,0,1,0,0,0,0,1,3,3,3,3,3,3,3,1,2,4,4,2,1,1,3,3,3,3,1,0,0,0,0,0,2,2,2,0,0,0,0,1,3,3,3,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,1,1,1,0,0,0,0,0,1,3,3,3,3,3,3,3,1,2,4,4,2,2,1,3,3,3,3,1,1,0,0,0,0,1,4,2,0,0,0,0,1,1,3,3,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,3,3,3,3,3,3,3,1,2,2,4,4,2,1,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,3,3,1,1,0,0,0,1,3,3,3,3,3,3,3,3,1,1,2,4,4,2,2,1,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,1,0,0,1,3,3,3,3,3,3,3,3,3,1,2,4,4,4,2,2,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,1,1,1,1,3,3,3,3,3,3,1,1,1,1,2,4,4,4,4,2,1,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,2,2,2,4,4,4,4,2,1,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,
-3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,1,1,2,2,4,4,4,4,4,4,2,2,1,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,1,1,2,2,4,4,4,4,4,4,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,1,1,2,2,4,4,4,4,4,4,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,1,2,2,4,4,2,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,1,1,2,4,4,2,2,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,1,2,2,4,4,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,1,2,2,4,4,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,3,3,3,1,1,2,4,4,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,1,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,2,4,4,2,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,2,2,4,4,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,1,2,2,4,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,3,1,0,0,0,0,1,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,1,1,2,4,4,2,2,1,1,3,3,3,3,3,3,3,3,3,3,1,1,0,0,4,1,1,1,0,0,0,0,1,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,1,2,2,4,4,2,2,1,1,3,3,3,3,3,3,3,3,3,1,0,4,0,1,0,4,0,0,0,0,1,1,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,1,0,1,1,1,1,3,3,3,3,3,3,3,1,1,2,2,4,4,2,2,1,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,
-3,3,3,3,3,3,1,1,1,1,1,0,0,0,1,1,1,3,3,3,3,3,3,3,1,1,2,4,4,4,2,1,3,3,3,3,3,3,3,3,3,1,4,0,1,0,0,1,0,0,0,0,1,3,3,3,3,3,3,3,
-3,3,3,3,3,1,1,4,4,4,0,0,0,0,4,0,1,3,3,3,3,3,3,3,3,1,2,4,4,4,2,1,1,3,3,3,3,3,3,3,3,1,1,0,4,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
-3,3,3,3,3,1,4,4,4,4,0,0,0,0,0,4,1,1,3,3,3,3,3,3,1,1,2,4,4,4,2,2,1,3,3,3,3,3,3,3,3,3,1,0,0,0,4,0,0,0,0,0,0,1,1,1,1,1,1,1,
-3,3,3,3,1,1,4,4,4,0,0,0,0,0,0,0,0,1,1,3,3,3,1,1,1,2,2,4,4,4,4,2,1,1,3,3,3,3,3,3,3,3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-3,3,3,3,1,4,1,0,0,1,0,0,0,0,0,0,0,0,1,3,3,1,1,2,2,2,4,4,4,4,4,2,2,1,3,3,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-3,3,3,3,1,4,4,4,0,0,0,0,0,0,0,0,1,0,1,1,1,1,2,2,4,4,4,4,4,4,4,4,2,1,3,3,3,0,3,3,3,3,1,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,
-3,3,3,3,1,4,4,4,0,0,0,0,0,0,0,0,0,4,1,1,2,2,2,4,4,4,4,4,4,4,4,2,2,1,3,3,3,0,3,3,3,3,1,1,0,0,0,0,0,4,1,1,4,0,0,0,0,0,0,0,
-3,3,3,3,1,4,4,4,4,1,0,0,0,0,0,0,0,4,4,2,2,4,4,4,2,2,2,2,2,2,2,2,1,1,3,3,3,0,3,3,3,3,3,1,1,1,0,0,0,4,1,1,4,0,0,0,0,0,1,1,
-3,3,3,3,1,1,4,4,4,0,0,0,0,0,0,0,0,0,1,2,4,4,4,4,2,1,1,1,1,1,1,1,1,3,3,3,3,0,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,
-3,3,3,3,3,1,4,4,4,4,0,0,0,0,0,0,0,0,4,2,4,4,4,4,2,1,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,1,4,4,4,4,4,0,0,0,0,0,0,0,1,2,4,4,4,2,2,1,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,1,1,4,4,0,4,0,0,0,0,0,0,0,0,2,4,4,4,2,1,1,3,0,0,0,0,0,0,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,1,1,0,0,4,0,1,1,1,0,0,0,0,0,0,0,4,2,1,3,3,0,3,3,3,3,3,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,1,1,1,1,1,1,3,1,1,0,0,1,2,4,0,2,2,1,3,3,0,3,3,3,3,3,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,2,4,0,2,1,1,3,3,0,3,3,3,3,3,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,4,0,0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,2,4,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,4,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,4,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,2,2,0,1,1,0,2,2,0,2,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,1,3,
+3,3,3,3,3,1,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,1,1,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
+3,3,3,3,3,1,0,0,0,0,0,2,2,2,1,0,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
+3,3,3,3,1,1,0,0,0,0,2,2,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
+3,3,3,3,1,0,0,0,1,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,0,0,0,0,0,0,0,1,1,3,3,3,
+3,3,3,1,1,0,0,0,0,0,2,2,2,1,1,1,2,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,0,0,0,0,0,0,1,3,3,3,3,
+3,3,3,1,0,0,0,0,0,2,2,2,2,1,3,1,2,2,1,1,1,2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,0,0,2,2,2,2,2,0,0,0,0,1,3,3,3,3,
+3,3,3,1,0,0,0,0,0,2,2,2,2,1,1,1,2,2,1,3,1,2,2,2,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,2,0,0,2,2,2,2,0,0,0,0,1,1,3,3,3,
+3,3,3,1,2,0,0,0,0,0,2,2,2,2,2,2,2,2,1,1,1,2,2,2,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,1,3,3,3,
+3,3,1,1,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,1,3,3,3,
+3,3,1,2,0,0,0,0,0,0,2,2,2,2,1,1,1,2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,1,3,3,3,
+3,3,1,0,0,0,0,0,0,0,0,2,2,2,1,3,1,2,2,2,2,2,2,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,0,0,2,2,2,2,2,2,0,0,0,0,1,3,3,3,
+3,3,1,1,2,2,1,0,0,0,0,0,2,2,1,1,1,2,2,2,2,2,2,2,0,0,0,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,0,0,2,2,2,2,2,2,0,0,0,0,1,3,3,3,
+3,3,3,1,2,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,0,2,2,2,2,2,0,0,0,0,2,2,2,2,1,0,0,0,0,0,1,3,3,3,
+3,3,3,1,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,2,2,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,1,3,3,3,
+3,3,3,1,0,0,0,0,0,0,0,0,0,2,0,0,0,2,2,2,0,2,1,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,1,1,3,3,3,
+3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,0,0,0,0,1,1,1,3,3,3,3,
+3,3,3,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,0,0,0,0,1,3,3,3,3,3,3,
+3,3,3,3,1,0,0,1,1,0,0,0,0,0,1,0,0,0,2,1,2,0,0,0,0,2,2,2,2,2,2,2,2,0,0,1,0,2,2,2,0,0,0,0,0,2,2,2,2,0,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,1,1,0,2,2,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,2,0,2,2,2,0,0,0,0,0,0,2,2,2,1,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,2,2,2,0,0,0,2,0,2,2,2,2,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,1,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,2,2,2,0,1,1,0,2,2,2,2,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,3,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2,0,1,1,0,2,2,2,2,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,1,1,2,1,0,0,0,0,1,0,0,1,1,1,1,0,0,2,2,2,2,2,1,0,0,0,0,0,2,2,2,2,2,0,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,1,2,0,0,0,0,0,2,0,0,1,3,3,1,1,1,2,2,2,2,2,2,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,2,2,2,2,2,1,1,1,0,0,0,0,1,2,2,2,2,2,2,2,2,0,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,1,1,2,2,2,2,2,1,3,1,0,0,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,1,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,1,0,0,1,0,0,0,0,0,0,1,1,3,3,3,1,2,2,2,2,2,2,1,3,1,1,0,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,3,
+3,3,3,3,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,1,2,2,2,2,2,2,1,3,3,1,1,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,1,0,0,1,0,0,0,0,0,1,3,3,3,3,3,1,1,2,2,2,2,1,1,3,3,3,1,0,0,0,0,0,2,2,2,2,2,0,0,0,0,1,1,3,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,1,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,1,2,2,2,2,1,3,3,3,3,1,1,0,0,0,0,0,2,2,2,0,0,0,0,1,1,3,3,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,1,0,0,1,0,0,0,0,1,3,3,3,3,3,3,3,1,2,2,2,2,1,1,3,3,3,3,1,0,0,0,0,0,2,2,2,0,0,0,0,1,3,3,3,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,1,1,1,0,0,0,0,0,1,3,3,3,3,3,3,3,1,2,2,2,2,2,1,3,3,3,3,1,1,0,0,0,0,1,2,2,0,0,0,0,1,1,3,3,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,3,3,3,3,3,3,3,1,2,2,2,2,2,1,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,3,3,1,1,0,0,0,1,3,3,3,3,3,3,3,3,1,1,2,2,2,2,2,1,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,1,0,0,1,3,3,3,3,3,3,3,3,3,1,2,2,2,2,2,2,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,1,1,1,1,3,3,3,3,3,3,1,1,1,1,2,2,2,2,2,2,1,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,
+3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,2,2,2,2,2,2,2,2,1,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,
+3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3,1,1,2,2,2,2,2,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,1,1,2,2,2,2,2,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,1,1,2,2,2,2,2,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,1,2,2,2,2,2,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,1,1,2,2,2,2,2,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,1,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,1,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,3,3,3,1,1,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,1,1,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,1,1,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,3,1,0,0,0,0,1,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,1,1,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,3,1,1,0,0,2,1,1,1,0,0,0,0,1,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,1,2,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,3,1,0,2,0,1,0,2,0,0,0,0,1,1,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,1,0,1,1,1,1,3,3,3,3,3,3,3,1,1,2,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,
+3,3,3,3,3,3,1,1,1,1,1,0,0,0,1,1,1,3,3,3,3,3,3,3,1,1,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,1,2,0,1,0,0,1,0,0,0,0,1,3,3,3,3,3,3,3,
+3,3,3,3,3,1,1,2,2,2,0,0,0,0,2,0,1,3,3,3,3,3,3,3,3,1,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,1,1,0,2,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
+3,3,3,3,3,1,2,2,2,2,0,0,0,0,0,2,1,1,3,3,3,3,3,3,1,1,2,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,1,0,0,0,2,0,0,0,0,0,0,1,1,1,1,1,1,1,
+3,3,3,3,1,1,2,2,2,0,0,0,0,0,0,0,0,1,1,3,3,3,1,1,1,2,2,2,2,2,2,2,1,1,3,3,3,3,3,3,3,3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+3,3,3,3,1,2,1,0,0,1,0,0,0,0,0,0,0,0,1,3,3,1,1,2,2,2,2,2,2,2,2,2,2,1,3,3,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+3,3,3,3,1,2,2,2,0,0,0,0,0,0,0,0,1,0,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,3,3,3,0,3,3,3,3,1,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,
+3,3,3,3,1,2,2,2,0,0,0,0,0,0,0,0,0,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,3,3,3,0,3,3,3,3,1,1,0,0,0,0,0,2,1,1,2,0,0,0,0,0,0,0,
+3,3,3,3,1,2,2,2,2,1,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,3,3,3,0,3,3,3,3,3,1,1,1,0,0,0,2,1,1,2,0,0,0,0,0,1,1,
+3,3,3,3,1,1,2,2,2,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,1,1,1,1,1,1,1,1,3,3,3,3,0,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,
+3,3,3,3,3,1,2,2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,1,2,2,2,2,2,0,0,0,0,0,0,0,1,2,2,2,2,2,2,1,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,1,1,2,2,0,2,0,0,0,0,0,0,0,0,2,2,2,2,2,1,1,3,0,0,0,0,0,0,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,1,1,0,0,2,0,1,1,1,0,0,0,0,0,0,0,2,2,1,3,3,0,3,3,3,3,3,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,1,1,1,1,1,1,3,1,1,0,0,1,2,2,0,2,2,1,3,3,0,3,3,3,3,3,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,2,2,0,2,1,1,3,3,0,3,3,3,3,3,0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,2,0,0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,2,2,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,2,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,2,2,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 </data>
  </layer>
  <objectgroup id="4" name="event">
   <object id="3" name="First note chest (Note 1)" type="event" x="4416" y="6048" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="1017,fixed,1" />
-    <property name="mapmod" value="object,46,63,176" />
-    <property name="repeat" value="false" />
-    <property name="requires_not_status" value="emp_mog_init,emp_mog_finish" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="1017,fixed,1"/>
+    <property name="mapmod" value="object,46,63,176"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_not_status" value="emp_mog_init,emp_mog_finish"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="4" name="Note 2" type="event" x="1824" y="2592" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="8,fixed,1,1" />
-    <property name="mapmod" value="object,32,30,0;collision,32,30,0" />
-    <property name="msg" value="You found another note. Keep following the trail." />
-    <property name="remove_item" value="1017:1" />
-    <property name="repeat" value="false" />
-    <property name="requires_item" value="1017:1" />
-    <property name="requires_not_status" value="emp_mog_note2,emp_mog_finish" />
-    <property name="requires_status" value="emp_mog_init" />
-    <property name="reward_item" value="1018:1" />
-    <property name="set_status" value="emp_mog_note2" />
-    <property name="shakycam" value="2s" />
-    <property name="soundfx" value="soundfx/environment/falling_rocks.ogg" />
-    <property name="tooltip" value="Waterlogged Support Beam" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="8,fixed,1,1"/>
+    <property name="mapmod" value="object,32,30,0;collision,32,30,0"/>
+    <property name="msg" value="You found another note. Keep following the trail."/>
+    <property name="remove_item" value="1017:1"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_item" value="1017:1"/>
+    <property name="requires_not_status" value="emp_mog_note2,emp_mog_finish"/>
+    <property name="requires_status" value="emp_mog_init"/>
+    <property name="reward_item" value="1018:1"/>
+    <property name="set_status" value="emp_mog_note2"/>
+    <property name="shakycam" value="2s"/>
+    <property name="soundfx" value="soundfx/environment/falling_rocks.ogg"/>
+    <property name="tooltip" value="Waterlogged Support Beam"/>
    </properties>
   </object>
   <object id="5" name="Note 3" type="event" x="4224" y="1536" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="754,fixed,1,2" />
-    <property name="msg" value="You found another note. Keep following the trail." />
-    <property name="remove_item" value="1018:1" />
-    <property name="repeat" value="false" />
-    <property name="requires_item" value="1018:1" />
-    <property name="requires_not_status" value="emp_mog_note3,emp_mog_finish" />
-    <property name="requires_status" value="emp_mog_init,emp_mog_note2" />
-    <property name="reward_item" value="1019:1" />
-    <property name="set_status" value="emp_mog_note3" />
-    <property name="tooltip" value="Moldy Rock" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="754,fixed,1,2"/>
+    <property name="msg" value="You found another note. Keep following the trail."/>
+    <property name="remove_item" value="1018:1"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_item" value="1018:1"/>
+    <property name="requires_not_status" value="emp_mog_note3,emp_mog_finish"/>
+    <property name="requires_status" value="emp_mog_init,emp_mog_note2"/>
+    <property name="reward_item" value="1019:1"/>
+    <property name="set_status" value="emp_mog_note3"/>
+    <property name="tooltip" value="Moldy Rock"/>
    </properties>
   </object>
   <object id="6" name="Note 4" type="event" x="2208" y="1824" width="192" height="288">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="203,fixed,1,1" />
-    <property name="msg" value="You found another note. Keep following the trail." />
-    <property name="remove_item" value="1019:1" />
-    <property name="repeat" value="false" />
-    <property name="requires_item" value="1019:1" />
-    <property name="requires_not_status" value="emp_mog_note4,emp_mog_finish" />
-    <property name="requires_status" value="emp_mog_init,emp_mog_note3" />
-    <property name="reward_item" value="1020:1" />
-    <property name="set_status" value="emp_mog_note4" />
-    <property name="tooltip" value="Pile of Bones" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="203,fixed,1,1"/>
+    <property name="msg" value="You found another note. Keep following the trail."/>
+    <property name="remove_item" value="1019:1"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_item" value="1019:1"/>
+    <property name="requires_not_status" value="emp_mog_note4,emp_mog_finish"/>
+    <property name="requires_status" value="emp_mog_init,emp_mog_note3"/>
+    <property name="reward_item" value="1020:1"/>
+    <property name="set_status" value="emp_mog_note4"/>
+    <property name="tooltip" value="Pile of Bones"/>
    </properties>
   </object>
   <object id="7" name="Note 5" type="event" x="4704" y="96" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="currency,fixed,50,100" />
-    <property name="msg" value="You found another note. Keep following the trail." />
-    <property name="remove_item" value="1020:1" />
-    <property name="repeat" value="false" />
-    <property name="requires_item" value="1020:1" />
-    <property name="requires_not_status" value="emp_mog_note5,emp_mog_finish" />
-    <property name="requires_status" value="emp_mog_init,emp_mog_note4" />
-    <property name="reward_item" value="1021:1" />
-    <property name="set_status" value="emp_mog_note5" />
-    <property name="tooltip" value="Blocked Mine Cart" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="currency,fixed,50,100"/>
+    <property name="msg" value="You found another note. Keep following the trail."/>
+    <property name="remove_item" value="1020:1"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_item" value="1020:1"/>
+    <property name="requires_not_status" value="emp_mog_note5,emp_mog_finish"/>
+    <property name="requires_status" value="emp_mog_init,emp_mog_note4"/>
+    <property name="reward_item" value="1021:1"/>
+    <property name="set_status" value="emp_mog_note5"/>
+    <property name="tooltip" value="Blocked Mine Cart"/>
    </properties>
   </object>
   <object id="8" name="Open secret door" type="event" x="1344" y="3648" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="mapmod" value="object,11,37,0;collision,11,37,0" />
-    <property name="remove_item" value="1021:1" />
-    <property name="repeat" value="false" />
-    <property name="requires_item" value="1021:1" />
-    <property name="requires_not_status" value="emp_mog_door1" />
-    <property name="requires_status" value="emp_mog_init,emp_mog_note5" />
-    <property name="set_status" value="emp_mog_door1" />
-    <property name="soundfx" value="soundfx/door_open.ogg" />
-    <property name="spawn" value="mog,10,37" />
-    <property name="tooltip" value="Boulder" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="mapmod" value="object,11,37,0;collision,11,37,0"/>
+    <property name="remove_item" value="1021:1"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_item" value="1021:1"/>
+    <property name="requires_not_status" value="emp_mog_door1"/>
+    <property name="requires_status" value="emp_mog_init,emp_mog_note5"/>
+    <property name="set_status" value="emp_mog_door1"/>
+    <property name="soundfx" value="soundfx/door_open.ogg"/>
+    <property name="spawn" value="mog,10,37"/>
+    <property name="tooltip" value="Boulder"/>
    </properties>
   </object>
   <object id="11" name="to Southern Ridge" type="event" x="5664" y="6144" width="96" height="384">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/southern_ridge.txt,25,49" />
-    <property name="tooltip" value="Southern Ridge" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/southern_ridge.txt,25,49"/>
+    <property name="tooltip" value="Southern Ridge"/>
    </properties>
   </object>
   <object id="12" name="Crate" type="event" x="4224" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_9.txt" />
-    <property name="loot_count" value="1,2" />
-    <property name="mapmod" value="object,44,29,179" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_9.txt"/>
+    <property name="loot_count" value="1,2"/>
+    <property name="mapmod" value="object,44,29,179"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="13" name="Crate" type="event" x="2016" y="2400" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_9.txt" />
-    <property name="loot_count" value="2,3" />
-    <property name="mapmod" value="object,21,25,179" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_9.txt"/>
+    <property name="loot_count" value="2,3"/>
+    <property name="mapmod" value="object,21,25,179"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="14" name="Barrel" type="event" x="1056" y="480" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_9.txt" />
-    <property name="loot_count" value="1,2" />
-    <property name="mapmod" value="object,11,5,178" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_9.txt"/>
+    <property name="loot_count" value="1,2"/>
+    <property name="mapmod" value="object,11,5,178"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="16" name="Open secret door (on_load)" type="event" x="672" y="3264" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="mapmod" value="object,11,37,0;collision,11,37,0" />
-    <property name="requires_status" value="emp_mog_door1" />
+    <property name="activate" value="on_load"/>
+    <property name="mapmod" value="object,11,37,0;collision,11,37,0"/>
+    <property name="requires_status" value="emp_mog_door1"/>
    </properties>
   </object>
   <object id="17" name="Open shortcut door" type="event" x="3552" y="6240" width="96" height="96">
    <properties>
-    <property name="mapmod" value="object,42,65,0;collision,42,65,0" />
-    <property name="repeat" value="false" />
-    <property name="requires_not_status" value="emp_mog_door2" />
-    <property name="set_status" value="emp_mog_door2" />
-    <property name="soundfx" value="soundfx/door_open.ogg" />
+    <property name="mapmod" value="object,42,65,0;collision,42,65,0"/>
+    <property name="repeat" value="false"/>
+    <property name="requires_not_status" value="emp_mog_door2"/>
+    <property name="set_status" value="emp_mog_door2"/>
+    <property name="soundfx" value="soundfx/door_open.ogg"/>
    </properties>
   </object>
   <object id="19" name="Open shortcut door (on_load)" type="event" x="3456" y="5952" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="mapmod" value="object,42,65,0;collision,42,65,0" />
-    <property name="requires_status" value="emp_mog_door2" />
+    <property name="activate" value="on_load"/>
+    <property name="mapmod" value="object,42,65,0;collision,42,65,0"/>
+    <property name="requires_status" value="emp_mog_door2"/>
    </properties>
   </object>
   <object id="20" name="First note chest (on_load, init)" type="event" x="3744" y="5568" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="mapmod" value="object,46,63,176" />
-    <property name="requires_status" value="emp_mog_init" />
+    <property name="activate" value="on_load"/>
+    <property name="mapmod" value="object,46,63,176"/>
+    <property name="requires_status" value="emp_mog_init"/>
    </properties>
   </object>
   <object id="21" name="First note chest (on_load, finish)" type="event" x="3744" y="5376" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="mapmod" value="object,46,63,176" />
-    <property name="requires_status" value="emp_mog_finish" />
+    <property name="activate" value="on_load"/>
+    <property name="mapmod" value="object,46,63,176"/>
+    <property name="requires_status" value="emp_mog_finish"/>
    </properties>
   </object>
   <object id="22" name="Cave wind sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
    </properties>
   </object>
   <object id="23" name="River sound" type="event" x="2016" y="7008" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="24" name="River sound" type="event" x="2688" y="6336" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="25" name="River sound" type="event" x="2304" y="5184" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="26" name="River sound" type="event" x="2976" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="27" name="River sound" type="event" x="2880" y="3264" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="28" name="River sound" type="event" x="2976" y="2016" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="29" name="River sound" type="event" x="3552" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="30" name="River sound" type="event" x="4608" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="31" name="River sound" type="event" x="4512" y="3264" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="32" name="River sound" type="event" x="1536" y="1632" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="33" name="Water dripping" type="event" x="1920" y="2688" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="34" name="Water dripping" type="event" x="4224" y="6048" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="35" name="Water dripping" type="event" x="4128" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="36" name="Water dripping" type="event" x="4608" y="480" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="37" name="Water dripping" type="event" x="1440" y="1056" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="38" name="Water dripping" type="event" x="480" y="2112" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="39" name="Water dripping" type="event" x="384" y="4512" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="40" name="Water dripping" type="event" x="1536" y="5184" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="41" name="Water dripping" type="event" x="3168" y="7296" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
   <object id="43" name="Water dripping" type="event" x="672" y="6240" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
   <object id="44" type="enemy" x="1536" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="mog" />
-    <property name="number" value="1" />
-    <property name="requires_status" value="emp_mog_door1" />
+    <property name="category" value="mog"/>
+    <property name="number" value="1"/>
+    <property name="requires_status" value="emp_mog_door1"/>
    </properties>
   </object>
   <object id="45" type="enemy" x="4128" y="5760" width="384" height="384">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="1" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="1"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="47" type="enemy" x="4416" y="3744" width="672" height="768">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="2" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="2"/>
    </properties>
   </object>
   <object id="48" type="enemy" x="3936" y="1440" width="576" height="768">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3"/>
    </properties>
   </object>
   <object id="49" type="enemy" x="3264" y="3168" width="864" height="864">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="2,3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="2,3"/>
    </properties>
   </object>
   <object id="50" type="enemy" x="3168" y="2208" width="864" height="864">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="2,3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="2,3"/>
    </properties>
   </object>
   <object id="51" type="enemy" x="4704" y="2304" width="384" height="768">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="1,2" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="1,2"/>
    </properties>
   </object>
   <object id="52" type="enemy" x="3936" y="192" width="1440" height="1056">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="4,5" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="4,5"/>
    </properties>
   </object>
   <object id="53" type="enemy" x="2208" y="192" width="1440" height="672">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3"/>
    </properties>
   </object>
   <object id="54" type="enemy" x="2208" y="1440" width="480" height="768">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3"/>
    </properties>
   </object>
   <object id="55" type="enemy" x="672" y="288" width="960" height="864">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3"/>
    </properties>
   </object>
   <object id="56" type="enemy" x="384" y="1440" width="576" height="1344">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3"/>
    </properties>
   </object>
   <object id="57" type="enemy" x="1152" y="2304" width="1344" height="864">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="9" />
-    <property name="number" value="3,4" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3,4"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="npc">
   <object id="15" type="npc" x="960" y="6336" width="96" height="96">
    <properties>
-    <property name="filename" value="npcs/loren.txt" />
+    <property name="filename" value="npcs/loren.txt"/>
    </properties>
   </object>
  </objectgroup>

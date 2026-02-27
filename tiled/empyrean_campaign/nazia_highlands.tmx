@@ -1,36 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="80" height="80" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="23">
  <editorsettings>
-  <export target="../../mods/empyrean_campaign/maps/nazia_highlands.txt" format="flare" />
+  <export target="../../mods/empyrean_campaign/maps/nazia_highlands.txt" format="flare"/>
  </editorsettings>
  <properties>
-  <property name="hero_pos" value="69,9" />
-  <property name="music" value="music/overworld_theme.ogg" />
-  <property name="tileset" value="tilesetdefs/tileset_grassland.txt" />
-  <property name="title" value="Nazia Highlands" />
+  <property name="hero_pos" value="69,9"/>
+  <property name="music" value="music/overworld_theme.ogg"/>
+  <property name="tileset" value="tilesetdefs/tileset_grassland.txt"/>
+  <property name="title" value="Nazia Highlands"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
-  <image source="../grassland/../tilesheets/tiled_collision.png" width="2880" height="96" />
+  <image source="../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
  <tileset firstgid="16" name="grassland" tilewidth="192" tileheight="384" tilecount="128" columns="16">
-  <image source="../grassland/../tilesheets/grassland.png" width="3072" height="3072" />
+  <image source="../tilesheets/grassland.png" width="3072" height="3072"/>
  </tileset>
  <tileset firstgid="144" name="water" tilewidth="192" tileheight="192" tilecount="64" columns="16">
-  <tileoffset x="0" y="96" />
-  <image source="../grassland/../tilesheets/grassland_water.png" width="3072" height="768" />
+  <tileoffset x="0" y="96"/>
+  <image source="../tilesheets/grassland_water.png" width="3072" height="768"/>
  </tileset>
  <tileset firstgid="208" name="tall structures" tilewidth="192" tileheight="768" tilecount="32" columns="16">
-  <image source="../grassland/../tilesheets/grassland_structures.png" width="3072" height="1536" />
+  <image source="../tilesheets/grassland_structures.png" width="3072" height="1536"/>
  </tileset>
  <tileset firstgid="240" name="trees" tilewidth="384" tileheight="768" tilecount="16" columns="8">
-  <tileoffset x="-96" y="0" />
-  <image source="../grassland/../tilesheets/grassland_trees.png" width="3072" height="1536" />
+  <tileoffset x="-96" y="0"/>
+  <image source="../tilesheets/grassland_trees.png" width="3072" height="1536"/>
  </tileset>
  <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
-  <image source="../grassland/../tilesheets/tiled_set_rules.png" width="384" height="384" />
+  <image source="../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="264" name="tiled_grassland_2x2" tilewidth="384" tileheight="192" tilecount="32" columns="4">
-  <tileoffset x="0" y="48" />
-  <image source="../grassland/../tilesheets/grassland_2x2.png" width="1536" height="1536" />
+  <tileoffset x="0" y="48"/>
+  <image source="../tilesheets/grassland_2x2.png" width="1536" height="1536"/>
  </tileset>
  <layer id="1" name="background" width="80" height="80">
   <data encoding="csv">
@@ -209,31 +210,31 @@
 3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,1,1,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,1,1,1,3,3,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,1,3,3,3,3,
 3,3,3,3,3,3,1,1,1,0,0,1,0,0,0,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,1,0,0,0,1,0,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,1,0,1,0,0,1,0,0,1,1,3,3,3,
-3,3,3,3,3,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
-3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,3,3,3,3,3,3,3,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
-3,3,3,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
-3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,4,1,1,1,3,3,3,3,3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
+3,3,3,3,3,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
+3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,1,3,3,3,3,3,3,3,1,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
+3,3,3,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
+3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,3,3,3,3,3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
 3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,3,3,3,3,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
-3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
-3,3,3,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,4,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,1,0,4,4,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
-3,3,3,1,0,0,0,0,0,0,0,1,1,1,3,3,3,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,4,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,3,3,3,3,
-3,3,3,1,1,0,0,0,0,0,0,1,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,1,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,3,3,3,3,3,
-3,3,3,3,1,0,0,0,0,0,0,1,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,3,1,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,
+3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
+3,3,3,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,1,0,2,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
+3,3,3,1,0,0,0,0,0,0,0,1,1,1,3,3,3,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,3,3,3,3,
+3,3,3,1,1,0,0,0,0,0,0,1,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,3,3,3,3,3,
+3,3,3,3,1,0,0,0,0,0,0,1,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,3,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,
 3,3,3,3,1,1,0,0,0,0,0,1,1,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,
 3,3,3,3,1,0,0,0,0,0,0,1,1,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,1,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,1,1,0,0,0,0,0,0,1,1,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,1,1,0,0,0,0,0,0,1,1,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,1,0,0,0,0,0,0,0,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,1,1,0,0,0,0,0,0,1,1,1,0,4,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,1,1,0,0,0,0,0,0,1,1,1,0,2,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,1,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,1,1,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,3,3,3,3,3,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,3,3,3,3,3,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,4,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,
@@ -251,8 +252,8 @@
 3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,1,4,0,0,0,0,0,0,0,0,0,0,1,1,3,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
-3,3,3,3,3,3,3,1,1,4,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,1,2,0,0,0,0,0,0,0,0,0,0,1,1,3,1,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
+3,3,3,3,3,3,3,1,1,2,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,
 3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,
 3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,
 3,3,3,3,3,3,3,1,0,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
@@ -260,21 +261,21 @@
 3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
 3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
 3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,1,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
-3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
-3,3,3,3,3,3,1,1,1,1,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,
+3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,1,1,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
+3,3,3,3,3,3,1,1,1,1,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,
 3,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,
-3,3,1,0,1,0,4,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,
-3,3,1,0,0,0,0,0,4,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,3,3,3,3,3,3,
-3,3,1,1,0,0,0,0,4,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,1,1,3,3,3,3,3,
-3,3,1,0,0,0,0,0,4,0,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,1,1,3,3,3,3,3,
-3,3,1,1,0,0,0,0,4,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,1,1,3,3,3,3,3,1,1,1,1,3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,3,3,3,3,3,
+3,3,1,0,1,0,2,1,1,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,
+3,3,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,3,3,3,3,3,3,
+3,3,1,1,0,0,0,0,2,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,1,1,3,3,3,3,3,
+3,3,1,0,0,0,0,0,2,0,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,1,1,3,3,3,3,3,
+3,3,1,1,0,0,0,0,2,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,1,1,3,3,3,3,3,1,1,1,1,3,3,3,3,3,1,1,0,0,0,0,0,0,0,1,3,3,3,3,3,
 3,3,1,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,1,3,3,3,3,3,1,1,2,2,1,1,1,1,3,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,
-3,3,1,0,1,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,3,3,3,3,1,1,4,2,2,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,
+3,3,1,0,1,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,3,3,3,3,1,1,2,2,2,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,
 3,3,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,2,2,2,0,0,4,4,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,2,2,2,2,0,0,4,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,2,2,2,0,0,2,2,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,2,2,2,2,0,0,2,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,4,4,0,0,0,0,0,0,0,4,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,2,2,0,0,0,0,0,0,0,2,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,0,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,
@@ -287,152 +288,152 @@
  <objectgroup id="4" name="event">
   <object id="1" name="award XP for aquiring Black Quill" type="event" x="5952" y="288" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="requires_not_status" value="emp_main_reward2" />
-    <property name="requires_status" value="emp_main_quill" />
-    <property name="reward_xp" value="6400" />
-    <property name="set_status" value="emp_main_reward2" />
+    <property name="activate" value="on_load"/>
+    <property name="requires_not_status" value="emp_main_reward2"/>
+    <property name="requires_status" value="emp_main_quill"/>
+    <property name="reward_xp" value="6400"/>
+    <property name="set_status" value="emp_main_reward2"/>
    </properties>
   </object>
   <object id="2" name="Wind and crickets sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/wind_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/wind_loop.ogg"/>
    </properties>
   </object>
   <object id="3" name="Raven sound effect" type="event" x="1152" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/raven_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/raven_loop.ogg"/>
    </properties>
   </object>
   <object id="4" name="Bird twitter" type="event" x="4032" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="5" name="Forrest owl sound effect" type="event" x="6432" y="576" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
   <object id="7" name="Supplies" type="event" x="3552" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_9.txt" />
-    <property name="mapmod" value="object,37,13,97" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Supplies" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_9.txt"/>
+    <property name="mapmod" value="object,37,13,97"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Supplies"/>
    </properties>
   </object>
   <object id="8" name="Supplies" type="event" x="3840" y="5664" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_9.txt" />
-    <property name="mapmod" value="object,40,59,97" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Supplies" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_9.txt"/>
+    <property name="mapmod" value="object,40,59,97"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Supplies"/>
    </properties>
   </object>
   <object id="9" name="Forrest owl sound effect" type="event" x="5760" y="6432" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
   <object id="10" name="Raven sound effect" type="event" x="4320" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/raven_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/raven_loop.ogg"/>
    </properties>
   </object>
   <object id="11" name="Bird twitter" type="event" x="2208" y="4320" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="19" name="move Abasi to this map" type="event" x="7200" y="288" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="requires_not_status" value="emp_abasi_2" />
-    <property name="set_status" value="emp_abasi_2" />
+    <property name="activate" value="on_load"/>
+    <property name="requires_not_status" value="emp_abasi_2"/>
+    <property name="set_status" value="emp_abasi_2"/>
    </properties>
   </object>
   <object id="20" name="to Nazia Underground" type="event" x="384" y="5952" width="384" height="384">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/nazia_underground.txt,92,29" />
-    <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0" />
-    <property name="tooltip" value="Nazia Underground" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/nazia_underground.txt,92,29"/>
+    <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
+    <property name="tooltip" value="Nazia Underground"/>
    </properties>
   </object>
   <object id="21" name="to Nazia Mines" type="event" x="1152" y="480" width="192" height="192">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/nazia_mines.txt,33,57" />
-    <property name="repeat" value="false" />
-    <property name="tooltip" value="Nazia Mines" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/nazia_mines.txt,33,57"/>
+    <property name="repeat" value="false"/>
+    <property name="tooltip" value="Nazia Mines"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
   <object id="12" type="enemy" x="3264" y="672" width="2304" height="2400">
    <properties>
-    <property name="category" value="grassland" />
-    <property name="level" value="9" />
-    <property name="number" value="6,7" />
+    <property name="category" value="grassland"/>
+    <property name="level" value="9"/>
+    <property name="number" value="6,7"/>
    </properties>
   </object>
   <object id="13" type="enemy" x="4032" y="3072" width="2784" height="3072">
    <properties>
-    <property name="category" value="grassland" />
-    <property name="level" value="9" />
-    <property name="number" value="6,7" />
+    <property name="category" value="grassland"/>
+    <property name="level" value="9"/>
+    <property name="number" value="6,7"/>
    </properties>
   </object>
   <object id="14" type="enemy" x="1728" y="3072" width="2304" height="2976">
    <properties>
-    <property name="category" value="grassland" />
-    <property name="level" value="9" />
-    <property name="number" value="6,7" />
+    <property name="category" value="grassland"/>
+    <property name="level" value="9"/>
+    <property name="number" value="6,7"/>
    </properties>
   </object>
   <object id="15" type="enemy" x="384" y="1152" width="768" height="1824">
    <properties>
-    <property name="category" value="grassland" />
-    <property name="level" value="9" />
-    <property name="number" value="3,4" />
+    <property name="category" value="grassland"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3,4"/>
    </properties>
   </object>
   <object id="17" type="enemy" x="768" y="3552" width="672" height="2112">
    <properties>
-    <property name="category" value="grassland" />
-    <property name="level" value="9" />
-    <property name="number" value="3" />
+    <property name="category" value="grassland"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3"/>
    </properties>
   </object>
   <object id="22" type="enemy" x="1920" y="864" width="768" height="1824">
    <properties>
-    <property name="category" value="grassland" />
-    <property name="level" value="9" />
-    <property name="number" value="3,4" />
+    <property name="category" value="grassland"/>
+    <property name="level" value="9"/>
+    <property name="number" value="3,4"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="npc">
   <object id="18" type="npc" x="5952" y="6912" width="96" height="96">
    <properties>
-    <property name="filename" value="npcs/abasi_2.txt" />
-    <property name="requires_not_status" value="emp_abasi_3" />
+    <property name="filename" value="npcs/abasi_2.txt"/>
+    <property name="requires_not_status" value="emp_abasi_3"/>
    </properties>
   </object>
  </objectgroup>

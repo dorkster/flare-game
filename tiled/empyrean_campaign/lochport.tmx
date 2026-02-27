@@ -1,34 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="50" height="60" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="38">
  <properties>
-  <property name="hero_pos" value="43,1" />
-  <property name="music" value="music/forest_theme.ogg" />
-  <property name="parallax_layers" value="maps/parallax/rain.txt" />
-  <property name="tileset" value="tilesetdefs/tileset_grassland.txt" />
-  <property name="title" value="Lochport" />
+  <property name="hero_pos" value="43,1"/>
+  <property name="music" value="music/forest_theme.ogg"/>
+  <property name="parallax_layers" value="maps/parallax/rain.txt"/>
+  <property name="tileset" value="tilesetdefs/tileset_grassland.txt"/>
+  <property name="title" value="Lochport"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
-  <image source="../grassland/../tilesheets/tiled_collision.png" width="2880" height="96" />
+  <image source="../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
  <tileset firstgid="16" name="grassland" tilewidth="192" tileheight="384" tilecount="128" columns="16">
-  <image source="../grassland/../tilesheets/grassland.png" width="3072" height="3072" />
+  <image source="../tilesheets/grassland.png" width="3072" height="3072"/>
  </tileset>
  <tileset firstgid="144" name="water" tilewidth="192" tileheight="192" tilecount="64" columns="16">
-  <tileoffset x="0" y="96" />
-  <image source="../grassland/../tilesheets/grassland_water.png" width="3072" height="768" />
+  <tileoffset x="0" y="96"/>
+  <image source="../tilesheets/grassland_water.png" width="3072" height="768"/>
  </tileset>
  <tileset firstgid="208" name="tall structures" tilewidth="192" tileheight="768" tilecount="32" columns="16">
-  <image source="../grassland/../tilesheets/grassland_structures.png" width="3072" height="1536" />
+  <image source="../tilesheets/grassland_structures.png" width="3072" height="1536"/>
  </tileset>
  <tileset firstgid="240" name="trees" tilewidth="384" tileheight="768" tilecount="16" columns="8">
-  <tileoffset x="-96" y="0" />
-  <image source="../grassland/../tilesheets/grassland_trees.png" width="3072" height="1536" />
+  <tileoffset x="-96" y="0"/>
+  <image source="../tilesheets/grassland_trees.png" width="3072" height="1536"/>
  </tileset>
  <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
-  <image source="../grassland/../tilesheets/tiled_set_rules.png" width="384" height="384" />
+  <image source="../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="264" name="tiled_grassland_2x2" tilewidth="384" tileheight="192" tilecount="32" columns="4">
-  <tileoffset x="0" y="48" />
-  <image source="../grassland/../tilesheets/grassland_2x2.png" width="1536" height="1536" />
+  <tileoffset x="0" y="48"/>
+  <image source="../tilesheets/grassland_2x2.png" width="1536" height="1536"/>
  </tileset>
  <layer id="1" name="background" width="50" height="60">
   <data encoding="csv">
@@ -166,55 +167,55 @@
 1,1,1,1,1,3,3,3,1,1,0,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,1,3,3,3,3,
 2,2,0,0,1,1,1,1,1,0,0,1,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,0,1,1,1,3,3,
 2,2,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,3,3,3,3,3,1,1,1,1,1,1,3,3,1,1,1,0,0,0,0,0,0,0,0,1,3,3,
-2,2,2,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,1,1,1,1,0,0,4,0,0,0,0,0,0,0,1,3,3,
-2,2,2,0,0,1,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,4,0,1,0,0,0,0,0,0,1,0,0,0,0,4,0,0,0,0,0,0,0,1,3,3,
-2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
-2,2,2,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
-2,2,2,2,0,0,0,0,0,0,0,0,1,1,1,4,0,0,0,0,1,1,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,1,1,3,
-2,2,2,2,0,1,0,0,0,0,0,4,0,0,0,0,0,0,0,0,1,1,1,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,1,1,3,3,
-2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,3,3,
-2,2,2,2,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,0,1,1,1,0,0,0,0,0,0,0,0,1,1,3,
+2,2,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,1,1,1,1,0,0,2,0,0,0,0,0,0,0,1,3,3,
+2,2,2,0,0,1,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,2,0,1,0,0,0,0,0,0,1,0,0,0,0,2,0,0,0,0,0,0,0,1,3,3,
+2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
+2,2,2,0,0,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
+2,2,2,2,0,0,0,0,0,0,0,0,1,1,1,2,0,0,0,0,1,1,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,1,3,
+2,2,2,2,0,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,1,1,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,1,1,3,3,
+2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,3,3,
+2,2,2,2,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,0,1,1,1,0,0,0,0,0,0,0,0,1,1,3,
 2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
 2,2,2,2,2,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,3,
 2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
-2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,1,1,3,
-2,2,2,2,2,2,2,2,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,4,4,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
-2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,1,1,1,4,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
-2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,0,0,0,0,4,0,0,0,0,0,0,4,0,1,1,0,0,0,0,0,0,0,0,4,0,0,1,0,0,1,3,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,0,0,4,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,0,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
+2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,3,
+2,2,2,2,2,2,2,2,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,2,2,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
+2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,1,1,1,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,0,0,0,0,2,0,0,0,0,0,0,2,0,1,1,0,0,0,0,0,0,0,0,2,0,0,1,0,0,1,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,4,0,0,0,0,0,0,1,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,1,3,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,0,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,1,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,
 2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,
-2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,1,3,3,
-2,2,2,2,2,0,0,0,1,0,0,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,4,0,0,4,0,0,0,0,0,1,0,0,0,0,0,1,3,3,
-2,2,2,2,0,4,0,0,0,0,1,0,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
-2,2,2,2,0,0,0,0,4,0,0,0,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,0,0,0,4,0,4,0,0,4,0,0,0,0,1,1,0,0,0,0,1,3,3,3,
-2,2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,4,0,0,0,0,1,1,0,0,0,0,1,3,3,3,
-2,2,2,0,3,1,0,1,3,0,0,1,2,2,2,2,2,0,0,2,2,2,2,2,0,0,0,1,0,0,0,0,0,0,0,3,0,0,0,0,1,1,0,0,0,0,1,3,3,3,
-2,2,2,0,1,1,1,1,1,0,0,0,2,2,2,2,2,0,0,2,2,2,2,1,0,0,0,0,0,0,4,4,0,4,4,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
-2,2,2,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,0,0,1,3,3,3,
-2,2,2,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,1,3,3,3,
-2,2,2,0,3,1,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,1,1,3,3,
-2,2,2,2,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,1,3,3,
+2,2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,3,3,
+2,2,2,2,2,0,0,0,1,0,0,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,2,0,0,2,0,0,0,0,0,1,0,0,0,0,0,1,3,3,
+2,2,2,2,0,2,0,0,0,0,1,0,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
+2,2,2,2,0,0,0,0,2,0,0,0,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,0,0,0,2,0,2,0,0,2,0,0,0,0,1,1,0,0,0,0,1,3,3,3,
+2,2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,1,1,0,0,0,0,1,3,3,3,
+2,2,2,0,3,1,0,1,3,0,0,1,2,2,2,2,2,0,0,2,2,2,2,2,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,3,3,3,
+2,2,2,0,1,1,1,1,1,0,0,0,2,2,2,2,2,0,0,2,2,2,2,1,0,0,0,0,0,0,2,2,0,2,2,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,
+2,2,2,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,0,0,1,3,3,3,
+2,2,2,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,1,3,3,3,
+2,2,2,0,3,1,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,1,1,3,3,
+2,2,2,2,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,3,3,
 2,2,2,2,1,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,3,3,
-2,2,2,2,2,0,0,0,0,0,4,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,3,3,
-2,2,2,2,2,2,0,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,4,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,
+2,2,2,2,2,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,3,3,
+2,2,2,2,2,2,0,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,2,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,
 2,2,2,2,2,2,2,0,0,1,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,1,1,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1,1,3,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,3,3,3,3,3,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,1,1,1,0,0,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,3,3,3,3,3,3,3,
@@ -225,244 +226,244 @@
  <objectgroup id="4" name="event">
   <object id="1" name="to Lochport Cemetery" type="event" x="3936" y="0" width="384" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/lochport_cemetery.txt,48,78" />
-    <property name="tooltip" value="Lochport Cemetery" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/lochport_cemetery.txt,48,78"/>
+    <property name="tooltip" value="Lochport Cemetery"/>
    </properties>
   </object>
   <object id="2" name="Wind and crickets sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/wind_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/wind_loop.ogg"/>
    </properties>
   </object>
   <object id="3" name="River sound" type="event" x="192" y="1056" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="4" name="River sound" type="event" x="1536" y="2400" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="5" name="River sound" type="event" x="1920" y="3264" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="6" name="River sound" type="event" x="1632" y="4032" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="7" name="River sound" type="event" x="1440" y="5184" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="8" name="River sound" type="event" x="384" y="3360" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="9" name="River sound" type="event" x="192" y="5088" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="10" name="Raven sound effect" type="event" x="864" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/raven_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/raven_loop.ogg"/>
    </properties>
   </object>
   <object id="11" name="Bird twitter" type="event" x="2688" y="960" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="12" name="Forrest owl sound effect" type="event" x="4224" y="1728" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
   <object id="13" name="Forrest owl sound effect" type="event" x="2400" y="5280" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
   <object id="14" name="Bird twitter" type="event" x="2208" y="2208" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="15" name="Bird twitter" type="event" x="4032" y="4896" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="16" name="Forrest owl sound effect" type="event" x="672" y="1056" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
   <object id="17" name="Supplies" type="event" x="1056" y="1056" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_2.txt" />
-    <property name="mapmod" value="object,11,11,99" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Supplies" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_2.txt"/>
+    <property name="mapmod" value="object,11,11,99"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Supplies"/>
    </properties>
   </object>
   <object id="18" name="Supplies" type="event" x="1920" y="3168" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_2.txt" />
-    <property name="mapmod" value="object,20,33,97" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Supplies" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_2.txt"/>
+    <property name="mapmod" value="object,20,33,97"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Supplies"/>
    </properties>
   </object>
   <object id="32" name="to St. Maria: Mausoleum" type="event" x="576" y="4224" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/st_maria_1.txt,39,66" />
-    <property name="tooltip" value="St. Maria: Mausoleum" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/st_maria_1.txt,39,66"/>
+    <property name="tooltip" value="St. Maria: Mausoleum"/>
    </properties>
   </object>
   <object id="36" name="to St. Maria: Mausoleum" type="event" x="576" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/st_maria_1.txt,39,66" />
-    <property name="tooltip" value="St. Maria: Mausoleum" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/st_maria_1.txt,39,66"/>
+    <property name="tooltip" value="St. Maria: Mausoleum"/>
    </properties>
   </object>
   <object id="37" name="Rain sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/rain.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/rain.ogg"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
   <object id="19" type="enemy" x="2304" y="4320" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton_archer" />
-    <property name="direction" value="5" />
-    <property name="level" value="2" />
-    <property name="number" value="1" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton_archer"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="2"/>
+    <property name="number" value="1"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="21" type="enemy" x="2304" y="4704" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton_archer" />
-    <property name="direction" value="5" />
-    <property name="level" value="2" />
-    <property name="number" value="1" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton_archer"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="2"/>
+    <property name="number" value="1"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="22" type="enemy" x="2496" y="864" width="768" height="288">
    <properties>
-    <property name="category" value="zombie" />
-    <property name="level" value="2" />
-    <property name="number" value="2" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="zombie"/>
+    <property name="level" value="2"/>
+    <property name="number" value="2"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="23" type="enemy" x="864" y="1056" width="672" height="384">
    <properties>
-    <property name="category" value="undead" />
-    <property name="level" value="2" />
-    <property name="number" value="2,3" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="undead"/>
+    <property name="level" value="2"/>
+    <property name="number" value="2,3"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="24" type="enemy" x="2208" y="1824" width="576" height="480">
    <properties>
-    <property name="category" value="zombie" />
-    <property name="level" value="2" />
-    <property name="number" value="2" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="zombie"/>
+    <property name="level" value="2"/>
+    <property name="number" value="2"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="25" type="enemy" x="3264" y="2496" width="384" height="1056">
    <properties>
-    <property name="category" value="undead" />
-    <property name="level" value="2" />
-    <property name="number" value="3" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="undead"/>
+    <property name="level" value="2"/>
+    <property name="number" value="3"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="26" type="enemy" x="3840" y="4512" width="384" height="480">
    <properties>
-    <property name="category" value="zombie" />
-    <property name="level" value="2" />
-    <property name="number" value="2" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="zombie"/>
+    <property name="level" value="2"/>
+    <property name="number" value="2"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="27" type="enemy" x="2112" y="3168" width="480" height="192">
    <properties>
-    <property name="category" value="undead" />
-    <property name="level" value="2" />
-    <property name="number" value="1,2" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="undead"/>
+    <property name="level" value="2"/>
+    <property name="number" value="1,2"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="28" type="enemy" x="3072" y="4416" width="576" height="384">
    <properties>
-    <property name="category" value="undead" />
-    <property name="level" value="2" />
-    <property name="number" value="2,3" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="undead"/>
+    <property name="level" value="2"/>
+    <property name="number" value="2,3"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="29" type="enemy" x="1632" y="3744" width="192" height="288">
    <properties>
-    <property name="category" value="undead" />
-    <property name="level" value="2" />
-    <property name="number" value="1,2" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="undead"/>
+    <property name="level" value="2"/>
+    <property name="number" value="1,2"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="30" type="enemy" x="3264" y="4992" width="480" height="288">
    <properties>
-    <property name="category" value="undead" />
-    <property name="level" value="2" />
-    <property name="number" value="1,2" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="undead"/>
+    <property name="level" value="2"/>
+    <property name="number" value="1,2"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
   <object id="31" type="enemy" x="4032" y="3072" width="288" height="768">
    <properties>
-    <property name="category" value="undead" />
-    <property name="level" value="2" />
-    <property name="number" value="2" />
-    <property name="wander_radius" value="1" />
+    <property name="category" value="undead"/>
+    <property name="level" value="2"/>
+    <property name="number" value="2"/>
+    <property name="wander_radius" value="1"/>
    </properties>
   </object>
  </objectgroup>

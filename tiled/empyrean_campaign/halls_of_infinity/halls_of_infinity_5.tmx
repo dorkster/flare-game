@@ -1,37 +1,38 @@
-<map version="1.11" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="70" height="100" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="39">
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="70" height="100" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="39">
  <properties>
-  <property name="hero_pos" value="63,5" />
-  <property name="music" value="music/dungeon_theme.ogg" />
-  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
-  <property name="title" value="Halls of Infinity" />
+  <property name="hero_pos" value="63,5"/>
+  <property name="music" value="music/dungeon_theme.ogg"/>
+  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
+  <property name="title" value="Halls of Infinity"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
-  <image source="../../dungeon/../tilesheets/tiled_collision.png" width="2880" height="96" />
+  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
  <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240" columns="16">
-  <image source="../../dungeon/../tilesheets/dungeon.png" width="3072" height="5760" />
+  <image source="../../tilesheets/dungeon.png" width="3072" height="5760"/>
  </tileset>
  <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
-  <image source="../../dungeon/../tilesheets/tiled_set_rules.png" width="384" height="384" />
+  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16" columns="4">
-  <tileoffset x="0" y="48" />
-  <image source="../../dungeon/../tilesheets/dungeon_2x2.png" width="1536" height="768" />
+  <tileoffset x="0" y="48"/>
+  <image source="../../tilesheets/dungeon_2x2.png" width="1536" height="768"/>
  </tileset>
  <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2" columns="2">
-  <tileoffset x="-48" y="-24" />
-  <image source="../../dungeon/../tilesheets/dungeon_door_left.png" width="384" height="384" />
+  <tileoffset x="-48" y="-24"/>
+  <image source="../../tilesheets/dungeon_door_left.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2" columns="2">
-  <tileoffset x="48" y="-24" />
-  <image source="../../dungeon/../tilesheets/dungeon_door_right.png" width="384" height="384" />
+  <tileoffset x="48" y="-24"/>
+  <image source="../../tilesheets/dungeon_door_right.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4" columns="4">
-  <tileoffset x="0" y="144" />
-  <image source="../../dungeon/../tilesheets/dungeon_stairs.png" width="3072" height="768" />
+  <tileoffset x="0" y="144"/>
+  <image source="../../tilesheets/dungeon_stairs.png" width="3072" height="768"/>
  </tileset>
  <tileset firstgid="288" name="boss_chest" tilewidth="192" tileheight="192" tilecount="4" columns="4">
-  <image source="../../common/../tilesheets/boss_chest.png" width="768" height="192" />
+  <image source="../../tilesheets/boss_chest.png" width="768" height="192"/>
  </tileset>
  <layer id="1" name="background" width="70" height="100">
   <data encoding="csv">
@@ -348,235 +349,235 @@
  <objectgroup id="4" name="event">
   <object id="6" name="bookstand" type="event" x="1920" y="7200" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="3,fixed,1" />
-    <property name="mapmod" value="object,20,75,164" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg" />
-    <property name="tooltip" value="Book Stand" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="3,fixed,1"/>
+    <property name="mapmod" value="object,20,75,164"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/inventory/inventory_page.ogg"/>
+    <property name="tooltip" value="Book Stand"/>
    </properties>
   </object>
   <object id="7" name="barrel" type="event" x="960" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,10,49,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,10,49,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="8" name="barrel" type="event" x="960" y="4608" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,10,48,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,10,48,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="9" name="barrel" type="event" x="960" y="4512" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,10,47,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,10,47,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="10" name="barrel" type="event" x="1152" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,12,49,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,12,49,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="11" name="crate" type="event" x="1056" y="4416" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,11,46,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,11,46,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="12" name="crate" type="event" x="1248" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,13,49,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,13,49,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="13" name="crate" type="event" x="1440" y="4704" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,15,49,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,15,49,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="16" name="teleport chest" type="event" x="4320" y="9312" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="loot_count" value="2" />
-    <property name="mapmod" value="object,45,97,161" />
-    <property name="repeat" value="false" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="loot_count" value="2"/>
+    <property name="mapmod" value="object,45,97,161"/>
+    <property name="repeat" value="false"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="38" name="Treasure Chest" type="event" x="960" y="8640" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_16.txt" />
-    <property name="loot_count" value="5,6" />
-    <property name="mapmod" value="object,10,90,289" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_16.txt"/>
+    <property name="loot_count" value="5,6"/>
+    <property name="mapmod" value="object,10,90,289"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy" visible="0">
   <object id="19" name="entrance guards" type="enemy" x="5760" y="1344" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="20" type="enemy" x="6240" y="1344" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="21" type="enemy" x="4800" y="2400" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="22" type="enemy" x="4800" y="2880" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="23" type="enemy" x="4320" y="8160" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="25" type="enemy" x="5568" y="2208" width="864" height="672">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="1,3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="1,3"/>
    </properties>
   </object>
   <object id="26" name="foyer" type="enemy" x="3264" y="2496" width="864" height="1344">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="2,3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="2,3"/>
    </properties>
   </object>
   <object id="27" type="enemy" x="1440" y="2112" width="1728" height="1728">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="2,2" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="2,2"/>
    </properties>
   </object>
   <object id="28" type="enemy" x="1440" y="2112" width="1728" height="1728">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="1,2" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="1,2"/>
    </properties>
   </object>
   <object id="29" name="north book location" type="enemy" x="1440" y="2112" width="1728" height="1728">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="3,4" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="3,4"/>
    </properties>
   </object>
   <object id="30" type="enemy" x="4896" y="6336" width="672" height="864">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="1,3" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="1,3"/>
    </properties>
   </object>
   <object id="31" type="enemy" x="2400" y="4032" width="3168" height="3168">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="4,6" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="4,6"/>
    </properties>
   </object>
   <object id="32" type="enemy" x="2400" y="4032" width="2880" height="2880">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="3,7" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="3,7"/>
    </properties>
   </object>
   <object id="33" name="center book location" type="enemy" x="2400" y="4032" width="2880" height="2880">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="7,10" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="7,10"/>
    </properties>
   </object>
   <object id="34" name="south book location" type="enemy" x="1248" y="6528" width="1152" height="768">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="2,4" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="2,4"/>
    </properties>
   </object>
   <object id="35" type="enemy" x="768" y="6432" width="1632" height="2496">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
-    <property name="number" value="3,5" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
+    <property name="number" value="3,5"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="npc">
   <object id="37" type="npc" x="576" y="8736" width="96" height="96">
    <properties>
-    <property name="filename" value="npcs/infinity_obelisk_1.txt" />
+    <property name="filename" value="npcs/infinity_obelisk_1.txt"/>
    </properties>
   </object>
  </objectgroup>

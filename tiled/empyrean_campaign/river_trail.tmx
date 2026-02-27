@@ -1,36 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="80" height="40" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="6" nextobjectid="23">
  <editorsettings>
-  <export target="../../mods/empyrean_campaign/maps/river_trail.txt" format="flare" />
+  <export target="../../mods/empyrean_campaign/maps/river_trail.txt" format="flare"/>
  </editorsettings>
  <properties>
-  <property name="hero_pos" value="7,5" />
-  <property name="music" value="music/wind_ambient.ogg" />
-  <property name="tileset" value="tilesetdefs/tileset_grassland.txt" />
-  <property name="title" value="River Trail" />
+  <property name="hero_pos" value="7,5"/>
+  <property name="music" value="music/wind_ambient.ogg"/>
+  <property name="tileset" value="tilesetdefs/tileset_grassland.txt"/>
+  <property name="title" value="River Trail"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
-  <image source="../grassland/../tilesheets/tiled_collision.png" width="2880" height="96" />
+  <image source="../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
  <tileset firstgid="16" name="grassland" tilewidth="192" tileheight="384" tilecount="128" columns="16">
-  <image source="../grassland/../tilesheets/grassland.png" width="3072" height="3072" />
+  <image source="../tilesheets/grassland.png" width="3072" height="3072"/>
  </tileset>
  <tileset firstgid="144" name="water" tilewidth="192" tileheight="192" tilecount="64" columns="16">
-  <tileoffset x="0" y="96" />
-  <image source="../grassland/../tilesheets/grassland_water.png" width="3072" height="768" />
+  <tileoffset x="0" y="96"/>
+  <image source="../tilesheets/grassland_water.png" width="3072" height="768"/>
  </tileset>
  <tileset firstgid="208" name="tall structures" tilewidth="192" tileheight="768" tilecount="32" columns="16">
-  <image source="../grassland/../tilesheets/grassland_structures.png" width="3072" height="1536" />
+  <image source="../tilesheets/grassland_structures.png" width="3072" height="1536"/>
  </tileset>
  <tileset firstgid="240" name="trees" tilewidth="384" tileheight="768" tilecount="16" columns="8">
-  <tileoffset x="-96" y="0" />
-  <image source="../grassland/../tilesheets/grassland_trees.png" width="3072" height="1536" />
+  <tileoffset x="-96" y="0"/>
+  <image source="../tilesheets/grassland_trees.png" width="3072" height="1536"/>
  </tileset>
  <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
-  <image source="../grassland/../tilesheets/tiled_set_rules.png" width="384" height="384" />
+  <image source="../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="264" name="tiled_grassland_2x2" tilewidth="384" tileheight="192" tilecount="32" columns="4">
-  <tileoffset x="0" y="48" />
-  <image source="../grassland/../tilesheets/grassland_2x2.png" width="1536" height="1536" />
+  <tileoffset x="0" y="48"/>
+  <image source="../tilesheets/grassland_2x2.png" width="1536" height="1536"/>
  </tileset>
  <layer id="1" name="background" width="80" height="40">
   <data encoding="csv">
@@ -133,13 +134,13 @@
 3,3,3,3,3,3,3,3,3,3,3,1,1,1,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,3,3,1,1,1,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,3,3,1,1,1,1,1,1,1,3,1,1,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,0,0,0,2,2,2,2,2,1,2,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,2,1,2,2,2,2,2,2,2,2,2,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
-3,3,3,1,1,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,4,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
+3,3,3,1,1,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,2,1,1,1,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,1,0,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,1,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,1,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,3,1,0,0,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,3,3,3,3,3,3,3,3,1,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
 3,3,1,1,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,0,0,0,0,0,0,0,0,1,1,3,3,3,3,3,3,3,1,1,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,0,0,1,1,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,
@@ -167,134 +168,134 @@
  <objectgroup id="4" name="event">
   <object id="1" name="to Arrival" type="event" x="576" y="384" width="96" height="192">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/arrival.txt,37,34" />
-    <property name="tooltip" value="Arrival" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/arrival.txt,37,34"/>
+    <property name="tooltip" value="Arrival"/>
    </properties>
   </object>
   <object id="2" name="to Perdition Harbor" type="event" x="7488" y="2400" width="96" height="384">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="intermap" value="maps/perdition_harbor.txt,2,24" />
-    <property name="tooltip" value="Perdition Harbor" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="intermap" value="maps/perdition_harbor.txt,2,24"/>
+    <property name="tooltip" value="Perdition Harbor"/>
    </properties>
   </object>
   <object id="6" name="Wind and crickets sound effect" type="event" x="0" y="0" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/wind_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/wind_loop.ogg"/>
    </properties>
   </object>
   <object id="7" name="River sound" type="event" x="768" y="2304" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="8" name="River sound" type="event" x="2208" y="2304" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="9" name="River sound" type="event" x="3552" y="3072" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="10" name="River sound" type="event" x="4608" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="11" name="River sound" type="event" x="4992" y="1728" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="12" name="River sound" type="event" x="5952" y="2592" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="13" name="River sound" type="event" x="7104" y="3168" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/river_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
   <object id="14" name="Bird twitter" type="event" x="1344" y="480" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="15" name="Forrest owl sound effect" type="event" x="2688" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
   <object id="16" name="Raven sound effect" type="event" x="480" y="1536" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/raven_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/raven_loop.ogg"/>
    </properties>
   </object>
   <object id="17" name="Bird twitter" type="event" x="3168" y="2592" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="18" name="Forrest owl sound effect" type="event" x="3840" y="1248" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
   <object id="20" name="Raven sound effect" type="event" x="4992" y="1344" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/raven_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/raven_loop.ogg"/>
    </properties>
   </object>
   <object id="21" name="Bird twitter" type="event" x="4704" y="384" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/bird_twitter_loop.ogg"/>
    </properties>
   </object>
   <object id="22" name="Forrest owl sound effect" type="event" x="6624" y="2304" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/forest_owl_loop.ogg"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
   <object id="3" type="enemy" x="384" y="2016" width="96" height="96">
    <properties>
-    <property name="category" value="zombie" />
-    <property name="level" value="1" />
+    <property name="category" value="zombie"/>
+    <property name="level" value="1"/>
    </properties>
   </object>
   <object id="4" type="enemy" x="4416" y="480" width="96" height="96">
    <properties>
-    <property name="category" value="zombie" />
-    <property name="level" value="1" />
+    <property name="category" value="zombie"/>
+    <property name="level" value="1"/>
    </properties>
   </object>
   <object id="5" type="enemy" x="5184" y="672" width="96" height="96">
    <properties>
-    <property name="category" value="zombie" />
-    <property name="level" value="1" />
+    <property name="category" value="zombie"/>
+    <property name="level" value="1"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,37 +1,38 @@
-<map version="1.11" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="101" height="120" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="122">
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="101" height="120" tilewidth="192" tileheight="96" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="122">
  <properties>
-  <property name="hero_pos" value="96,71" />
-  <property name="music" value="music/dungeon_theme.ogg" />
-  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt" />
-  <property name="title" value="Halls of Infinity" />
+  <property name="hero_pos" value="96,71"/>
+  <property name="music" value="music/dungeon_theme.ogg"/>
+  <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
+  <property name="title" value="Halls of Infinity"/>
  </properties>
  <tileset firstgid="1" name="collision" tilewidth="192" tileheight="96" tilecount="15" columns="15">
-  <image source="../../dungeon/../tilesheets/tiled_collision.png" width="2880" height="96" />
+  <image source="../../tilesheets/tiled_collision.png" width="2880" height="96"/>
  </tileset>
  <tileset firstgid="16" name="dungeon" tilewidth="192" tileheight="384" tilecount="240" columns="16">
-  <image source="../../dungeon/../tilesheets/dungeon.png" width="3072" height="5760" />
+  <image source="../../tilesheets/dungeon.png" width="3072" height="5760"/>
  </tileset>
  <tileset firstgid="256" name="set_rules" tilewidth="192" tileheight="96" tilecount="8" columns="2">
-  <image source="../../dungeon/../tilesheets/tiled_set_rules.png" width="384" height="384" />
+  <image source="../../tilesheets/tiled_set_rules.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="384" tileheight="192" tilecount="16" columns="4">
-  <tileoffset x="0" y="48" />
-  <image source="../../dungeon/../tilesheets/dungeon_2x2.png" width="1536" height="768" />
+  <tileoffset x="0" y="48"/>
+  <image source="../../tilesheets/dungeon_2x2.png" width="1536" height="768"/>
  </tileset>
  <tileset firstgid="280" name="door_left" tilewidth="192" tileheight="384" tilecount="2" columns="2">
-  <tileoffset x="-48" y="-24" />
-  <image source="../../dungeon/../tilesheets/dungeon_door_left.png" width="384" height="384" />
+  <tileoffset x="-48" y="-24"/>
+  <image source="../../tilesheets/dungeon_door_left.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="282" name="door_right" tilewidth="192" tileheight="384" tilecount="2" columns="2">
-  <tileoffset x="48" y="-24" />
-  <image source="../../dungeon/../tilesheets/dungeon_door_right.png" width="384" height="384" />
+  <tileoffset x="48" y="-24"/>
+  <image source="../../tilesheets/dungeon_door_right.png" width="384" height="384"/>
  </tileset>
  <tileset firstgid="284" name="stairs" tilewidth="768" tileheight="768" tilecount="4" columns="4">
-  <tileoffset x="0" y="144" />
-  <image source="../../dungeon/../tilesheets/dungeon_stairs.png" width="3072" height="768" />
+  <tileoffset x="0" y="144"/>
+  <image source="../../tilesheets/dungeon_stairs.png" width="3072" height="768"/>
  </tileset>
  <tileset firstgid="288" name="boss_chest" tilewidth="192" tileheight="192" tilecount="4" columns="4">
-  <image source="../../common/../tilesheets/boss_chest.png" width="768" height="192" />
+  <image source="../../tilesheets/boss_chest.png" width="768" height="192"/>
  </tileset>
  <layer id="1" name="background" width="101" height="120">
   <data encoding="csv">
@@ -408,886 +409,886 @@
  <objectgroup id="4" name="event">
   <object id="2" name="intro crate" type="event" x="8160" y="7104" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,85,74,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,85,74,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="3" name="zombie barrels" type="event" x="7104" y="6048" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,74,63,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,74,63,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="4" name="zombie barrels" type="event" x="7008" y="5952" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,73,62,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,73,62,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="5" name="zombie barrels" type="event" x="7104" y="5952" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,74,62,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,74,62,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="6" name="goblin firepit barrel" type="event" x="6912" y="9216" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,72,96,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,72,96,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="7" name="goblin firepit crate" type="event" x="6912" y="9312" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,72,97,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,72,97,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="8" name="secret room crate" type="event" x="7008" y="10560" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,73,110,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,73,110,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="10" name="barracks chests" type="event" x="3936" y="5664" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,41,59,160" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,41,59,160"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="11" name="barracks chests" type="event" x="3936" y="5472" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,41,57,160" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,41,57,160"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="12" name="barracks chests" type="event" x="3936" y="5280" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,41,55,160" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,41,55,160"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="13" name="barracks chests" type="event" x="3936" y="5088" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,41,53,160" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,41,53,160"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="14" name="barracks chests" type="event" x="3936" y="4896" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,41,51,160" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,41,51,160"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="15" name="large room storage" type="event" x="4800" y="2688" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,50,28,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,50,28,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="16" name="large room storage" type="event" x="4800" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,50,29,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,50,29,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="17" name="large room storage" type="event" x="5280" y="2688" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,55,28,163" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Crate" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,55,28,163"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Crate"/>
    </properties>
   </object>
   <object id="18" name="large room storage" type="event" x="5280" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_15.txt" />
-    <property name="mapmod" value="object,55,29,162" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Barrel" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_15.txt"/>
+    <property name="mapmod" value="object,55,29,162"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
   <object id="19" name="kill room chest" type="event" x="864" y="1920" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_16.txt" />
-    <property name="loot_count" value="3,4" />
-    <property name="mapmod" value="object,9,20,291" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_16.txt"/>
+    <property name="loot_count" value="3,4"/>
+    <property name="mapmod" value="object,9,20,291"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="20" name="kill room chest" type="event" x="864" y="2784" width="96" height="96">
    <properties>
-    <property name="activate" value="on_trigger" />
-    <property name="hotspot" value="location" />
-    <property name="loot" value="loot/chest_level_16.txt" />
-    <property name="loot_count" value="3,4" />
-    <property name="mapmod" value="object,9,29,291" />
-    <property name="repeat" value="false" />
-    <property name="soundfx" value="soundfx/wood_open.ogg" />
-    <property name="tooltip" value="Treasure Chest" />
+    <property name="activate" value="on_trigger"/>
+    <property name="hotspot" value="location"/>
+    <property name="loot" value="loot/chest_level_16.txt"/>
+    <property name="loot_count" value="3,4"/>
+    <property name="mapmod" value="object,9,29,291"/>
+    <property name="repeat" value="false"/>
+    <property name="soundfx" value="soundfx/wood_open.ogg"/>
+    <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
   <object id="22" name="brazier sound effect" type="event" x="4512" y="1920" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="23" name="brazier sound effect" type="event" x="7200" y="9024" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="24" name="brazier sound effect" type="event" x="4608" y="1920" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="25" name="brazier sound effect" type="event" x="4608" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="26" name="brazier sound effect" type="event" x="4512" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="27" name="brazier sound effect" type="event" x="5664" y="1920" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="28" name="brazier sound effect" type="event" x="5664" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="29" name="brazier sound effect" type="event" x="5760" y="1824" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
   <object id="30" name="brazier sound effect" type="event" x="5760" y="1920" width="96" height="96">
    <properties>
-    <property name="activate" value="on_load" />
-    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg" />
+    <property name="activate" value="on_load"/>
+    <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="5" name="enemy">
   <object id="31" type="enemy" x="8160" y="6624" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="32" type="enemy" x="8160" y="6912" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="33" type="enemy" x="6816" y="5952" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="34" type="enemy" x="7008" y="6048" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="35" type="enemy" x="7008" y="6912" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="36" type="enemy" x="6528" y="6624" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="37" type="enemy" x="6624" y="7776" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="38" type="enemy" x="6720" y="8064" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="39" type="enemy" x="7008" y="7968" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="40" type="enemy" x="7104" y="9024" width="96" height="96">
    <properties>
-    <property name="category" value="goblin" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="goblin"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="41" type="enemy" x="7296" y="9024" width="96" height="96">
    <properties>
-    <property name="category" value="goblin" />
-    <property name="direction" value="1" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="goblin"/>
+    <property name="direction" value="1"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="42" type="enemy" x="7200" y="8928" width="96" height="96">
    <properties>
-    <property name="category" value="goblin" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="goblin"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="43" type="enemy" x="7200" y="9120" width="96" height="96">
    <properties>
-    <property name="category" value="goblin" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="goblin"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="44" type="enemy" x="6336" y="8832" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="45" type="enemy" x="5856" y="8352" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="46" type="enemy" x="5856" y="8544" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="47" type="enemy" x="5952" y="8736" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="48" type="enemy" x="4896" y="8640" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton_knight" />
-    <property name="direction" value="1" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton_knight"/>
+    <property name="direction" value="1"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="49" type="enemy" x="4416" y="8352" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="50" type="enemy" x="4416" y="9024" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="51" type="enemy" x="4704" y="8736" width="96" height="96">
    <properties>
-    <property name="category" value="antlion" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="antlion"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="52" type="enemy" x="4032" y="10560" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="53" type="enemy" x="4512" y="11040" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="54" type="enemy" x="4992" y="10560" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="55" type="enemy" x="4512" y="10752" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="56" type="enemy" x="4608" y="11328" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="57" type="enemy" x="3744" y="10464" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="58" type="enemy" x="5376" y="7680" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="59" type="enemy" x="5280" y="7008" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="60" type="enemy" x="3744" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton_knight" />
-    <property name="direction" value="1" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton_knight"/>
+    <property name="direction" value="1"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="61" type="enemy" x="3552" y="7488" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="62" type="enemy" x="4032" y="6624" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="63" type="enemy" x="4320" y="6624" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="64" type="enemy" x="3840" y="5760" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="65" type="enemy" x="4032" y="5088" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="66" type="enemy" x="4224" y="5184" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="67" type="enemy" x="4224" y="5376" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="68" type="enemy" x="4032" y="4704" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="69" type="enemy" x="6912" y="4032" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="70" type="enemy" x="6528" y="4512" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="71" type="enemy" x="6144" y="4128" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="72" type="enemy" x="5568" y="3936" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="73" type="enemy" x="5376" y="4512" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="74" type="enemy" x="6144" y="4608" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="75" type="enemy" x="5472" y="4224" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="76" type="enemy" x="5184" y="4032" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="77" type="enemy" x="7104" y="4224" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="78" type="enemy" x="6432" y="3936" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="79" type="enemy" x="5280" y="6048" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="80" type="enemy" x="5280" y="5952" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="81" type="enemy" x="5376" y="6048" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="82" type="enemy" x="5664" y="5184" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="83" type="enemy" x="5664" y="5088" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="84" type="enemy" x="5664" y="5280" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="85" type="enemy" x="4128" y="3360" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="86" type="enemy" x="4224" y="3456" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="87" type="enemy" x="6624" y="2208" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="88" type="enemy" x="6720" y="2496" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="89" type="enemy" x="6912" y="2304" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="90" type="enemy" x="4896" y="2688" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="91" type="enemy" x="5184" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="level" value="13,15" />
+    <property name="category" value="dungeon"/>
+    <property name="level" value="13,15"/>
    </properties>
   </object>
   <object id="92" type="enemy" x="5568" y="1728" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="6" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="6"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="93" type="enemy" x="5856" y="1728" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="0" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="0"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="94" type="enemy" x="5856" y="2016" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="2" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="2"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="95" type="enemy" x="5568" y="2016" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="4" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="4"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="96" type="enemy" x="4416" y="1728" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="6" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="6"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="97" type="enemy" x="4704" y="1728" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="0" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="0"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="98" type="enemy" x="4416" y="2016" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="2" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="2"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="99" type="enemy" x="4704" y="2016" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="4" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="4"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="100" name="kill room creature" type="enemy" x="1056" y="1920" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="101" name="kill room creature" type="enemy" x="1248" y="1920" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="102" name="kill room creature" type="enemy" x="1440" y="1920" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="103" name="kill room creature" type="enemy" x="1632" y="1920" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="7" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="7"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="104" name="kill room creature" type="enemy" x="1056" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="105" name="kill room creature" type="enemy" x="1248" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="106" name="kill room creature" type="enemy" x="1440" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="107" name="kill room creature" type="enemy" x="1632" y="2784" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="3" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="3"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="108" name="kill room creature" type="enemy" x="864" y="2208" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="109" name="kill room creature" type="enemy" x="864" y="2496" width="96" height="96">
    <properties>
-    <property name="category" value="dungeon" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="dungeon"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="110" type="enemy" x="4608" y="8736" width="96" height="96">
    <properties>
-    <property name="category" value="antlion" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="antlion"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="111" type="enemy" x="4608" y="8640" width="96" height="96">
    <properties>
-    <property name="category" value="antlion" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="antlion"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="112" type="enemy" x="4608" y="8544" width="96" height="96">
    <properties>
-    <property name="category" value="antlion" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="antlion"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="113" type="enemy" x="4704" y="8544" width="96" height="96">
    <properties>
-    <property name="category" value="antlion" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="antlion"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="114" type="enemy" x="3552" y="7392" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="115" type="enemy" x="3552" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="116" type="enemy" x="3552" y="7200" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="117" type="enemy" x="3456" y="7200" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="118" type="enemy" x="3456" y="7296" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="119" type="enemy" x="3456" y="7392" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
   <object id="120" type="enemy" x="3456" y="7488" width="96" height="96">
    <properties>
-    <property name="category" value="skeleton" />
-    <property name="direction" value="5" />
-    <property name="level" value="13,15" />
-    <property name="wander_radius" value="0" />
+    <property name="category" value="skeleton"/>
+    <property name="direction" value="5"/>
+    <property name="level" value="13,15"/>
+    <property name="wander_radius" value="0"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup id="6" name="npc">
   <object id="121" type="npc" x="960" y="2400" width="96" height="96">
    <properties>
-    <property name="filename" value="npcs/infinity_obelisk_1.txt" />
+    <property name="filename" value="npcs/infinity_obelisk_1.txt"/>
    </properties>
   </object>
  </objectgroup>
