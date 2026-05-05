@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24 08:47+\n"
+"POT-Creation-Date: 2026-05-03 13:59+\n"
 "PO-Revision-Date: 2018-03-28 19:35+0000\n"
 "Last-Translator: Blueberryy <igory.ygr200@gmail.com>, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/flareorg/teams/84925/ru/)\n"
@@ -47,7 +47,7 @@ msgstr "Использование: невидимость"
 msgid "DEV Tome"
 msgstr "Том разработчика"
 
-#: ../items/items.txt:83
+#: ../items/items.txt:84
 msgid "Use: Open DEV Tome"
 msgstr "Использование: открыть том разработчика"
 
@@ -81,11 +81,11 @@ msgstr "Адский Орнамент"
 
 #: ../items/qualities.txt:5
 msgid "Normal"
-msgstr "Обычный"
+msgstr "[Обычное]"
 
 #: ../items/qualities.txt:17
 msgid "Mastite"
-msgstr "Маститовый"
+msgstr "[Маститовое]"
 
 #: ../powers/effects.txt:5
 msgid "Shield"
@@ -1174,25 +1174,25 @@ msgstr "Адские катакомбы"
 msgid "Cutscenes"
 msgstr "Ролики"
 
+#: ../maps/iron_labyrinth/room16.txt:188
+msgid "Lectern"
+msgstr "Кафедра"
+
 #: ../maps/iron_labyrinth/room6.txt:160
 msgid "Urn"
 msgstr "Урна"
 
-#: ../maps/iron_labyrinth/room11.txt:210
-msgid "Crypt"
-msgstr "Склеп"
-
-#: ../maps/iron_labyrinth/door_ns1.txt:155
+#: ../maps/iron_labyrinth/treasure_room.txt:156
 msgid "This door needs a key to be opened."
 msgstr "Без ключа эту дверь не открыть."
 
-#: ../maps/iron_labyrinth/door_ns1.txt:160
+#: ../maps/iron_labyrinth/treasure_room.txt:159
 msgid "Locked Door"
 msgstr "Запертая дверь"
 
-#: ../maps/iron_labyrinth/warp_room.txt:175
-msgid "Lectern"
-msgstr "Кафедра"
+#: ../maps/iron_labyrinth/room11.txt:210
+msgid "Crypt"
+msgstr "Склеп"
 
 #: ../maps/iron_labyrinth/warp_room.txt:200
 msgid "Unknown Destination"
@@ -2597,6 +2597,10 @@ msgstr "Вот. А теперь будьте осторожны с этим."
 msgid "Glowing Obelisk"
 msgstr "Светящийся обелиск"
 
+#: ../npcs/il_loren.txt:1
+msgid "Loren, Undead Trader"
+msgstr "Лорен, торговец-нежить"
+
 #: ../npcs/iron_labyrinth_teleporter.txt:1
 msgid "Strange Obelisk"
 msgstr "Странный обелиск"
@@ -2604,10 +2608,6 @@ msgstr "Странный обелиск"
 #: ../npcs/iron_labyrinth_teleporter.txt:21
 msgid "Choose a destination."
 msgstr "Выберите пункт назначения."
-
-#: ../npcs/loren.txt:1
-msgid "Loren, Undead Trader"
-msgstr "Лорен, торговец-нежить"
 
 #: ../npcs/martigan.txt:1
 msgid "Martigan"
@@ -4401,63 +4401,63 @@ msgstr "Ключ от подвала храма Мез"
 msgid "Temple of Mez Main Hall Key"
 msgstr "Ключ от центрального зала храма Мез"
 
-#: ../items/categories/quest.txt:183
+#: ../items/categories/quest.txt:184
 msgid "Worn Note #1"
 msgstr "Ветхая записка №1"
 
-#: ../items/categories/quest.txt:194
+#: ../items/categories/quest.txt:195
 msgid "Worn Note #2"
 msgstr "Ветхая записка №2"
 
-#: ../items/categories/quest.txt:205
+#: ../items/categories/quest.txt:206
 msgid "Worn Note #3"
 msgstr "Ветхая записка №3"
 
-#: ../items/categories/quest.txt:216
+#: ../items/categories/quest.txt:217
 msgid "Worn Note #4"
 msgstr "Ветхая записка №4"
 
-#: ../items/categories/quest.txt:227
+#: ../items/categories/quest.txt:228
 msgid "Worn Note #5"
 msgstr "Ветхая записка №5"
 
-#: ../items/categories/quest.txt:238
+#: ../items/categories/quest.txt:239
 msgid "Wizard's Tower Entrance Key"
 msgstr "Ключ от входа в башню колдуна"
 
-#: ../items/categories/quest.txt:248
+#: ../items/categories/quest.txt:249
 msgid "Wizard's Tower Research Hall Key"
 msgstr "Ключ от камеры исследований"
 
-#: ../items/categories/quest.txt:269
+#: ../items/categories/quest.txt:270
 msgid "Lorund's Sword"
 msgstr "Меч Лорунда"
 
-#: ../items/categories/quest.txt:281
+#: ../items/categories/quest.txt:282
 msgid "Nerin's Bow"
 msgstr "Лук Нерин"
 
-#: ../items/categories/quest.txt:293
+#: ../items/categories/quest.txt:294
 msgid "Kayl's Staff"
 msgstr "Посох Кайлы"
 
-#: ../items/categories/quest.txt:305
+#: ../items/categories/quest.txt:306
 msgid "Underworld Stronghold Foyer Key"
 msgstr "Ключ от фойе в адскую крепость"
 
-#: ../items/categories/quest.txt:315
+#: ../items/categories/quest.txt:316
 msgid "Underworld Stronghold Barracks Key"
 msgstr "Ключ от адских бараков"
 
-#: ../items/categories/quest.txt:325
+#: ../items/categories/quest.txt:326
 msgid "Treasure Chest Key"
 msgstr "Ключ от сундука с сокровищами"
 
-#: ../items/categories/quest.txt:335
+#: ../items/categories/quest.txt:336
 msgid "Silver Family Ring"
 msgstr "Серебряное фамильное кольцо"
 
-#: ../items/categories/quest.txt:361
+#: ../items/categories/quest.txt:362
 msgid ""
 "An odor of iron and its abrasive petals make this rare plant easy to "
 "identify."
@@ -4465,7 +4465,7 @@ msgstr ""
 "По запаху металла и шершавым лепесткам легко понять, что это за редкое "
 "растение."
 
-#: ../items/categories/quest.txt:372
+#: ../items/categories/quest.txt:374
 msgid ""
 "This mysterious black feather has a very sharp follicle, making it a "
 "suitable writing utensil."
@@ -4473,35 +4473,35 @@ msgstr ""
 "У этого загадочного чёрного пера очень острый кончик, что делает его "
 "пригодным для письма."
 
-#: ../items/categories/quest.txt:383
+#: ../items/categories/quest.txt:386
 msgid "A dark, magical energy flows through the tip of this small blade."
 msgstr ""
 "Тёмная, магическая энергия протекает на кончике этого маленького клинка."
 
-#: ../items/categories/quest.txt:391
+#: ../items/categories/quest.txt:395
 msgid "Vial of Your Blood"
 msgstr "Флакон с собственной кровью"
 
-#: ../items/categories/quest.txt:394
+#: ../items/categories/quest.txt:398
 msgid "Spoils of the Red Altar ritual."
 msgstr "Остатки от ритуала красного алтаря."
 
-#: ../items/categories/quest.txt:402
+#: ../items/categories/quest.txt:407
 msgid "Blood Inkwell"
 msgstr "Чернильница для крови"
 
-#: ../items/categories/quest.txt:405
+#: ../items/categories/quest.txt:410
 msgid ""
 "According to Florin, this is the only ink capable of being used in the Book "
 "of the Dead."
 msgstr ""
 "По словам Флорина только этими чернилами можно писать в книге мёртвых."
 
-#: ../items/categories/quest.txt:413
+#: ../items/categories/quest.txt:419
 msgid "Iron Labyrinth Key"
 msgstr "Ключ от Железного лабиринта"
 
-#: ../items/categories/quest.txt:424
+#: ../items/categories/quest.txt:430
 msgid "Excavation Journal Pages"
 msgstr "Страницы журнала раскопок"
 
@@ -5291,6 +5291,10 @@ msgstr "Маститовый большой лук"
 #: ../items/categories/mastite.txt:434
 msgid "Mastite Greatstaff"
 msgstr "Маститовый большой посох"
+
+#: ../items/categories/mastite.txt:441
+msgid "Mastite Crest Shield"
+msgstr "Маститовый гербовый щит"
 
 #: ../items/categories/level_12.txt:5
 msgid "Warlord Chain Coif"
