@@ -20,32 +20,32 @@
 	<launchable type="desktop-id">flare.desktop</launchable>
 	<url type="homepage">http://flarerpg.org/</url>
 	<releases>
-		<release date="2022-12-10" version="1.14" />
+		<release date="2026-05-08" version="1.15" />
 	</releases>
 	<screenshots>
 		<screenshot type="default">
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_1.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_1.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_2.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_2.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_3.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_3.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_4.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_4.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_5.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_5.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_6.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_6.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_7.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_7.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2018/03/empyrean_8.jpg</image>
+			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_8.jpg</image>
 		</screenshot>
 	</screenshots>
 	<content_rating type="oars-1.1">
@@ -54,7 +54,7 @@
 	</content_rating>
 	<developer_name>Clint Bellanger and Contributors</developer_name>
 	<url type="bugtracker">https://github.com/flareteam/flare-game/issues</url>
-	<url type="help">https://opengameart.org/forums/flare</url>
+	<url type="help">https://github.com/flareteam/flare-game/discussions</url>
 	<!--FIXME: this is optional, but recommended-->
 	<!--<update_contact></update_contact>-->
 </component>
