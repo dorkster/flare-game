@@ -15,6 +15,7 @@ text=Visual Artists
 separator=16
 text=Blarumyrran
 text=Jessica Cox
+text=Justin Jacobs
 text=Sarah Benalene
 text=Scrittl
 text=Stefan Beller
