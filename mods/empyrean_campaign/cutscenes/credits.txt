@@ -1,4 +1,4 @@
-APPEND
-
 INCLUDE cutscenes/credits_empyrean.txt
+INCLUDE cutscenes/credits_fantasycore.txt
+INCLUDE cutscenes/credits_engine.txt
 
