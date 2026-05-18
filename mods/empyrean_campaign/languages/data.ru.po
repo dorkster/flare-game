@@ -5695,7 +5695,7 @@ msgstr "Огненный шар"
 
 #: ../powers/base/magician/fireball.txt:2
 msgid "Launch a ball of fire that does extra mental damage."
-msgstr "Бросок огненного шара, наносящего дополнительный ментальный урон."
+msgstr "Бросок огненного шара, наносящего дополнительный психический урон."
 
 #: ../powers/base/magician/thunderstrike.txt:1
 msgid "Thunderstrike"

@@ -266,7 +266,7 @@ msgstr "оружие дальнего боя"
 
 #: ../engine/equip_flags.txt:13
 msgid "mental weapon"
-msgstr "ментальное оружие"
+msgstr "психическое оружие"
 
 #: ../engine/equip_flags.txt:17
 msgid "shield"

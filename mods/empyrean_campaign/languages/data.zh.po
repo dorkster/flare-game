@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24 08:47+\n"
+"POT-Creation-Date: 2026-05-03 13:59+\n"
 "PO-Revision-Date: 2018-03-28 19:35+0000\n"
 "Last-Translator: Li Yang, 2026\n"
 "Language-Team: Chinese (https://app.transifex.com/flareorg/teams/84925/zh/)\n"
@@ -46,7 +46,7 @@ msgstr "用途：让自己隐身"
 msgid "DEV Tome"
 msgstr "开发者手册"
 
-#: ../items/items.txt:83
+#: ../items/items.txt:84
 msgid "Use: Open DEV Tome"
 msgstr "用途：打开开发者手册"
 
@@ -120,7 +120,7 @@ msgstr "弱冰"
 
 #: ../powers/effects.txt:136
 msgid "Sacrifice"
-msgstr "祈福"
+msgstr "献祭"
 
 #: ../powers/effects.txt:161
 msgid "Reflect"
@@ -156,19 +156,19 @@ msgstr "中毒"
 
 #: ../powers/effects.txt:216
 msgid "Resist Damage (Fire)"
-msgstr "抗性（火）"
+msgstr "抗性（火焰）"
 
 #: ../powers/effects.txt:223
 msgid "Resist Damage (Ice)"
-msgstr "抗性（冰）"
+msgstr "抗性（寒冰）"
 
 #: ../powers/effects.txt:230
 msgid "Resist Damage (Lightning)"
-msgstr "抗性（电）"
+msgstr "抗性（闪电）"
 
 #: ../powers/effects.txt:237
 msgid "Resist Damage (Dark)"
-msgstr "抗性（暗）"
+msgstr "抗性（暗影）"
 
 #: ../powers/effects.txt:244
 msgid "Summoned Skeleton"
@@ -176,7 +176,7 @@ msgstr "召唤骷髅"
 
 #: ../powers/effects.txt:253
 msgid "MP Regen"
-msgstr ""
+msgstr "MP恢复"
 
 #: ../powers/powers.txt:61
 msgid "Teleport"
@@ -242,7 +242,7 @@ msgstr "狙击手"
 
 #: ../engine/titles.txt:28
 msgid "Templar"
-msgstr "圣骑士"
+msgstr "圣殿骑士"
 
 #: ../engine/titles.txt:34
 msgid "Assassin"
@@ -266,7 +266,7 @@ msgstr "战斗大法师"
 
 #: ../engine/titles.txt:59
 msgid "High Warden"
-msgstr "高级看守"
+msgstr "高级监狱长"
 
 #: ../engine/titles.txt:63
 msgid "Adventurer"
@@ -286,7 +286,7 @@ msgstr "巫师"
 
 #: ../engine/titles.txt:84
 msgid "Paladin"
-msgstr "骑士"
+msgstr "圣骑士"
 
 #: ../engine/titles.txt:90
 msgid "Rogue"
@@ -310,7 +310,7 @@ msgstr "战斗法师"
 
 #: ../engine/titles.txt:115
 msgid "Warden"
-msgstr "看守"
+msgstr "监狱长"
 
 #: ../engine/titles.txt:119
 msgid "Wanderer"
@@ -378,7 +378,7 @@ msgstr "火焰"
 
 #: ../engine/damage_types.txt:18
 msgid "Adds elemental fire damage to non-elemental attacks."
-msgstr "为非元素伤害附加火焰伤害。"
+msgstr "为非元素攻击附加火焰伤害。"
 
 #: ../engine/damage_types.txt:25
 msgid "Ice Damage"
@@ -390,7 +390,7 @@ msgstr "寒冰"
 
 #: ../engine/damage_types.txt:27
 msgid "Adds elemental ice damage to non-elemental attacks."
-msgstr "为非元素伤害附加寒冰伤害。"
+msgstr "为非元素攻击附加寒冰伤害。"
 
 #: ../engine/damage_types.txt:34
 msgid "Lightning Damage"
@@ -402,7 +402,7 @@ msgstr "闪电"
 
 #: ../engine/damage_types.txt:36
 msgid "Adds elemental lightning damage to non-elemental attacks."
-msgstr "为非元素伤害附加闪电伤害。"
+msgstr "为非元素攻击附加闪电伤害。"
 
 #: ../engine/damage_types.txt:43
 msgid "Dark Damage"
@@ -414,7 +414,7 @@ msgstr "暗影"
 
 #: ../engine/damage_types.txt:45
 msgid "Adds elemental dark damage to non-elemental attacks."
-msgstr "为非元素伤害附加暗影伤害。"
+msgstr "为非元素攻击附加暗影伤害。"
 
 #: ../enemies/base/ardwen.txt:3
 msgid "Ardwen"
@@ -422,7 +422,7 @@ msgstr "艾德温"
 
 #: ../enemies/catacomb_boulder_1.txt:6
 msgid "Boulder"
-msgstr "圆石"
+msgstr "巨石"
 
 #: ../enemies/goblin_minecart.txt:4
 msgid "Goblin"
@@ -462,7 +462,7 @@ msgstr "淘气的迷宫哥布林"
 
 #: ../enemies/il_hobgoblin_archer.txt:3
 msgid "Labyrinth Hobgoblin Archer"
-msgstr "淘气的迷宫哥布林弓箭手"
+msgstr "迷宫淘气鬼射手"
 
 #: ../enemies/il_skeleton_archer.txt:3
 msgid "Labyrinth Skeleton Archer"
@@ -898,7 +898,7 @@ msgstr "箱子"
 
 #: ../maps/abandoned_mines.txt:491
 msgid "Barrel"
-msgstr "酒桶"
+msgstr "木桶"
 
 #: ../maps/abandoned_mines.txt:524
 msgid "The Breach"
@@ -1134,7 +1134,7 @@ msgstr "你将刻有数字的物品放到了祭坛上。"
 
 #: ../maps/hyperspace.txt:196
 msgid "St. Maria: Catacombs"
-msgstr "圣玛丽亚：地下墓穴"
+msgstr "圣玛利亚：地下墓穴"
 
 #: ../maps/hyperspace.txt:218
 msgid "Stormrock Pass"
@@ -1160,25 +1160,25 @@ msgstr "地狱之墓"
 msgid "Cutscenes"
 msgstr "过场动画"
 
+#: ../maps/iron_labyrinth/room16.txt:188
+msgid "Lectern"
+msgstr "诵经台"
+
 #: ../maps/iron_labyrinth/room6.txt:160
 msgid "Urn"
 msgstr "瓮"
 
-#: ../maps/iron_labyrinth/room11.txt:210
-msgid "Crypt"
-msgstr ""
-
-#: ../maps/iron_labyrinth/door_ns1.txt:155
+#: ../maps/iron_labyrinth/treasure_room.txt:156
 msgid "This door needs a key to be opened."
 msgstr "这个门已上锁，需要钥匙打开。"
 
-#: ../maps/iron_labyrinth/door_ns1.txt:160
+#: ../maps/iron_labyrinth/treasure_room.txt:159
 msgid "Locked Door"
 msgstr "上锁的门"
 
-#: ../maps/iron_labyrinth/warp_room.txt:175
-msgid "Lectern"
-msgstr "诵经台"
+#: ../maps/iron_labyrinth/room11.txt:210
+msgid "Crypt"
+msgstr "地窖"
 
 #: ../maps/iron_labyrinth/warp_room.txt:200
 msgid "Unknown Destination"
@@ -1218,7 +1218,7 @@ msgstr "隆港"
 
 #: ../maps/lochport.txt:360
 msgid "St. Maria: Mausoleum"
-msgstr "圣玛丽亚：陵墓"
+msgstr "圣玛利亚：陵墓"
 
 #: ../maps/lochport_cemetery.txt:310
 msgid "Lochport Cemetery waypoint discovered."
@@ -1230,7 +1230,7 @@ msgstr "慕格山洞"
 
 #: ../maps/mog_caverns.txt:292
 msgid "You found another note. Keep following the trail."
-msgstr "你找到了另一个提示。按它说的做。"
+msgstr "你又发现了一张纸条，继续沿着线索追踪吧。"
 
 #: ../maps/mog_caverns.txt:302
 msgid "Waterlogged Support Beam"
@@ -1266,7 +1266,7 @@ msgstr "这个矿车过于单薄，无法破开这扇门。"
 
 #: ../maps/nazia_mines.txt:428
 msgid "You found a door, but it appears to be barricaded from the inside."
-msgstr "您找到了一扇门，但它似乎从里面锁上了。"
+msgstr "你找到了一扇门，但它似乎从里面被堵住了。"
 
 #: ../maps/nazia_underground.txt:260
 msgid "The switch won't budge."
@@ -1314,7 +1314,7 @@ msgstr "圣玛利亚：地下墓穴传送门已解锁。"
 
 #: ../maps/st_maria_2.txt:471
 msgid "St. Maria: Crypt"
-msgstr "圣玛利亚：墓穴"
+msgstr "圣玛利亚：地窖"
 
 #: ../maps/st_maria_3.txt:411
 msgid "The plaque reads: Grave of the Saints"
@@ -1944,7 +1944,7 @@ msgstr "重置"
 
 #: ../npcs/base/dev_tome/respec.txt:12
 msgid "Reset power points"
-msgstr "重置法力点"
+msgstr "重置技能点"
 
 #: ../npcs/base/dev_tome/respec.txt:18
 msgid "Reset stat points"
@@ -2148,7 +2148,7 @@ msgstr "介绍"
 
 #: ../npcs/base/dev_tome/teleport.txt:30
 msgid "Region 1: Salted Field -> St. Maria"
-msgstr "区域 1：盐碱田野 -> 圣玛丽"
+msgstr "区域 1：盐碱田野 -> 圣玛利亚"
 
 #: ../npcs/base/dev_tome/teleport.txt:49
 msgid "Region 2: Lake Kuuma -> Temple of Mez"
@@ -2212,7 +2212,7 @@ msgstr "战役"
 
 #: ../npcs/dev_tome.txt:50
 msgid "Restore HP/MP/status"
-msgstr "恢复生命值/法力值/状态"
+msgstr "恢复生命值/魔力值/状态"
 
 #: ../npcs/dev_tome.txt:57
 msgid "Save game at current position"
@@ -2459,6 +2459,10 @@ msgstr "就是这样。现在要小心使用它。"
 msgid "Glowing Obelisk"
 msgstr "发光方尖碑"
 
+#: ../npcs/il_loren.txt:1
+msgid "Loren, Undead Trader"
+msgstr "老任，亡灵商人"
+
 #: ../npcs/iron_labyrinth_teleporter.txt:1
 msgid "Strange Obelisk"
 msgstr "奇怪的方尖碑"
@@ -2466,10 +2470,6 @@ msgstr "奇怪的方尖碑"
 #: ../npcs/iron_labyrinth_teleporter.txt:21
 msgid "Choose a destination."
 msgstr "选择一个目的地。"
-
-#: ../npcs/loren.txt:1
-msgid "Loren, Undead Trader"
-msgstr "老任，亡灵商人"
 
 #: ../npcs/martigan.txt:1
 msgid "Martigan"
@@ -2931,7 +2931,7 @@ msgid ""
 "clear that any we find must be brought to the surface. No questions. This "
 "stuff is obviously something special. They better make it worth our while."
 msgstr ""
-"向议会的信使称这种矿物为“魔石”。他们明确表示，我们发现的任何东西都必须带到地表上来。毫无疑问，这些东西显然是特别的。他们最好让它值得我们付出努力"
+"送信到议会的使者称这种矿物为“魔石”。他们明确表示，我们发现的任何东西都必须带到地面上来。毫无疑问，这些东西非同寻常。他们最好让我们的努力物有所值。"
 
 #: ../books/il_notes_3.txt:13
 msgid "1462/3/23"
@@ -3222,31 +3222,31 @@ msgstr "圣骑士木盾"
 
 #: ../items/categories/level_4.txt:229
 msgid "Master Fire Ring"
-msgstr "大师级火焰之戒"
+msgstr "大师火焰戒指"
 
 #: ../items/categories/level_4.txt:239
 msgid "Master Ice Ring"
-msgstr "大师级寒冰之戒"
+msgstr "大师冰霜戒指"
 
 #: ../items/categories/level_4.txt:249
 msgid "Master Lightning Ring"
-msgstr "大师级闪电之戒"
+msgstr "大师闪电戒指"
 
 #: ../items/categories/level_4.txt:259
 msgid "Master Dark Ring"
-msgstr "大师级黑暗之戒"
+msgstr "大师黑暗戒指"
 
 #: ../items/categories/level_4.txt:269
 msgid "Master Experience Ring"
-msgstr "大师级经验之戒"
+msgstr "大师经验戒指"
 
 #: ../items/categories/level_4.txt:279
 msgid "Master Wealth Ring"
-msgstr "大师级财富之戒"
+msgstr "大师财富戒指"
 
 #: ../items/categories/level_4.txt:289
 msgid "Master Treasure Ring"
-msgstr "大师级宝藏之戒"
+msgstr "大师宝藏戒指"
 
 #: ../items/categories/level_5.txt:5
 msgid "Leather Hood"
@@ -3454,15 +3454,15 @@ msgstr "大法师毛袖"
 
 #: ../items/categories/level_8.txt:185
 msgid "Master Fighting Leather Belt"
-msgstr "大师级战斗皮带"
+msgstr "大师战斗皮带"
 
 #: ../items/categories/level_8.txt:196
 msgid "Master Recon Pendant"
-msgstr "大师级侦察项链"
+msgstr "大师侦察项链"
 
 #: ../items/categories/level_8.txt:207
 msgid "Master Sorcerer Spellbook"
-msgstr "大师级术士咒书"
+msgstr "术士大师咒书"
 
 #: ../items/categories/level_8.txt:218
 msgid "Warlord Shortsword"
@@ -3482,31 +3482,31 @@ msgstr "圣骑士铁盾"
 
 #: ../items/categories/level_8.txt:265
 msgid "Master Burn Ring"
-msgstr "大师级燃烧之戒"
+msgstr "大师燃烧戒指"
 
 #: ../items/categories/level_8.txt:275
 msgid "Master Frost Ring"
-msgstr "大师级霜冻之戒"
+msgstr "大师严冬戒指"
 
 #: ../items/categories/level_8.txt:285
 msgid "Master Electric Ring"
-msgstr "大师级电能之戒"
+msgstr "大师充能戒指"
 
 #: ../items/categories/level_8.txt:295
 msgid "Master Shadow Ring"
-msgstr "大师级暗影之戒"
+msgstr "大师暗影戒指"
 
 #: ../items/categories/level_8.txt:305
 msgid "Master Knowledge Ring"
-msgstr "大师级知识之戒"
+msgstr "大师知识戒指"
 
 #: ../items/categories/level_8.txt:315
 msgid "Master Prosperity Ring"
-msgstr "大师级繁荣之戒"
+msgstr "大师繁荣戒指"
 
 #: ../items/categories/level_8.txt:325
 msgid "Master Loot Ring"
-msgstr "大师级掠夺之戒"
+msgstr "大师战利品戒指"
 
 #: ../items/categories/scrolls.txt:8
 msgid "Use: Summon a zombie to fight for you"
@@ -3518,7 +3518,7 @@ msgstr "用途：传送到避风港"
 
 #: ../items/categories/scrolls.txt:30
 msgid "Use: Create a magical shield that absorbs damage"
-msgstr "用途：创造一个吸收伤害的魔法盾牌"
+msgstr "用途：创造一个吸收伤害的魔法护盾"
 
 #: ../items/categories/scrolls.txt:41
 msgid "Use: Shoot a fireball"
@@ -3548,7 +3548,7 @@ msgstr "重生之书"
 
 #: ../items/categories/scrolls.txt:95
 msgid "Use: Resets all stat and power points"
-msgstr "用途：重置所有属性和能力点"
+msgstr "用途：重置所有属性和技能点"
 
 #: ../items/categories/level_2.txt:5
 msgid "Fighting Cloth Shirt"
@@ -4123,7 +4123,7 @@ msgstr "一个木制的龟型雕像，底部刻着一个“4”的符号。"
 
 #: ../items/categories/quest.txt:143
 msgid "Stormrock Key"
-msgstr "暴雪石岸之钥"
+msgstr "暴雪遗迹之钥"
 
 #: ../items/categories/quest.txt:153
 msgid "Temple of Mez Basement Key"
@@ -4133,101 +4133,101 @@ msgstr "梅兹神庙地窖之钥"
 msgid "Temple of Mez Main Hall Key"
 msgstr "梅兹神庙大厅之钥"
 
-#: ../items/categories/quest.txt:183
+#: ../items/categories/quest.txt:184
 msgid "Worn Note #1"
 msgstr "破旧的笔记1"
 
-#: ../items/categories/quest.txt:194
+#: ../items/categories/quest.txt:195
 msgid "Worn Note #2"
 msgstr "破旧的笔记2"
 
-#: ../items/categories/quest.txt:205
+#: ../items/categories/quest.txt:206
 msgid "Worn Note #3"
 msgstr "破旧的笔记3"
 
-#: ../items/categories/quest.txt:216
+#: ../items/categories/quest.txt:217
 msgid "Worn Note #4"
 msgstr "破旧的笔记4"
 
-#: ../items/categories/quest.txt:227
+#: ../items/categories/quest.txt:228
 msgid "Worn Note #5"
 msgstr "破旧的笔记5"
 
-#: ../items/categories/quest.txt:238
+#: ../items/categories/quest.txt:239
 msgid "Wizard's Tower Entrance Key"
 msgstr "巫师塔入口之钥"
 
-#: ../items/categories/quest.txt:248
+#: ../items/categories/quest.txt:249
 msgid "Wizard's Tower Research Hall Key"
 msgstr "巫师塔研究室之钥"
 
-#: ../items/categories/quest.txt:269
+#: ../items/categories/quest.txt:270
 msgid "Lorund's Sword"
 msgstr "洛伦德的剑"
 
-#: ../items/categories/quest.txt:281
+#: ../items/categories/quest.txt:282
 msgid "Nerin's Bow"
 msgstr "内林的弓"
 
-#: ../items/categories/quest.txt:293
+#: ../items/categories/quest.txt:294
 msgid "Kayl's Staff"
 msgstr "凯尔的杖"
 
-#: ../items/categories/quest.txt:305
+#: ../items/categories/quest.txt:306
 msgid "Underworld Stronghold Foyer Key"
 msgstr "地狱堡垒前厅之钥"
 
-#: ../items/categories/quest.txt:315
+#: ../items/categories/quest.txt:316
 msgid "Underworld Stronghold Barracks Key"
 msgstr "地狱堡垒兵营之钥"
 
-#: ../items/categories/quest.txt:325
+#: ../items/categories/quest.txt:326
 msgid "Treasure Chest Key"
 msgstr "宝箱之钥"
 
-#: ../items/categories/quest.txt:335
+#: ../items/categories/quest.txt:336
 msgid "Silver Family Ring"
 msgstr "银质家族戒指"
 
-#: ../items/categories/quest.txt:361
+#: ../items/categories/quest.txt:362
 msgid ""
 "An odor of iron and its abrasive petals make this rare plant easy to "
 "identify."
 msgstr "一种铁锈和磨蚀性花瓣的气味，使这种稀有植物易于识别。"
 
-#: ../items/categories/quest.txt:372
+#: ../items/categories/quest.txt:374
 msgid ""
 "This mysterious black feather has a very sharp follicle, making it a "
 "suitable writing utensil."
 msgstr "这枚神秘的黑色羽毛具有非常尖锐的毛囊，使其成为一种合适的书写工具。"
 
-#: ../items/categories/quest.txt:383
+#: ../items/categories/quest.txt:386
 msgid "A dark, magical energy flows through the tip of this small blade."
 msgstr "这把小刀的尖端流淌着黑暗的魔法能量。"
 
-#: ../items/categories/quest.txt:391
+#: ../items/categories/quest.txt:395
 msgid "Vial of Your Blood"
 msgstr "你的血瓶"
 
-#: ../items/categories/quest.txt:394
+#: ../items/categories/quest.txt:398
 msgid "Spoils of the Red Altar ritual."
 msgstr "赤色祭坛的战利品。"
 
-#: ../items/categories/quest.txt:402
+#: ../items/categories/quest.txt:407
 msgid "Blood Inkwell"
 msgstr "血墨瓶"
 
-#: ../items/categories/quest.txt:405
+#: ../items/categories/quest.txt:410
 msgid ""
 "According to Florin, this is the only ink capable of being used in the Book "
 "of the Dead."
 msgstr "据弗洛里说，这是唯一能用于死亡之书的墨水。"
 
-#: ../items/categories/quest.txt:413
+#: ../items/categories/quest.txt:419
 msgid "Iron Labyrinth Key"
 msgstr "钢铁迷宫之钥"
 
-#: ../items/categories/quest.txt:424
+#: ../items/categories/quest.txt:430
 msgid "Excavation Journal Pages"
 msgstr "挖掘日记"
 
@@ -4363,7 +4363,7 @@ msgstr "大师级将军皮带"
 
 #: ../items/categories/level_16.txt:196
 msgid "Master Sniper Pendant"
-msgstr "大师级狙击项链"
+msgstr "狙击大师项链"
 
 #: ../items/categories/level_16.txt:207
 msgid "Master Archwizard Spellbook"
@@ -4387,31 +4387,31 @@ msgstr "圣骑士塔盾"
 
 #: ../items/categories/level_16.txt:265
 msgid "Master Inferno Ring"
-msgstr "大师级火狱之戒"
+msgstr "大师火狱之戒"
 
 #: ../items/categories/level_16.txt:275
 msgid "Master Glacial Ring"
-msgstr "大师级冰川之戒"
+msgstr "大师冰川之戒"
 
 #: ../items/categories/level_16.txt:285
 msgid "Master Volt Ring"
-msgstr "大师级电场之戒"
+msgstr "大师电场之戒"
 
 #: ../items/categories/level_16.txt:295
 msgid "Master Void Ring"
-msgstr "大师级虚空之戒"
+msgstr "大师虚空之戒"
 
 #: ../items/categories/level_16.txt:305
 msgid "Master Scholar Ring"
-msgstr "大师级学者之戒"
+msgstr "大师学者之戒"
 
 #: ../items/categories/level_16.txt:315
 msgid "Master Affluence Ring"
-msgstr "大师级富足之戒"
+msgstr "大师富足之戒"
 
 #: ../items/categories/level_16.txt:325
 msgid "Master Relic Ring"
-msgstr "大师级遗物之戒"
+msgstr "大师遗物之戒"
 
 #: ../items/categories/level_11.txt:5
 msgid "Warrior Chain Coif"
@@ -4655,7 +4655,7 @@ msgstr "流浪者侦察吊坠"
 
 #: ../items/categories/level_6.txt:207
 msgid "Wandering Sorcerer Spellbook"
-msgstr "流浪者法师咒书"
+msgstr "流浪法师咒书"
 
 #: ../items/categories/level_6.txt:218
 msgid "Fighting Shortsword"
@@ -5017,6 +5017,10 @@ msgstr "魔石巨弓"
 msgid "Mastite Greatstaff"
 msgstr "魔石巨杖"
 
+#: ../items/categories/mastite.txt:441
+msgid "Mastite Crest Shield"
+msgstr "魔石纹章盾"
+
 #: ../items/categories/level_12.txt:5
 msgid "Warlord Chain Coif"
 msgstr "将军链盔"
@@ -5079,15 +5083,15 @@ msgstr "大法师绸袖"
 
 #: ../items/categories/level_12.txt:185
 msgid "Master Warrior Leather Belt"
-msgstr "大师级战士皮带"
+msgstr "战士大师皮带"
 
 #: ../items/categories/level_12.txt:196
 msgid "Master Ranger Pendant"
-msgstr "大师级游荡者项链"
+msgstr "游侠大师项链"
 
 #: ../items/categories/level_12.txt:207
 msgid "Master Wizard Spellbook"
-msgstr "大师级巫师咒书"
+msgstr "大师魔道书"
 
 #: ../items/categories/level_12.txt:218
 msgid "Warlord Longsword"
@@ -5107,31 +5111,31 @@ msgstr "圣骑士纹章盾"
 
 #: ../items/categories/level_12.txt:265
 msgid "Master Blaze Ring"
-msgstr "大师级烈焰之戒"
+msgstr "大师烈焰戒指"
 
 #: ../items/categories/level_12.txt:275
 msgid "Master Freeze Ring"
-msgstr "大师级冻结之戒"
+msgstr "大师冻结戒指"
 
 #: ../items/categories/level_12.txt:285
 msgid "Master Shock Ring"
-msgstr "大师级电击之戒"
+msgstr "大师电击戒指"
 
 #: ../items/categories/level_12.txt:295
 msgid "Master Gloom Ring"
-msgstr "大师级幽暗之戒"
+msgstr "大师幽暗戒指"
 
 #: ../items/categories/level_12.txt:305
 msgid "Master Intellectual Ring"
-msgstr "大师级智慧之戒"
+msgstr "大师智慧戒指"
 
 #: ../items/categories/level_12.txt:315
 msgid "Master Lucrative Ring"
-msgstr "大师级盈利之戒"
+msgstr "大师盈利戒指"
 
 #: ../items/categories/level_12.txt:325
 msgid "Master Artifact Ring"
-msgstr "大师级神器之戒"
+msgstr "大师神器戒指"
 
 #: ../items/categories/level_8_unique.txt:3
 msgid "Amir Blade"
@@ -5139,7 +5143,7 @@ msgstr "阿米尔之刃"
 
 #: ../items/categories/level_8_unique.txt:4
 msgid "A remnant of those who guarded Fort Amir."
-msgstr "曾守卫阿米尔堡的残余部队。"
+msgstr "阿米尔堡守卫的遗物。"
 
 #: ../items/categories/level_8_unique.txt:19
 msgid "Huntsman Bow"
@@ -5207,7 +5211,7 @@ msgstr "一件胸前刻有“K”的皇家铠甲。"
 
 #: ../items/categories/level_12_unique.txt:56
 msgid "Inferno Pendant"
-msgstr "炼狱项链"
+msgstr "炼狱吊坠"
 
 #: ../items/categories/level_12_unique.txt:57
 msgid "Hot. Hot. Hot."
@@ -5239,7 +5243,7 @@ msgstr "恢复最大生命值的25%"
 
 #: ../items/categories/potions.txt:19
 msgid "Restore 25% of maximum MP"
-msgstr "恢复最大魔法值的25%"
+msgstr "恢复最大魔力值的25%"
 
 #: ../items/categories/potions.txt:31
 msgid "Temporarily increase regeneration and movement speed"
@@ -5247,7 +5251,7 @@ msgstr "暂时提高恢复与移动速度"
 
 #: ../items/categories/potions.txt:43
 msgid "Restore 25% of both HP and MP"
-msgstr "恢复最大生命值与魔法值的25%"
+msgstr "恢复25%的生命值和魔力值"
 
 #: ../items/categories/potions.txt:55
 msgid "Temporarily increases the ability to find items and gold"
@@ -5267,11 +5271,11 @@ msgstr "恢复最大生命值的75%"
 
 #: ../items/categories/potions.txt:103
 msgid "Restore 50% of maximum MP"
-msgstr "恢复最大魔法值的50%"
+msgstr "恢复最大魔力值的50%"
 
 #: ../items/categories/potions.txt:115
 msgid "Restore 75% of maximum MP"
-msgstr "恢复最大魔法值的75%"
+msgstr "恢复最大魔力值的75%"
 
 #: ../items/categories/level_14.txt:5
 msgid "Fighting Plate Helmet"
@@ -5335,15 +5339,15 @@ msgstr "法师丝绒袖"
 
 #: ../items/categories/level_14.txt:185
 msgid "Wandering Warlord Leather Belt"
-msgstr "流浪者将军皮带"
+msgstr "流浪军阀皮带"
 
 #: ../items/categories/level_14.txt:196
 msgid "Wandering Sniper Pendant"
-msgstr "流浪者狙击手项链"
+msgstr "流浪狙击手项链"
 
 #: ../items/categories/level_14.txt:207
 msgid "Wandering Archwizard Spellbook"
-msgstr "流浪者大法师咒书"
+msgstr "流浪大法师咒书"
 
 #: ../items/categories/level_14.txt:218
 msgid "Fighting Greatsword"
@@ -5363,31 +5367,31 @@ msgstr "守护者塔盾"
 
 #: ../items/categories/level_14.txt:265
 msgid "Wandering Inferno Ring"
-msgstr "流浪者火狱之戒"
+msgstr "流浪火狱之戒"
 
 #: ../items/categories/level_14.txt:275
 msgid "Wandering Glacial Ring"
-msgstr "流浪者冰川之戒"
+msgstr "流浪冰川之戒"
 
 #: ../items/categories/level_14.txt:285
 msgid "Wandering Volt Ring"
-msgstr "流浪者电场之戒"
+msgstr "流浪电场之戒"
 
 #: ../items/categories/level_14.txt:295
 msgid "Wandering Void Ring"
-msgstr "流浪者虚空之戒"
+msgstr "流浪虚空之戒"
 
 #: ../items/categories/level_14.txt:305
 msgid "Wandering Scholar Ring"
-msgstr "流浪者学者之戒"
+msgstr "流浪学者之戒"
 
 #: ../items/categories/level_14.txt:315
 msgid "Wandering Affluence Ring"
-msgstr "流浪者富足之戒"
+msgstr "流浪财富之戒"
 
 #: ../items/categories/level_14.txt:325
 msgid "Wandering Relic Ring"
-msgstr "流浪者遗物之戒"
+msgstr "流浪遗迹之戒"
 
 #: ../powers/base/magician/burn.txt:1
 msgid "Burn"
@@ -5457,7 +5461,7 @@ msgstr "冰弹"
 
 #: ../powers/base/magician/ice_bolt.txt:2
 msgid "Launch a chunk of ice that slows enemies."
-msgstr "发射一块冰块减缓敌人的速度。"
+msgstr "发射一枚冰块减缓敌人的速度。"
 
 #: ../powers/base/magician/freeze.txt:1
 msgid "Freeze"
@@ -5478,7 +5482,7 @@ msgstr "召唤骷髅"
 msgid ""
 "Raise an undead to battle alongside you. Each summoned skeleton reduces your"
 " maximum MP."
-msgstr "召唤亡灵与你并肩作战。每召唤一个骷髅都会降低你的最大魔法值。"
+msgstr "召唤亡灵与你并肩作战。每召唤一个骷髅都会降低你的最大魔力值。"
 
 #: ../powers/base/magician/barrier.txt:1
 msgid "Barrier"
@@ -5546,7 +5550,7 @@ msgstr "势不可当"
 
 #: ../powers/base/warrior/shield_bash.txt:2
 msgid "Dash into enemies, crushing them with sheer force."
-msgstr "冲向敌人，用强大的力量将他们碾碎。"
+msgstr "冲向敌人，用强大的力量将敌人碾碎。"
 
 #: ../powers/base/warrior/cleave.txt:1
 msgid "Cleave"
@@ -5596,7 +5600,7 @@ msgstr "三箭齐发"
 
 #: ../powers/base/ranger/multishot.txt:2
 msgid "Shoot multiple projectiles in an arc simultaneously."
-msgstr "同时沿弧线发射多个投射物。"
+msgstr "以弧线同时发射多枚箭矢。"
 
 #: ../powers/base/ranger/wolfs_eye.txt:1
 msgid "Wolf's Eye"
@@ -5632,7 +5636,7 @@ msgstr "毒箭"
 
 #: ../powers/base/ranger/poison_shot.txt:4
 msgid "Shoot a projectile that explodes into a poisonous cloud on impact."
-msgstr "发射一枚撞击时会爆炸并产生毒云的投射物。"
+msgstr "发射一枚撞击时会爆炸并产生毒云的箭矢。"
 
 #: ../powers/base/ranger/scavenger.txt:1
 msgid "Scavenger"
@@ -5715,7 +5719,7 @@ msgstr "基础近身伤害"
 
 #: ../powers/trees/default.txt:11
 msgid "Magician"
-msgstr "魔术师"
+msgstr "魔法师"
 
 #: ../scripts/dev/waypoints_unlock.txt:14
 msgid "Unlocked all waypoints"
@@ -5735,8 +5739,8 @@ msgstr "你试图打开宝箱，但它被一股未知的力量封印了。"
 
 #: ../scripts/powers/goblin_steal.txt:107
 msgid "Goblin Thief stole a potion!"
-msgstr "哥布林窃贼偷了你的药水！"
+msgstr "哥布林偷了你的药水！"
 
 #: ../scripts/powers/respec_tome.txt:7
 msgid "All stat and power points have been reset."
-msgstr "所有属性和能力点数均已重置。"
+msgstr "所有属性点和技能点都已重置。"

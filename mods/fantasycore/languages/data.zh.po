@@ -75,11 +75,11 @@ msgstr "书"
 
 #: ../items/types.txt:59
 msgid "Potion"
-msgstr ""
+msgstr "药剂"
 
 #: ../items/types.txt:64
 msgid "Scroll"
-msgstr ""
+msgstr "卷轴"
 
 #: ../items/qualities.txt:3
 msgid "Low"
