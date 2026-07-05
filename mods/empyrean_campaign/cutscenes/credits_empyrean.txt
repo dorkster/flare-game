@@ -57,6 +57,7 @@ text=Iwan Gabovitch
 text=Jaakko Muilu
 text=Jacobo Feijóo
 text=Janet Hunt
+text=João Francisco Gauze Carrer
 text=Julvenzor
 text=kang
 text=Kevin Setterborn

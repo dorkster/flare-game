@@ -9,14 +9,15 @@
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2021
 # Vicente Monteiro, 2021
 # Thiago Guaryuu, 2025
+# João Francisco Gauze Carrer <jfcarrer@hotmail.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24 08:47+\n"
+"POT-Creation-Date: 2026-05-03 13:59+\n"
 "PO-Revision-Date: 2018-03-28 19:35+0000\n"
-"Last-Translator: Thiago Guaryuu, 2025\n"
+"Last-Translator: João Francisco Gauze Carrer <jfcarrer@hotmail.com>, 2026\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/flareorg/teams/84925/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +49,7 @@ msgstr "Usar: Tornar Invisível"
 msgid "DEV Tome"
 msgstr "DEV Tomo"
 
-#: ../items/items.txt:83
+#: ../items/items.txt:84
 msgid "Use: Open DEV Tome"
 msgstr "Usar: Abrir DEV Tomo"
 
@@ -150,11 +151,11 @@ msgstr "Pergaminho do Raio de Gelo"
 
 #: ../powers/effects.txt:202
 msgid "Vampirsim"
-msgstr ""
+msgstr "Vampirismo"
 
 #: ../powers/effects.txt:208
 msgid "Poison"
-msgstr ""
+msgstr "Veneno"
 
 #: ../powers/effects.txt:216
 msgid "Resist Damage (Fire)"
@@ -1176,29 +1177,29 @@ msgstr "Catacumbas do Submundo"
 msgid "Cutscenes"
 msgstr "Cenas"
 
-#: ../maps/iron_labyrinth/room6.txt:160
-msgid "Urn"
-msgstr ""
-
-#: ../maps/iron_labyrinth/room11.txt:210
-msgid "Crypt"
-msgstr ""
-
-#: ../maps/iron_labyrinth/door_ns1.txt:155
-msgid "This door needs a key to be opened."
-msgstr "Esta porta precisa de uma chave para ser aberta."
-
-#: ../maps/iron_labyrinth/door_ns1.txt:160
-msgid "Locked Door"
-msgstr "Porta trancada"
-
-#: ../maps/iron_labyrinth/warp_room.txt:175
+#: ../maps/iron_labyrinth/room16.txt:188
 msgid "Lectern"
 msgstr ""
 
+#: ../maps/iron_labyrinth/room6.txt:160
+msgid "Urn"
+msgstr "Urna"
+
+#: ../maps/iron_labyrinth/treasure_room.txt:156
+msgid "This door needs a key to be opened."
+msgstr "Esta porta precisa de uma chave para ser aberta."
+
+#: ../maps/iron_labyrinth/treasure_room.txt:159
+msgid "Locked Door"
+msgstr "Porta trancada"
+
+#: ../maps/iron_labyrinth/room11.txt:210
+msgid "Crypt"
+msgstr "Cripta"
+
 #: ../maps/iron_labyrinth/warp_room.txt:200
 msgid "Unknown Destination"
-msgstr ""
+msgstr "Destino Desconhecido"
 
 #: ../maps/iron_labyrinth/f1/start.txt:157
 msgid "Perdition Harbor Cave"
@@ -1310,7 +1311,7 @@ msgstr "Ponto de referência do Porto da Perdição descoberto."
 
 #: ../maps/perdition_harbor_cave.txt:148
 msgid "Iron Labyrinth"
-msgstr ""
+msgstr "Labirinto de Ferro"
 
 #: ../maps/perdition_harbor_cave.txt:195
 msgid "Excavation Journal"
@@ -2616,17 +2617,17 @@ msgstr "Aqui. Mas tenha cuidado com isso."
 msgid "Glowing Obelisk"
 msgstr "Obelisco Incandescente"
 
+#: ../npcs/il_loren.txt:1
+msgid "Loren, Undead Trader"
+msgstr "Loren, Comerciante Morto-Vivo"
+
 #: ../npcs/iron_labyrinth_teleporter.txt:1
 msgid "Strange Obelisk"
-msgstr ""
+msgstr "Obelisco Estranho"
 
 #: ../npcs/iron_labyrinth_teleporter.txt:21
 msgid "Choose a destination."
 msgstr ""
-
-#: ../npcs/loren.txt:1
-msgid "Loren, Undead Trader"
-msgstr "Loren, Comerciante Morto-Vivo"
 
 #: ../npcs/martigan.txt:1
 msgid "Martigan"
@@ -4356,63 +4357,63 @@ msgstr "Chave do Porão do Templo de Mez"
 msgid "Temple of Mez Main Hall Key"
 msgstr "Chave do Corredor Principal do Templo de Mez"
 
-#: ../items/categories/quest.txt:183
+#: ../items/categories/quest.txt:184
 msgid "Worn Note #1"
 msgstr "Nota Desgastada #1"
 
-#: ../items/categories/quest.txt:194
+#: ../items/categories/quest.txt:195
 msgid "Worn Note #2"
 msgstr "Nota Desgastada #2"
 
-#: ../items/categories/quest.txt:205
+#: ../items/categories/quest.txt:206
 msgid "Worn Note #3"
 msgstr "Nota Desgastada #3"
 
-#: ../items/categories/quest.txt:216
+#: ../items/categories/quest.txt:217
 msgid "Worn Note #4"
 msgstr "Nota Desgastada #4"
 
-#: ../items/categories/quest.txt:227
+#: ../items/categories/quest.txt:228
 msgid "Worn Note #5"
 msgstr "Nota Desgastada #5"
 
-#: ../items/categories/quest.txt:238
+#: ../items/categories/quest.txt:239
 msgid "Wizard's Tower Entrance Key"
 msgstr "Chave de Entrada da Torre do Mago"
 
-#: ../items/categories/quest.txt:248
+#: ../items/categories/quest.txt:249
 msgid "Wizard's Tower Research Hall Key"
 msgstr "Chave do Corredor do Laboratório da Torre do Mago"
 
-#: ../items/categories/quest.txt:269
+#: ../items/categories/quest.txt:270
 msgid "Lorund's Sword"
 msgstr "Espada de Lorund"
 
-#: ../items/categories/quest.txt:281
+#: ../items/categories/quest.txt:282
 msgid "Nerin's Bow"
 msgstr "Arco de Nerin"
 
-#: ../items/categories/quest.txt:293
+#: ../items/categories/quest.txt:294
 msgid "Kayl's Staff"
 msgstr "Cajado de Kayl"
 
-#: ../items/categories/quest.txt:305
+#: ../items/categories/quest.txt:306
 msgid "Underworld Stronghold Foyer Key"
 msgstr "Chave do Vestíbulo da Fortaleza do Submundo"
 
-#: ../items/categories/quest.txt:315
+#: ../items/categories/quest.txt:316
 msgid "Underworld Stronghold Barracks Key"
 msgstr "Chave do Quartel da Fortaleza do Submundo"
 
-#: ../items/categories/quest.txt:325
+#: ../items/categories/quest.txt:326
 msgid "Treasure Chest Key"
 msgstr "Chave do Baú de Tesouros"
 
-#: ../items/categories/quest.txt:335
+#: ../items/categories/quest.txt:336
 msgid "Silver Family Ring"
 msgstr "Anel de Prata da Família"
 
-#: ../items/categories/quest.txt:361
+#: ../items/categories/quest.txt:362
 msgid ""
 "An odor of iron and its abrasive petals make this rare plant easy to "
 "identify."
@@ -4420,7 +4421,7 @@ msgstr ""
 "Um odor de ferro e suas pétalas abrasivas tornam essa planta rara fácil de "
 "identificar."
 
-#: ../items/categories/quest.txt:372
+#: ../items/categories/quest.txt:374
 msgid ""
 "This mysterious black feather has a very sharp follicle, making it a "
 "suitable writing utensil."
@@ -4428,35 +4429,35 @@ msgstr ""
 "Essa misteriosa pena possui estruturas afiadas, fazendo uma boa ferramenta "
 "para escrita a mão."
 
-#: ../items/categories/quest.txt:383
+#: ../items/categories/quest.txt:386
 msgid "A dark, magical energy flows through the tip of this small blade."
 msgstr ""
 "Uma energia mágica e escura flui através da ponta dessa pequena lâmina."
 
-#: ../items/categories/quest.txt:391
+#: ../items/categories/quest.txt:395
 msgid "Vial of Your Blood"
 msgstr "Frasco com seu Sangue"
 
-#: ../items/categories/quest.txt:394
+#: ../items/categories/quest.txt:398
 msgid "Spoils of the Red Altar ritual."
 msgstr "Despojos do ritual do Altar Vermelho."
 
-#: ../items/categories/quest.txt:402
+#: ../items/categories/quest.txt:407
 msgid "Blood Inkwell"
 msgstr "Tinteiro de Sangue"
 
-#: ../items/categories/quest.txt:405
+#: ../items/categories/quest.txt:410
 msgid ""
 "According to Florin, this is the only ink capable of being used in the Book "
 "of the Dead."
 msgstr ""
 "Segundo Florin, esta é a única tinta capaz de ser usada no Livro dos Mortos."
 
-#: ../items/categories/quest.txt:413
+#: ../items/categories/quest.txt:419
 msgid "Iron Labyrinth Key"
-msgstr ""
+msgstr "Chave do Labirinto de Ferro"
 
-#: ../items/categories/quest.txt:424
+#: ../items/categories/quest.txt:430
 msgid "Excavation Journal Pages"
 msgstr ""
 
@@ -5248,6 +5249,10 @@ msgstr ""
 msgid "Mastite Greatstaff"
 msgstr ""
 
+#: ../items/categories/mastite.txt:441
+msgid "Mastite Crest Shield"
+msgstr ""
+
 #: ../items/categories/level_12.txt:5
 msgid "Warlord Chain Coif"
 msgstr "Touca de Correntes de Sr. da Guerra"
@@ -5728,7 +5733,7 @@ msgstr ""
 
 #: ../powers/base/magician/barrier.txt:1
 msgid "Barrier"
-msgstr ""
+msgstr "Barreira"
 
 #: ../powers/base/magician/barrier.txt:2
 msgid "Applies permanent protection against all elemental damage."
@@ -5744,7 +5749,7 @@ msgstr "Repele inimigos próximos com chance de atordoamento."
 
 #: ../powers/base/warrior/vampirism.txt:1
 msgid "Vampirism"
-msgstr ""
+msgstr "Vampirismo"
 
 #: ../powers/base/warrior/vampirism.txt:4
 msgid "Grants attacks the ability to leech enemy health."
@@ -5772,7 +5777,7 @@ msgstr ""
 
 #: ../powers/base/warrior/rupture.txt:1
 msgid "Rupture"
-msgstr ""
+msgstr "Ruptura"
 
 #: ../powers/base/warrior/rupture.txt:4
 msgid ""

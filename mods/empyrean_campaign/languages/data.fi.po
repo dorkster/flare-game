@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-24 08:47+\n"
+"POT-Creation-Date: 2026-05-03 13:59+\n"
 "PO-Revision-Date: 2018-03-28 19:35+0000\n"
 "Last-Translator: Jaakko Muilu, 2026\n"
 "Language-Team: Finnish (https://app.transifex.com/flareorg/teams/84925/fi/)\n"
@@ -43,7 +43,7 @@ msgstr "Käyttö: muuttaa näkymättömäksi"
 msgid "DEV Tome"
 msgstr "DEV-opus"
 
-#: ../items/items.txt:83
+#: ../items/items.txt:84
 msgid "Use: Open DEV Tome"
 msgstr "Käyttö: avaa DEV-opuksen"
 
@@ -173,7 +173,7 @@ msgstr "Manattu luuranko"
 
 #: ../powers/effects.txt:253
 msgid "MP Regen"
-msgstr ""
+msgstr "MP-palautuminen"
 
 #: ../powers/powers.txt:61
 msgid "Teleport"
@@ -257,7 +257,7 @@ msgstr "Lordi"
 
 #: ../engine/titles.txt:44
 msgid "Tempest"
-msgstr "Myrskyvelho"
+msgstr "Myrrysvelho"
 
 #: ../engine/titles.txt:49
 msgid "High Priest"
@@ -1171,25 +1171,25 @@ msgstr "Maanalaiset katakombit"
 msgid "Cutscenes"
 msgstr "Välinäytökset"
 
+#: ../maps/iron_labyrinth/room16.txt:188
+msgid "Lectern"
+msgstr "Lukuteline"
+
 #: ../maps/iron_labyrinth/room6.txt:160
 msgid "Urn"
 msgstr "Uurna"
 
-#: ../maps/iron_labyrinth/room11.txt:210
-msgid "Crypt"
-msgstr ""
-
-#: ../maps/iron_labyrinth/door_ns1.txt:155
+#: ../maps/iron_labyrinth/treasure_room.txt:156
 msgid "This door needs a key to be opened."
 msgstr "Tämän oven avaamiseen tarvitaan avain."
 
-#: ../maps/iron_labyrinth/door_ns1.txt:160
+#: ../maps/iron_labyrinth/treasure_room.txt:159
 msgid "Locked Door"
 msgstr "Lukittu ovi"
 
-#: ../maps/iron_labyrinth/warp_room.txt:175
-msgid "Lectern"
-msgstr "Lukuteline"
+#: ../maps/iron_labyrinth/room11.txt:210
+msgid "Crypt"
+msgstr ""
 
 #: ../maps/iron_labyrinth/warp_room.txt:200
 msgid "Unknown Destination"
@@ -2591,6 +2591,10 @@ msgstr "Noin. Olehan varovainen sen kanssa."
 msgid "Glowing Obelisk"
 msgstr "Hohtava obeliski"
 
+#: ../npcs/il_loren.txt:1
+msgid "Loren, Undead Trader"
+msgstr "Loren, epäkuollut kauppias"
+
 #: ../npcs/iron_labyrinth_teleporter.txt:1
 msgid "Strange Obelisk"
 msgstr "Outo obeliski"
@@ -2598,10 +2602,6 @@ msgstr "Outo obeliski"
 #: ../npcs/iron_labyrinth_teleporter.txt:21
 msgid "Choose a destination."
 msgstr "Valitse määränpää"
-
-#: ../npcs/loren.txt:1
-msgid "Loren, Undead Trader"
-msgstr "Loren, epäkuollut kauppias"
 
 #: ../npcs/martigan.txt:1
 msgid "Martigan"
@@ -3170,7 +3170,7 @@ msgid ""
 "waiting until the damage is done? We need defensive mages! But somehow, "
 "that's out of the question for the Empyrean..."
 msgstr ""
-"Mitäkö Ylähuoneen parantaja tekee? Antaa vain surkean taikajuoman! Miksi me "
+"Mitäkö Ylähuoneen parantaja tekee? Antaa vain surkean putelin! Miksi me "
 "odotamme, kunnes vahinko on tapahtunut? Me tarvitsemme suojelevia velhoja! "
 "Mutta jotenkin se ei tule kysymykseenkään Empyreanille..."
 
@@ -4383,63 +4383,63 @@ msgstr "Mezin temppelin kellariavain"
 msgid "Temple of Mez Main Hall Key"
 msgstr "Mezin temppelin päähallin avain"
 
-#: ../items/categories/quest.txt:183
+#: ../items/categories/quest.txt:184
 msgid "Worn Note #1"
 msgstr "Kulunut muistiinpano #1"
 
-#: ../items/categories/quest.txt:194
+#: ../items/categories/quest.txt:195
 msgid "Worn Note #2"
 msgstr "Kulunut muistiinpano #2"
 
-#: ../items/categories/quest.txt:205
+#: ../items/categories/quest.txt:206
 msgid "Worn Note #3"
 msgstr "Kulunut muistiinpano #3"
 
-#: ../items/categories/quest.txt:216
+#: ../items/categories/quest.txt:217
 msgid "Worn Note #4"
 msgstr "Kulunut muistiinpano #4"
 
-#: ../items/categories/quest.txt:227
+#: ../items/categories/quest.txt:228
 msgid "Worn Note #5"
 msgstr "Kulunut muistiinpano #5"
 
-#: ../items/categories/quest.txt:238
+#: ../items/categories/quest.txt:239
 msgid "Wizard's Tower Entrance Key"
 msgstr "Velhon tornin sisäänkäyntiavain"
 
-#: ../items/categories/quest.txt:248
+#: ../items/categories/quest.txt:249
 msgid "Wizard's Tower Research Hall Key"
 msgstr "Velhon tornin tutkimushallin avain"
 
-#: ../items/categories/quest.txt:269
+#: ../items/categories/quest.txt:270
 msgid "Lorund's Sword"
 msgstr "Lorundin miekka"
 
-#: ../items/categories/quest.txt:281
+#: ../items/categories/quest.txt:282
 msgid "Nerin's Bow"
 msgstr "Nerinin jousi"
 
-#: ../items/categories/quest.txt:293
+#: ../items/categories/quest.txt:294
 msgid "Kayl's Staff"
 msgstr "Kaylin sauva"
 
-#: ../items/categories/quest.txt:305
+#: ../items/categories/quest.txt:306
 msgid "Underworld Stronghold Foyer Key"
 msgstr "Alamaailman linnoituksen aulan avain"
 
-#: ../items/categories/quest.txt:315
+#: ../items/categories/quest.txt:316
 msgid "Underworld Stronghold Barracks Key"
 msgstr "Alamaailman linnoituksen kasarmin avain"
 
-#: ../items/categories/quest.txt:325
+#: ../items/categories/quest.txt:326
 msgid "Treasure Chest Key"
 msgstr "Aarrearkun avain"
 
-#: ../items/categories/quest.txt:335
+#: ../items/categories/quest.txt:336
 msgid "Silver Family Ring"
 msgstr "Hopeinen sukusormus"
 
-#: ../items/categories/quest.txt:361
+#: ../items/categories/quest.txt:362
 msgid ""
 "An odor of iron and its abrasive petals make this rare plant easy to "
 "identify."
@@ -4447,7 +4447,7 @@ msgstr ""
 "Tämän harvinaisen kasvin tunnistaa helposti raudan hajusta ja hankaavista "
 "terälehdistä."
 
-#: ../items/categories/quest.txt:372
+#: ../items/categories/quest.txt:374
 msgid ""
 "This mysterious black feather has a very sharp follicle, making it a "
 "suitable writing utensil."
@@ -4455,34 +4455,34 @@ msgstr ""
 "Tällä salaperäisellä mustalla sulalla on hyvin terävä tyvi, mikä tekee siitä"
 " sopivan kirjoitusvälineen."
 
-#: ../items/categories/quest.txt:383
+#: ../items/categories/quest.txt:386
 msgid "A dark, magical energy flows through the tip of this small blade."
 msgstr "Synkkä, maaginen energia virtaa tämän pienen teräaseen kärjestä."
 
-#: ../items/categories/quest.txt:391
+#: ../items/categories/quest.txt:395
 msgid "Vial of Your Blood"
 msgstr "Veresi näytepullo"
 
-#: ../items/categories/quest.txt:394
+#: ../items/categories/quest.txt:398
 msgid "Spoils of the Red Altar ritual."
 msgstr "Punaisen alttarin rituaalin tuotos."
 
-#: ../items/categories/quest.txt:402
+#: ../items/categories/quest.txt:407
 msgid "Blood Inkwell"
 msgstr "Verimustepullo"
 
-#: ../items/categories/quest.txt:405
+#: ../items/categories/quest.txt:410
 msgid ""
 "According to Florin, this is the only ink capable of being used in the Book "
 "of the Dead."
 msgstr ""
 "Florinin mukaan tämä on ainoa muste, jota voi käyttää Kuolleiden kirjaan."
 
-#: ../items/categories/quest.txt:413
+#: ../items/categories/quest.txt:419
 msgid "Iron Labyrinth Key"
 msgstr "Rautalabyrintin avain"
 
-#: ../items/categories/quest.txt:424
+#: ../items/categories/quest.txt:430
 msgid "Excavation Journal Pages"
 msgstr "Kaivauksen lokikirjan sivuja"
 
@@ -5272,6 +5272,10 @@ msgstr ""
 
 #: ../items/categories/mastite.txt:434
 msgid "Mastite Greatstaff"
+msgstr ""
+
+#: ../items/categories/mastite.txt:441
+msgid "Mastite Crest Shield"
 msgstr ""
 
 #: ../items/categories/level_12.txt:5
