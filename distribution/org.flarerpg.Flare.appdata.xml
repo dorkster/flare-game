@@ -18,34 +18,34 @@
 		<p>The Flare engine is licensed under GPL 3, whereas the Empyrean Campaign is licensed under CC-BY-SA 3.0. Both the engine and the game content are being actively developed, including new features, art, and content.</p>
 	</description>
 	<launchable type="desktop-id">flare.desktop</launchable>
-	<url type="homepage">http://flarerpg.org/</url>
+	<url type="homepage">https://flarerpg.org/</url>
 	<releases>
 		<release date="2026-05-08" version="1.15" />
 	</releases>
 	<screenshots>
 		<screenshot type="default">
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_1.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_1.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_2.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_2.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_3.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_3.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_4.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_4.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_5.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_5.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_6.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_6.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_7.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_7.jpg</image>
 		</screenshot>
 		<screenshot>
-			<image type="source">http://flarerpg.org/wp-content/uploads/2026/05/empyrean_8.jpg</image>
+			<image type="source">https://flarerpg.org/wp-content/uploads/2026/05/empyrean_8.jpg</image>
 		</screenshot>
 	</screenshots>
 	<content_rating type="oars-1.1">
