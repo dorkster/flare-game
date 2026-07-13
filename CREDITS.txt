@@ -3,17 +3,17 @@ Flare Game Credits
 Art
 
 Blarumyrran
-Brandon Morris "Augmentality" | http://www.youtube.com/brandon75689
-Clint Bellanger | http://clintbellanger.net
+Brandon Morris "Augmentality" | https://www.youtube.com/brandon75689
+Clint Bellanger | https://clintbellanger.net
 Holly Daniel | https://www.odesk.com/users/~~822174c5679d5273
-Justin Jacobs | http://dorkster.github.io/
-Justin Nichol | http://blackflaggames.org/
-Jessica "Zeldyn" Cox | http://zeldyn.deviantart.com/
-remaxim | http://opengameart.org/users/remaxim
+Justin Jacobs | https://dorkster.github.io/
+Justin Nichol | https://opengameart.org/users/justin-nichol
+Jessica "Zeldyn" Cox | https://zeldyn.deviantart.com/
+remaxim | https://opengameart.org/users/remaxim
 rubberduck | https://opengameart.org/users/rubberduck
-Sarah Benalene | http://benalene.com/
+Sarah Benalene | https://benalene.com/
 Scrittl
-Stefan Beller | http://github.com/stefanbeller
+Stefan Beller | https://github.com/stefanbeller
 
 Additional Art
   Thanks to these artists for releasing reusable open-licensed art
@@ -50,10 +50,10 @@ Zuendholz
 
 Content
 
-Clint Bellanger | http://clintbellanger.net
-Justin Jacobs | http://dorkster.github.io/
-Stefan Beller | http://github.com/stefanbeller
-Thane "pennomi" Brimhall | http://github.com/pennomi
+Clint Bellanger | https://clintbellanger.net
+Justin Jacobs | https://dorkster.github.io/
+Stefan Beller | https://github.com/stefanbeller
+Thane "pennomi" Brimhall | https://github.com/pennomi
 
 Distributions
 
